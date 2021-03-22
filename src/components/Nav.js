@@ -1,9 +1,23 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
 import NutrackerLogo from '../assets/images/nutcracker-logo.png';
 
 const NavStyles = styled.nav`
+  @keyframes menu {
+    to {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  @keyframes menuOut {
+    to {
+      opacity: 0;
+      visibility: hidden;
+      z-index: -9999;
+    }
+  }
+
   width: 100%;
   position: fixed;
   .nav {
@@ -14,7 +28,7 @@ const NavStyles = styled.nav`
     display: flex;
     justify-content: space-between;
     &--logo {
-      width: 170px;
+      width: 185px;
       img {
         width: 100%;
       }
@@ -23,15 +37,12 @@ const NavStyles = styled.nav`
       position: absolute;
       width: 100%;
       margin-top: 3rem;
-      .mobile-bg {
-        background-color: rgb(0, 0, 0);
-        opacity: 0.85;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 5px;
-      }
+      transition: all 0.35s linear;
+      /* animation: ${({ open }) => (open ? 'menuOut' : 'menu')} 0.35s both; */
+      z-index: ${({ open }) => (open ? '9999' : '-99999')};
+      opacity: ${({ open }) => (open ? '1' : '0')};
+      visibility: ${({ open }) => (open ? 'visable' : 'hidden')};
+
       .desktop--menu {
         display: none;
         list-style: none;
@@ -47,9 +58,13 @@ const NavStyles = styled.nav`
       }
       .mobile--menu {
         padding: 1rem;
-        opacity: 1;
         position: relative;
         z-index: 999;
+        background-color: rgba(0, 0, 0, 0.85);
+        border-radius: 5px;
+        /* display: ${({ open }) => (open ? 'block' : 'none')}; */
+        /* opacity: ${({ open }) => (open ? '1' : '0')}; */
+
         &--top,
         &--lower {
           list-style: none;
@@ -57,13 +72,14 @@ const NavStyles = styled.nav`
             color: #ffffff;
             padding: 0.3rem 0;
             font-weight: 500;
+            font-size: var(--titleExtraSmall);
           }
         }
         &--top {
         }
         &--lower {
           li {
-            border-top: solid rgba(255, 255, 255, 0.5) 1px;
+            border-top: solid rgba(255, 255, 255, 0.95) 2px;
             padding-bottom: 8px;
             button {
               width: 75%;
@@ -89,14 +105,17 @@ const NavStyles = styled.nav`
     &--hamburger {
       width: 30px;
       height: 100%;
-      padding-top: 8.5px;
-      background: ${({ open }) => (open ? 'red' : 'blue')};
+      padding-top: 5.5px;
+      transition: all 0.35s linear;
       div {
         width: 100%;
         height: 3px;
         background-color: #ffffff;
         content: '';
-        margin-bottom: 4px;
+        border-radius: 3px;
+        margin-bottom: 5px;
+        transition: all 0.25s linear;
+        transform-origin: 3px;
         &:nth-child(1) {
           transform: ${({ open }) => (open ? 'rotate(40deg)' : 'rotate(0deg)')};
         }
@@ -114,10 +133,18 @@ const NavStyles = styled.nav`
   }
 `;
 const Nav = () => {
-  const i = true;
   const [open, setOpen] = useState(false);
+  const [scroll, setScroll] = useState(false);
+  const changeNavScroll = () => {
+    if (window.scrollY >= 20) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+  window.addEventListener('scroll', changeNavScroll);
   return (
-    <NavStyles>
+    <NavStyles className={scroll ? 'nav nav-active' : 'nav'} open={open}>
       <div className="nav">
         <div className="nav--logo">
           {/* <StaticImage
@@ -147,7 +174,7 @@ const Nav = () => {
               </button>
             </li>
           </ul>
-          <div className="mobile--menu">
+          <div className="mobile--menu" open={open}>
             <ul className="mobile--menu--top">
               <li>Marketing</li>
               <li>Content</li>
@@ -167,20 +194,18 @@ const Nav = () => {
               </li>
             </ul>
           </div>
-          <div className="mobile-bg" />
         </div>
         <div
           className="nav--hamburger"
-          onClick={(() => setOpen(!open), () => console.log('clicked'))}
+          onClick={() => setOpen(!open)}
           onKeyDown={() => setOpen(!open)}
           role="button"
           tabIndex={0}
           open={open}
-          id="hamburger"
         >
-          <div open={open} />
-          <div open={open} />
-          <div open={open} />
+          <div />
+          <div />
+          <div />
         </div>
       </div>
     </NavStyles>

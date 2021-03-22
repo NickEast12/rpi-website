@@ -3,6 +3,9 @@ import 'normalize.css';
 import GlobalStyles from '../styles/GlobalStyles';
 import Nav from './Nav';
 import Loader from './functional/Load';
+import Footer from './Footer';
+import Animations from '../styles/Animations';
+import Typography from '../styles/Typography';
 
 const Layout = ({ children, location }) => {
   const isHome = location.pathname === '/';
@@ -16,13 +19,16 @@ const Layout = ({ children, location }) => {
   return (
     <>
       <GlobalStyles />
+      <Animations />
+      <Typography />
       {isLoading && isHome ? (
         <Loader finishLoading={() => setIsLoading(false)} />
       ) : (
-        <div>
+        <>
           <Nav isHome={isHome} />
           <div>{children}</div>
-        </div>
+          <Footer />
+        </>
       )}
     </>
   );
