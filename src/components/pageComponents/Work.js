@@ -16,7 +16,7 @@ const WorkStyles = styled.section`
       font-size: 2rem;
       font-weight: 600;
     }
-    p {
+    > p {
       margin-top: 1rem;
     }
     &__boxes {
@@ -70,10 +70,14 @@ const WorkStyles = styled.section`
           left: 0;
           background: #16212a;
           color: #fff;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
           div {
             width: 60px;
             justify-content: space-between;
-            margin: 0.75rem auto 0 auto;
+            margin: 1rem auto 0 auto;
             display: flex;
             svg {
               width: 22.5px;

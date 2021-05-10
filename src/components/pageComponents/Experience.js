@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const LowerAboutStyles = styled.section`
   width: 100%;
-  padding: 0 0 5rem 0;
+  padding: 0 0 2rem 0;
   .la {
     width: 90%;
     margin: 0 auto;
