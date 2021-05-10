@@ -28,6 +28,7 @@ const FooterStyles = styled.footer`
         svg {
           fill: rgba(255, 255, 255, 0.7);
           width: 25px;
+          height: 25px;
           transition: fill 0.35s ease-in-out;
           &:hover {
             fill: var(--mainColour);

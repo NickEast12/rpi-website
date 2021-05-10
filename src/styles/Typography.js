@@ -17,6 +17,9 @@ const Typography = createGlobalStyle`
         @media only screen and (min-width: 375px) {
           font-size: 16.5px;
         }
+        @media only screen and (min-width: 414px) {
+          font-size: 17px;
+        }
       }
       h1 {
     font-size: var(--titleLarge);

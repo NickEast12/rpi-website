@@ -88,6 +88,7 @@ const WorkStyles = styled.section`
             display: flex;
             svg {
               width: 22.5px;
+              height: 22.5px;
               fill: #fff;
             }
           }

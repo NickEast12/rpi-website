@@ -90,13 +90,18 @@ const NavStyles = styled.nav`
       text-align: center;
       list-style: none;
       padding: 2rem 0;
+      @media only screen and (min-width: 375px) {
+        margin-top: 9.5rem;
+      }
+      @media only screen and (min-width: 414px) {
+        margin-top: 10.5rem;
+      }
       a {
         li {
           margin-bottom: 2rem;
           font-family: var(--roboto);
           font-size: var(--text);
           transition: all 0.35s ease;
-          font-weight: 100;
           opacity: 0;
           transform: translateY(-10px);
           .nav-button {

@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
         --opacityBackground: rgba(22,33,42, .99);
         --opacityAlt: rgba(244,245,246, .55);
         //*Font
-        --roboto: Roboto Mono,  -apple-system, system-ui, "Helvetica Neue",Helvetica,Arial,sans-serif;
+        --roboto: RobotoMono,  -apple-system, system-ui, "Helvetica Neue",Helvetica,Arial,sans-serif;
         --title: Lato,  -apple-system, system-ui, "Helvetica Neue",Helvetica,Arial,sans-serif;        
         //*Font-size
         --titleLarge: 2.6rem;
