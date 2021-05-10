@@ -22,7 +22,8 @@ const WorkStyles = styled.section`
     &__boxes {
       margin-top: 2rem;
       section {
-        border-radius: 5px;
+        border-radius: 20px;
+        height: 12rem;
         position: relative;
         background: red;
         transition: all 0.35s ease-in-out;
@@ -33,8 +34,9 @@ const WorkStyles = styled.section`
           }
         }
         .gatsby-image-wrapper {
-          border-radius: 4.5px;
-          height: auto;
+          border-radius: 20px;
+          height: 100%;
+          width: 100%;
           &::after {
             width: 100%;
             height: 100%;
@@ -60,7 +62,7 @@ const WorkStyles = styled.section`
         }
         .overlay {
           transition: all 0.35s ease-in-out;
-          border-radius: 5px;
+          border-radius: 20px;
           opacity: 0;
           width: 100%;
           height: 100%;
