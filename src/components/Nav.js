@@ -1,5 +1,6 @@
 import { Link } from 'gatsby';
 import React, { useState } from 'react';
+import { window } from 'browser-monads';
 import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
 import Github from '../svgs/github.svg';
