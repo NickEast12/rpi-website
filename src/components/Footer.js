@@ -12,7 +12,7 @@ const FooterStyles = styled.footer`
   background: #16222a;
   .footer {
     max-width: var(--maxWidth);
-    padding: 2.5rem 0 1rem 0;
+    padding: 2.5rem 0 2rem 0;
     width: 90%;
     margin: 0 auto;
     @media only screen and (min-width: 600px) {

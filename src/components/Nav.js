@@ -6,6 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import Github from '../svgs/github.svg';
 import LinkedIn from '../svgs/linkedin.svg';
 import Spotify from '../svgs/spotify.svg';
+import Logo from '../svgs/logo.svg';
 
 const NavStyles = styled.nav`
   z-index: 999;
@@ -38,6 +39,11 @@ const NavStyles = styled.nav`
       .gatsby-image-wrapper {
         width: 40px;
         height: auto;
+      }
+      svg {
+        fill: black;
+        width: 45px;
+        height: 100%;
       }
     }
     &--menu {
@@ -220,10 +226,7 @@ const Nav = () => {
       <div className={scroll ? 'active nav__wrapper' : 'nav__wrapper'}>
         <div className="nav">
           <div className="nav--logo">
-            <StaticImage
-              src="../assets/images/ne-logo.PNG"
-              alt="Nick East | Full stack JavaScript developer"
-            />
+            <Logo />
           </div>
           <div
             className="nav--menu"

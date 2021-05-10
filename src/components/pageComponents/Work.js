@@ -8,6 +8,7 @@ import ZanoLogo from '../../svgs/zano-logo.svg';
 import VSLogo from '../../svgs/vs-logo.svg';
 import Github from '../../svgs/github.svg';
 import LinkIcon from '../../svgs/link.svg';
+import LashBaseIcon from '../../svgs/lashbase.svg';
 
 const WorkStyles = styled.section`
   width: 100%;
@@ -23,8 +24,8 @@ const WorkStyles = styled.section`
       font-weight: 600;
     }
     > p {
-      width: 80%;
-      margin: 1rem auto 0 auto;
+      width: 90%;
+      margin: 1rem auto 1.5rem auto;
     }
     &__boxes {
       margin-top: 2rem;
@@ -191,6 +192,22 @@ const Work = () => {
             <Image filename="sorted.jpeg" alt="Sorted Property Services" />
             <div className="box--logo">
               <SortedLogo />
+            </div>
+            <div className="overlay">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolores, commodi!
+              </p>
+              <div>
+                <Github />
+                <LinkIcon />
+              </div>
+            </div>
+          </section>
+          <section>
+            <Image filename="lashbase.jpg" alt="LashBase" />
+            <div className="box--logo">
+              <LashBaseIcon />
             </div>
             <div className="overlay">
               <p>
