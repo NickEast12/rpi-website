@@ -1,5 +1,0 @@
-[build]
-  base = "/public"
-[functions]
-  directory = "functions/"
-
