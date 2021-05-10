@@ -7,7 +7,7 @@ import LinkIcon from '../../svgs/link.svg';
 
 const WorkStyles = styled.section`
   width: 100%;
-  padding-bottom: 5rem;
+  padding-bottom: 7rem;
   .work {
     width: 90%;
     margin: 0 auto;
@@ -21,11 +21,16 @@ const WorkStyles = styled.section`
     }
     &__boxes {
       margin-top: 2rem;
+      width: 90%;
+      margin: 2rem auto 0 auto;
       section {
         border-radius: 20px;
         height: 12rem;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        @media only screen and (min-width: 375px) {
+          height: 14rem;
+        }
         position: relative;
-        background: red;
         transition: all 0.35s ease-in-out;
         margin-bottom: 1.5rem;
         &:hover {

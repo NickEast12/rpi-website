@@ -1,7 +1,17 @@
 import { createGlobalStyle } from 'styled-components';
+import font from '../assets/fonts/Inter.ttf';
+import altFont from '../assets/fonts/RobotoMono.ttf';
 
 const Typography = createGlobalStyle`
-
+  @font-face {
+        font-family: Inter;
+        src: url(${font});
+    }
+   
+     @font-face {
+        font-family: RobotoMono;
+        src: url(${altFont});
+    } 
   html {
         font-size: 16px;
         @media only screen and (min-width: 375px) {

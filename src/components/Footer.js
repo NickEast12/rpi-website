@@ -15,7 +15,7 @@ const FooterStyles = styled.footer`
     width: 90%;
     margin: 0 auto;
     &__wrapper {
-      padding-top: 17rem;
+      padding-top: 16rem;
       text-align: center;
       > svg {
         width: 110px;
@@ -88,17 +88,17 @@ const FooterCTAStyles = styled.section`
   width: 100%;
   position: relative;
   .cta {
-    top: -2rem;
+    top: -3rem;
     left: 0;
     position: absolute;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-shadow: rgba(17, 12, 46, 0.95) 0px 48px 100px 0px;
     /* background: #4e94fc; */
     background: #fff;
 
     border-radius: 5px;
-    padding: 1.85rem 1.5rem;
-    width: 90%;
-    margin: 0 calc(5%);
+    padding: 2.5rem 1.85rem;
+    width: 85%;
+    margin: 0 calc(7.5%);
     text-align: center;
     h4 {
       font-weight: 600;

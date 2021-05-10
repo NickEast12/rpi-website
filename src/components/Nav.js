@@ -1,5 +1,5 @@
 import { Link } from 'gatsby';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { window } from 'browser-monads';
 import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
@@ -181,6 +181,15 @@ const Nav = () => {
     }
   };
   window.addEventListener('scroll', changeNavScroll);
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    }
+    if (!open) {
+      document.body.style.overflow = 'auto';
+    }
+  }, [open]);
+
   return (
     <NavStyles open={open}>
       <div className={scroll ? 'active nav__wrapper' : 'nav__wrapper'}>

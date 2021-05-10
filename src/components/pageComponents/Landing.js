@@ -22,6 +22,12 @@ const LandingStyles = styled.header`
     margin: 0 auto;
     text-align: left;
     padding-top: 8rem;
+    @media only screen and (min-width: 375px) {
+      padding-top: 9.5rem;
+    }
+    @media only screen and (min-width: 414px) {
+      padding-top: 11.5rem;
+    }
     color: var(--secondaryColour);
     h6 {
       /* color: var(--mainColour); */
@@ -46,9 +52,8 @@ const LandingStyles = styled.header`
         }
       }
     }
-    p {
-      margin-bottom: 0.85rem;
-      font-weight: 200;
+    > p {
+      margin-bottom: 0.95rem;
     }
     button {
       margin-top: 0.5rem;
@@ -61,6 +66,7 @@ const Landing = () => {
   const gradients = [
     ['#16222A', '#3A6073'],
     ['#0A1A2E', '#093637'],
+    ['#4e94fb', '#69ffb7'],
   ];
   return (
     <>
@@ -94,3 +100,13 @@ const Landing = () => {
 };
 
 export default Landing;
+
+// &:nth-child(1n) {
+//   background: #4e94fb;
+// }
+// &:nth-child(2n) {
+//   background: #69ffb7;
+// }
+// &:nth-child(3n) {
+//   background: #ef5e93;
+// }
