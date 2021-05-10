@@ -3,13 +3,14 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyles = createGlobalStyle`
     :root {
         //*Colours
-        --mainColour: #2BA5A2;
-        --accentColour: #8E1C55;
-        --backgroundColour: #4C4C4C;
-        --yellow: #FAE101;
+        --mainColour: #1DBC9B;
+        --secondaryColour: #F4F5F6;
+        --backgroundColour: #16212A;
+        --opacityBackground: rgba(22,33,42, .99);
+        --opacityAlt: rgba(244,245,246, .55);
         //*Font
-        --slab: museo-slab, -apple-system, system-ui, Helvetica,Arial,sans-serif;
-        --serif: museo-sans, -apple-system, system-ui, "Helvetica Neue",Helvetica,Arial,sans-serif;
+        --roboto: Roboto Mono,  -apple-system, system-ui, "Helvetica Neue",Helvetica,Arial,sans-serif;
+        --title: Lato,  -apple-system, system-ui, "Helvetica Neue",Helvetica,Arial,sans-serif;        
         //*Font-size
         --titleLarge: 2.6rem;
         --titleSemiLarge: 2.441rem;
@@ -37,10 +38,10 @@ const GlobalStyles = createGlobalStyle`
         overflow: scroll;
         -webkit-font-smoothing: subpixel-antialiased !important; 
         text-rendering:optimizeLegibility !important;
-        background-color: var(--backgroundColour);
+        /* background-color: var(--backgroundColour); */
     }
     h1,h2,h3,h4,h5,h6 {
-      font-family: var(--slab);
+      font-family: var(--title);
       margin: 0;
       letter-spacing: -.5px;
       font-feature-settings: "kern" 1;
@@ -49,36 +50,73 @@ const GlobalStyles = createGlobalStyle`
       font-smoothing: antialiased; 
       font-weight: 100;
     }
-    .title--bold {
-        font-weight: 700;
+    .subtitle {
+        font-family: var(--roboto);
+        font-weight: 400;
+        letter-spacing: -.5px;
+        z-index: -2;
+    }
+    .mainTitle {
+        z-index: 0;
+        font-family: var(--roboto);
+        font-weight: 400;
+        letter-spacing: -.5px;
+        position: relative;
+        font-size: var(--titleSmall);
+        span {
+            width: 100%;
+            position: relative;
+            z-index: -1;
+            padding-bottom: 4.5px;
+            &::after {
+            position: absolute;
+            left: 0;
+            z-index: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--mainColour);
+            content: '';
+        }
+        }
+        
     }
     .btn {
         width: 100%;
-        padding: .65rem 0; 
-        border-radius: 35px;
+        padding: .5rem 0; 
+        border-radius: 2px;
         span {
-            vertical-align: center;
+
             font-size: var(--text);
-            font-family: var(--serif);
+            font-family: var(--roboto);
             letter-spacing: -.5px;
             color: #fff;
         }
     }
-    .btn--main {
-        background: var(--mainColour);
-        border: none;
-    }
-    .btn--alt {
+    .btn--outline {
         background: none;
         border: solid 2px var(--mainColour);
+        span {
+            color: var(--mainColour);
+        }
+    }
+    .btn--main {
+        background: #1DBC9B;
+        border: none;
+        span {
+            color: #16212A;
+        }
     }
     p , li, input, address, label,input, textarea  {
-      font-family: var(--serif);
+      font-family: var(--title);
       font-feature-settings: "kern" 1;
       font-kerning: normal;
     }
+    p {
+        line-height: 1.5;
+    }
     a {
-        font-family: var(--slab);
+        font-family: var(--title);
         color: #fff!important;
         fill: #fff;
     }

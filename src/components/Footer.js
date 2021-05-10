@@ -2,60 +2,57 @@ import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 import styled from 'styled-components';
 //* Local imports
-import LinkedInIcon from '../svgs/linkedin.svg';
-import TwitterIcon from '../svgs/twitter.svg';
-import InstagramIcon from '../svgs/instagram.svg';
+import Logo from '../svgs/logo.svg';
+import GithubIcon from '../svgs/github.svg';
+import LinkedinIcon from '../svgs/linkedin.svg';
+import SpotifyIcon from '../svgs/spotify.svg';
 
 const FooterStyles = styled.footer`
   width: 100%;
-  padding: 2.5rem 0 1.5rem 0;
+  background: #16222a;
   .footer {
-    width: 95%;
+    padding: 2.5rem 0 1rem 0;
+    width: 90%;
     margin: 0 auto;
-    &__content {
-      color: #fff;
-      &--links {
+    &__wrapper {
+      padding-top: 17rem;
+      text-align: center;
+      > svg {
+        width: 110px;
+      }
+      &__icons {
         display: flex;
-        width: 100%;
         justify-content: space-between;
-        .ft--img {
-          flex: 1 0 auto;
-          .gatsby-image-wrapper {
-            width: 170px;
-          }
-        }
-        .ft--icons {
-          flex: 1 0 auto;
-          display: flex;
-          justify-content: space-evenly;
-          svg {
+        width: 120px;
+        margin: 2rem auto 0 auto;
+        svg {
+          fill: rgba(255, 255, 255, 0.7);
+          width: 25px;
+          transition: fill 0.35s ease-in-out;
+          &:hover {
             fill: var(--mainColour);
-            width: 25px;
           }
         }
       }
-      h3 {
-        margin: 2rem 0;
-        font-weight: 700;
-        span {
-          color: var(--yellow);
+      .built {
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 2rem;
+        font-family: var(--roboto);
+        font-size: 0.85rem;
+      }
+      .legal {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        p {
+          color: rgba(255, 255, 255, 0.7);
+          font-family: var(--roboto);
+          font-size: 0.75rem;
+          transition: color 0.35s ease-in-out;
+          &:hover {
+            color: rgba(255, 255, 255, 1);
+          }
         }
-      }
-      p {
-        font-size: var(--textMedium);
-        line-height: 1.5;
-      }
-      address {
-        font-style: inherit;
-        font-size: var(--textMedium);
-        margin-top: 1rem;
-      }
-    }
-    &__img {
-      margin-top: 2rem;
-      .gatsby-image-wrapper {
-        height: auto;
-        width: 100%;
       }
     }
   }
@@ -65,37 +62,20 @@ const Footer = () => {
   const i = true;
   return (
     <FooterStyles>
+      <FooterCTA />
       <div className="footer">
-        <div className="footer__content">
-          <div className="footer__content--links">
-            <div className="ft--img">
-              <StaticImage
-                src="../assets/images/nutcracker-logo.png"
-                alt="Nutcracker logo"
-              />
-            </div>
-            <div className="ft--icons">
-              <TwitterIcon />
-              <LinkedInIcon />
-              <InstagramIcon />
-            </div>
+        <div className="footer__wrapper">
+          <Logo />
+          <div className="footer__wrapper__icons">
+            <GithubIcon />
+            <LinkedinIcon />
+            <SpotifyIcon />
           </div>
-          <h3>
-            Stand <span className="title--bold">out</span> from the crowd
-          </h3>
-          <p>
-            Marketing | Content | Social media | Design | Lead generation | PR |
-            The team | Blog | Contact us
-          </p>
-          <address>
-            Nutcracker Agency, Salatin House, 19 Cedar Road, Sutton, SM2 5DA
-          </address>
-        </div>
-        <div className="footer__img">
-          <StaticImage
-            src="../assets/images/footer-awards.png"
-            alt="Nutracker awards"
-          />
+          <p className="built">Designed &amp; Built by Nick East</p>
+          <div className="legal">
+            <p>Privacy Policy</p>
+            <p>Cookie Policy</p>
+          </div>
         </div>
       </div>
     </FooterStyles>
@@ -103,3 +83,49 @@ const Footer = () => {
 };
 
 export default Footer;
+
+const FooterCTAStyles = styled.section`
+  width: 100%;
+  position: relative;
+  .cta {
+    top: -2rem;
+    left: 0;
+    position: absolute;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    /* background: #4e94fc; */
+    background: #fff;
+
+    border-radius: 5px;
+    padding: 1.85rem 1.5rem;
+    width: 90%;
+    margin: 0 calc(5%);
+    text-align: center;
+    h4 {
+      font-weight: 600;
+    }
+    p {
+      margin-top: 1rem;
+    }
+    button {
+      margin-top: 1rem;
+      width: 80%;
+    }
+  }
+`;
+const FooterCTA = () => (
+  <FooterCTAStyles>
+    <div className="cta">
+      <h4>Some words about getting in contact</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni totam
+        dolores deleniti repellat quidem?
+      </p>
+      <button type="button" className="btn btn--main">
+        <span>Let's go</span>
+      </button>
+    </div>
+  </FooterCTAStyles>
+);
+
+// ['#16222A', '#3A6073'],
+// ['#0A1A2E', '#093637'],

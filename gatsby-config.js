@@ -1,5 +1,7 @@
 require('dotenv').config({ path: '.env' });
 
+const path = require(`path`);
+
 module.exports = {
   siteMetadata: {
     title: `Enter`,
@@ -20,9 +22,19 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        typekit: {
-          id: process.env.TYPEKIT_ID,
+        google: {
+          families: [
+            'Roboto Mono Condensed:100,200,300,400,500,700',
+            'Lato Condensed:100,200,300,400,500,700',
+          ],
         },
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `assets`, 'images'),
       },
     },
     // `gatsby-plugin-gatsby-cloud`,
