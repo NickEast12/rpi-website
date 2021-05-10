@@ -33,6 +33,7 @@ const NavStyles = styled.nav`
     margin: 0 auto;
     position: relative;
     z-index: 999;
+    max-width: var(--maxWidth);
     &--logo {
       .gatsby-image-wrapper {
         width: 40px;
@@ -65,9 +66,28 @@ const NavStyles = styled.nav`
           margin: 0 0 0.3rem auto;
         }
       }
+      @media only screen and (min-width: 768px) {
+        display: none;
+      }
     }
     &--desktop {
       display: none;
+      @media only screen and (min-width: 768px) {
+        display: block;
+        ul {
+          list-style: none;
+          display: flex;
+          gap: 1.25rem;
+          li {
+            color: #fff;
+            align-items: center;
+            align-self: center;
+            button {
+              width: 120px;
+            }
+          }
+        }
+      }
     }
   }
   .menu {
@@ -218,24 +238,28 @@ const Nav = () => {
           </div>
           <div className="nav--desktop">
             <ul>
-              <li>About me</li>
+              <li>About</li>
               <li>Experience</li>
-              <li>Recent work</li>
+              <li>Work</li>
               <li>Resources</li>
-              <li>Contact</li>
+              <li>
+                <button type="button" className="btn btn--main ">
+                  <span>Contact</span>
+                </button>
+              </li>
             </ul>
           </div>
         </div>
         <div className="menu" open={open}>
           <ul>
             <Link to="/" onClick={() => setOpen(!open)}>
-              <li>About me</li>
+              <li>About</li>
             </Link>
             <Link to="/projects" onClick={() => setOpen(!open)}>
               <li>Experience</li>
             </Link>
             <Link to="/projects" onClick={() => setOpen(!open)}>
-              <li>Recent work</li>
+              <li>Work</li>
             </Link>
             <Link to="/projects" onClick={() => setOpen(!open)}>
               <li>Resources</li>

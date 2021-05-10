@@ -17,16 +17,29 @@ const BgStyles = styled.div`
 const LandingStyles = styled.header`
   width: 100%;
   height: 100vh;
+  @media only screen and (min-width: 600px) {
+    height: 40rem;
+  }
+  @media only screen and (min-width: 1280px) {
+    height: 42rem;
+  }
   .landing {
     width: 90%;
     margin: 0 auto;
     text-align: left;
     padding-top: 8rem;
+    max-width: var(--maxWidth);
     @media only screen and (min-width: 375px) {
       padding-top: 9.5rem;
     }
     @media only screen and (min-width: 414px) {
       padding-top: 11.5rem;
+    }
+    @media only screen and (min-width: 1280px) {
+      &__wrapper {
+        width: 75%;
+        margin: 1rem auto 0 0;
+      }
     }
     color: var(--secondaryColour);
     h6 {
@@ -52,7 +65,7 @@ const LandingStyles = styled.header`
         }
       }
     }
-    > p {
+    p {
       margin-bottom: 0.95rem;
     }
     button {
@@ -80,19 +93,21 @@ const Landing = () => {
       </BgStyles>
       <LandingStyles>
         <div className="landing">
-          <h6 className="subtitle">Hi, i'm Nick </h6>
-          <h1>
-            I build <span>Websites</span> and other cool things for the web!
-          </h1>
-          {/* <h1>I'm a Designer &amp; Front-end Developer</h1> */}
-          {/* <h1>I'm a Front-end Developer &amp; Designer</h1> */}
-          <p>
-            I’m a self-taught Front-end Developer and UI/UX designer based in
-            London, UK.
-          </p>
-          <button type="button" className="btn btn--main">
-            <span>Say hello</span>
-          </button>
+          <div className="landing__wrapper">
+            <h6 className="subtitle">Hi, i'm Nick </h6>
+            <h1>
+              I build <span>Websites</span> and other cool things for the web!
+            </h1>
+            {/* <h1>I'm a Designer &amp; Front-end Developer</h1> */}
+            {/* <h1>I'm a Front-end Developer &amp; Designer</h1> */}
+            <p>
+              I’m a self-taught Front-end Developer and UI/UX designer based in
+              London, UK.
+            </p>
+            <button type="button" className="btn btn--main">
+              <span>Say hello</span>
+            </button>
+          </div>
         </div>
       </LandingStyles>
     </>

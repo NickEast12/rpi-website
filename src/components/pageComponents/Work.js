@@ -2,22 +2,29 @@ import React from 'react';
 import styled from 'styled-components';
 import Image from '../functional/Image';
 import UCtelLogo from '../../svgs/uctel-logo.svg';
+import NutcrackerLogo from '../../svgs/nutcracker-logo.svg';
+import SortedLogo from '../../svgs/sorted.svg';
+import ZanoLogo from '../../svgs/zano-logo.svg';
+import VSLogo from '../../svgs/vs-logo.svg';
 import Github from '../../svgs/github.svg';
 import LinkIcon from '../../svgs/link.svg';
 
 const WorkStyles = styled.section`
   width: 100%;
   padding-bottom: 7rem;
+  /* background: rgba(222, 222, 222, 0.25); */
   .work {
     width: 90%;
     margin: 0 auto;
     text-align: center;
+    max-width: var(--maxWidth);
     h4 {
       font-size: 2rem;
       font-weight: 600;
     }
     > p {
-      margin-top: 1rem;
+      width: 80%;
+      margin: 1rem auto 0 auto;
     }
     &__boxes {
       margin-top: 2rem;
@@ -27,6 +34,13 @@ const WorkStyles = styled.section`
         border-radius: 20px;
         height: 12rem;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        &:nth-child(2) {
+          .gatsby-image-wrapper {
+            &::after {
+              background: rgba(22, 34, 42, 0.75);
+            }
+          }
+        }
         @media only screen and (min-width: 375px) {
           height: 14rem;
         }
@@ -94,6 +108,23 @@ const WorkStyles = styled.section`
           }
         }
       }
+      @media only screen and (min-width: 768px) {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0.25rem;
+        section {
+          height: 15rem;
+          margin-bottom: 0;
+        }
+      }
+      @media only screen and (min-width: 1280px) {
+        width: 100%;
+        grid-gap: 1rem;
+        section {
+          height: 14rem;
+        }
+      }
     }
   }
 `;
@@ -125,9 +156,9 @@ const Work = () => {
             </div>
           </section>
           <section>
-            <Image filename="uctel.jpeg" alt="UCtel" />
+            <Image filename="nutcracker.jpeg" alt="Nutcracker Agency" />
             <div className="box--logo">
-              <UCtelLogo />
+              <NutcrackerLogo />
             </div>
             <div className="overlay">
               <p>
@@ -141,9 +172,9 @@ const Work = () => {
             </div>
           </section>
           <section>
-            <Image filename="uctel.jpeg" alt="UCtel" />
+            <Image filename="vs.png" alt="Vine Street Solutions" />
             <div className="box--logo">
-              <UCtelLogo />
+              <VSLogo />
             </div>
             <div className="overlay">
               <p>
@@ -157,9 +188,9 @@ const Work = () => {
             </div>
           </section>
           <section>
-            <Image filename="uctel.jpeg" alt="UCtel" />
+            <Image filename="sorted.jpeg" alt="Sorted Property Services" />
             <div className="box--logo">
-              <UCtelLogo />
+              <SortedLogo />
             </div>
             <div className="overlay">
               <p>
@@ -173,25 +204,9 @@ const Work = () => {
             </div>
           </section>
           <section>
-            <Image filename="uctel.jpeg" alt="UCtel" />
+            <Image filename="zano.jpeg" alt="Zano Controls" />
             <div className="box--logo">
-              <UCtelLogo />
-            </div>
-            <div className="overlay">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolores, commodi!
-              </p>
-              <div>
-                <Github />
-                <LinkIcon />
-              </div>
-            </div>
-          </section>
-          <section>
-            <Image filename="uctel.jpeg" alt="UCtel" />
-            <div className="box--logo">
-              <UCtelLogo />
+              <ZanoLogo />
             </div>
             <div className="overlay">
               <p>

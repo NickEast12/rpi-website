@@ -12,6 +12,7 @@ const AboutStyles = styled.section`
   .about {
     width: 90%;
     margin: 0 auto;
+    max-width: var(--maxWidth);
     &--me {
       text-align: center;
       h2 {
@@ -21,12 +22,20 @@ const AboutStyles = styled.section`
       }
       p {
         margin: 1.5rem 0;
+        @media only screen and (min-width: 1280px) {
+          width: 80%;
+          margin: 1.5rem auto;
+        }
       }
+    }
+    @media only screen and (min-width: 600px) {
+      width: 80%;
     }
   }
   .boxes {
     width: 90%;
     margin: 2rem auto 0 auto;
+    max-width: var(--maxWidth);
     .box {
       margin: 1rem auto 2rem auto;
       background-color: #fff;
@@ -38,9 +47,24 @@ const AboutStyles = styled.section`
         width: 80px;
       }
       h3 {
+        font-size: 1.65rem;
         font-weight: 600;
         margin: 0.85rem 0;
       }
+    }
+    @media only screen and (min-width: 600px) {
+      width: 80%;
+      display: grid;
+    }
+    @media only screen and (min-width: 768px) {
+      width: 90%;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 0.75rem;
+    }
+    @media only screen and (min-width: 1280px) {
+      width: 100%;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1.5rem;
     }
   }
 `;

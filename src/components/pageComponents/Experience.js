@@ -7,6 +7,20 @@ const LowerAboutStyles = styled.section`
   .la {
     width: 90%;
     margin: 0 auto;
+    max-width: var(--maxWidth);
+    @media only screen and (min-width: 600px) {
+      width: 80%;
+    }
+    @media only screen and (min-width: 768px) {
+      width: 90%;
+      display: flex;
+      gap: 2rem;
+      justify-content: space-between;
+    }
+    @media only screen and (min-width: 1280px) {
+      width: 70%;
+      padding: 3rem 0;
+    }
     div {
       margin-bottom: 4rem;
       h4 {

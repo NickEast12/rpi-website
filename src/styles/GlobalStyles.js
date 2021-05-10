@@ -19,6 +19,8 @@ const GlobalStyles = createGlobalStyle`
         --titleExtraSmall: 1.25rem;
         --text: 1rem;
         --textMedium: .95rem;
+        //*Max-width
+        --maxWidth: 1100px;
         
     }
     *, *:after, *:before {

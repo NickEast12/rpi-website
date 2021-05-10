@@ -11,9 +11,16 @@ const FooterStyles = styled.footer`
   width: 100%;
   background: #16222a;
   .footer {
+    max-width: var(--maxWidth);
     padding: 2.5rem 0 1rem 0;
     width: 90%;
     margin: 0 auto;
+    @media only screen and (min-width: 600px) {
+      width: 80%;
+    }
+    @media only screen and (min-width: 1280px) {
+      margin-top: 3rem;
+    }
     &__wrapper {
       padding-top: 16rem;
       text-align: center;
@@ -88,7 +95,11 @@ export default Footer;
 const FooterCTAStyles = styled.section`
   width: 100%;
   position: relative;
+  max-width: var(--maxWidth);
+  margin: 0 auto;
   .cta {
+    text-align: center;
+
     top: -3rem;
     left: 0;
     position: absolute;
@@ -99,17 +110,24 @@ const FooterCTAStyles = styled.section`
     border-radius: 5px;
     padding: 2.5rem 1.85rem;
     width: 85%;
-    margin: 0 calc(7.5%);
+    margin: 0 calc(0% + 7.5%);
     text-align: center;
     h4 {
       font-weight: 600;
     }
     p {
       margin-top: 1rem;
+      max-width: 500px;
+      margin: 1rem auto 0 auto;
     }
     button {
       margin-top: 1rem;
       width: 80%;
+      max-width: 250px;
+    }
+    @media only screen and (min-width: 600px) {
+      width: 80%;
+      margin: 0 calc(0% + 10%);
     }
   }
 `;
