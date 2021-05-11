@@ -14,7 +14,7 @@ import LashBaseIcon from '../../svgs/lashbase.svg';
 
 const WorkStyles = styled.section`
   width: 100%;
-  padding-bottom: 7rem;
+  padding-bottom: 2rem;
   /* background: rgba(222, 222, 222, 0.25); */
   .work {
     width: 90%;
@@ -28,6 +28,12 @@ const WorkStyles = styled.section`
     > p {
       width: 90%;
       margin: 1rem auto 1.5rem auto;
+      span {
+        a {
+          color: var(--mainColour) !important;
+          font-weight: 800;
+        }
+      }
     }
     &__boxes {
       margin-top: 2rem;
@@ -104,7 +110,9 @@ const WorkStyles = styled.section`
             justify-content: space-between;
             margin: 1rem auto 0 auto;
             display: flex;
+            text-align: center;
             svg {
+              text-align: center;
               width: 22.5px;
               height: 22.5px;
               fill: #fff;
@@ -162,8 +170,18 @@ const Work = () => {
           Recent work
         </h4>
         <p className="willFade expFade">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque hic
-          voluptatem quas consectetur, quis natus!
+          A selection of my most recent projects to date for a full overview of
+          all my projects, check out my
+          <span>
+            {' '}
+            <a
+              href="https://github.com/NickEast12"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>{' '}
+          </span>
         </p>
         <div className="work__boxes">
           <section className="willFade workFade">
@@ -172,13 +190,22 @@ const Work = () => {
               <UCtelLogo />
             </div>
             <div className="overlay">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolores, commodi!
-              </p>
+              <p>5G communication specialists keeping businesses connected.</p>
               <div>
-                <Github />
-                <LinkIcon />
+                <a
+                  href="https://github.com/NickEast12/UCtel-website"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github />
+                </a>
+                <a
+                  href="https://www.uctel.co.uk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <LinkIcon />
+                </a>
               </div>
             </div>
           </section>
@@ -188,13 +215,22 @@ const Work = () => {
               <NutcrackerLogo />
             </div>
             <div className="overlay">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolores, commodi!
-              </p>
+              <p>Multi-award winning digital marketing agency</p>
               <div>
-                <Github />
-                <LinkIcon />
+                <a
+                  href="https://github.com/NickEast12/nutcracker-website"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github />
+                </a>
+                <a
+                  href="https://www.nutcrackeragency.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <LinkIcon />
+                </a>
               </div>
             </div>
           </section>
@@ -205,12 +241,17 @@ const Work = () => {
             </div>
             <div className="overlay">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolores, commodi!
+                Bespoke print solution provider based in the heart of Mayfair,
+                London
               </p>
               <div>
-                <Github />
-                <LinkIcon />
+                <a
+                  href="http://www.vinestreet.solutions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <LinkIcon />
+                </a>
               </div>
             </div>
           </section>
@@ -220,13 +261,22 @@ const Work = () => {
               <SortedLogo />
             </div>
             <div className="overlay">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolores, commodi!
-              </p>
+              <p>Southeast London's property maintenance experts.</p>
               <div>
-                <Github />
-                <LinkIcon />
+                <a
+                  href="https://github.com/NickEast12/sorted-property-services"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github />
+                </a>
+                <a
+                  href="https://www.sortedpropertyservices.co.uk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <LinkIcon />
+                </a>
               </div>
             </div>
           </section>
@@ -237,28 +287,51 @@ const Work = () => {
             </div>
             <div className="overlay">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolores, commodi!
+                Personal project for booking freelance eyelash technicians in
+                your local area.
               </p>
               <div>
-                <Github />
-                <LinkIcon />
+                <a
+                  href="https://github.com/NickEast12/Lash-Base"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github />
+                </a>
+                <a
+                  href="https://lashbase.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <LinkIcon />
+                </a>
               </div>
             </div>
           </section>
-          <section className="willFade workFade">
+          <section className="willFade workFade" id="blog">
             <Image filename="zano.jpeg" alt="Zano Controls" />
             <div className="box--logo">
               <ZanoLogo />
             </div>
             <div className="overlay">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolores, commodi!
+                Leading manufacturer of revolutionary LED dimming technology
               </p>
               <div>
-                <Github />
-                <LinkIcon />
+                <a
+                  href="https://github.com/NickEast12/zano-microsite"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github />
+                </a>
+                <a
+                  href="https://www.zanotechnology.co.uk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <LinkIcon />
+                </a>
               </div>
             </div>
           </section>

@@ -15,8 +15,9 @@ const LowerAboutStyles = styled.section`
     }
     @media only screen and (min-width: 768px) {
       width: 90%;
-      display: flex;
-      gap: 2rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 3rem;
       justify-content: space-between;
     }
     @media only screen and (min-width: 1280px) {
@@ -88,9 +89,12 @@ const LowerAbout = () => {
         <div className="la__tech">
           <h4 className="willFade expFade">My current tech stack</h4>
           <p className="willFade expFade">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            perspiciatis explicabo impedit! Quo, quisquam libero.
+            I'm currently working on client projects with JAMstack and
+            serverless architecture, Using static site builders such as
+            Gatsby.js and Sanity.io as my headless CMS to build responsive,
+            lightning-fast sites.
           </p>
+
           <ul>
             <li className="willFade expFade">JSX</li>
             <li className="willFade expFade">Styled Components</li>
@@ -108,11 +112,14 @@ const LowerAbout = () => {
             Currently working @ <span>Nutcracker Agency</span>
           </h4>
           <p className="willFade expFade">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            perspiciatis explicabo impedit! Quo, quisquam libero.
+            As Nutcrackers sole web developer &amp; UI/UX designer, I work
+            within a team of digital designers and copy-writers to produce
+            initial wireframes, visual prototypes and responsive websites that
+            are fully SEO optimised.
           </p>
-          <p className="willFade expFade">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, ad!
+          <p className="willFade expFade" id="work">
+            Writing modern, performant, maintainable code for a diverse array of
+            clients.
           </p>
         </div>
       </div>

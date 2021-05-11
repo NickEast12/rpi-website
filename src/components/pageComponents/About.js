@@ -94,7 +94,7 @@ const About = () => {
     }
   });
   return (
-    <AboutStyles>
+    <AboutStyles id="about">
       <div className="about" ref={aboutRef}>
         <div className="about--me">
           <h2 className="willFade aboutFade">
@@ -129,7 +129,7 @@ const About = () => {
         <div className="box willFade aboutFade">
           <ProblemSolverIcon />
           <h3>Problem solver</h3>
-          <p>
+          <p id="experience">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ex?
             Et beatae dicta cumque laudantium.
           </p>

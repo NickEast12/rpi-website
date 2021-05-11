@@ -251,7 +251,9 @@ const Nav = () => {
       <div className={scroll ? 'active nav__wrapper' : 'nav__wrapper'}>
         <div className="nav" ref={navRef}>
           <div className="nav--logo">
-            <Logo />
+            <Link to="/#home">
+              <Logo />
+            </Link>
           </div>
           <div
             className="nav--menu"
@@ -266,10 +268,18 @@ const Nav = () => {
           </div>
           <div className="nav--desktop">
             <ul>
-              <li className="willFade navFade">About</li>
-              <li className="willFade navFade">Experience</li>
-              <li className="willFade navFade">Work</li>
-              <li className="willFade navFade">Resources</li>
+              <li className="willFade navFade">
+                <Link to="/#about">About</Link>
+              </li>
+              <li className="willFade navFade">
+                <Link to="/#experience">Experience</Link>
+              </li>
+              <li className="willFade navFade">
+                <Link to="/#work">Work</Link>
+              </li>
+              <li className="willFade navFade">
+                <Link to="/#blog">Blog</Link>
+              </li>
               <li className="willFade navFade">
                 <button type="button" className="btn btn--main ">
                   <span>Contact</span>
@@ -280,17 +290,17 @@ const Nav = () => {
         </div>
         <div className="menu" open={open}>
           <ul>
-            <Link to="/" onClick={() => setOpen(!open)}>
+            <Link to="/#about" onClick={() => setOpen(!open)}>
               <li>About</li>
             </Link>
-            <Link to="/projects" onClick={() => setOpen(!open)}>
+            <Link to="/#experience" onClick={() => setOpen(!open)}>
               <li>Experience</li>
             </Link>
-            <Link to="/projects" onClick={() => setOpen(!open)}>
+            <Link to="/#work" onClick={() => setOpen(!open)}>
               <li>Work</li>
             </Link>
-            <Link to="/projects" onClick={() => setOpen(!open)}>
-              <li>Resources</li>
+            <Link to="/#blog" onClick={() => setOpen(!open)}>
+              <li>Blog</li>
             </Link>
             <a
               href="mailto:contact@nick-east.com?subject=Request Resume"
@@ -303,13 +313,25 @@ const Nav = () => {
               </li>
             </a>
             <div className="nav__icons">
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/NickEast12"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Github />
               </a>
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a
+                href="http://www.linkedin.com/in/nick-east"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <LinkedIn />
               </a>
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://open.spotify.com/user/nickeast12?si=GeSIN_6YSeKYSKAFsmj-8A"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Spotify />
               </a>
             </div>

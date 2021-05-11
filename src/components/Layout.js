@@ -6,6 +6,11 @@ import Footer from './Footer';
 import Animations from '../styles/Animations';
 import Typography from '../styles/Typography';
 
+if (typeof window !== 'undefined') {
+  // eslint-disable-next-line global-require
+  require('smooth-scroll')('a[href*="#"]');
+}
+
 const Layout = ({ children }) => (
   <>
     <GlobalStyles />

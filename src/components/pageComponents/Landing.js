@@ -117,7 +117,7 @@ const Landing = () => {
         />
       </BgStyles>
       <LandingStyles>
-        <div className="landing" ref={reviewRef}>
+        <div className="landing" ref={reviewRef} id="home">
           <div className="landing__wrapper">
             <h6 className="subtitle willFade reviewFade">Hi, i'm Nick </h6>
             <h1 className="willFade reviewFade">

@@ -23,6 +23,9 @@ const FooterStyles = styled.footer`
     }
     &__wrapper {
       padding-top: 16rem;
+      @media only screen and (min-width: 1280px) {
+        padding-top: 12rem;
+      }
       text-align: center;
       > svg {
         width: 110px;
@@ -96,7 +99,7 @@ const FooterCTAStyles = styled.section`
   width: 100%;
   position: relative;
   max-width: var(--maxWidth);
-  margin: 0 auto;
+  margin: 4rem auto 0 auto;
   .cta {
     text-align: center;
 
@@ -114,6 +117,7 @@ const FooterCTAStyles = styled.section`
     text-align: center;
     h4 {
       font-weight: 600;
+      font-size: 1.75rem;
     }
     p {
       margin-top: 1rem;
@@ -134,14 +138,16 @@ const FooterCTAStyles = styled.section`
 const FooterCTA = () => (
   <FooterCTAStyles>
     <div className="cta">
-      <h4>Some words about getting in contact</h4>
+      <h4>Looking to start a new project?</h4>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni totam
-        dolores deleniti repellat quidem?
+        My inbox is always open to discuss new opportunities, if you've got a
+        project and think I'm the right man for the job then send me an email!
       </p>
-      <button type="button" className="btn btn--main">
-        <span>Let's go</span>
-      </button>
+      <a href="mailto:contact@nick-east.com">
+        <button type="button" className="btn btn--main">
+          <span>Contact me</span>
+        </button>
+      </a>
     </div>
   </FooterCTAStyles>
 );
