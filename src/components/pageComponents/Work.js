@@ -152,9 +152,9 @@ const Work = () => {
       opacity: 1,
       y: 0,
       ease: 'power1.out',
-      delay: 1.5,
+      delay: 1.2,
       stagger: {
-        amount: 1.5,
+        amount: 1.15,
       },
     });
   };
