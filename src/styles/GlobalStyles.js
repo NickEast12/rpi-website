@@ -123,7 +123,10 @@ const GlobalStyles = createGlobalStyle`
         fill: #fff;
     }
    
-    
+    .willFade {
+        opacity: 0;
+        transform: translateY(20px);
+    }
     //* Overiding normalise css font-size: 100%;
     button {
         font-size: inherit;

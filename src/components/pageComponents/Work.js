@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
+import { useIntersection } from 'react-use';
+import gsap from 'gsap';
 import Image from '../functional/Image';
 import UCtelLogo from '../../svgs/uctel-logo.svg';
 import NutcrackerLogo from '../../svgs/nutcracker-logo.svg';
@@ -46,7 +48,8 @@ const WorkStyles = styled.section`
           height: 14rem;
         }
         position: relative;
-        transition: all 0.35s ease-in-out;
+        /* transition: all 0.35s ease-in-out; */
+        transition: inherit;
         margin-bottom: 1.5rem;
         &:hover {
           .overlay {
@@ -130,17 +133,40 @@ const WorkStyles = styled.section`
   }
 `;
 const Work = () => {
-  const i = true;
+  const workRef = useRef(null);
+  const contactIntersection = useIntersection(workRef, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 1,
+  });
+  const contactFadeIn = (element) => {
+    gsap.to(element, 1, {
+      opacity: 1,
+      y: 0,
+      ease: 'power1.out',
+      delay: 1.5,
+      stagger: {
+        amount: 1.5,
+      },
+    });
+  };
+  useEffect(() => {
+    if (contactIntersection && contactIntersection.isIntersecting) {
+      contactFadeIn('.workFade');
+    }
+  });
   return (
     <WorkStyles>
       <div className="work">
-        <h4>Recent work</h4>
-        <p>
+        <h4 className="willFade expFade" ref={workRef}>
+          Recent work
+        </h4>
+        <p className="willFade expFade">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque hic
           voluptatem quas consectetur, quis natus!
         </p>
         <div className="work__boxes">
-          <section>
+          <section className="willFade workFade">
             <Image filename="uctel.jpeg" alt="UCtel" />
             <div className="box--logo">
               <UCtelLogo />
@@ -156,7 +182,7 @@ const Work = () => {
               </div>
             </div>
           </section>
-          <section>
+          <section className="willFade workFade">
             <Image filename="nutcracker.jpeg" alt="Nutcracker Agency" />
             <div className="box--logo">
               <NutcrackerLogo />
@@ -172,7 +198,7 @@ const Work = () => {
               </div>
             </div>
           </section>
-          <section>
+          <section className="willFade workFade">
             <Image filename="vs.png" alt="Vine Street Solutions" />
             <div className="box--logo">
               <VSLogo />
@@ -188,7 +214,7 @@ const Work = () => {
               </div>
             </div>
           </section>
-          <section>
+          <section className="willFade workFade">
             <Image filename="sorted.jpeg" alt="Sorted Property Services" />
             <div className="box--logo">
               <SortedLogo />
@@ -204,7 +230,7 @@ const Work = () => {
               </div>
             </div>
           </section>
-          <section>
+          <section className="willFade workFade">
             <Image filename="lashbase.jpg" alt="LashBase" />
             <div className="box--logo">
               <LashBaseIcon />
@@ -220,7 +246,7 @@ const Work = () => {
               </div>
             </div>
           </section>
-          <section>
+          <section className="willFade workFade">
             <Image filename="zano.jpeg" alt="Zano Controls" />
             <div className="box--logo">
               <ZanoLogo />

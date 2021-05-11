@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
+import { useIntersection } from 'react-use';
+import gsap from 'gsap';
 
 const LowerAboutStyles = styled.section`
   width: 100%;
@@ -58,37 +60,58 @@ const LowerAboutStyles = styled.section`
   }
 `;
 const LowerAbout = () => {
-  const i = true;
+  const expRef = useRef(null);
+  const contactIntersection = useIntersection(expRef, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.2,
+  });
+  const contactFadeIn = (element) => {
+    gsap.to(element, 1, {
+      opacity: 1,
+      y: 0,
+      ease: 'power2.out',
+      delay: 0.5,
+      stagger: {
+        amount: 1.5,
+      },
+    });
+  };
+  useEffect(() => {
+    if (contactIntersection && contactIntersection.isIntersecting) {
+      contactFadeIn('.expFade');
+    }
+  });
   return (
     <LowerAboutStyles>
-      <div className="la">
+      <div className="la" ref={expRef}>
         <div className="la__tech">
-          <h4>My current tech stack</h4>
-          <p>
+          <h4 className="willFade expFade">My current tech stack</h4>
+          <p className="willFade expFade">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
             perspiciatis explicabo impedit! Quo, quisquam libero.
           </p>
           <ul>
-            <li>JSX</li>
-            <li>Styled Components</li>
-            <li>React.js</li>
-            <li>Gatsby.js</li>
-            <li>Next.js</li>
-            <li>GraphQL</li>
-            <li>Sanity.io</li>
-            <li>Netlify</li>
-            <li>Vercel</li>
+            <li className="willFade expFade">JSX</li>
+            <li className="willFade expFade">Styled Components</li>
+            <li className="willFade expFade">React.js</li>
+            <li className="willFade expFade">Gatsby.js</li>
+            <li className="willFade expFade">Next.js</li>
+            <li className="willFade expFade">GraphQL</li>
+            <li className="willFade expFade">Sanity.io</li>
+            <li className="willFade expFade">Netlify</li>
+            <li className="willFade expFade">Vercel</li>
           </ul>
         </div>
         <div className="la__work">
-          <h4>
+          <h4 className="willFade expFade">
             Currently working @ <span>Nutcracker Agency</span>
           </h4>
-          <p>
+          <p className="willFade expFade">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
             perspiciatis explicabo impedit! Quo, quisquam libero.
           </p>
-          <p>
+          <p className="willFade expFade">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, ad!
           </p>
         </div>

@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { Gradient } from 'react-gradient';
+import { useIntersection } from 'react-use';
+import gsap from 'gsap';
 
 const BgStyles = styled.div`
   width: 100%;
@@ -81,6 +83,29 @@ const Landing = () => {
     ['#0A1A2E', '#093637'],
     ['#4e94fb', '#69ffb7'],
   ];
+  const reviewRef = useRef(null);
+  const contactIntersection = useIntersection(reviewRef, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.2,
+  });
+  const contactFadeIn = (element) => {
+    gsap.to(element, 1, {
+      opacity: 1,
+      y: 0,
+      ease: 'power2.out',
+      delay: 0.5,
+      stagger: {
+        amount: 0.5,
+      },
+    });
+  };
+  useEffect(() => {
+    if (contactIntersection && contactIntersection.isIntersecting) {
+      contactFadeIn('.reviewFade');
+      console.log('intersecting');
+    }
+  });
   return (
     <>
       <BgStyles>
@@ -92,19 +117,19 @@ const Landing = () => {
         />
       </BgStyles>
       <LandingStyles>
-        <div className="landing">
+        <div className="landing" ref={reviewRef}>
           <div className="landing__wrapper">
-            <h6 className="subtitle">Hi, i'm Nick </h6>
-            <h1>
+            <h6 className="subtitle willFade reviewFade">Hi, i'm Nick </h6>
+            <h1 className="willFade reviewFade">
               I build <span>Websites</span> and other cool things for the web!
             </h1>
             {/* <h1>I'm a Designer &amp; Front-end Developer</h1> */}
             {/* <h1>I'm a Front-end Developer &amp; Designer</h1> */}
-            <p>
+            <p className="willFade reviewFade">
               I’m a self-taught Front-end Developer and UI/UX designer based in
               London, UK.
             </p>
-            <button type="button" className="btn btn--main">
+            <button type="button" className="btn btn--main willFade reviewFade">
               <span>Say hello</span>
             </button>
           </div>

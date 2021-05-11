@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { useIntersection } from 'react-use';
+import gsap from 'gsap';
 import styled from 'styled-components';
 import DesignIcon from '../../svgs/design.svg';
 import CodeIcon from '../../svgs/code.svg';
@@ -69,15 +71,36 @@ const AboutStyles = styled.section`
   }
 `;
 const About = () => {
-  const i = true;
+  const aboutRef = useRef(null);
+  const contactIntersection = useIntersection(aboutRef, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.2,
+  });
+  const contactFadeIn = (element) => {
+    gsap.to(element, 1, {
+      opacity: 1,
+      y: 0,
+      ease: 'power2.out',
+      delay: 0.5,
+      stagger: {
+        amount: 0.45,
+      },
+    });
+  };
+  useEffect(() => {
+    if (contactIntersection && contactIntersection.isIntersecting) {
+      contactFadeIn('.aboutFade');
+    }
+  });
   return (
     <AboutStyles>
-      <div className="about">
+      <div className="about" ref={aboutRef}>
         <div className="about--me">
-          <h2>
+          <h2 className="willFade aboutFade">
             <span>A nice catchy title to introduce me</span>
           </h2>
-          <p>
+          <p className="willFade aboutFade">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
             lobortis nisl ac risus facilisis aliquet. Curabitur blandit pulvinar
             sodales. Etiam at elit et elit ultricies aliquet. Donec leo nibh,
@@ -87,7 +110,7 @@ const About = () => {
         </div>
       </div>
       <div className="boxes">
-        <div className="box">
+        <div className="box willFade aboutFade ">
           <DesignIcon />
           <h3>Designer</h3>
           <p>
@@ -95,7 +118,7 @@ const About = () => {
             Et beatae dicta cumque laudantium.
           </p>
         </div>
-        <div className="box">
+        <div className="box willFade aboutFade">
           <CodeIcon />
           <h3>Front-end Developer</h3>
           <p>
@@ -103,7 +126,7 @@ const About = () => {
             Et beatae dicta cumque laudantium.
           </p>
         </div>
-        <div className="box">
+        <div className="box willFade aboutFade">
           <ProblemSolverIcon />
           <h3>Problem solver</h3>
           <p>

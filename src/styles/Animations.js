@@ -7,6 +7,9 @@ const Animations = createGlobalStyle`
     }    
     .active {
              background: #16222A;
+             .nav {
+                 padding: .5rem 0;
+             }
              .nav--menu {
                  div {
                      background-color: #fff;

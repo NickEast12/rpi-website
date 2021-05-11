@@ -1,7 +1,9 @@
 import { Link } from 'gatsby';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { window } from 'browser-monads';
 import styled from 'styled-components';
+import { useIntersection } from 'react-use';
+import gsap from 'gsap';
 import { StaticImage } from 'gatsby-plugin-image';
 import Github from '../svgs/github.svg';
 import LinkedIn from '../svgs/linkedin.svg';
@@ -35,6 +37,7 @@ const NavStyles = styled.nav`
     position: relative;
     z-index: 999;
     max-width: var(--maxWidth);
+    transition: padding 0.35s ease-in-out;
     &--logo {
       .gatsby-image-wrapper {
         width: 40px;
@@ -221,10 +224,32 @@ const Nav = () => {
     }
   }, [open]);
 
+  const navRef = useRef(null);
+  const contactIntersection = useIntersection(navRef, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.2,
+  });
+  const contactFadeIn = (element) => {
+    gsap.to(element, 1, {
+      opacity: 1,
+      y: 0,
+      ease: 'power2.out',
+      delay: 1.25,
+      stagger: {
+        amount: 0.45,
+      },
+    });
+  };
+  useEffect(() => {
+    if (contactIntersection && contactIntersection.isIntersecting) {
+      contactFadeIn('.navFade');
+    }
+  });
   return (
     <NavStyles open={open}>
       <div className={scroll ? 'active nav__wrapper' : 'nav__wrapper'}>
-        <div className="nav">
+        <div className="nav" ref={navRef}>
           <div className="nav--logo">
             <Logo />
           </div>
@@ -241,11 +266,11 @@ const Nav = () => {
           </div>
           <div className="nav--desktop">
             <ul>
-              <li>About</li>
-              <li>Experience</li>
-              <li>Work</li>
-              <li>Resources</li>
-              <li>
+              <li className="willFade navFade">About</li>
+              <li className="willFade navFade">Experience</li>
+              <li className="willFade navFade">Work</li>
+              <li className="willFade navFade">Resources</li>
+              <li className="willFade navFade">
                 <button type="button" className="btn btn--main ">
                   <span>Contact</span>
                 </button>
