@@ -1,4 +1,4 @@
-import LogRocket from 'logrocket';
+const LogRocket = require('logrocket');
 
 LogRocket.init('2wlhjq/rpi');
 
