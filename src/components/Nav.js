@@ -4,14 +4,12 @@ import { window } from 'browser-monads';
 import styled from 'styled-components';
 import { useIntersection } from 'react-use';
 import gsap from 'gsap';
-import { StaticImage } from 'gatsby-plugin-image';
-import Github from '../svgs/github.svg';
-import LinkedIn from '../svgs/linkedin.svg';
-import Spotify from '../svgs/spotify.svg';
-import Logo from '../svgs/logo.svg';
+//* Local imports
+import RPILogo from '../svgs/rpi-logo.svg';
 
 const NavStyles = styled.nav`
   z-index: 999;
+
   @keyframes liAnimation {
     to {
       opacity: 1;
@@ -28,51 +26,67 @@ const NavStyles = styled.nav`
   }
   width: 100%;
   position: fixed;
+
+  transition: all 0.35s ease;
   .nav {
+    padding: 1.05rem 0;
     display: flex;
     justify-content: space-between;
     width: 90%;
-    padding: 1rem 0;
     margin: 0 auto;
     position: relative;
-    z-index: 999;
     max-width: var(--maxWidth);
-    transition: padding 0.35s ease-in-out;
+    transition: all 0.35s ease;
+    z-index: 9999;
     &--logo {
-      .gatsby-image-wrapper {
-        width: 40px;
-        height: auto;
-      }
       svg {
+        width: 80px;
+        height: auto;
+        transition: all 10s ease;
         fill: black;
-        width: 45px;
-        height: 100%;
+        path {
+          .st0 {
+            fill: black;
+          }
+        }
+        .st0 {
+          fill: ${({ open }) => (open ? 'white' : 'black')};
+        }
       }
     }
     &--menu {
       width: 30px;
-      margin-top: 4px;
+      /* margin-top: 4px; */
+      display: flex;
+      flex-direction: column;
       outline: none;
+      align-self: center;
       div {
         width: 100%;
         height: 3px;
         margin-bottom: 0.3rem;
         transition: all 0.25s ease 0s;
         transform-origin: 26px center;
-        background-color: rgba(255, 255, 255, 1);
+        background-color: var(--background);
         &:nth-child(1) {
           transform: ${({ open }) =>
             open ? 'rotate(-45deg)' : 'rotate(0deg)'};
           width: ${({ open }) => (open ? '100%' : '75%')};
           margin: 0 0 0.3rem auto;
+          background-color: ${({ open }) =>
+            open ? 'white' : 'var(--background)'};
         }
         &:nth-child(2) {
           opacity: ${({ open }) => (open ? '0' : '1')};
+          background-color: ${({ open }) =>
+            open ? 'white' : 'var(--background)'};
         }
         &:nth-child(3) {
           transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0deg)')};
           width: ${({ open }) => (open ? '100%' : '75%')};
-          margin: 0 0 0.3rem auto;
+          margin: 0 0 0 auto;
+          background-color: ${({ open }) =>
+            open ? 'white' : 'var(--background)'};
         }
       }
       @media only screen and (min-width: 768px) {
@@ -81,22 +95,6 @@ const NavStyles = styled.nav`
     }
     &--desktop {
       display: none;
-      @media only screen and (min-width: 768px) {
-        display: block;
-        ul {
-          list-style: none;
-          display: flex;
-          gap: 1.25rem;
-          li {
-            color: #fff;
-            align-items: center;
-            align-self: center;
-            button {
-              width: 120px;
-            }
-          }
-        }
-      }
     }
   }
   .menu {
@@ -106,10 +104,7 @@ const NavStyles = styled.nav`
     top: 0;
     left: 0;
     transition: all 0.35s linear;
-    /* background: ${({ open }) =>
-      open ? 'rgba(22, 33, 41, 1)' : 'rgba(22, 33, 41, 0.85)'}; */
-    background-color: rgba(22, 33, 42, 0.85);
-    backdrop-filter: saturate(120%) blur(8px);
+    background-color: var(--background);
     max-height: ${({ open }) => (open ? '1000rem' : '0')};
     height: ${({ open }) => (open ? '100vh' : '0')};
     ul {
@@ -128,22 +123,12 @@ const NavStyles = styled.nav`
       a {
         li {
           margin-bottom: 2rem;
-          font-family: var(--roboto);
-          font-size: var(--text);
+          color: var(--white);
           transition: all 0.35s ease;
           opacity: 0;
           transform: translateY(-10px);
           .nav-button {
             width: 70%;
-          }
-          &:hover {
-            color: var(--mainColour);
-          }
-          .page__num {
-            display: block;
-            font-family: var(--Roboto);
-            color: var(--mainColour);
-            margin-bottom: 0.5rem;
           }
         }
       }
@@ -252,7 +237,7 @@ const Nav = () => {
         <div className="nav" ref={navRef}>
           <div className="nav--logo">
             <Link to="/#home">
-              <Logo />
+              <RPILogo />
             </Link>
           </div>
           <div
@@ -282,7 +267,7 @@ const Nav = () => {
               </li>
               <li className="willFade navFade">
                 <button type="button" className="btn btn--main ">
-                  <span>Contact</span>
+                  <span>Contact me</span>
                 </button>
               </li>
             </ul>
@@ -308,33 +293,10 @@ const Nav = () => {
             >
               <li>
                 <button type="button" className="btn btn--main nav-button">
-                  <span>Say hello</span>
+                  <span>Contact me</span>
                 </button>
               </li>
             </a>
-            <div className="nav__icons">
-              <a
-                href="https://github.com/NickEast12"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github />
-              </a>
-              <a
-                href="http://www.linkedin.com/in/nick-east"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <LinkedIn />
-              </a>
-              <a
-                href="https://open.spotify.com/user/nickeast12?si=GeSIN_6YSeKYSKAFsmj-8A"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Spotify />
-              </a>
-            </div>
           </ul>
         </div>
       </div>

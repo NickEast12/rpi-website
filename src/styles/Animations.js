@@ -1,25 +1,20 @@
-import { createGlobalStyle } from 'styled-components';
+import { css } from 'styled-components';
 
-const Animations = createGlobalStyle`
-    .nav__wrapper {
-        transition: all .35s linear;
-        z-index: 99999;
-    }    
-    .active {
-             background: #16222A;
-             .nav {
-                 padding: .5rem 0;
-             }
-             .nav--menu {
-                 div {
-                     background-color: #fff;
-                 }
-             }
-             /* background: var(--opacityBackground); */
-             /*   opacity: 1; */
-              /* backdrop-filter: saturate(180%) blur(24px);   */
-            /* border-bottom: solid rgba(255, 255, 255, 0.5) 1px; */
+const Animations = css`
+  .nav__wrapper {
+    transition: all 0.35s linear;
+    z-index: 99999;
+  }
+  .active {
+    border-bottom: 1px solid #dee4ec;
+    transition: all 0.35s ease;
+    z-index: 99999;
+    background-color: var(--white);
+
+    .nav {
+      padding: 0.75rem 0 !important;
     }
+  }
 `;
 
 export default Animations;

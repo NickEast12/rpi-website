@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { useLocation } from '@reach/router';
 
-export default function SEO({ children, location, description, title, img }) {
+const SEO = ({ children, location, description, title, img }) => {
   const { pathname } = useLocation();
   const { site } = useStaticQuery(graphql`
     query {
@@ -23,7 +23,7 @@ export default function SEO({ children, location, description, title, img }) {
     <Helmet>
       <html lang="en" />
       <title>{title}</title>
-      <link rel="stylesheet" href="https://use.typekit.net/ltj6ded.css" />
+      <link rel="stylesheet" href="https://use.typekit.net/hir3cmg.css" />
       <meta name="description" content={description} />
       <link rel="canonical" href={`${site.siteMetadata.siteUrl}${pathname}`} />
       <link rel="icon" href="./assets/images/icon.png" />
@@ -52,6 +52,7 @@ export default function SEO({ children, location, description, title, img }) {
       <meta name="twitter:image" content={img} />
     </Helmet>
   );
-}
+};
 
 // titleTemplate={`%s - ${site.siteMetadata.title}`}
+export default SEO;

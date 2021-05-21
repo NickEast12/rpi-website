@@ -20,24 +20,38 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-preload-fonts`,
     {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: [
-            'Roboto Mono Condensed:100,200,300,400,500,700',
-            'Lato Condensed:100,200,300,400,500,700',
-          ],
-        },
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: path.join(__dirname, `src`, `assets`, 'images'),
+        path: `${__dirname}/src/assets/images`,
+        // path: path.join(__dirname, `src`, `assets`, 'images'),
+      },
+    },
+
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        typekit: {
+          id: process.env.TYPEKIT_ID,
+        },
       },
     },
     // `gatsby-plugin-gatsby-cloud`,
+    //! Font loader for local font files
+    // {
+    //   resolve: 'gatsby-plugin-web-font-loader',
+    //   options: {
+    //     custom: {
+    //       families: [
+    //         'Gellix-Regular',
+    //         'Gellix-Medium',
+    //         'Gellix-Bold',
+    //         'Gellix-SemiBold',
+    //       ],
+    //       urls: ['/fonts/fonts.css'],
+    //     },
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -53,6 +67,21 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-transform-portable-text`,
+      options: {
+        extendTypes: [{ typeName: `SanityPost`, contentFieldName: 'body' }],
+      },
+    },
+    {
+      resolve: `gatsby-source-sanity`,
+      options: {
+        projectId: 'x2j6emyv',
+        dataset: `production`,
+        watchMode: true,
+        token: process.env.SANITY_GRAPHQL_KEY,
+      },
+    },
+    {
       resolve: `gatsby-plugin-react-svg`,
       options: {
         rule: {
@@ -64,7 +93,7 @@ module.exports = {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         // Setting a color is optional.
-        color: `#1bbc9b`,
+        color: `#BE2626`,
         // Disable the loading spinner.
         showSpinner: true,
       },
@@ -72,7 +101,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-138434630-1',
+        trackingId: '01010101010',
         head: true,
       },
     },
@@ -80,8 +109,18 @@ module.exports = {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
-          trackingId: 'UA-138434630-1',
+          trackingId: '',
+          cookieName: 'gatsby-gdpr-google-analytics',
           anonymize: true,
+        },
+        googleTagManager: {
+          trackingId: '',
+          cookieName: 'gatsby-gdpr-google-tagmanager',
+          dataLayerName: 'dataLayer',
+        },
+        facebookPixel: {
+          pixelId: '',
+          cookieName: 'gatsby-gdpr-facebook-pixel',
         },
         environments: ['production', 'development'],
       },

@@ -1,53 +1,38 @@
-import { createGlobalStyle } from 'styled-components';
-import font from '../assets/fonts/Inter.ttf';
-import altFont from '../assets/fonts/RobotoMono.ttf';
+import { css } from 'styled-components';
 
-const Typography = createGlobalStyle`
-  @font-face {
-        font-family: Inter;
-        src: url(${font});
-    }
-   
-     @font-face {
-        font-family: RobotoMono;
-        src: url(${altFont});
-    } 
+const typography = css`
   html {
-        font-size: 16px;
-        @media only screen and (min-width: 375px) {
+    font-size: 18px;
+    /* @media only screen and (min-width: 375px) {
           font-size: 16.5px;
-        }
-        @media only screen and (min-width: 414px) {
-          font-size: 17px;
-        }
-        @media only screen and (min-width: 768px) {
-          font-size: 18px;
-        }
-        @media only screen and (min-width: 1280px) {
-          font-size: 19px;
-        }
-      }
-      h1 {
+        } */
+  }
+  h1 {
     font-size: var(--titleLarge);
-    }
-    h2 {
-    font-size: var(--titleSemiLarge);
-    }
-    h3 {
+  }
+  h2 {
     font-size: var(--titleMedium);
-    }
-    h4 {
+  }
+  h3 {
+    font-size: var(--titleRegular);
+  }
+  h4 {
+    font-size: var(--titleRegular);
+  }
+  h5 {
     font-size: var(--titleSmall);
-    }
-    h5 {
+  }
+  h6 {
     font-size: var(--titleSmall);
-    }
-    h6 {
-        font-size: var(--titleSmall)
-    }
-    p {
-        font-size: var(--text);
-    }
+  }
+  p,
+  li,
+  span,
+  i,
+  input,
+  textarea {
+    font-size: var(--base);
+  }
 `;
 
-export default Typography;
+export default typography;
