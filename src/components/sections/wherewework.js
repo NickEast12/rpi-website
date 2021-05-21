@@ -217,9 +217,9 @@ const WhereWeWorkStyles = styled.section`
       margin: 1.5rem auto;
     }
     &__boxes {
-      border: red 1px dotted;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0.5rem;
       &__inner {
         svg {
           width: 40px;
