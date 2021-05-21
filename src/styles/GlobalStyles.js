@@ -2,12 +2,12 @@ import { createGlobalStyle } from 'styled-components';
 //* Local imports
 import Animations from './Animations';
 import Typography from './Typography';
-import Variables from './Variables';
+import Vars from './Vars';
 
 const GlobalStyles = createGlobalStyle`
     ${Animations}
     ${Typography}
-    ${Variables}
+    ${Vars}
     html {
         box-sizing: border-box;
         width: 100%;
