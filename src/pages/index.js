@@ -6,7 +6,7 @@ import UVP from '../components/sections/uvp';
 import Services from '../components/sections/services';
 import WhoWeAre from '../components/sections/whoweare';
 import WhereWeWork from '../components/sections/wherewework';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 
 const IndexPageStyles = styled.section`
   width: 100%;

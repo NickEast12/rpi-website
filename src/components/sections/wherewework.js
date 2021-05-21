@@ -225,7 +225,7 @@ const WhereWeWorkStyles = styled.section`
           width: 40px;
         }
         h5 {
-          font-size: 1.5rem;
+          /* font-size: 1.5rem; */
         }
       }
     }
