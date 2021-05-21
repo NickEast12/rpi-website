@@ -1,7 +1,3 @@
-const LogRocket = require('logrocket');
-
-LogRocket.init('2wlhjq/rpi');
-
 // const path = require('path');
 
 // exports.onCreateWebpackConfig = ({ actions }) => {

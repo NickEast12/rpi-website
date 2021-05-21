@@ -1,5 +1,8 @@
 require('dotenv').config({ path: '.env' });
 
+const LogRocket = require('logrocket');
+
+LogRocket.init('2wlhjq/rpi');
 const path = require(`path`);
 
 module.exports = {
