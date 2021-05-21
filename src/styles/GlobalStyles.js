@@ -29,7 +29,7 @@ const GlobalStyles = createGlobalStyle`
         text-decoration: none;
     }
     body {
-       margin: 0;
+        margin: 0;
         width: 100%;
         min-height: 100%;
         overflow-x: hidden;
