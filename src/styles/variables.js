@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 
-const Variables = css`
+const variables = css`
   :root {
     //*Colours
     --mainColour: rgb(190, 26, 38);
@@ -31,7 +31,8 @@ const Variables = css`
     --auto: 0 auto;
     //* Border radius
     //* Box shadow
+    --test: 1;
   }
 `;
 
-export default Variables;
+export default variables;
