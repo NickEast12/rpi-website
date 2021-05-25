@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-//* Local Imports
-import Illustration from '../../svgs/template-1.svg';
 
-const areaData = [
+const data = [
   {
+    name: 'Mission',
     icon: (
       <svg viewBox="0 0 464.02688 464.02688" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -49,11 +48,9 @@ const areaData = [
         />
       </svg>
     ),
-    location: 'Location',
-    description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, temporibus?',
   },
   {
+    name: 'Mission',
     icon: (
       <svg viewBox="0 0 464.02688 464.02688" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -98,11 +95,9 @@ const areaData = [
         />
       </svg>
     ),
-    location: 'Location2',
-    description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, temporibus?',
   },
   {
+    name: 'Mission',
     icon: (
       <svg viewBox="0 0 464.02688 464.02688" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -147,11 +142,9 @@ const areaData = [
         />
       </svg>
     ),
-    location: 'Location3',
-    description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, temporibus?',
   },
   {
+    name: 'Mission',
     icon: (
       <svg viewBox="0 0 464.02688 464.02688" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -196,65 +189,52 @@ const areaData = [
         />
       </svg>
     ),
-    location: 'Location4',
-    description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, temporibus?',
   },
 ];
 
-const WhereWeWorkStyles = styled.section`
+const MissionStyles = styled.section`
   width: 100%;
-  padding: 3rem 0;
-  .work {
+  padding-bottom: 4rem;
+  .mission {
     width: 90%;
-    margin: 0 auto;
+    margin: var(--auto);
     text-align: center;
-    h4 {
-      margin-top: 0.25rem;
+    h2 {
+      margin: 0.25rem 0;
     }
-    &__img {
-      width: 90%;
-      margin: 1.5rem auto;
-    }
-    &__boxes {
+    &__wrapper {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 0.5rem;
+      grid-gap: 2rem;
       margin-top: 2rem;
-      &__inner {
-        margin-bottom: 1rem;
-        svg {
-          width: 50px;
-        }
-        h5 {
-          /* font-size: 1.5rem; */
-        }
+      svg {
+        width: 40px;
+      }
+      h4 {
+        font-size: 1.6rem;
+        margin-top: 0.5rem;
       }
     }
   }
 `;
-const WhereWeWork = () => {
+const Mission = () => {
   const i = true;
   return (
-    <WhereWeWorkStyles>
-      <div className="work">
-        <h6 className="sbt">Our locations </h6>
-        <h4>Where we work</h4>
-        <div className="work__img">
-          <Illustration />
-        </div>
-        <div className="work__boxes">
-          {areaData.map((area) => (
-            <div className="work__boxes__inner" key={area.location}>
-              {area.icon}
-              <h5>{area.location}</h5>
-              <p>{area.description}</p>
+    <MissionStyles>
+      <div className="mission">
+        <h6 className="sbt">Our mission</h6>
+        <h2>Our mission sub title</h2>
+        <div className="mission__wrapper">
+          {data.map((x) => (
+            <div className="mission__wrapper__box" key={x.name}>
+              {x.icon}
+              <h4>{x.name}</h4>
             </div>
           ))}
         </div>
       </div>
-    </WhereWeWorkStyles>
+    </MissionStyles>
   );
 };
 
-export default WhereWeWork;
+export default Mission;

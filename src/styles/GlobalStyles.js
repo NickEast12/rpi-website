@@ -40,6 +40,8 @@ const GlobalStyles = createGlobalStyle`
          font-family: var(--main); 
         font-size: var(--base); 
         line-height: 1.3;
+       
+
     }
     h1,h2,h3,h4,h5,h6 {
       font-family: var(--main);
@@ -49,12 +51,14 @@ const GlobalStyles = createGlobalStyle`
       font-kerning: normal;
       text-rendering: optimizeLegibility; 
       font-smoothing: antialiased; 
+       font-display: swap;
     }
   
     p , a, li, input, address, label,input, textarea  {
       font-family: var(--main);
       font-feature-settings: "kern" 1;
       font-kerning: normal;
+       font-display: swap;
     }
     p {
         line-height: 1.5;

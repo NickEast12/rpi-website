@@ -181,7 +181,7 @@ const Footer = () => {
           <div className="footer__right__signup">
             <p>Subscribe for our latest news</p>
             <form action="">
-              <input type="text" name="" id="" />
+              <input type="text" name="" id="" placeholder="Email address" />
               <button type="button">
                 <span>Subscribe</span>
               </button>

@@ -21,7 +21,7 @@ const HeroStyles = styled.header`
         line-height: 1.2;
         font-weight: 600;
         span {
-          font-size: inherit;
+          font-size: inherit; /*
           background-image: linear-gradient(
             to top,
             rgb(190, 26, 38),
@@ -31,7 +31,12 @@ const HeroStyles = styled.header`
           background-repeat: repeat-x;
           background-size: 10% 10%;
           border-bottom: 0px;
-          color: inherit;
+          color: inherit; */
+          background-color: var(--background);
+          color: var(--offWhite);
+          padding: 0.15rem;
+          margin-top: 0.25rem;
+          display: inline-block;
         }
       }
       p {

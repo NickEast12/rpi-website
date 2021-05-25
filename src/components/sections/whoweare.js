@@ -5,7 +5,7 @@ import Illustration from '../../svgs/template-1.svg';
 
 const WhoweareStyles = styled.section`
   width: 100%;
-  padding: 3rem 0;
+  padding: 6rem 0;
   /* background-color: var(--darkBlue); */
   background-color: var(--background);
   .wwa {
