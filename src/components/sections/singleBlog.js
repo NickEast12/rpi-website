@@ -2,12 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
 import { Link } from 'gatsby';
+//* Local imports
+import BookIcon from '../../svgs/open-book.svg';
 
 const SingleBlogStyles = styled.article`
   width: 100%;
   margin-bottom: 2rem;
   border-bottom: solid 4px var(--background);
   padding-bottom: 1rem;
+  text-align: left;
   .b-img {
     width: 100%;
     height: auto;
@@ -32,6 +35,10 @@ const SingleBlogStyles = styled.article`
   .b-meta {
     display: flex;
     margin-top: 0.75rem;
+    svg {
+      width: 20px;
+      fill: var(--mainColour);
+    }
     p {
       &:nth-child(1) {
         font-weight: 700;

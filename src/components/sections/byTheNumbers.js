@@ -29,7 +29,7 @@ const ByTheNumbersStyles = styled.section`
     &__box {
       margin-bottom: 2rem;
       span {
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-weight: 800;
       }
       p {

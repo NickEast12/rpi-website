@@ -12,6 +12,7 @@ const CTAStyles = styled.section`
     text-align: center;
     color: var(--offWhite);
     h3 {
+      font-size: 2.35rem;
     }
     p {
       margin: 0.75rem 0;

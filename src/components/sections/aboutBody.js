@@ -16,8 +16,8 @@ const AboutBodyStyles = styled.section`
     &__text {
       margin-top: 2rem;
       h3 {
-        margin: 0.85rem 0;
-        font-size: var(--titleMedium);
+        margin: 0.25rem 0 0.5rem 0;
+        font-size: 2.35rem;
       }
       p {
         margin-bottom: 0.75rem;

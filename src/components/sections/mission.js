@@ -194,13 +194,14 @@ const data = [
 
 const MissionStyles = styled.section`
   width: 100%;
-  padding-bottom: 4rem;
+  padding: 3rem 0;
   .mission {
     width: 90%;
     margin: var(--auto);
     text-align: center;
     h2 {
       margin: 0.25rem 0;
+      font-size: 2.35rem;
     }
     &__wrapper {
       display: grid;

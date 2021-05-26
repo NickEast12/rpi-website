@@ -30,7 +30,7 @@ const ValuesStyles = styled.section`
     width: 90%;
     margin: 0 auto;
     h4 {
-      font-size: 2.5rem;
+      font-size: 2.35rem;
     }
     p {
       margin-top: 0.75rem;
