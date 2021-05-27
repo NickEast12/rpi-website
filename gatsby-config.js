@@ -27,7 +27,6 @@ module.exports = {
         // path: path.join(__dirname, `src`, `assets`, 'images'),
       },
     },
-
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {

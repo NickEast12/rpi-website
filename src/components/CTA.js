@@ -10,11 +10,12 @@ const CTAStyles = styled.section`
     width: 90%;
     margin: var(--auto);
     text-align: center;
-    color: var(--offWhite);
     h3 {
+      color: var(--offWhite);
       font-size: 2.35rem;
     }
     p {
+      color: var(--offWhite);
       margin: 0.75rem 0;
     }
     button {

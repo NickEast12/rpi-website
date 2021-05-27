@@ -18,7 +18,7 @@ const AllSpecialismsStyles = styled.section`
       margin-top: 1.5rem;
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      grid-gap: 0.5rem;
+      grid-gap: 1.25rem;
       &__inner {
         padding: 2rem 0.5rem;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -57,7 +57,7 @@ const AllSpecialismsStyles = styled.section`
     }
   }
 `;
-const AllSpecialisms = () => {
+const AllSpecialisms = ({ title, text }) => {
   const boxes = [
     {
       name: 'Specialisms',
@@ -463,11 +463,8 @@ const AllSpecialisms = () => {
   return (
     <AllSpecialismsStyles>
       <div className="specialisms">
-        <h2>Subtitle introducing specialisms</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quia
-          eos quisquam iste at consectetur!
-        </p>
+        <h2>{title}</h2>
+        <p>{text}</p>
         <div className="specialisms__boxes">
           {boxes.map((box) => (
             <div className="specialisms__boxes__inner" key={box.name}>

@@ -4178,7 +4178,11 @@ const Specialisms = () => {
   return (
     <Layout>
       <MainHeader />
-      <AllSpecialisms />
+      <AllSpecialisms
+        title="Subtitle introducing specialisms"
+        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quia
+          eos quisquam iste at consectetur!"
+      />
       {data.map((x) => (
         <SpecialismSection key={x.id} title={x.title} text={x.text}>
           {x.img}

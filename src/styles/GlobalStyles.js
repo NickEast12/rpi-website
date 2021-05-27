@@ -52,13 +52,15 @@ const GlobalStyles = createGlobalStyle`
       text-rendering: optimizeLegibility; 
       font-smoothing: antialiased; 
        font-display: swap;
+       color: var(--background);
     }
   
     p , a, li, input, address, label,input, textarea  {
       font-family: var(--main);
       font-feature-settings: "kern" 1;
       font-kerning: normal;
-       font-display: swap;
+        font-display: swap;
+       color: var(--background);
     }
     p {
         line-height: 1.5;

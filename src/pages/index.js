@@ -12,6 +12,7 @@ import CTA from '../components/CTA';
 
 const IndexPage = ({ data }) => {
   const blogs = data.BlogQuery.nodes;
+  console.log(data);
   return (
     <Layout>
       <Hero />

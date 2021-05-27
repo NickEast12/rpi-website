@@ -237,6 +237,7 @@ export const resourcesQuery = graphql`
     }
     AllQuery: allSanityPost(
       limit: 5
+      skip: 1
       sort: { fields: publishedAt, order: DESC }
     ) {
       nodes {
