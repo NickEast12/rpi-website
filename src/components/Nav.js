@@ -236,7 +236,7 @@ const Nav = () => {
       <div className={scroll ? 'active nav__wrapper' : 'nav__wrapper'}>
         <div className="nav" ref={navRef}>
           <div className="nav--logo">
-            <Link to="/#home">
+            <Link to="/">
               <RPILogo />
             </Link>
           </div>

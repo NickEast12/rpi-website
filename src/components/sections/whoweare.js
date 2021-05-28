@@ -5,7 +5,7 @@ import Illustration from '../../svgs/template-1.svg';
 
 const WhoweareStyles = styled.section`
   width: 100%;
-  padding: 6rem 0;
+  padding: 4rem 0;
   /* background-color: var(--darkBlue); */
   background-color: var(--background);
   .wwa {
@@ -19,9 +19,11 @@ const WhoweareStyles = styled.section`
       h3 {
         margin: 0.25rem 0;
         font-size: 2.35rem;
+        color: var(--offWhite);
       }
       p {
         margin: 0.5rem 0;
+        color: var(--offWhite);
       }
     }
     &__img {

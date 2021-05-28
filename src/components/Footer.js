@@ -2,9 +2,11 @@ import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 import styled from 'styled-components';
 //* Local imports
+import { graphql, Link, useStaticQuery } from 'gatsby';
 import RPILogo from '../svgs/rpi-logo.svg';
 import LinkedinIcon from '../svgs/linkedin.svg';
 import TwitterIcon from '../svgs/twitter.svg';
+import ArrowIcon from '../svgs/right-arrow.svg';
 
 const FooterStyles = styled.footer`
   width: 100%;
@@ -86,13 +88,39 @@ const FooterStyles = styled.footer`
           margin-bottom: 1rem;
         }
         section {
+          border: rgba(255, 255, 255, 0.25) 1px solid;
+          border-radius: 3px;
+          padding: 1rem;
           margin: 1rem 0;
-          p {
+          &:hover {
+            border: rgba(255, 255, 255, 1) 1px solid;
             span {
+              svg {
+                fill: #fff;
+              }
+            }
+          }
+          div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p {
+              color: var(--offWhite);
+              span {
+                font-weight: 700;
+              }
+            }
+            > span {
+              svg {
+                fill: rgba(255, 255, 255, 0.75);
+                width: 15px;
+                height: 15px;
+              }
             }
           }
           h6 {
             margin: 0.25rem 0;
+            color: var(--offWhite);
           }
         }
       }
@@ -145,7 +173,23 @@ const FooterStyles = styled.footer`
 `;
 
 const Footer = () => {
-  const i = true;
+  const { featured } = useStaticQuery(graphql`
+    query FeaturedQuery {
+      featured: allSanityPost(
+        limit: 2
+        sort: { fields: publishedAt, order: DESC }
+      ) {
+        nodes {
+          title
+          publishedAt
+          id
+          slug {
+            current
+          }
+        }
+      }
+    }
+  `);
   return (
     <FooterStyles>
       <section className="footer">
@@ -189,20 +233,20 @@ const Footer = () => {
           </div>
           <div className="footer__right__featured">
             <p>Featured articles</p>
-            <section>
-              <p>Article category</p>
-              <h6>Article title</h6>
-              <p>
-                <span>5 min read time</span>
-              </p>
-            </section>
-            <section>
-              <p>Article category</p>
-              <h6>Article title</h6>
-              <p>
-                <span>5 min read time</span>
-              </p>
-            </section>
+            {featured.nodes.map((x) => (
+              <Link to={`/blog/${x.slug.current}`} key={x.id}>
+                <section>
+                  <div>
+                    <p>
+                      <span>Article</span> : {x.title}
+                    </p>
+                    <span>
+                      <ArrowIcon />
+                    </span>
+                  </div>
+                </section>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
