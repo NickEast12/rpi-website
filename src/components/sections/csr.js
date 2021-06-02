@@ -5,7 +5,7 @@ import Illustration from '../../svgs/template-1.svg';
 
 const CSRStyles = styled.section`
   width: 100%;
-  padding-bottom: 3rem;
+  padding: 3rem 0;
   .CSR {
     width: 90%;
     margin: var(--auto);

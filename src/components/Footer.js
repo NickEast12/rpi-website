@@ -164,9 +164,9 @@ const FooterStyles = styled.footer`
     width: 90%;
     margin: var(--auto);
     text-align: center;
-    color: var(--white);
     margin-top: 1rem;
     p {
+      color: var(--white);
       font-size: 0.85rem;
     }
   }
