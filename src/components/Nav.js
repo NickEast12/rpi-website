@@ -109,7 +109,7 @@ const NavStyles = styled.nav`
     height: ${({ open }) => (open ? '100vh' : '0')};
     ul {
       display: ${({ open }) => (open ? 'block' : 'none')};
-      width: 80%;
+      width: 100%;
       margin: 6rem auto;
       text-align: center;
       list-style: none;
@@ -122,7 +122,10 @@ const NavStyles = styled.nav`
       }
       a {
         li {
-          margin-bottom: 2rem;
+          padding: 0.85rem 0;
+          /* border-bottom: solid var(--offWhite) 1px; */
+          border-top: solid var(--offWhite) 1px;
+          /* margin-bottom: 1rem; */
           color: var(--white);
           transition: all 0.35s ease;
           opacity: 0;
@@ -130,6 +133,10 @@ const NavStyles = styled.nav`
           .nav-button {
             width: 70%;
           }
+        }
+        .menu--button {
+          border: none;
+          margin-top: 1.5rem;
         }
       }
       a:nth-child(1) li {
@@ -147,6 +154,7 @@ const NavStyles = styled.nav`
       a:nth-child(4) li {
         animation: ${({ open }) => (open ? 'liAnimation' : '')} 0.55s 1.1s
           forwards;
+        border-bottom: solid var(--offWhite) 1px;
       }
       a:nth-child(5) li {
         animation: ${({ open }) => (open ? 'liAnimation' : '')} 0.55s 1.3s
@@ -189,7 +197,7 @@ const NavStyles = styled.nav`
     }
   }
 `;
-const Nav = () => {
+const Nav = ({ alt }) => {
   const [open, setOpen] = useState(false);
   const [scroll, setScroll] = useState(false);
   const changeNavScroll = () => {
@@ -235,13 +243,13 @@ const Nav = () => {
     <NavStyles open={open}>
       <div className={scroll ? 'active nav__wrapper' : 'nav__wrapper'}>
         <div className="nav" ref={navRef}>
-          <div className="nav--logo">
+          <div className={alt ? ' alt--logo' : 'nav--logo'}>
             <Link to="/">
               <RPILogo />
             </Link>
           </div>
           <div
-            className="nav--menu"
+            className={alt ? 'alt--menu' : 'nav--menu'}
             onClick={() => setOpen(!open)}
             onKeyDown={() => setOpen(!open)}
             role="button"
@@ -275,25 +283,25 @@ const Nav = () => {
         </div>
         <div className="menu" open={open}>
           <ul>
-            <Link to="/#about" onClick={() => setOpen(!open)}>
-              <li>About</li>
+            <Link to="/services" onClick={() => setOpen(!open)}>
+              <li>Services</li>
             </Link>
-            <Link to="/#experience" onClick={() => setOpen(!open)}>
-              <li>Experience</li>
+            <Link to="/specialisms" onClick={() => setOpen(!open)}>
+              <li>Specialisms</li>
             </Link>
-            <Link to="/#work" onClick={() => setOpen(!open)}>
-              <li>Work</li>
+            <Link to="/company" onClick={() => setOpen(!open)}>
+              <li>Company</li>
             </Link>
-            <Link to="/#blog" onClick={() => setOpen(!open)}>
-              <li>Blog</li>
+            <Link to="/resources" onClick={() => setOpen(!open)}>
+              <li>Resources</li>
             </Link>
             <a
               href="mailto:contact@nick-east.com?subject=Request Resume"
               onClick={() => setOpen(!open)}
             >
-              <li>
+              <li className="menu--button">
                 <button type="button" className="btn btn--main nav-button">
-                  <span>Contact me</span>
+                  <span>Get started</span>
                 </button>
               </li>
             </a>

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 //* Local imports
-import Illustration from '../../svgs/template-1.svg';
+import Illustration from '../../svgs/uvp.svg';
 
 const UVPStyles = styled.section`
   width: 100%;
@@ -35,8 +35,8 @@ const UVP = () => {
     <UVPStyles>
       <div className="uvp">
         <div className="uvp__text">
-          <h6 className="sbt">Intro to section</h6>
-          <h2>Section title</h2>
+          <h6 className="sbt">Subtitle</h6>
+          <h2>UVP what makes us different?</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
             aliquam expedita adipisci quia itaque facilis.

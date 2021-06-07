@@ -3,9 +3,12 @@ import { css } from 'styled-components';
 const typography = css`
   html {
     font-size: 18px;
-    /* @media only screen and (min-width: 375px) {
-          font-size: 16.5px;
-        } */
+    @media only screen and (min-width: 375px) {
+      font-size: 18.5px;
+    }
+    @media only screen and (min-width: 414px) {
+      font-size: 19px;
+    }
   }
   h1 {
     font-size: var(--titleLarge);

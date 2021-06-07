@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 //* Local imports
 import RPIElementIcon from '../../svgs/logo-element.svg';
-import TemplateSVG from '../../svgs/template.svg';
+import TemplateSVG from '../../svgs/home.svg';
 
 const HeroStyles = styled.header`
   width: 100%;
@@ -14,10 +14,21 @@ const HeroStyles = styled.header`
     width: 90%;
     margin: 0 auto;
     padding: 5.5rem 0 0 0;
+
     &__title {
+      position: relative;
+      z-index: 5;
       h1 {
         color: var(--background);
-        font-size: 2.5rem;
+        font-size: 2.25rem;
+        z-index: 10;
+        position: relative;
+        @media only screen and (min-width: 375px) {
+          font-size: 2.5rem;
+        }
+        @media only screen and (min-width: 414px) {
+          font-size: 2.75rem;
+        }
         line-height: 1.2;
         font-weight: 600;
         span {
@@ -40,7 +51,7 @@ const HeroStyles = styled.header`
         }
       }
       p {
-        margin: 0.85rem 0;
+        margin: 0.85rem 0 2rem 0;
         color: var(--background);
       }
       &__btn {
@@ -50,19 +61,35 @@ const HeroStyles = styled.header`
         /* justify-content: space-between; */
         button {
           margin-bottom: 0.75rem;
-          width: 100%;
+          /* width: 185px; */
         }
       }
     }
     &__img {
       padding: 2rem 0;
+
       svg {
         height: auto;
-        width: 100%;
+        width: 120%;
+        margin-left: calc(0% + -10%);
         .st0 {
           fill: none;
         }
       }
+    }
+  }
+  #aside {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    /* transform: rotate(180deg) translate(-55%, 75%); */
+    /* transform: rotate(180deg) translate(-20%, 15%); */
+    z-index: 1;
+
+    .b254f306-96f0-4d69-bb4e-ded5b25fa846 {
+      fill: var(--background);
+      opacity: 0;
     }
   }
 `;
@@ -74,8 +101,7 @@ const Hero = () => {
       <div className="hero">
         <div className="hero__title">
           <h1>
-            Sourcing the <span>talent</span> that ignites{' '}
-            <span>transformation</span> in your business
+            Sourcing the talent that ignites transformation in your business
           </h1>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -94,6 +120,7 @@ const Hero = () => {
           <TemplateSVG />
         </div>
       </div>
+      <RPIElementIcon id="aside" />
     </HeroStyles>
   );
 };

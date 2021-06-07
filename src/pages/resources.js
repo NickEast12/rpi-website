@@ -25,7 +25,7 @@ export default Resources;
 
 const ResourcesHeaderStyles = styled.header`
   width: 100%;
-  background-color: var(--lightAlphaTeal);
+  background-color: var(--offWhite);
   .resources {
     padding: 6rem 0 3rem 0;
     width: 90%;
@@ -111,7 +111,7 @@ const ResourcesHeaderStyles = styled.header`
         }
         &__signup {
           margin-top: 2rem;
-          background-color: var(--offWhite);
+          background-color: var(--white);
           padding: 1.5rem 1rem;
           h5 {
           }
@@ -121,7 +121,11 @@ const ResourcesHeaderStyles = styled.header`
             input {
               padding: 0.75rem;
               border: none;
-              background-color: var(--lightAlphaTeal);
+              background-color: var(--background);
+              color: var(--white);
+              &::placeholder {
+                color: var(--white);
+              }
             }
             button {
               padding: 0.75rem;

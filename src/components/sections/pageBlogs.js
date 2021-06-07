@@ -11,7 +11,7 @@ const PageBlogsStyles = styled.section`
     margin-bottom: 1.5rem;
   }
   .blogs {
-    width: 90%;
+    width: 85%;
     margin: var(--auto);
   }
 `;

@@ -6,12 +6,12 @@ import GlobalStyles from '../styles/GlobalStyles';
 import Nav from './Nav';
 import Footer from './Footer';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, alt }) => {
   const i = true;
   return (
     <>
       <GlobalStyles />
-      <Nav />
+      <Nav alt={alt ? 'alt' : ''} />
       <main>{children}</main>
       <Footer />
     </>

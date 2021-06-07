@@ -66,14 +66,15 @@ const GlobalStyles = createGlobalStyle`
         line-height: 1.5;
     }
     .sbt {
-        color: var(--mainColour);
+        color: var(--lightTeal);
         text-transform: uppercase;
         font-size: 1.25rem;
         font-weight: 700;
+        letter-spacing: .5px;
     }
     .btn {
         border-radius: 5px;
-        padding: .75rem;
+        padding: .95rem;
          span {
             color: var(--white);
             font-weight: 700;
@@ -86,10 +87,10 @@ const GlobalStyles = createGlobalStyle`
        
     }
     .btn--alt {
-        background: none;
-        border: solid var(--mainColour) 2px;
+        background: var(--background);
+        border: solid var(--background) 0;
         span {
-            color: var(--mainColour);
+            color: var(--offWhite);
         }
 
     }

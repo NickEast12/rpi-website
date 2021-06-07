@@ -2079,7 +2079,7 @@ const information = [
             />
           </svg>
         ),
-        quote: 'Quote to shocase are expertice in the area',
+        quote: 'Quote to showcase our expertice in the area',
         name: 'Joe Blogs',
         company: 'Company name',
       },

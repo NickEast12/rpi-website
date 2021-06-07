@@ -403,8 +403,11 @@ const ServicesStyles = styled.section`
   padding: 3rem 0;
   background-color: var(--offWhite);
   .services {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
+    @media only screen and (min-width: 414px) {
+      width: 80%;
+    }
     > h3,
     > p {
       text-align: center;
@@ -418,7 +421,11 @@ const ServicesStyles = styled.section`
     &__wrapper {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-
+      @media only screen and (min-width: 414px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+        padding: 2rem 0;
+      }
       &__box {
         background-color: var(--white);
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -426,14 +433,22 @@ const ServicesStyles = styled.section`
         text-align: center;
         border: none;
         padding: 1.5rem 1rem;
+        @media only screen and (min-width: 414px) {
+          margin-top: 0rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
         svg {
-          width: 50px;
+          width: 45px;
         }
         h4 {
-          font-size: 1.85rem;
-          margin: 0.5rem 0;
+          font-size: 1.5rem;
+          margin: 0.85rem 0 0.5rem 0;
         }
         p {
+          /* display: none; */
         }
         &:nth-child(1) {
           border-top: solid #923879 8px;
