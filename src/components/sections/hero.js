@@ -14,7 +14,20 @@ const HeroStyles = styled.header`
     width: 90%;
     margin: 0 auto;
     padding: 5.5rem 0 0 0;
-
+    max-width: var(--maxWidth);
+    @media only screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 60% 1fr;
+      padding: 8rem 0 5rem 0;
+    }
+    @media only screen and (min-width: 1024px) {
+      padding: 10rem 0 7rem 0;
+    }
+    @media only screen and (min-width: 1200px) {
+      height: 40rem;
+      padding: 9rem 0 0 0;
+      grid-template-columns: 45% 1fr;
+    }
     &__title {
       position: relative;
       z-index: 5;
@@ -63,11 +76,18 @@ const HeroStyles = styled.header`
           margin-bottom: 0.75rem;
           /* width: 185px; */
         }
+        @media only screen and (min-width: 768px) {
+          flex-direction: row;
+          gap: 1rem;
+          button {
+            width: 200px;
+          }
+        }
       }
     }
     &__img {
       padding: 2rem 0;
-
+      position: relative;
       svg {
         height: auto;
         width: 120%;
@@ -76,10 +96,51 @@ const HeroStyles = styled.header`
           fill: none;
         }
       }
+      @media only screen and (min-width: 768px) {
+        position: absolute;
+        right: -13.5rem;
+        top: 4rem;
+        width: 550px;
+      }
+      @media only screen and (min-width: 800px) {
+        position: absolute;
+        right: -15.5rem;
+        top: 1rem;
+        width: 650px;
+      }
+      @media only screen and (min-width: 950px) {
+        position: absolute;
+        right: -12.5rem;
+        top: 1rem;
+        width: 600px;
+      }
+      @media only screen and (min-width: 1024px) {
+        position: absolute;
+        right: -10.5rem;
+        top: 2rem;
+        width: 600px;
+      }
+      @media only screen and (min-width: 1200px) {
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 100%;
+        margin: -3rem 0 0 0;
+        padding: 0;
+      }
+      @media only screen and (min-width: 1280px) {
+        position: relative;
+        width: 100%;
+        right: 0;
+        top: 0;
+        margin: -4rem 0 0 2rem;
+        padding: 0;
+      }
     }
   }
   #aside {
     position: absolute;
+    display: none;
     top: 0;
     right: 0;
     width: 80%;

@@ -6,6 +6,7 @@ const CTAStyles = styled.section`
   width: 100%;
   background-color: var(--mainColour);
   .cta {
+    max-width: var(--maxWidth);
     padding: 3rem 0;
     width: 90%;
     margin: var(--auto);
@@ -16,7 +17,8 @@ const CTAStyles = styled.section`
     }
     p {
       color: var(--offWhite);
-      margin: 0.75rem 0;
+      margin: 0.75rem auto;
+      max-width: 650px;
     }
     button {
       margin-top: 1rem;

@@ -66,12 +66,13 @@ const GlobalStyles = createGlobalStyle`
         line-height: 1.5;
     }
     .sbt {
-        color: var(--lightTeal);
+        color: var(--mainColour);
         text-transform: uppercase;
         font-size: 1.25rem;
         font-weight: 700;
         letter-spacing: .5px;
     }
+    
     .btn {
         border-radius: 5px;
         padding: .95rem;

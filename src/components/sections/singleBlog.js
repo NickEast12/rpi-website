@@ -11,6 +11,11 @@ const SingleBlogStyles = styled.article`
   border-bottom: solid 4px var(--background);
   padding-bottom: 1rem;
   text-align: left;
+  transition: opacity 0.35s ease;
+  &:hover,
+  &:active {
+    opacity: 1 !important;
+  }
   .b-img {
     width: 100%;
     height: auto;

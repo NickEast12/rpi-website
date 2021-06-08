@@ -53,6 +53,10 @@ const NavStyles = styled.nav`
           fill: ${({ open }) => (open ? 'white' : 'black')};
         }
       }
+      @media only screen and (min-width: 1024px) {
+        display: flex;
+        align-items: center;
+      }
     }
     &--menu {
       width: 30px;
@@ -89,12 +93,27 @@ const NavStyles = styled.nav`
             open ? 'white' : 'var(--background)'};
         }
       }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 1024px) {
         display: none;
       }
     }
     &--desktop {
       display: none;
+      @media only screen and (min-width: 1024px) {
+        display: block;
+        ul {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+          li {
+            font-weight: 700;
+          }
+        }
+        button {
+          padding: 0.75rem 1.2rem;
+        }
+      }
     }
   }
   .menu {
@@ -262,22 +281,20 @@ const Nav = ({ alt }) => {
           <div className="nav--desktop">
             <ul>
               <li className="willFade navFade">
-                <Link to="/#about">About</Link>
+                <Link to="/#about">Services</Link>
               </li>
               <li className="willFade navFade">
-                <Link to="/#experience">Experience</Link>
+                <Link to="/#experience">Specialisms</Link>
               </li>
               <li className="willFade navFade">
-                <Link to="/#work">Work</Link>
+                <Link to="/#work">Company</Link>
               </li>
               <li className="willFade navFade">
-                <Link to="/#blog">Blog</Link>
+                <Link to="/#blog">Resources</Link>
               </li>
-              <li className="willFade navFade">
-                <button type="button" className="btn btn--main ">
-                  <span>Contact me</span>
-                </button>
-              </li>
+              <button type="button" className="btn btn--main">
+                <span>Get started</span>
+              </button>
             </ul>
           </div>
         </div>

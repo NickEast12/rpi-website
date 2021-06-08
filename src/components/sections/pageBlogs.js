@@ -11,8 +11,21 @@ const PageBlogsStyles = styled.section`
     margin-bottom: 1.5rem;
   }
   .blogs {
+    max-width: var(--maxWidth);
     width: 85%;
     margin: var(--auto);
+    position: relative;
+    @media only screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
+    }
+    @media only screen and (min-width: 1280px) {
+      grid-gap: 1.5rem;
+    }
+    &:hover article {
+      opacity: 0.6;
+    }
   }
 `;
 const PageBlogs = ({ Blogs }) => {
@@ -24,6 +37,7 @@ const PageBlogs = ({ Blogs }) => {
         {Blogs.map((blog) => (
           <SingleBlog key={blog.id} blog={blog} />
         ))}
+        <div className="blogs--cover" />
       </div>
     </PageBlogsStyles>
   );

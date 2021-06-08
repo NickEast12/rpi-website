@@ -27,7 +27,7 @@ const vars = css`
     --textMedium: 0.8rem;
     --textSmall: 0.75rem;
     //*Widths
-    --maxWidth: 1100px;
+    --maxWidth: 1200px;
     --auto: 0 auto;
     //* Border radius
     //* Box shadow

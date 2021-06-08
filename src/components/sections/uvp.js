@@ -9,6 +9,7 @@ const UVPStyles = styled.section`
   .uvp {
     width: 90%;
     margin: var(--auto);
+    max-width: var(--maxWidth);
     &__text {
       h2 {
         margin: 0.5rem 0;
@@ -27,6 +28,39 @@ const UVPStyles = styled.section`
         height: auto;
       }
     }
+    @media only screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: 'a b';
+      /* display: flex;
+      flex-direction: row-reverse;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center; */
+      padding: 2rem 0;
+      &__text {
+        grid-area: b;
+      }
+      &__img {
+        grid-area: a;
+
+        svg {
+          margin-top: 0;
+        }
+      }
+    }
+    @media only screen and (min-width: 1024px) {
+      &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    @media only screen and (min-width: 1280px) {
+      &__img {
+        width: 70%;
+      }
+    }
   }
 `;
 const UVP = () => {
@@ -35,8 +69,8 @@ const UVP = () => {
     <UVPStyles>
       <div className="uvp">
         <div className="uvp__text">
-          <h6 className="sbt">Subtitle</h6>
-          <h2>UVP what makes us different?</h2>
+          <h6 className="sbt">Why RPI?</h6>
+          <h2>UVP what makes us stand out from the competition?</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
             aliquam expedita adipisci quia itaque facilis.

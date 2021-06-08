@@ -13,6 +13,7 @@ const FooterStyles = styled.footer`
   background: var(--background);
   padding-bottom: 1.5rem;
   .footer {
+    max-width: var(--maxWidth);
     width: 90%;
     padding: 3rem 0 0 0;
     margin: var(--auto);
@@ -46,10 +47,17 @@ const FooterStyles = styled.footer`
             }
           }
         }
+        @media only screen and (min-width: 1024px) {
+          justify-content: left;
+          gap: 1.5rem;
+        }
       }
     }
     &__right {
       margin-top: 2rem;
+      @media only screen and (min-width: 1024px) {
+        margin-top: 0;
+      }
       &__signup {
         p {
           color: var(--white);
@@ -74,6 +82,17 @@ const FooterStyles = styled.footer`
             span {
               color: var(--white);
               font-weight: 700;
+            }
+          }
+          @media only screen and (min-width: 1024px) {
+            display: flex;
+            input {
+              border-radius: 5px 0 0 5px;
+            }
+            button {
+              margin-top: 0;
+              width: 35%;
+              border-radius: 0 5px 5px 0;
             }
           }
         }
@@ -125,11 +144,17 @@ const FooterStyles = styled.footer`
         }
       }
     }
+    @media only screen and (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5rem;
+    }
   }
   .legal {
     width: 90%;
     margin: var(--auto);
     margin-top: 2rem;
+    max-width: var(--maxWidth);
     &__icons {
       width: 80px;
       margin: var(--auto);
@@ -159,15 +184,29 @@ const FooterStyles = styled.footer`
         }
       }
     }
+    @media only screen and (min-width: 1024px) {
+      display: flex;
+      justify-content: space-between;
+      &__links {
+        ul {
+          justify-content: flex-end;
+        }
+        margin: 0 0 0 auto;
+      }
+    }
   }
   .copy {
     width: 90%;
     margin: var(--auto);
     text-align: center;
     margin-top: 1rem;
+    max-width: var(--maxWidth);
     p {
       color: var(--white);
       font-size: 0.85rem;
+    }
+    @media only screen and (min-width: 1024px) {
+      text-align: left;
     }
   }
 `;

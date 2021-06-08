@@ -50,8 +50,7 @@ const listData = [
       </svg>
     ),
     title: 'Leadership',
-    text:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ad et deleniti!',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
   },
   {
     icon: (
@@ -99,8 +98,7 @@ const listData = [
       </svg>
     ),
     title: 'Communications',
-    text:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ad et deleniti!',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
   },
   {
     icon: (
@@ -148,8 +146,7 @@ const listData = [
       </svg>
     ),
     title: 'Architecture',
-    text:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ad et deleniti!',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
   },
   {
     icon: (
@@ -197,8 +194,7 @@ const listData = [
       </svg>
     ),
     title: 'ERP',
-    text:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ad et deleniti!',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
   },
   {
     icon: (
@@ -246,8 +242,7 @@ const listData = [
       </svg>
     ),
     title: 'BI, Data & Analytics',
-    text:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ad et deleniti!',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
   },
   {
     icon: (
@@ -295,8 +290,7 @@ const listData = [
       </svg>
     ),
     title: 'Software Engineering & DevOps',
-    text:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ad et deleniti!',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
   },
   {
     icon: (
@@ -344,8 +338,7 @@ const listData = [
       </svg>
     ),
     title: 'Infrastructure & Cloud Services',
-    text:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ad et deleniti!',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
   },
   {
     icon: (
@@ -402,37 +395,72 @@ const ServicesStyles = styled.section`
   width: 100%;
   padding: 3rem 0;
   background-color: var(--offWhite);
+  @media only screen and (min-width: 1024px) {
+    padding: 4rem 0;
+  }
   .services {
     width: 80%;
     margin: 0 auto;
+    max-width: var(--maxWidth);
     @media only screen and (min-width: 414px) {
       width: 80%;
+    }
+    @media only screen and (min-width: 1024px) {
+      width: 90%;
     }
     > h3,
     > p {
       text-align: center;
     }
+    h6 {
+      text-align: center;
+    }
     h3 {
       font-size: 2.35rem;
+      margin: 0.5rem 0;
     }
     p {
-      margin-top: 0.5rem;
+      /* margin-top: 0.5rem; */
     }
     &__wrapper {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
+
       @media only screen and (min-width: 414px) {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 1rem;
         padding: 2rem 0;
       }
+      @media only screen and (min-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media only screen and (min-width: 1024px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      @media only screen and (min-width: 1280px) {
+        grid-gap: 1.25rem;
+        &:hover {
+          .services__wrapper__box {
+            opacity: 0.5;
+          }
+        }
+      }
       &__box {
+        cursor: pointer;
         background-color: var(--white);
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         margin-top: 2rem;
         text-align: center;
         border: none;
         padding: 1.5rem 1rem;
+        will-change: opacity;
+        transition: opacity 0.35s ease;
+
+        &:hover,
+        &:active {
+          opacity: 1 !important;
+        }
+
         @media only screen and (min-width: 414px) {
           margin-top: 0rem;
           display: flex;
@@ -440,9 +468,16 @@ const ServicesStyles = styled.section`
           align-items: center;
           justify-content: center;
         }
+        @media only screen and (min-width: 1024px) {
+          padding: 1rem 0.5rem;
+        }
+        @media only screen and (min-width: 1280px) {
+          padding: 1.5rem 0.75rem;
+        }
         svg {
           width: 45px;
         }
+
         h4 {
           font-size: 1.5rem;
           margin: 0.85rem 0 0.5rem 0;
@@ -483,7 +518,8 @@ const Services = () => {
   return (
     <ServicesStyles>
       <div className="services">
-        <h3>Services title</h3>
+        <h6 className="sbt">Our services</h6>
+        <h3>A title introducing our services</h3>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos,
           mollitia!
