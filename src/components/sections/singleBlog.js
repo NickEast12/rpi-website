@@ -67,7 +67,7 @@ const SingleBlog = ({ blog }) => {
   const pick = colors[num];
   return (
     <SingleBlogStyles style={{ borderBottom: `${pick} 4px solid` }}>
-      <Link to="/">
+      <Link to={`/blog/${blog.slug.current}`}>
         <div className="b-img">
           <Img fluid={blog.mainImage.asset.fluid} alt={blog.mainImage.alt} />
           <div className="b-img__overlay">

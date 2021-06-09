@@ -11,12 +11,14 @@ const AllBlogsStyles = styled.section`
     padding: 3rem 0;
     margin: var(--auto);
     text-align: center;
+    max-width: var(--maxWidth);
     h2 {
       text-align: center;
       margin-bottom: 1.25rem;
     }
     > a {
       span {
+        cursor: pointer;
         margin: var(--auto);
         text-align: center;
         margin-top: 1rem;
@@ -28,6 +30,16 @@ const AllBlogsStyles = styled.section`
     }
     &__wrapper {
       margin-top: 2rem;
+      @media only screen and (min-width: 600px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        &:hover {
+          article {
+            opacity: 0.5;
+          }
+        }
+      }
     }
   }
 `;
@@ -37,7 +49,7 @@ const AllBlogs = ({ blogs }) => {
     <AllBlogsStyles>
       <div className="allblogs">
         <h2>All Blogs</h2>
-        <Link to="/">
+        <Link to="/blog">
           <span>See all blogs</span>
         </Link>
         <div className="allblogs__wrapper">

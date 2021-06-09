@@ -29,6 +29,7 @@ const BlogStyles = styled.article`
     width: 90%;
     margin: var(--auto);
     padding: 2rem 0;
+    max-width: 1100px;
     &__left {
       color: var(--background);
       h2 {
@@ -53,7 +54,7 @@ const BlogStyles = styled.article`
       p {
         line-height: 1.45;
         font-size: 1.1rem;
-        margin: 1.2rem 0;
+        margin: 0 0 1.2rem 0;
       }
       ul {
         list-style: inside;
@@ -116,6 +117,20 @@ const BlogStyles = styled.article`
           }
         }
       }
+    }
+    @media only screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 35%;
+      grid-gap: 2rem;
+      &__right {
+        position: sticky;
+        top: 5rem;
+        width: 100%;
+        height: 5rem;
+      }
+    }
+    @media only screen and (min-width: 1024px) {
+      grid-template-columns: 1fr 30%;
     }
   }
 `;
@@ -218,10 +233,16 @@ export default Blog;
 const BlogHeaderStyles = styled.header`
   width: 100%;
   padding-top: 4.25rem;
+  @media only screen and (min-width: 1024px) {
+    padding-top: 4.5rem;
+  }
   .b-header {
     width: 100%;
-    padding: 6rem 0 7rem 0;
+    padding: 7.5rem 0 3rem 0;
     position: relative;
+    max-width: var(--maxWidth);
+    margin: var(--auto);
+
     &__img {
       position: absolute;
       top: 0;
@@ -240,9 +261,11 @@ const BlogHeaderStyles = styled.header`
       margin: 0 auto;
       border-radius: 4.5px;
       padding: 2rem 1.25rem;
+      max-width: var(--maxWidth);
       &__meta {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+        align-items: center;
         span {
           display: flex;
           align-self: center;
@@ -256,11 +279,14 @@ const BlogHeaderStyles = styled.header`
             font-size: var(--textMedium);
             color: var(--lightTeal);
             padding-left: 7.5px;
+            font-size: 0.9rem;
           }
         }
-        p {
+        > p {
           font-weight: 800;
           font-size: 0.9rem;
+          line-height: 1;
+          padding-left: 10px;
         }
       }
       h1 {
@@ -276,6 +302,17 @@ const BlogHeaderStyles = styled.header`
           font-weight: 700;
         }
       }
+      @media only screen and (min-width: 768px) {
+        width: 55%;
+        margin: 0 auto 0 calc(0% + 5%);
+      }
+      @media only screen and (min-width: 1280px) {
+        width: 55%;
+        margin: 0 auto 0 calc(0% + 4%);
+      }
+    }
+    @media only screen and (min-width: 1024px) {
+      padding: 14rem 0 2rem 0;
     }
   }
 `;
@@ -291,7 +328,7 @@ const BlogHeader = ({ blog }) => (
             <BookIcon />
             <p>Article</p>
           </span>
-          <p>{blog.publishedAt}</p>
+          <p>{`• ${blog.publishedAt}`}</p>
         </div>
         <h1>{blog.title}</h1>
         <div className="b-header__text__time">

@@ -30,15 +30,23 @@ const ResourcesHeaderStyles = styled.header`
     padding: 6rem 0 3rem 0;
     width: 90%;
     margin: var(--auto);
+    max-width: var(--maxWidth);
+    @media only screen and (min-width: 600px) {
+      padding-bottom: 4rem;
+    }
     h1 {
       span {
         color: var(--mainColour);
         font-size: inherit;
       }
+      @media only screen and (min-width: 600px) {
+        padding: 1rem 0;
+      }
     }
     &__wrapper {
       margin-top: 1.5rem;
       &__left {
+        cursor: pointer;
         .b-img {
           width: 100%;
           height: auto;
@@ -83,6 +91,39 @@ const ResourcesHeaderStyles = styled.header`
             margin: 0.5rem 0;
           }
         }
+        @media only screen and (min-width: 600px) {
+          position: relative;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          will-change: box-shadow;
+          transition: box-shadow 0.35s ease;
+          &:hover {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 10px;
+          }
+          .b-img {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            position: absolute;
+            &__overlay {
+              top: 1rem;
+              left: 1rem;
+              right: inherit;
+              bottom: inherit;
+            }
+          }
+          .b--img--wrapper {
+            position: absolute;
+            z-index: 2;
+            background-color: white;
+            border-radius: 4.5px;
+            padding: 0.7rem 1rem;
+            width: 80%;
+            top: 4rem;
+            left: 1rem;
+          }
+        }
       }
       &__right {
         margin-top: 1.5rem;
@@ -113,6 +154,8 @@ const ResourcesHeaderStyles = styled.header`
           margin-top: 2rem;
           background-color: var(--white);
           padding: 1.5rem 1rem;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          border-radius: 4.5px;
           h5 {
           }
           form {
@@ -126,18 +169,35 @@ const ResourcesHeaderStyles = styled.header`
               &::placeholder {
                 color: var(--white);
               }
+              @media only screen and (min-width: 600px) {
+                width: 100%;
+              }
             }
             button {
+              cursor: pointer;
               padding: 0.75rem;
               border: none;
               width: 100%;
+              background-color: var(--mainColour);
               span {
                 svg {
                   width: 15px;
+                  fill: var(--offWhite);
                 }
+              }
+              @media only screen and (min-width: 600px) {
+                width: 30%;
               }
             }
           }
+        }
+      }
+      @media only screen and (min-width: 600px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        &__right {
+          margin-top: 0;
         }
       }
     }
@@ -156,27 +216,29 @@ const ResourcesHeader = ({ blogs }) => {
         </h1>
         <div className="resources__wrapper">
           <div className="resources__wrapper__left">
-            <Link to="/">
+            <Link to={`/blog/${x.slug.current}`}>
               <div className="b-img">
                 <Img fluid={x.mainImage.asset.fluid} alt={x.mainImage.alt} />
                 <div className="b-img__overlay">
                   <p>{`${x.readingTimeInMinutes} min read`}</p>
                 </div>
               </div>
-              <div className="b-meta">
-                <p>{`${x.categories[0].title}`}</p>
-                <p>{`• ${x.authors[0].author.name}`}</p>
-              </div>
-              <div className="b-title">
-                <h3>{x.title}</h3>
-                <p>{x.excerpt}</p>
+              <div className="b--img--wrapper">
+                <div className="b-meta">
+                  <p>{`${x.categories[0].title}`}</p>
+                  <p>{`• ${x.authors[0].author.name}`}</p>
+                </div>
+                <div className="b-title">
+                  <h3>{x.title}</h3>
+                  <p>{x.excerpt}</p>
+                </div>
               </div>
             </Link>
           </div>
           <div className="resources__wrapper__right">
             <h4>Featured articles</h4>
             {secondary.map((blog) => (
-              <Link to="/" key={blog.title}>
+              <Link to={`/blog/${blog.slug.current}`} key={blog.title}>
                 <div className="resources__wrapper__right__fea">
                   <span>
                     <BookIcon />
