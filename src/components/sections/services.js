@@ -399,21 +399,18 @@ const ServicesStyles = styled.section`
     padding: 4rem 0;
   }
   .services {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     max-width: var(--maxWidth);
-    @media only screen and (min-width: 414px) {
-      width: 80%;
-    }
+    text-align: left;
     @media only screen and (min-width: 1024px) {
       width: 90%;
+      text-align: center;
     }
     > h3,
     > p {
-      text-align: center;
     }
     h6 {
-      text-align: center;
     }
     h3 {
       font-size: 2.35rem;
@@ -429,7 +426,7 @@ const ServicesStyles = styled.section`
       @media only screen and (min-width: 414px) {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 1rem;
-        padding: 2rem 0;
+        padding: 2rem 1rem;
       }
       @media only screen and (min-width: 600px) {
         grid-template-columns: repeat(2, 1fr);

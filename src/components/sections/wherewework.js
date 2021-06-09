@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 //* Local Imports
-import Illustration from '../../svgs/Map.svg';
+import Illustration from '../../svgs/map_pins.svg';
 
 const areaData = [
   {
@@ -40,7 +40,7 @@ const areaData = [
     ),
     location: 'UK & Europe',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, temporibus?',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aperiam ducimus atque, assumenda odio voluptates sequi vero.',
   },
   {
     icon: (
@@ -78,7 +78,7 @@ const areaData = [
     ),
     location: 'MEA',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, temporibus?',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aperiam ducimus atque, assumenda odio voluptates sequi vero.',
   },
   {
     icon: (
@@ -116,7 +116,7 @@ const areaData = [
     ),
     location: 'APAC',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, temporibus?',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aperiam ducimus atque, assumenda odio voluptates sequi vero.',
   },
 ];
 
@@ -126,47 +126,79 @@ const WhereWeWorkStyles = styled.section`
   .work {
     width: 90%;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     max-width: var(--maxWidth);
-    h4 {
-      margin-top: 0.25rem;
+    @media only screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 4rem;
+    }
+    @media only screen and (min-width: 1024px) {
+      padding-top: 1rem;
+    }
+    @media only screen and (min-width: 1280px) {
+      grid-template-columns: 55% 1fr;
     }
     &__img {
-      width: 90%;
-      margin: 1.5rem auto;
+      width: 100%;
+      margin: var(--auto);
       @media only screen and (min-width: 600px) {
         max-width: 600px;
       }
-      @media only screen and (min-width: 1024px) {
-        max-width: 750px;
-        height: 400px;
-        margin-top: 2rem;
+      @media only screen and (min-width: 768px) {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
     }
-    &__boxes {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 0.5rem;
-      margin-top: 2rem;
-      @media only screen and (min-width: 600px) {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1rem;
+    &__wrapper {
+      margin-top: 1.5rem;
+      h4 {
+        margin: 0.5rem 0;
       }
-      &__inner {
-        &:nth-child(3) {
-          grid-column: 1 / 3;
-          @media only screen and (min-width: 600px) {
-            grid-column: 3;
-          }
+      p {
+        margin-bottom: 0.5rem;
+      }
+      @media only screen and (min-width: 768px) {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+  .boxes {
+    max-width: var(--maxWidth);
+    width: 90%;
+    margin: var(--auto);
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem 0;
+    @media only screen and (min-width: 600px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
+    }
+    @media only screen and (min-width: 1024px) {
+      padding: 3rem 0 0 0;
+      grid-gap: 3rem;
+    }
+    &__inner {
+      text-align: center;
+      &:nth-child(3) {
+        /* grid-column: 1 / 3; */
+        @media only screen and (min-width: 600px) {
+          grid-column: 3;
         }
-        margin-bottom: 1rem;
-        svg {
-          width: 40px;
-        }
-        h5 {
-          font-size: 1.3rem;
-          margin: 0.5rem 0;
-        }
+      }
+      margin-bottom: 1rem;
+      svg {
+        width: 40px;
+      }
+      h5 {
+        font-size: 1.45rem;
+        margin: 0.5rem 0;
       }
     }
   }
@@ -176,20 +208,30 @@ const WhereWeWork = () => {
   return (
     <WhereWeWorkStyles>
       <div className="work">
-        <h6 className="sbt">Our locations </h6>
-        <h4>Where we work</h4>
         <div className="work__img">
           <Illustration />
         </div>
-        <div className="work__boxes">
-          {areaData.map((area) => (
-            <div className="work__boxes__inner" key={area.location}>
-              {area.icon}
-              <h5>{area.location}</h5>
-              <p>{area.description}</p>
-            </div>
-          ))}
+        <div className="work__wrapper">
+          <h6 className="sbt">Our locations</h6>
+          <h4>Where we work title</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            cupiditate ab cum similique odio. Recusandae.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+            reprehenderit.
+          </p>
         </div>
+      </div>
+      <div className="boxes">
+        {areaData.map((area) => (
+          <div className="boxes__inner" key={area.location}>
+            {area.icon}
+            <h5>{area.location}</h5>
+            <p>{area.description}</p>
+          </div>
+        ))}
       </div>
     </WhereWeWorkStyles>
   );

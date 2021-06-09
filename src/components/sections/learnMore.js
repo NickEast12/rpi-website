@@ -7,8 +7,10 @@ const LearnMoreStyles = styled.div`
   width: 100%;
   margin-top: 1.5rem;
   text-align: center;
+
   .l-m {
     cursor: pointer;
+
     &:hover {
       svg {
         transform: translate(7px);
@@ -22,10 +24,11 @@ const LearnMoreStyles = styled.div`
     font-weight: 700;
     display: flex;
     align-items: center;
-
+    justify-content: center;
     gap: 0.85rem;
     @media only screen and (min-width: 768px) {
       margin: 0 auto 0 0;
+      justify-content: flex-start;
     }
     &--text {
       color: var(--white);
