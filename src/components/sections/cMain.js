@@ -7,6 +7,20 @@ const CMainStyles = styled.section`
   .cmain {
     width: 90%;
     margin: var(--auto);
+    max-width: var(--maxWidth);
+    @media only screen and (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+      padding-top: 1rem;
+      &__contact {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        padding: 0 1rem;
+      }
+    }
     &__contact {
       h2 {
         font-size: 2rem;
@@ -53,6 +67,18 @@ const CMainStyles = styled.section`
         }
         button {
           width: 185px;
+        }
+      }
+      @media only screen and (min-width: 1024px) {
+        margin-top: 0;
+        form {
+          section {
+            display: flex;
+            gap: 1rem;
+          }
+          textarea {
+            height: 5rem;
+          }
         }
       }
     }

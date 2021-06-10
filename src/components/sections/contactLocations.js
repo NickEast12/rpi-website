@@ -7,6 +7,7 @@ import Pin from '../../svgs/pin.svg';
 const ContactLocationsStyles = styled.section`
   width: 100%;
   .locations {
+    max-width: var(--maxWidth);
     padding: 1.5rem 0 2rem 0;
     width: 90%;
     margin: var(--auto);
@@ -29,17 +30,23 @@ const ContactLocationsStyles = styled.section`
       margin-bottom: 1rem;
     }
     &__wrapper {
+      max-width: var(--maxWidth);
       width: 90%;
       margin: var(--auto);
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 1.5rem;
       padding-top: 1.5rem;
+      @media only screen and (min-width: 1024px) {
+        display: flex;
+        justify-content: center;
+      }
       &__box {
         display: flex;
         align-items: center;
         flex-direction: column;
         text-align: center;
+        justify-content: center;
         padding: 0 1.5rem;
         svg {
           width: 55px;
@@ -54,6 +61,8 @@ const ContactLocationsStyles = styled.section`
         }
         address {
           margin-bottom: 0.5rem;
+          margin: 0.5rem auto;
+          max-width: 400px;
         }
         p {
           font-weight: 700;
@@ -75,6 +84,7 @@ const ContactLocationsStyles = styled.section`
       margin-bottom: 1rem;
     }
     &__wrapper {
+      max-width: var(--maxWidth);
       width: 90%;
       margin: var(--auto);
       display: grid;
@@ -85,6 +95,7 @@ const ContactLocationsStyles = styled.section`
         display: flex;
         align-items: center;
         flex-direction: column;
+        justify-content: center;
         text-align: center;
         padding: 0 1.5rem;
         svg {
@@ -99,7 +110,8 @@ const ContactLocationsStyles = styled.section`
           margin-bottom: 0.5rem;
         }
         address {
-          margin-bottom: 0.5rem;
+          margin: 0.5rem auto;
+          max-width: 400px;
         }
         p {
           font-weight: 700;
@@ -110,7 +122,7 @@ const ContactLocationsStyles = styled.section`
   }
 `;
 const ContactLocations = () => {
-  console.log('🍎');
+  const i = true;
   return (
     <ContactLocationsStyles>
       <div className="locations">
