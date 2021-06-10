@@ -10,6 +10,16 @@ const TheTeamStyles = styled.section`
     margin: var(--auto);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    max-width: var(--maxWidth);
+    @media only screen and (min-width: 375px) {
+    }
+    @media only screen and (min-width: 600px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1.5rem;
+    }
+    @media only screen and (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 `;
 const TheTeam = () => {
@@ -17,6 +27,8 @@ const TheTeam = () => {
   return (
     <TheTeamStyles>
       <div className="team">
+        <SingleTeam />
+        <SingleTeam />
         <SingleTeam />
         <SingleTeam />
       </div>
