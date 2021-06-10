@@ -5,10 +5,13 @@ import Illustration from '../../svgs/template-1.svg';
 
 const MainHeaderStyles = styled.header`
   width: 100%;
+  background-color: var(--offWhite);
+  padding-bottom: 2rem;
   .head {
     width: 90%;
     margin: var(--auto);
     padding-top: 5rem;
+    max-width: var(--maxWidth);
     &__title {
       h1 {
         font-size: 3rem;
@@ -18,13 +21,38 @@ const MainHeaderStyles = styled.header`
         margin: 0.85rem 0;
       }
       button {
+        margin-top: 0.5rem;
         width: 100%;
+        max-width: 200px;
       }
     }
     &__img {
       width: 90%;
       margin: 2.5rem auto;
+      max-width: 450px;
       svg {
+      }
+    }
+    @media only screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+      &__title,
+      &__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    @media only screen and (min-width: 1024px) {
+      grid-template-columns: 52% 1fr;
+      grid-gap: 2rem;
+
+      &__title,
+      &__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
     }
   }

@@ -22,10 +22,12 @@ const ByTheNumbersStyles = styled.section`
   background-color: var(--background);
   padding: 3rem 0;
   color: var(--offWhite);
+
   .numbers {
     width: 90%;
     margin: var(--auto);
     text-align: center;
+    max-width: var(--maxWidth);
     &__box {
       margin-bottom: 2rem;
       span {
@@ -35,6 +37,14 @@ const ByTheNumbersStyles = styled.section`
       p {
         font-size: 1.25rem;
         font-weight: 700;
+        color: var(--offWhite);
+      }
+    }
+    @media only screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      &__box {
+        margin-bottom: 0;
       }
     }
   }
@@ -50,7 +60,7 @@ const ByTheNumbers = () => {
         <div className="numbers">
           {data.map((x) => (
             <div className="numbers__box">
-              {on ? <CountUp end={x.no} duration={9} /> : <p>0</p>}
+              {on ? <CountUp end={x.no} duration={12} /> : <p>0</p>}
               <p>{x.fact}</p>
             </div>
           ))}

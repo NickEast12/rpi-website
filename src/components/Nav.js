@@ -70,7 +70,7 @@ const NavStyles = styled.nav`
         height: 3px;
         margin-bottom: 0.3rem;
         transition: all 0.25s ease 0s;
-        transform-origin: 26px center;
+        transform-origin: 27.5px center;
         background-color: var(--background);
         &:nth-child(1) {
           transform: ${({ open }) =>
@@ -284,13 +284,13 @@ const Nav = ({ alt }) => {
                 <Link to="/#about">Services</Link>
               </li>
               <li className="willFade navFade">
-                <Link to="/#experience">Specialisms</Link>
+                <Link to="/specialisms">Specialisms</Link>
               </li>
               <li className="willFade navFade">
                 <Link to="/#work">Company</Link>
               </li>
               <li className="willFade navFade">
-                <Link to="/#blog">Resources</Link>
+                <Link to="/resources">Resources</Link>
               </li>
               <button type="button" className="btn btn--main">
                 <span>Get started</span>

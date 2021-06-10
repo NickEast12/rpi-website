@@ -195,10 +195,14 @@ const data = [
 const MissionStyles = styled.section`
   width: 100%;
   padding: 3rem 0;
+  @media only screen and (min-width: 768px) {
+    padding: 4rem 0;
+  }
   .mission {
     width: 90%;
     margin: var(--auto);
     text-align: center;
+    max-width: var(--maxWidth);
     h2 {
       margin: 0.25rem 0;
       font-size: 2.35rem;
@@ -206,6 +210,9 @@ const MissionStyles = styled.section`
     &__wrapper {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      @media only screen and (min-width: 768px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
       grid-gap: 2rem;
       margin-top: 2rem;
       svg {

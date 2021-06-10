@@ -9,6 +9,7 @@ const SpecialismSectionStyles = styled.section`
     width: 90%;
     margin: var(--auto);
     padding: 3rem 0;
+    max-width: var(--maxWidth);
     &__img {
       svg {
         width: 100%;
@@ -24,12 +25,36 @@ const SpecialismSectionStyles = styled.section`
         margin-top: 0.25rem;
       }
     }
+    @media only screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 40%;
+      grid-gap: 1.5rem;
+      &__img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &__text {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h3 {
+          margin-top: 0;
+        }
+      }
+    }
   }
 `;
-const SpecialismSection = ({ title, text, children }) => {
+const SpecialismSection = ({ id, title, text, children }) => {
   const i = true;
   return (
-    <SpecialismSectionStyles>
+    <SpecialismSectionStyles id={id}>
       <div className="section">
         <div className="section__img">{children}</div>
         <div className="section__text">

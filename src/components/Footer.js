@@ -1,8 +1,8 @@
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 import styled from 'styled-components';
-//* Local imports
 import { graphql, Link, useStaticQuery } from 'gatsby';
+//* Local imports
 import RPILogo from '../svgs/rpi-logo.svg';
 import LinkedinIcon from '../svgs/linkedin.svg';
 import TwitterIcon from '../svgs/twitter.svg';
@@ -253,9 +253,16 @@ const Footer = () => {
             <section>
               <h6>Company</h6>
               <ul>
-                <li>About us</li>
-                <li>Our Team</li>
-                <li>Join the team</li>
+                <li>
+                  <Link to="/about-us">About us</Link>
+                </li>
+
+                <li>
+                  <Link to="/our-team">Our Team</Link>
+                </li>
+                <li>
+                  <Link to="/join-the-team"> Join the team</Link>
+                </li>
               </ul>
             </section>
           </div>

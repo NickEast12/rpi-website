@@ -9,6 +9,7 @@ const CSRStyles = styled.section`
   .CSR {
     width: 90%;
     margin: var(--auto);
+    max-width: var(--maxWidth);
     &__left {
       width: 90%;
       margin: var(--auto);
@@ -18,6 +19,18 @@ const CSRStyles = styled.section`
       h4 {
         font-size: 2.35rem;
         margin: 0.25rem 0 0.5rem 0;
+      }
+    }
+    @media only screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+
+      &__left,
+      &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
     }
   }

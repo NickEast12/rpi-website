@@ -6,9 +6,13 @@ import Illustration from '../../svgs/template-1.svg';
 const AboutBodyStyles = styled.section`
   width: 100%;
   padding-bottom: 3rem;
+  @media only screen and (min-width: 1024px) {
+    padding: 2rem 0 4rem 0;
+  }
   .abody {
     width: 90%;
     margin: var(--auto);
+    max-width: var(--maxWidth);
     &__img {
       width: 90%;
       margin: var(--auto);
@@ -21,6 +25,18 @@ const AboutBodyStyles = styled.section`
       }
       p {
         margin-bottom: 0.75rem;
+      }
+    }
+    @media only screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+
+      &__img,
+      &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
     }
   }

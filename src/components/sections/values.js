@@ -29,6 +29,10 @@ const ValuesStyles = styled.section`
   .values {
     width: 90%;
     margin: 0 auto;
+    max-width: var(--maxWidth);
+    @media only screen and (min-width: 768px) {
+      width: 80%;
+    }
     h4 {
       font-size: 2.35rem;
     }
@@ -50,6 +54,12 @@ const ValuesStyles = styled.section`
             display: inline-block;
           }
         }
+      }
+      @media only screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem 2rem;
+        padding-top: 2rem;
       }
     }
   }
