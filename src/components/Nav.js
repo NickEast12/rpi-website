@@ -281,7 +281,7 @@ const Nav = ({ alt }) => {
           <div className="nav--desktop">
             <ul>
               <li className="willFade navFade">
-                <Link to="/#about">Services</Link>
+                <Link to="/services/leadership">Services</Link>
               </li>
               <li className="willFade navFade">
                 <Link to="/specialisms">Specialisms</Link>

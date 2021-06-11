@@ -76,6 +76,7 @@ const GlobalStyles = createGlobalStyle`
     .btn {
         border-radius: 5px;
         padding: 0.75rem 1.2rem;
+        cursor: pointer;
          span {
             color: var(--white);
             font-weight: 700;

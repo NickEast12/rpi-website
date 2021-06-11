@@ -22,6 +22,10 @@ const data = [
     quote:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nobis?',
   },
+  {
+    quote:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nobis?',
+  },
 ];
 const ReviewsStyles = styled.section`
   width: 100%;
@@ -30,6 +34,7 @@ const ReviewsStyles = styled.section`
   .reviews {
     width: 90%;
     margin: var(--auto);
+    max-width: var(--maxWidth);
     h4,
     p {
       text-align: center;
@@ -65,6 +70,12 @@ const ReviewsStyles = styled.section`
         &:nth-child(4n) {
           border-top: solid #53c0c5 6px;
         }
+      }
+      @media only screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media only screen and (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
       }
     }
   }

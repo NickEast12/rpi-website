@@ -6,6 +6,9 @@ import Illustration from '../../svgs/template-1.svg';
 const CSRStyles = styled.section`
   width: 100%;
   padding: 3rem 0;
+  @media only screen and (min-width: 768px) {
+    padding: 0.5rem 0 3rem 0;
+  }
   .CSR {
     width: 90%;
     margin: var(--auto);
@@ -22,16 +25,50 @@ const CSRStyles = styled.section`
       }
     }
     @media only screen and (min-width: 768px) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 1rem;
-
       &__left,
       &__right {
         display: flex;
         flex-direction: column;
         justify-content: center;
       }
+      &__left {
+        background-color: var(--background);
+        grid-area: b;
+        background-color: var(--darkTeal);
+        width: 100%;
+        padding: 2rem;
+        svg {
+          width: 100%;
+          height: 12rem;
+        }
+      }
+      &__right {
+        grid-area: a;
+        background-color: var(--background);
+        padding: 3rem;
+        text-align: left;
+        margin-top: 0;
+        h6 {
+          color: rgb(206, 211, 214);
+        }
+        h4,
+        p {
+          color: var(--offWhite);
+        }
+      }
+    }
+    @media only screen and (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: 60% 1fr;
+      /* grid-gap: 1rem; */
+      grid-template-areas: 'a b';
+      &__left {
+        width: 100%;
+        margin: var(--auto);
+      }
+    }
+    @media only screen and (min-width: 1280px) {
+      padding-bottom: 2rem;
     }
   }
 `;

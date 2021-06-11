@@ -13,7 +13,7 @@ const AllSpecialismsStyles = styled.section`
       font-size: 2.25rem;
     }
     p {
-      margin: 0.85rem 0;
+      margin: 0.85rem auto;
     }
     &__boxes {
       margin-top: 1.5rem;
@@ -88,13 +88,17 @@ const AllSpecialismsStyles = styled.section`
         }
       }
       @media only screen and (min-width: 1280px) {
-        width: 70%;
+        width: 80%;
+        grid-gap: 0.5rem;
         &__inner {
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          padding: 2rem 1rem;
+          padding: 1.5rem 0.5rem;
+          h4 {
+            font-size: 1.25rem;
+          }
         }
       }
     }

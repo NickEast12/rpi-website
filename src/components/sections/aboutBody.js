@@ -31,12 +31,21 @@ const AboutBodyStyles = styled.section`
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 1rem;
-
+      grid-template-areas: 'a b';
+      &__text {
+        grid-area: a;
+      }
       &__img,
       &__text {
         display: flex;
         flex-direction: column;
         justify-content: center;
+      }
+    }
+    @media only screen and (min-width: 1024px) {
+      &__img {
+        width: 80%;
+        margin: var(--auto);
       }
     }
   }

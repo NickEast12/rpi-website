@@ -3,7 +3,6 @@ import styled from 'styled-components';
 //* Local imports
 import Layout from '../components/Layout';
 import AboutBody from '../components/sections/aboutBody';
-import AltHeader from '../components/sections/altHeader';
 import ByTheNumbers from '../components/sections/byTheNumbers';
 import CSR from '../components/sections/csr';
 import Diversity from '../components/sections/diversity';
@@ -64,6 +63,11 @@ const AboutUsHeaderStyles = styled.header`
     }
     @media only screen and (min-width: 1024px) {
       grid-gap: 2rem;
+      padding: 1.5rem 0;
+      &__right {
+        width: 80%;
+        margin: var(--auto);
+      }
     }
   }
 `;

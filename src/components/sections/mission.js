@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const data = [
   {
-    name: 'Mission',
+    name: 'Delivering Excellence',
     icon: (
       <svg viewBox="0 0 464.02688 464.02688" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -50,7 +50,7 @@ const data = [
     ),
   },
   {
-    name: 'Mission',
+    name: 'Connecting People',
     icon: (
       <svg viewBox="0 0 464.02688 464.02688" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -97,7 +97,7 @@ const data = [
     ),
   },
   {
-    name: 'Mission',
+    name: 'Developing Solutions',
     icon: (
       <svg viewBox="0 0 464.02688 464.02688" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -144,7 +144,7 @@ const data = [
     ),
   },
   {
-    name: 'Mission',
+    name: 'Delivering Excellence',
     icon: (
       <svg viewBox="0 0 464.02688 464.02688" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -195,32 +195,72 @@ const data = [
 const MissionStyles = styled.section`
   width: 100%;
   padding: 3rem 0;
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     padding: 4rem 0;
   }
   .mission {
     width: 90%;
     margin: var(--auto);
-    text-align: center;
+    text-align: left;
     max-width: var(--maxWidth);
-    h2 {
-      margin: 0.25rem 0;
-      font-size: 2.35rem;
+    &__text {
+      h2 {
+        margin: 0 0 0.5rem 0;
+        font-size: 2.35rem;
+      }
     }
     &__wrapper {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+      padding: 1.5rem 0;
       @media only screen and (min-width: 768px) {
         grid-template-columns: repeat(4, 1fr);
       }
-      grid-gap: 2rem;
-      margin-top: 2rem;
-      svg {
-        width: 40px;
+      grid-gap: 1rem;
+      &__box {
+        text-align: center;
+        background-color: var(--offWhite);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 1rem;
+        svg {
+          width: 35px;
+        }
+        h4 {
+          font-size: 1.25rem;
+          margin-top: 0.5rem;
+        }
+        &:nth-child(1) {
+          border-top: solid #923879 8px;
+        }
+        &:nth-child(2) {
+          border-top: solid #48b481 8px;
+        }
+        &:nth-child(3) {
+          border-top: solid var(--lightTeal) 8px;
+        }
+        &:nth-child(4) {
+          border-top: solid var(--accent) 8px;
+        }
       }
-      h4 {
-        font-size: 1.6rem;
-        margin-top: 0.5rem;
+    }
+    @media only screen and (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 3rem;
+      grid-template-areas: 'a b';
+      &__text {
+        grid-area: b;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      &__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+        grid-gap: 1.5rem;
+        &__box {
+          text-align: left;
+        }
       }
     }
   }
@@ -230,8 +270,15 @@ const Mission = () => {
   return (
     <MissionStyles>
       <div className="mission">
-        <h6 className="sbt">Our mission</h6>
-        <h2>Our mission sub title</h2>
+        <div className="mission__text">
+          <h6 className="sbt">Our mission</h6>
+          <h2>Our mission sub title</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque
+            nulla est veritatis ea error sequi dicta voluptate, eveniet
+            reiciendis consectetur!
+          </p>
+        </div>
         <div className="mission__wrapper">
           {data.map((x) => (
             <div className="mission__wrapper__box" key={x.name}>

@@ -2092,8 +2092,6 @@ const Leadership = () => {
   const overviewData = data.overview;
   const bodyData = data.body[0];
   const quoteData = data.quote[0];
-  console.log(bodyData);
-
   return (
     <Layout>
       <ServicesHeader

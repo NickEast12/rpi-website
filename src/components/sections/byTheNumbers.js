@@ -2,19 +2,24 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Waypoint } from 'react-waypoint';
 import CountUp from 'react-countup';
+import { Link } from 'gatsby';
 
 const data = [
   {
+    title: 'Team members',
     no: 120,
-    fact: 'Employees',
+    fact: 'Join the team',
+    link: '/join-the-team',
   },
   {
-    no: 12,
-    fact: 'Nationalities',
+    title: 'Locations',
+    no: 7,
+    fact: 'World wide',
   },
   {
-    no: 6,
-    fact: 'Languages spoken',
+    title: 'placements',
+    no: 10000,
+    fact: 'need copy here',
   },
 ];
 const ByTheNumbersStyles = styled.section`
@@ -22,7 +27,12 @@ const ByTheNumbersStyles = styled.section`
   background-color: var(--background);
   padding: 3rem 0;
   color: var(--offWhite);
-
+  h4 {
+    color: var(--offWhite);
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 2.25rem;
+  }
   .numbers {
     width: 90%;
     margin: var(--auto);
@@ -30,6 +40,12 @@ const ByTheNumbersStyles = styled.section`
     max-width: var(--maxWidth);
     &__box {
       margin-bottom: 2rem;
+      h6 {
+        color: var(--offWhite);
+        text-transform: uppercase;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
       span {
         font-size: 3.5rem;
         font-weight: 800;
@@ -60,8 +76,11 @@ const ByTheNumbers = () => {
         <div className="numbers">
           {data.map((x) => (
             <div className="numbers__box">
-              {on ? <CountUp end={x.no} duration={12} /> : <p>0</p>}
-              <p>{x.fact}</p>
+              <h6>{x.title}</h6>
+              {on ? <CountUp end={x.no} duration={5} /> : <p>0</p>}
+              <Link to={x.link}>
+                <p>{x.fact}</p>
+              </Link>
             </div>
           ))}
         </div>
