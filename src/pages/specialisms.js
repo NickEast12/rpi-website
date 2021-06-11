@@ -6,6 +6,7 @@ import Layout from '../components/Layout';
 import AllSpecialisms from '../components/sections/allSpecialisms';
 import MainHeader from '../components/sections/mainHeader';
 import SpecialismSection from '../components/sections/specialismSection';
+import Illustration from '../svgs/who.svg';
 
 const data = [
   {
@@ -3158,7 +3159,15 @@ const Specialisms = () => {
   const i = true;
   return (
     <Layout>
-      <MainHeader />
+      <MainHeader
+        page="Specialisms"
+        title="A title introducing our Specialisms"
+        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio autem
+          nobis, temporibus sunt similique sint iure repudiandae dolorum
+          distinctio perspiciatis a commodi asperiores, blanditiis voluptatum!"
+      >
+        <Illustration />
+      </MainHeader>
       <AllSpecialisms
         title="Subtitle introducing specialisms"
         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quia

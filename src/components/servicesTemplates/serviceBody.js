@@ -6,9 +6,10 @@ import Illustration from '../../svgs/template-1.svg';
 const ServiceBodyStyles = styled.section`
   width: 100%;
   .sb {
-    width: 80%;
+    width: 90%;
     margin: var(--auto);
     padding: 3rem 0;
+    max-width: var(--maxWidth);
     &__left {
       h3 {
       }

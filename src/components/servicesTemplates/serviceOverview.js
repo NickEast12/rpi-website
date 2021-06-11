@@ -152,7 +152,7 @@ import styled from 'styled-components';
 // ];
 const ServiceOverviewStyles = styled.section`
   width: 100%;
-  background-color: var(--offWhite);
+
   .overview {
     width: 90%;
     margin: var(--auto);
@@ -168,6 +168,12 @@ const ServiceOverviewStyles = styled.section`
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 1.85rem;
+      @media only screen and (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+        width: 70%;
+        margin: var(--auto);
+        padding-top: 2rem;
+      }
       &__box {
         padding: 0 1rem;
         svg {
@@ -181,17 +187,16 @@ const ServiceOverviewStyles = styled.section`
     }
   }
 `;
-const ServiceOverview = ({ overviewData }) => {
+const ServiceOverview = ({ subtitle, title, fp, sp, overviewData }) => {
   const i = true;
 
   return (
     <ServiceOverviewStyles>
       <div className="overview">
-        <h3>Service overview</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-          tempora?
-        </p>
+        <h6 className="sbt">{subtitle}</h6>
+        <h3>{title}</h3>
+        <p>{fp}</p>
+        <p>{sp}</p>
         <div className="overview__wrapper">
           {overviewData.map((x) => (
             <div className="overview__wrapper__box" key={x.title}>

@@ -10,12 +10,22 @@ import Mission from '../components/sections/mission';
 import Values from '../components/sections/values';
 import CTA from '../components/CTA';
 import Illustration from '../svgs/who.svg';
+import MainHeader from '../components/sections/mainHeader';
 
 const AboutUs = () => {
   const i = true;
   return (
     <Layout>
-      <AboutUsHeader />
+      {/* <AboutUsHeader /> */}
+      <MainHeader
+        page="About us"
+        title="Title introducing RPI"
+        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio autem
+          nobis, temporibus sunt similique sint iure repudiandae dolorum
+          distinctio perspiciatis a commodi asperiores, blanditiis voluptatum!"
+      >
+        <Illustration />
+      </MainHeader>
       <Mission />
       <AboutBody />
       <ByTheNumbers />

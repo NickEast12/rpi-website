@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 //* Local imports
-import Illustration from '../../svgs/template-1.svg';
+import Illustration from '../../svgs/who.svg';
 
 const ServiceTestimonialStyles = styled.section`
   width: 100%;
@@ -9,6 +9,7 @@ const ServiceTestimonialStyles = styled.section`
     width: 90%;
     margin: var(--auto);
     padding: 3rem 0;
+    max-width: var(--maxWidth);
     &__left {
       background-color: var(--darkTeal);
       padding: 1.5rem;
@@ -36,6 +37,7 @@ const ServiceTestimonialStyles = styled.section`
       }
       h4 {
         margin-top: 1rem;
+        font-size: 1.5rem;
       }
       h6 {
         margin-top: 1rem;
@@ -45,6 +47,25 @@ const ServiceTestimonialStyles = styled.section`
           font-weight: 700;
           padding-right: 10px;
         }
+      }
+    }
+    @media only screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 45% 1fr;
+      &__left {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+      }
+    }
+    @media only screen and (min-width: 1024px) {
+      &__left {
+        padding: 2rem;
+      }
+      &__right {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 4rem;
       }
     }
   }

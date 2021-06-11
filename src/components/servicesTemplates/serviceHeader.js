@@ -4,10 +4,12 @@ import styled from 'styled-components';
 
 const ServiceHeaderStyles = styled.header`
   width: 100%;
+  background-color: var(--offWhite);
   .sHeader {
     width: 90%;
     margin: var(--auto);
     padding: 6rem 0 3rem 0;
+    max-width: var(--maxWidth);
     &__left {
       h1 {
         font-size: 2.35rem;
@@ -24,6 +26,25 @@ const ServiceHeaderStyles = styled.header`
     &__right {
       margin: 3rem auto 0 auto;
       width: 90%;
+    }
+    @media only screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+      &__left,
+      &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    @media only screen and (min-width: 1024px) {
+      grid-gap: 2rem;
+      padding: 7rem 0 4rem 0;
+      &__right {
+        width: 80%;
+        margin: var(--auto);
+      }
     }
   }
 `;
