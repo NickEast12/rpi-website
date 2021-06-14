@@ -6,10 +6,14 @@ import { useIntersection } from 'react-use';
 import gsap from 'gsap';
 //* Local imports
 import RPILogo from '../svgs/rpi-logo.svg';
+import LeaderShipIcon from '../svgs/leadership.svg';
 
 const NavStyles = styled.nav`
   z-index: 999;
-
+  .nav__wrapper {
+    background: ${({ open }) => (open ? 'var(--background)' : 'none')};
+    /* transition: all 1s ease; */
+  }
   @keyframes liAnimation {
     to {
       opacity: 1;
@@ -24,10 +28,22 @@ const NavStyles = styled.nav`
       z-index: 50;
     }
   }
+  @keyframes desktopMenuIn {
+    to {
+      opacity: 1;
+      visibility: visible;
+      z-index: 99999;
+    }
+  }
   width: 100%;
   position: fixed;
-
-  transition: all 0.35s ease;
+  /* transition: all 0.5s ease; */
+  .nav-bkg {
+    background-color: ${({ open }) => (open ? 'var(--background)' : 'none')};
+    position: relative;
+    z-index: 999;
+    transition: all 0.6s ease;
+  }
   .nav {
     padding: 1.05rem 0;
     display: flex;
@@ -70,7 +86,7 @@ const NavStyles = styled.nav`
         height: 3px;
         margin-bottom: 0.3rem;
         transition: all 0.25s ease 0s;
-        transform-origin: 27.5px center;
+        transform-origin: 26.5px center;
         background-color: var(--background);
         &:nth-child(1) {
           transform: ${({ open }) =>
@@ -101,13 +117,110 @@ const NavStyles = styled.nav`
       display: none;
       @media only screen and (min-width: 1024px) {
         display: block;
-        ul {
+        > ul {
           list-style: none;
           display: flex;
           align-items: center;
           gap: 2rem;
-          li {
+          > li {
             font-weight: 700;
+          }
+          .submenu {
+            position: relative;
+            &:hover {
+              .dropdown {
+                animation: desktopMenuIn 0.35s ease-in-out forwards;
+              }
+            }
+            .dropdown {
+              width: 38rem;
+              left: -16.5rem;
+              top: 0;
+              position: absolute;
+              padding-top: 2rem;
+              visibility: hidden;
+              z-index: -40;
+              opacity: 0;
+              transition: all 0.55s ease;
+              &__wrapper {
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                border-radius: 4.5px;
+                list-style: none;
+                background-color: #fff;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 0.25rem 2rem;
+                padding: 1rem;
+                li {
+                  padding: 0.75rem 0.5rem;
+                  border-bottom: solid 1px rgba(100, 100, 111, 0.2);
+                  &:nth-child(8) {
+                    border: none;
+                  }
+                  &:hover {
+                    a {
+                      p {
+                        color: red;
+                      }
+                    }
+                  }
+                  a {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    svg {
+                      width: 25px;
+                      height: 25px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .submenu-c {
+            position: relative;
+            &:hover {
+              .dropdown {
+                animation: desktopMenuIn 0.35s ease-in-out forwards;
+              }
+            }
+            .dropdown {
+              width: 7.5rem;
+              left: -1.5rem;
+              top: 0;
+              position: absolute;
+              padding-top: 2rem;
+              visibility: hidden;
+              z-index: -40;
+              opacity: 0;
+              transition: all 0.55s ease;
+              &__wrapper {
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                border-radius: 4.5px;
+                list-style: none;
+                background-color: #fff;
+
+                padding: 0.5rem 1rem;
+                li {
+                  padding: 0.75rem 0.5rem;
+                  border-bottom: solid 1px rgba(100, 100, 111, 0.2);
+
+                  &:nth-child(3) {
+                    border: none;
+                  }
+                  &:hover {
+                    a {
+                      p {
+                        color: red;
+                      }
+                    }
+                  }
+                  a {
+                    text-align: center;
+                  }
+                }
+              }
+            }
           }
         }
         button {
@@ -117,70 +230,149 @@ const NavStyles = styled.nav`
     }
   }
   .menu {
+    @media only screen and (min-width: 1024px) {
+      display: none;
+    }
     width: 100%;
-    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
-    transition: all 0.35s linear;
+    transition: all 0.5s linear;
     background-color: var(--background);
     max-height: ${({ open }) => (open ? '1000rem' : '0')};
     height: ${({ open }) => (open ? '100vh' : '0')};
-    ul {
+    overflow: ${({ open }) => (open ? 'scroll' : 'hidden')};
+    > ul {
       display: ${({ open }) => (open ? 'block' : 'none')};
       width: 100%;
-      margin: 6rem auto;
-      text-align: center;
+      margin: 5rem auto;
+      text-align: left;
       list-style: none;
-      padding: 2rem 0;
       @media only screen and (min-width: 375px) {
-        margin-top: 9.5rem;
+        margin-top: 5rem;
       }
       @media only screen and (min-width: 414px) {
-        margin-top: 10.5rem;
+        margin-top: 7rem;
       }
-      a {
-        li {
-          padding: 0.85rem 0;
-          /* border-bottom: solid var(--offWhite) 1px; */
-          border-top: solid var(--offWhite) 1px;
-          /* margin-bottom: 1rem; */
+      > li {
+        font-size: 1.4rem;
+        color: var(--offWhite);
+        transform: translateY(-10px);
+        opacity: 0;
+        a {
+          padding: 0.85rem 0.85rem;
+          display: block;
           color: var(--white);
-          transition: all 0.35s ease;
-          opacity: 0;
-          transform: translateY(-10px);
-          .nav-button {
-            width: 70%;
+        }
+      }
+      .menu--button {
+        width: 90%;
+        margin: var(--auto);
+        text-align: center;
+        @media only screen and (min-width: 414px) {
+          width: 60%;
+        }
+        button {
+          margin: 1.5rem auto 0 auto;
+          width: 100%;
+          text-align: center;
+          span {
+            font-size: 1.2rem;
           }
         }
-        .menu--button {
-          border: none;
-          margin-top: 1.5rem;
+        border: none;
+      }
+      .s-submenu {
+        padding: 0;
+        .s-dropdown {
+          list-style: none;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          -webkit-tap-highlight-color: transparent;
+          width: 100%;
+          max-height: ${({ secondactive }) => (secondactive ? '99rem' : '0')};
+          overflow: hidden;
+          transition: all 0.75s ease;
+          padding: 0;
+          li {
+            padding: 0;
+            margin: 0 0 2px 0;
+            background-color: rgb(45, 56, 75);
+            a {
+              display: flex;
+              align-items: center;
+              gap: 0.85rem;
+              svg {
+                width: 20px;
+                height: 20px;
+                fill: var(--offWhite);
+              }
+              p {
+                color: var(--offWhite);
+              }
+            }
+          }
         }
       }
-      a:nth-child(1) li {
+      .submenu {
+        padding: 0;
+        .dropdown {
+          list-style: none;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          -webkit-tap-highlight-color: transparent;
+          width: 100%;
+          max-height: ${({ active }) => (active ? '99rem' : '0')};
+          overflow: hidden;
+          transition: all 0.75s ease;
+          padding: 0;
+          li {
+            padding: 0;
+            margin: 0 0 2px 0;
+            background-color: rgb(45, 56, 75);
+            a {
+              display: flex;
+              align-items: center;
+              gap: 0.85rem;
+              svg {
+                width: 20px;
+                height: 20px;
+                fill: var(--offWhite);
+              }
+              p {
+                color: var(--offWhite);
+              }
+            }
+          }
+        }
+      }
+
+      > li:nth-child(1) {
         animation: ${({ open }) => (open ? 'liAnimation' : '')} 0.65s 0.5s
           forwards;
       }
-      a:nth-child(2) li {
+      > li:nth-child(2) {
         animation: ${({ open }) => (open ? 'liAnimation' : '')} 0.65s 0.7s
           forwards;
       }
-      a:nth-child(3) li {
+      > li:nth-child(3) {
         animation: ${({ open }) => (open ? 'liAnimation' : '')} 0.65s 0.9s
           forwards;
       }
-      a:nth-child(4) li {
+      > li:nth-child(4) {
         animation: ${({ open }) => (open ? 'liAnimation' : '')} 0.55s 1.1s
           forwards;
-        border-bottom: solid var(--offWhite) 1px;
       }
-      a:nth-child(5) li {
+      > li:nth-child(5) {
         animation: ${({ open }) => (open ? 'liAnimation' : '')} 0.55s 1.3s
-          forwards;
-      }
-      a:nth-child(6) li {
-        animation: ${({ open }) => (open ? 'liAnimation' : '')} 0.55s 1.5s
           forwards;
       }
       .nav__icons {
@@ -219,6 +411,9 @@ const NavStyles = styled.nav`
 const Nav = ({ alt }) => {
   const [open, setOpen] = useState(false);
   const [scroll, setScroll] = useState(false);
+  const [active, setActive] = useState(false);
+  const [secondactive, setSecondActive] = useState(false);
+
   const changeNavScroll = () => {
     if (window.scrollY >= 20) {
       setScroll(true);
@@ -259,69 +454,226 @@ const Nav = ({ alt }) => {
     }
   });
   return (
-    <NavStyles open={open}>
+    <NavStyles open={open} active={active} secondactive={secondactive}>
       <div className={scroll ? 'active nav__wrapper' : 'nav__wrapper'}>
-        <div className="nav" ref={navRef}>
-          <div className={alt ? ' alt--logo' : 'nav--logo'}>
-            <Link to="/">
-              <RPILogo />
-            </Link>
-          </div>
-          <div
-            className={alt ? 'alt--menu' : 'nav--menu'}
-            onClick={() => setOpen(!open)}
-            onKeyDown={() => setOpen(!open)}
-            role="button"
-            tabIndex={0}
-          >
-            <div />
-            <div />
-            <div />
-          </div>
-          <div className="nav--desktop">
-            <ul>
-              <li className="willFade navFade">
-                <Link to="/services/leadership">Services</Link>
-              </li>
-              <li className="willFade navFade">
-                <Link to="/specialisms">Specialisms</Link>
-              </li>
-              <li className="willFade navFade">
-                <Link to="/#work">Company</Link>
-              </li>
-              <li className="willFade navFade">
-                <Link to="/resources">Resources</Link>
-              </li>
-              <button type="button" className="btn btn--main">
-                <span>Get started</span>
-              </button>
-            </ul>
+        <div className="nav-bkg">
+          <div className="nav" ref={navRef}>
+            <div className={alt ? ' alt--logo' : 'nav--logo'}>
+              <Link to="/">
+                <RPILogo />
+              </Link>
+            </div>
+            <div
+              className={alt ? 'alt--menu' : 'nav--menu'}
+              onClick={() => setOpen(!open)}
+              onKeyDown={() => setOpen(!open)}
+              role="button"
+              tabIndex={0}
+            >
+              <div />
+              <div />
+              <div />
+            </div>
+            <div className="nav--desktop">
+              <ul>
+                <li className="willFade navFade submenu">
+                  Services
+                  <div className="dropdown">
+                    <ul className="dropdown__wrapper">
+                      <li>
+                        <Link to="/">
+                          <LeaderShipIcon />
+                          <p>Leadership</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/">
+                          <LeaderShipIcon />
+                          <p>Communications</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/">
+                          <LeaderShipIcon />
+                          <p>Architecture</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/">
+                          <LeaderShipIcon />
+                          <p>ERP</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/">
+                          <LeaderShipIcon />
+                          <p>Big Data &amp; Analytics</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/">
+                          <LeaderShipIcon />
+                          <p>Software Engineering &amp; DevOps</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/">
+                          <LeaderShipIcon />
+                          <p>Infrastructure &amp; Cloud Services</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/">
+                          <LeaderShipIcon />
+                          <p>Cybersecurity</p>
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li className="willFade navFade">
+                  <Link to="/specialisms">Specialisms</Link>
+                </li>
+                <li className="willFade navFade submenu-c">
+                  Company
+                  <div className="dropdown">
+                    <ul className="dropdown__wrapper">
+                      <li>
+                        <Link to="/">
+                          <p>About us</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/">
+                          <p>Our team</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/">
+                          <p>Careers</p>
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li className="willFade navFade">
+                  <Link to="/resources">Resources</Link>
+                </li>
+                <button type="button" className="btn btn--main">
+                  <span>Get started</span>
+                </button>
+              </ul>
+            </div>
           </div>
         </div>
         <div className="menu" open={open}>
           <ul>
-            <Link to="/services" onClick={() => setOpen(!open)}>
-              <li>Services</li>
-            </Link>
-            <Link to="/specialisms" onClick={() => setOpen(!open)}>
-              <li>Specialisms</li>
-            </Link>
-            <Link to="/company" onClick={() => setOpen(!open)}>
-              <li>Company</li>
-            </Link>
-            <Link to="/resources" onClick={() => setOpen(!open)}>
-              <li>Resources</li>
-            </Link>
-            <a
-              href="mailto:contact@nick-east.com?subject=Request Resume"
-              onClick={() => setOpen(!open)}
+            <li
+              className="submenu"
+              onClick={() => setActive(!active)}
+              onKeyDown={() => setActive(!active)}
+              role="button"
+              tabIndex={0}
             >
-              <li className="menu--button">
+              <a>Services</a>
+              <ul className="dropdown">
+                <li>
+                  <Link to="/">
+                    <LeaderShipIcon />
+                    <p>Leadership</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/">
+                    <LeaderShipIcon />
+                    <p>Communications</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/">
+                    <LeaderShipIcon />
+                    <p>Architecture</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/">
+                    <LeaderShipIcon />
+                    <p>ERP</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/">
+                    <LeaderShipIcon />
+                    <p>Big Data &amp; Analytics</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/">
+                    <LeaderShipIcon />
+                    <p>Software Engineering &amp; DevOps</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/">
+                    <LeaderShipIcon />
+                    <p>Infrastructure &amp; Cloud Services</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/">
+                    <LeaderShipIcon />
+                    <p>Cybersecurity</p>
+                  </Link>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Link to="/specialisms" onClick={() => setOpen(!open)}>
+                Specialisms
+              </Link>
+            </li>
+            <li
+              className="s-submenu"
+              onClick={() => setSecondActive(!secondactive)}
+              onKeyDown={() => setSecondActive(!secondactive)}
+              role="button"
+              tabIndex={0}
+            >
+              <a>Company</a>
+              <ul className="s-dropdown">
+                <li>
+                  <Link to="/">
+                    <p>About us</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/">
+                    <p>Our team</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/">
+                    <p>Careers</p>
+                  </Link>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Link to="/resources" onClick={() => setOpen(!open)}>
+                Resources
+              </Link>
+            </li>
+            <li className="menu--button">
+              <Link
+                to="/contact"
+                href="mailto:contact@nick-east.com?subject=Request Resume"
+                onClick={() => setOpen(!open)}
+              >
                 <button type="button" className="btn btn--main nav-button">
                   <span>Get started</span>
                 </button>
-              </li>
-            </a>
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

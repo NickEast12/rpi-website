@@ -85,7 +85,7 @@ const Whoweare = () => {
             voluptate possimus pariatur perferendis dolore ab porro itaque
             incidunt consequuntur eaque? Magni exercitationem unde iste et.
           </p>
-          <LearnMore />
+          <LearnMore link="/about-us" />
         </div>
         <div className="wwa__img">
           <Illustration />
