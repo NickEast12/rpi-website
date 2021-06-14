@@ -6,7 +6,7 @@ import AllSpecialisms from '../../components/sections/allSpecialisms';
 import MainHeader from '../../components/sections/mainHeader';
 import ServiceOverview from '../../components/servicesTemplates/serviceOverview';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
-import Illustration from '../../svgs/Infrastructure.svg';
+import Illustration from '../../svgs/infrastructure.svg';
 
 const information = [
   {
