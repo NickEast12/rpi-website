@@ -269,8 +269,10 @@ const BlogHeaderStyles = styled.header`
         span {
           display: flex;
           align-self: center;
+          align-items: center;
           svg {
             width: 20px;
+            height: 20px;
             fill: var(--lightTeal);
           }
           p {
@@ -279,7 +281,7 @@ const BlogHeaderStyles = styled.header`
             font-size: var(--textMedium);
             color: var(--lightTeal);
             padding-left: 7.5px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
           }
         }
         > p {

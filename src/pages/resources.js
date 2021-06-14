@@ -69,20 +69,19 @@ const ResourcesHeaderStyles = styled.header`
           }
         }
         .b-meta {
+          margin: 1rem 0 0 0;
           display: flex;
-          margin-top: 0.75rem;
           svg {
             width: 20px;
-            fill: var(--mainColour);
+            height: 20px;
+            fill: var(--lightTeal);
           }
           p {
-            &:nth-child(1) {
-              font-weight: 700;
-              color: var(--mainColour);
-            }
-            &:nth-child(2) {
-              margin-left: 5px;
-            }
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: var(--textMedium);
+            color: var(--lightTeal);
+            padding-left: 7.5px;
           }
         }
         .b-title {
@@ -136,6 +135,7 @@ const ResourcesHeaderStyles = styled.header`
             display: flex;
             svg {
               width: 20px;
+              height: 20px;
               fill: var(--lightTeal);
             }
             p {
@@ -164,6 +164,7 @@ const ResourcesHeaderStyles = styled.header`
             input {
               padding: 0.75rem;
               border: none;
+              border-radius: 0;
               background-color: var(--background);
               color: var(--white);
               &::placeholder {
@@ -207,7 +208,6 @@ const ResourcesHeader = ({ blogs }) => {
   const [x, y, z, i] = blogs;
   const secondary = [];
   secondary.push(y, z, i);
-  console.log(secondary);
   return (
     <ResourcesHeaderStyles>
       <div className="resources">
@@ -224,10 +224,10 @@ const ResourcesHeader = ({ blogs }) => {
                 </div>
               </div>
               <div className="b--img--wrapper">
-                <div className="b-meta">
-                  <p>{`${x.categories[0].title}`}</p>
-                  <p>{`• ${x.authors[0].author.name}`}</p>
-                </div>
+                <span className="b-meta">
+                  <BookIcon />
+                  <p>Article</p>
+                </span>
                 <div className="b-title">
                   <h3>{x.title}</h3>
                   <p>{x.excerpt}</p>

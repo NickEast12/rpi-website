@@ -125,6 +125,7 @@ const FooterStyles = styled.footer`
             justify-content: space-between;
             p {
               color: var(--offWhite);
+              font-size: 0.9rem;
               span {
                 font-weight: 700;
               }
@@ -244,7 +245,7 @@ const Footer = () => {
                 <li>Communications</li>
                 <li>Architecture</li>
                 <li>ERP</li>
-                <li>BI, Data &amp; Analytics</li>
+                <li>Big Data &amp; Analytics</li>
                 <li>Software Engineering &amp; DevOps</li>
                 <li>Infrastructure &amp; Cloud Services</li>
                 <li>Cybersecurity</li>

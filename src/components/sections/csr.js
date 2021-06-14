@@ -19,6 +19,7 @@ const CSRStyles = styled.section`
     }
     &__right {
       margin-top: 2.5rem;
+      text-align: center;
       h4 {
         font-size: 2.35rem;
         margin: 0.25rem 0 0.5rem 0;
