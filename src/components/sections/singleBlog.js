@@ -52,6 +52,9 @@ const SingleBlogStyles = styled.article`
       color: var(--lightTeal);
       padding-left: 7.5px;
     }
+    .author {
+      color: var(--background);
+    }
   }
   .b-title {
     h5 {
@@ -77,6 +80,7 @@ const SingleBlog = ({ blog }) => {
           <span className="b-meta">
             <BookIcon />
             <p>Article</p>
+            <p className="author">• {blog.authors[0].author.name}</p>
           </span>
         </div>
         <div className="b-title">
