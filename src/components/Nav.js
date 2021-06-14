@@ -160,7 +160,7 @@ const NavStyles = styled.nav`
                   &:hover {
                     a {
                       p {
-                        color: red;
+                        color: var(--mainColour);
                       }
                     }
                   }

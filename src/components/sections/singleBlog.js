@@ -38,20 +38,19 @@ const SingleBlogStyles = styled.article`
     }
   }
   .b-meta {
+    margin: 0.5rem 0 0 0;
     display: flex;
-    margin-top: 0.75rem;
     svg {
       width: 20px;
-      fill: var(--mainColour);
+      height: 20px;
+      fill: var(--lightTeal);
     }
     p {
-      &:nth-child(1) {
-        font-weight: 700;
-        color: var(--mainColour);
-      }
-      &:nth-child(2) {
-        margin-left: 5px;
-      }
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: var(--textMedium);
+      color: var(--lightTeal);
+      padding-left: 7.5px;
     }
   }
   .b-title {
@@ -66,7 +65,7 @@ const SingleBlog = ({ blog }) => {
   const num = Math.floor(Math.random() * 4);
   const pick = colors[num];
   return (
-    <SingleBlogStyles style={{ borderBottom: `${pick} 4px solid` }}>
+    <SingleBlogStyles>
       <Link to={`/blog/${blog.slug.current}`}>
         <div className="b-img">
           <Img fluid={blog.mainImage.asset.fluid} alt={blog.mainImage.alt} />
@@ -75,8 +74,10 @@ const SingleBlog = ({ blog }) => {
           </div>
         </div>
         <div className="b-meta">
-          <p>{`${blog.categories[0].title}`}</p>
-          <p>{`• ${blog.authors[0].author.name}`}</p>
+          <span className="b-meta">
+            <BookIcon />
+            <p>Article</p>
+          </span>
         </div>
         <div className="b-title">
           <h5>{blog.title}</h5>
