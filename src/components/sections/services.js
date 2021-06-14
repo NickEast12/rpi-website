@@ -478,6 +478,9 @@ const ServicesStyles = styled.section`
         h4 {
           font-size: 1.5rem;
           margin: 0.85rem 0 0.5rem 0;
+          @media only screen and (min-width: 1280px) {
+            font-size: 1.4rem;
+          }
         }
         p {
           /* display: none; */

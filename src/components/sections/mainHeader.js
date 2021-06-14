@@ -25,7 +25,7 @@ const AboutUsHeaderStyles = styled.header`
       }
     }
     &__right {
-      margin-top: 1rem;
+      margin-top: 2.5rem;
       /* max-width: 450px; */
     }
     @media only screen and (min-width: 768px) {
