@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -108,6 +109,7 @@ const AllSpecialisms = ({ title, text }) => {
   const boxes = [
     {
       name: 'Retained Search',
+      link: '/specialisms#retained-search',
       icon: (
         <svg
           viewBox="0 0 464.02688 464.02688"
@@ -158,6 +160,7 @@ const AllSpecialisms = ({ title, text }) => {
     },
     {
       name: 'Permanent',
+      link: '/specialisms#permanent',
       icon: (
         <svg
           viewBox="0 0 464.02688 464.02688"
@@ -208,6 +211,7 @@ const AllSpecialisms = ({ title, text }) => {
     },
     {
       name: 'Interim & Contract',
+      link: '/specialisms#interim-contract',
       icon: (
         <svg
           viewBox="0 0 464.02688 464.02688"
@@ -258,6 +262,7 @@ const AllSpecialisms = ({ title, text }) => {
     },
     {
       name: 'Project Solutions',
+      link: '/specialisms#project-solutions',
       icon: (
         <svg
           viewBox="0 0 464.02688 464.02688"
@@ -308,6 +313,7 @@ const AllSpecialisms = ({ title, text }) => {
     },
     {
       name: 'Visa and Payroll Services',
+      link: '/specialisms#visa-payroll-services',
       icon: (
         <svg
           viewBox="0 0 464.02688 464.02688"
@@ -358,6 +364,7 @@ const AllSpecialisms = ({ title, text }) => {
     },
     {
       name: 'Campaign Management',
+      link: '/specialisms#campaign-management',
       icon: (
         <svg
           viewBox="0 0 464.02688 464.02688"
@@ -415,8 +422,10 @@ const AllSpecialisms = ({ title, text }) => {
         <div className="specialisms__boxes">
           {boxes.map((box) => (
             <div className="specialisms__boxes__inner" key={box.name}>
-              {box.icon}
-              <h4>{box.name}</h4>
+              <Link to={box.link}>
+                {box.icon}
+                <h4>{box.name}</h4>
+              </Link>
             </div>
           ))}
         </div>

@@ -11,6 +11,7 @@ import Illustration from '../svgs/who.svg';
 const data = [
   {
     title: 'Retained Search',
+    id: 'retained-search',
     text:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nihil aut odio illo veniam, ducimus iste facilis facere fuga magni nostrum magnam, libero, cupiditate saepe.',
     img: (
@@ -527,10 +528,10 @@ const data = [
       </svg>
     ),
     alt: 'Permanent',
-    id: 1,
   },
   {
     title: 'Permanent',
+    id: 'permanent',
     text:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nihil aut odio illo veniam, ducimus iste facilis facere fuga magni nostrum magnam, libero, cupiditate saepe.',
     img: (
@@ -1047,10 +1048,10 @@ const data = [
       </svg>
     ),
     alt: 'Permanent',
-    id: 1,
   },
   {
     title: 'Interim & Contract',
+    id: 'interim-contract',
     text:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nihil aut odio illo veniam, ducimus iste facilis facere fuga magni nostrum magnam, libero, cupiditate saepe.',
     img: (
@@ -1567,10 +1568,10 @@ const data = [
       </svg>
     ),
     alt: 'First specialism',
-    id: 2,
   },
   {
     title: 'Project Solutions',
+    id: 'project-solutions',
     text:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nihil aut odio illo veniam, ducimus iste facilis facere fuga magni nostrum magnam, libero, cupiditate saepe.',
     img: (
@@ -2087,10 +2088,10 @@ const data = [
       </svg>
     ),
     alt: 'First specialism',
-    id: 1,
   },
   {
     title: 'Visa and Payroll Services',
+    id: 'visa-payroll-services',
     text:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nihil aut odio illo veniam, ducimus iste facilis facere fuga magni nostrum magnam, libero, cupiditate saepe.',
     img: (
@@ -2607,10 +2608,10 @@ const data = [
       </svg>
     ),
     alt: 'Campaign Management',
-    id: 2,
   },
   {
     title: 'Campaign Management',
+    id: 'campaign-management',
     text:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nihil aut odio illo veniam, ducimus iste facilis facere fuga magni nostrum magnam, libero, cupiditate saepe.',
     img: (
@@ -3127,7 +3128,6 @@ const data = [
       </svg>
     ),
     alt: 'Campaign Management',
-    id: 2,
   },
 ];
 
@@ -3175,12 +3175,7 @@ const Specialisms = () => {
       />
       <SpecialismsStyles>
         {data.map((x) => (
-          <SpecialismSection
-            id={x.title}
-            key={x.id}
-            title={x.title}
-            text={x.text}
-          >
+          <SpecialismSection id={x.id} key={x.id} title={x.title} text={x.text}>
             {x.img}
           </SpecialismSection>
         ))}

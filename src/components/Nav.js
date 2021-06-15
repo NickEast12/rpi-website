@@ -481,49 +481,49 @@ const Nav = ({ alt }) => {
                   <div className="dropdown">
                     <ul className="dropdown__wrapper">
                       <li>
-                        <Link to="/">
+                        <Link to="/services/leadership">
                           <LeaderShipIcon />
                           <p>Leadership</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/">
+                        <Link to="/services/communications">
                           <LeaderShipIcon />
                           <p>Communications</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/">
+                        <Link to="/services/architecture">
                           <LeaderShipIcon />
                           <p>Architecture</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/">
+                        <Link to="/services/erp">
                           <LeaderShipIcon />
                           <p>ERP</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/">
+                        <Link to="/services/big-data-analytics">
                           <LeaderShipIcon />
                           <p>Big Data &amp; Analytics</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/">
+                        <Link to="/services/software-engineering-devops">
                           <LeaderShipIcon />
                           <p>Software Engineering &amp; DevOps</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/">
+                        <Link to="/services/infrastructure-cloud-services">
                           <LeaderShipIcon />
                           <p>Infrastructure &amp; Cloud Services</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/">
+                        <Link to="/services/cybersecurity">
                           <LeaderShipIcon />
                           <p>Cybersecurity</p>
                         </Link>
@@ -539,17 +539,17 @@ const Nav = ({ alt }) => {
                   <div className="dropdown">
                     <ul className="dropdown__wrapper">
                       <li>
-                        <Link to="/">
+                        <Link to="/about-us">
                           <p>About us</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/">
+                        <Link to="/our-team">
                           <p>Our team</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/">
+                        <Link to="/careers">
                           <p>Careers</p>
                         </Link>
                       </li>
@@ -560,7 +560,9 @@ const Nav = ({ alt }) => {
                   <Link to="/resources">Resources</Link>
                 </li>
                 <button type="button" className="btn btn--main">
-                  <span>Get started</span>
+                  <Link to="/contact">
+                    <span>Get started</span>
+                  </Link>
                 </button>
               </ul>
             </div>
@@ -578,49 +580,49 @@ const Nav = ({ alt }) => {
               <a>Services</a>
               <ul className="dropdown">
                 <li>
-                  <Link to="/">
+                  <Link to="/services/leadership">
                     <LeaderShipIcon />
                     <p>Leadership</p>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">
+                  <Link to="/services/communications">
                     <LeaderShipIcon />
                     <p>Communications</p>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">
+                  <Link to="/services/architecture">
                     <LeaderShipIcon />
                     <p>Architecture</p>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">
+                  <Link to="/services/erp">
                     <LeaderShipIcon />
                     <p>ERP</p>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">
+                  <Link to="/services/big-data-analytics">
                     <LeaderShipIcon />
                     <p>Big Data &amp; Analytics</p>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">
+                  <Link to="/services/software-engineering-devops">
                     <LeaderShipIcon />
                     <p>Software Engineering &amp; DevOps</p>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">
+                  <Link to="/services/infrastructure-cloud-services">
                     <LeaderShipIcon />
                     <p>Infrastructure &amp; Cloud Services</p>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">
+                  <Link to="/services/cybersecurity">
                     <LeaderShipIcon />
                     <p>Cybersecurity</p>
                   </Link>
@@ -642,17 +644,17 @@ const Nav = ({ alt }) => {
               <a>Company</a>
               <ul className="s-dropdown">
                 <li>
-                  <Link to="/">
+                  <Link to="/about-us">
                     <p>About us</p>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">
+                  <Link to="/our-team">
                     <p>Our team</p>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">
+                  <Link to="/careers">
                     <p>Careers</p>
                   </Link>
                 </li>

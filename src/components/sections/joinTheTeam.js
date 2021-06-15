@@ -53,7 +53,7 @@ const JoinOurTeam = () => {
             voluptatem, molestiae obcaecati nihil repellendus magnam voluptas
             nobis ipsam.
           </p>
-          <LearnMore alt link="/join-the-team" />
+          <LearnMore alt link="/careers" />
         </div>
       </div>
     </JoinOurTeamStyles>

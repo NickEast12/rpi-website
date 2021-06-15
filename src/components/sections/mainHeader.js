@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 //* Local imports
@@ -59,7 +60,9 @@ const MainHeader = ({ page, title, text, children }) => {
           <h1>{title}</h1>
           <p>{text}</p>
           <button type="button" className="btn btn--main">
-            <span>Get started</span>
+            <Link to="/contact">
+              <span>Get started</span>
+            </Link>
           </button>
         </div>
         <div className="a-h__right">{children}</div>

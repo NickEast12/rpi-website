@@ -40,10 +40,26 @@ const FooterStyles = styled.footer`
           }
           ul {
             list-style: none;
+            will-change: opacity;
+            transition: opacity 0.25s ease;
+            &:hover {
+              li a {
+                opacity: 0.5;
+              }
+            }
             li {
               color: var(--white);
               margin: 0.5rem 0;
               font-size: 0.9rem;
+
+              a {
+                will-change: opacity;
+                transition: opacity 0.25s ease;
+                &:hover {
+                  opacity: 1 !important;
+                }
+                color: var(--white);
+              }
             }
           }
         }
@@ -162,10 +178,22 @@ const FooterStyles = styled.footer`
       text-align: center;
       display: flex;
       justify-content: space-between;
+      will-change: opacity;
+      transition: opacity 0.25s ease;
+      &:hover {
+        svg {
+          opacity: 0.5;
+        }
+      }
       svg {
         fill: var(--white);
         width: 25px;
         height: 25px;
+        will-change: opacity;
+        transition: opacity 0.25s ease;
+        &:hover {
+          opacity: 1;
+        }
       }
     }
     &__links {
@@ -179,9 +207,25 @@ const FooterStyles = styled.footer`
         justify-content: center;
         align-self: center;
         gap: 1rem;
+        will-change: opacity;
+        transition: opacity 0.25s ease;
+        &:hover {
+          li a {
+            opacity: 0.5;
+          }
+        }
         li {
           color: var(--white);
           font-size: 0.85rem;
+
+          a {
+            will-change: opacity;
+            transition: opacity 0.25s ease;
+            &:hover {
+              opacity: 1;
+            }
+            color: var(--white);
+          }
         }
       }
     }
@@ -241,14 +285,36 @@ const Footer = () => {
             <section>
               <h6>Services</h6>
               <ul>
-                <li>Leadership</li>
-                <li>Communications</li>
-                <li>Architecture</li>
-                <li>ERP</li>
-                <li>Big Data &amp; Analytics</li>
-                <li>Software Engineering &amp; DevOps</li>
-                <li>Infrastructure &amp; Cloud Services</li>
-                <li>Cybersecurity</li>
+                <li>
+                  <Link to="/services/leadership">Leadership</Link>
+                </li>
+                <li>
+                  <Link to="/services/communications">Communications</Link>
+                </li>
+                <li>
+                  <Link to="/services/architecture">Architecture</Link>
+                </li>
+                <li>
+                  <Link to="/services/erp">ERP</Link>
+                </li>
+                <li>
+                  <Link to="/services/big-data-analytics">
+                    Big Data &amp; Analytics
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services/software-engineering-devops">
+                    Software Engineering &amp; DevOps
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services/infrastructure-cloud-services">
+                    Infrastructure &amp; Cloud Services
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services/cybersecurity">Cybersecurity</Link>
+                </li>
               </ul>
             </section>
             <section>
@@ -299,14 +365,32 @@ const Footer = () => {
       </section>
       <section className="legal">
         <div className="legal__icons">
-          <LinkedinIcon />
-          <TwitterIcon />
+          <a
+            href="https://www.linkedin.com/company/rp-international/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LinkedinIcon />
+          </a>
+          <a
+            href="https://twitter.com/RPInsight"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <TwitterIcon />
+          </a>
         </div>
         <div className="legal__links">
           <ul>
-            <li>Terms</li>
-            <li>Privacy Policy</li>
-            <li>Cookie Policy</li>
+            <li>
+              <Link to="/terms">Terms</Link>
+            </li>
+            <li>
+              <Link to="privacy-policy">Privacy Policy</Link>
+            </li>
+            <li>
+              <Link to="/cookie-policy">Cookie Policy</Link>
+            </li>
           </ul>
         </div>
       </section>

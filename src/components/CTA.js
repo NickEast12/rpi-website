@@ -42,7 +42,7 @@ const CTA = () => (
         </p>
       </div>
       <div className="cta--btn">
-        <Link to="/">
+        <Link to="/contact">
           <button type="button" className="btn ">
             <span>Get started</span>
           </button>

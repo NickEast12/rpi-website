@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 //* Local imports
+import { Link } from 'gatsby';
 import RPIElementIcon from '../../svgs/logo-element.svg';
 import TemplateSVG from '../../svgs/home.svg';
 
@@ -170,10 +171,14 @@ const Hero = () => {
           </p>
           <div className="hero__title__btn">
             <button type="button" className="btn btn--main">
-              <span>Find out more</span>
+              <Link to="/about-us">
+                <span>Find out more</span>
+              </Link>
             </button>
             <button type="button" className="btn btn--alt">
-              <span>Get started</span>
+              <Link to="/contact">
+                <span>Get started</span>
+              </Link>
             </button>
           </div>
         </div>

@@ -11,7 +11,7 @@ import Reviews from '../components/sections/reviews';
 import Illustration from '../svgs/template-1.svg';
 import MainHeader from '../components/sections/mainHeader';
 
-const JoinTheTeam = () => {
+const Careers = () => {
   const i = true;
   return (
     <Layout>
@@ -34,4 +34,4 @@ const JoinTheTeam = () => {
   );
 };
 
-export default JoinTheTeam;
+export default Careers;

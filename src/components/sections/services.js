@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 //* Local imports
@@ -49,6 +50,7 @@ const listData = [
         />
       </svg>
     ),
+    link: '/services/leadership',
     title: 'Leadership',
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
   },
@@ -97,6 +99,7 @@ const listData = [
         />
       </svg>
     ),
+    link: '/services/communication',
     title: 'Communications',
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
   },
@@ -145,6 +148,7 @@ const listData = [
         />
       </svg>
     ),
+    link: '/services/architecture',
     title: 'Architecture',
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
   },
@@ -193,6 +197,7 @@ const listData = [
         />
       </svg>
     ),
+    link: '/services/erp',
     title: 'ERP',
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
   },
@@ -241,7 +246,8 @@ const listData = [
         />
       </svg>
     ),
-    title: 'BI, Data & Analytics',
+    link: '/services/big-data-analytics',
+    title: 'Big Data & Analytics',
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
   },
   {
@@ -289,6 +295,7 @@ const listData = [
         />
       </svg>
     ),
+    link: '/services/software-engineering-devops',
     title: 'Software Engineering & DevOps',
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
   },
@@ -337,6 +344,7 @@ const listData = [
         />
       </svg>
     ),
+    link: '/services/infrastructure-cloud-services',
     title: 'Infrastructure & Cloud Services',
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
   },
@@ -385,6 +393,7 @@ const listData = [
         />
       </svg>
     ),
+    link: '/services/cybersecurity',
     title: 'Cybersecurity',
     text:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ad et deleniti!',
@@ -485,29 +494,30 @@ const ServicesStyles = styled.section`
         p {
           /* display: none; */
         }
+
         &:nth-child(1) {
-          border-top: solid #923879 8px;
+          border-top: solid #ffd131 8px;
         }
         &:nth-child(2) {
-          border-top: solid #48b481 8px;
+          border-top: solid #73d0d9 8px;
         }
         &:nth-child(3) {
-          border-top: solid var(--accent) 8px;
+          border-top: solid #071841 8px;
         }
         &:nth-child(4) {
-          border-top: solid #923879 8px;
+          border-top: solid #66c2ab 8px;
         }
         &:nth-child(5) {
-          border-top: solid #48b481 8px;
+          border-top: solid #071841 8px;
         }
         &:nth-child(6) {
-          border-top: solid var(--darkBlue) 8px;
+          border-top: solid #66c2ab 8px;
         }
         &:nth-child(7) {
-          border-top: solid var(--darkBlue) 8px;
+          border-top: solid #ffd131 8px;
         }
         &:nth-child(8) {
-          border-top: solid var(--darkBlue) 8px;
+          border-top: solid #73d0d9 8px;
         }
       }
     }
@@ -527,9 +537,11 @@ const Services = () => {
         <div className="services__wrapper">
           {listData.map((box) => (
             <div className="services__wrapper__box" key={box.title}>
-              {box.icon}
-              <h4>{box.title}</h4>
-              <p>{box.text}</p>
+              <Link to={box.link}>
+                {box.icon}
+                <h4>{box.title}</h4>
+                <p>{box.text}</p>
+              </Link>
             </div>
           ))}
         </div>
