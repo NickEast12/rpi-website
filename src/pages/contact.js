@@ -12,7 +12,7 @@ const Contact = () => {
     <Layout>
       <DarkHeader
         title="Contact us"
-        text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo nam, voluptas doloremque fugiat nihil dolore!"
+        text="Are you ready to find the talent that will ignite transformation in your business?"
       />
       <CMain />
       <ContactLocations />

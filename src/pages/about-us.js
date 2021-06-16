@@ -20,7 +20,7 @@ const AboutUs = () => {
       <MainHeader
         page="About us"
         title="A trusted partner to identify and deliver the best talent"
-        text="Our deep market knowledge, extensive relationships with industry leaders and bespoke services make RPI your go-to specialist recruitment partner."
+        text="Our deep market knowledge, extensive relationships with industry leaders and bespoke services make RPI your go-to specialist recruitment partner"
       >
         <Illustration />
       </MainHeader>

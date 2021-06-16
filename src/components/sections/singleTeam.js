@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
+import Img from 'gatsby-image';
 
 //* Local imports
 import Image from '../functional/Image';
@@ -19,7 +18,7 @@ const SingleTeamStyles = styled.section`
   }
   .gatsby-image-wrapper {
     width: 100%;
-    height: auto;
+    height: 20rem;
     border-radius: 5px;
   }
   .info {
@@ -68,25 +67,18 @@ const SingleTeamStyles = styled.section`
       overflow-y: auto;
       transition: all 0.5s;
       @media only screen and (min-width: 375px) {
-        height: ${({ open }) => (open ? '16rem' : '0')};
+        height: ${({ open }) => (open ? '15.5rem' : '0')};
       }
-      @media only screen and (min-width: 414px) {
-        height: ${({ open }) => (open ? '17.5rem' : '0')};
-      }
+
       @media only screen and (min-width: 600px) {
-        height: ${({ open }) => (open ? '10.75rem' : '0')};
+        height: ${({ open }) => (open ? '15.5rem' : '0')};
       }
-      @media only screen and (min-width: 700px) {
-        height: ${({ open }) => (open ? '13rem' : '0')};
-      }
-      @media only screen and (min-width: 768px) {
+
+      @media only screen and (min-width: 1024px) {
         height: ${({ open }) => (open ? '15rem' : '0')};
       }
-      @media only screen and (min-width: 1024px) {
-        height: ${({ open }) => (open ? '12.75rem' : '0')};
-      }
       @media only screen and (min-width: 1280px) {
-        height: ${({ open }) => (open ? '16rem' : '0')};
+        height: ${({ open }) => (open ? '15rem' : '0')};
       }
       &__inner {
         width: 90%;
@@ -99,17 +91,16 @@ const SingleTeamStyles = styled.section`
     }
   }
 `;
-const SingleTeam = () => {
-  const i = true;
+const SingleTeam = ({ data }) => {
   const [open, setOpen] = useState(false);
   return (
     <SingleTeamStyles onClick={() => setOpen(!open)} open={open}>
-      <Image filename="Laura.jpeg" alt="test" />
+      <Img fluid={data.image.asset.fluid} alt={data.image.alt} />
       <div className="info">
         <header>
           <section>
-            <h5>Laura Ali</h5>
-            <h6>Position of person</h6>
+            <h5>{data.name}</h5>
+            <h6>{data.position}</h6>
           </section>
           <section>
             <LinkedinIcon />
@@ -117,18 +108,7 @@ const SingleTeam = () => {
         </header>
         <div className="body">
           <div className="body__inner">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
-              expedita voluptatem, at incidunt officia qui?
-            </p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
-              expedita voluptatem, at incidunt officia qui?
-            </p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
-              expedita voluptatem, at incidunt officia qui?
-            </p>
+            <p>{data.bio}</p>
           </div>
         </div>
       </div>

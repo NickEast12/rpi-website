@@ -22,15 +22,14 @@ const TheTeamStyles = styled.section`
     }
   }
 `;
-const TheTeam = () => {
-  const i = true;
+const TheTeam = ({ teamData }) => {
+  const data = teamData;
   return (
     <TheTeamStyles>
       <div className="team">
-        <SingleTeam />
-        <SingleTeam />
-        <SingleTeam />
-        <SingleTeam />
+        {data.map((team) => (
+          <SingleTeam data={team} key={team.id} />
+        ))}
       </div>
     </TheTeamStyles>
   );

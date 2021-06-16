@@ -11,10 +11,11 @@ import PageBlogs from '../components/sections/pageBlogs';
 
 const OurTeam = ({ data }) => {
   const blogs = data.BlogQuery.nodes;
+  const team = data.allSanityAuthor.nodes;
   return (
     <Layout>
       <TeamHeader />
-      <TheTeam />
+      <TheTeam teamData={team} />
       <JoinTheTeam />
       <PageBlogs Blogs={blogs} />
       <CTA />
@@ -117,6 +118,24 @@ export const teamQuery = graphql`
           title
           slug {
             current
+          }
+        }
+      }
+    }
+    allSanityAuthor(sort: { fields: order, order: ASC }) {
+      nodes {
+        name
+        position
+        linkedin
+        bio
+        id
+        order
+        image {
+          alt
+          asset {
+            fluid(maxWidth: 900) {
+              ...GatsbySanityImageFluid
+            }
           }
         }
       }

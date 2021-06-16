@@ -26,6 +26,7 @@ const SpecialismSectionStyles = styled.section`
         display: block;
         font-weight: 700;
         font-size: 1.1rem;
+        color: var(--newCyan);
       }
       p {
         margin-top: 0.25rem;

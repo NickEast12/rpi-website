@@ -36,28 +36,25 @@ const JoinOurTeamStyles = styled.section`
     }
   }
 `;
-const JoinOurTeam = () => {
-  const i = true;
-  return (
-    <JoinOurTeamStyles>
-      <div className="join">
-        <div className="join__left">
-          <Illustration />
-        </div>
-        <div className="join__right">
-          <h6 className="sbt">Join the team</h6>
-          <h4>Come and join us</h4>
-          <p>
-            What does it take to get the right skills, in the right place, at
-            the right time? A global mindset. At RPI, we’re looking for
-            recruiters with an international outlook to join our team and help
-            our clients access the best in global talent.
-          </p>
-          <LearnMore alt link="/careers" />
-        </div>
+const JoinOurTeam = () => (
+  <JoinOurTeamStyles>
+    <div className="join">
+      <div className="join__left">
+        <Illustration />
       </div>
-    </JoinOurTeamStyles>
-  );
-};
+      <div className="join__right">
+        <h6 className="sbt">Join the team</h6>
+        <h4>Come and join us</h4>
+        <p>
+          What does it take to get the right skills, in the right place, at the
+          right time? A global mindset. At RPI, we’re looking for recruiters
+          with an international outlook to join our team and help our clients
+          access the best in global talent.
+        </p>
+        <LearnMore alt link="/careers" />
+      </div>
+    </div>
+  </JoinOurTeamStyles>
+);
 
 export default JoinOurTeam;

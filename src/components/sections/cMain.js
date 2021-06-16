@@ -90,10 +90,10 @@ const CMain = () => {
     <CMainStyles>
       <div className="cmain">
         <div className="cmain__contact">
-          <h2>Talk to a member of our team today</h2>
+          <h2>Let’s start a conversation</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut,
-            facere! Quod laborum porro cupiditate aliquid.
+            Curious how RPI will fit in best with your business? Give us a call
+            or send us a message.
           </p>
           <div className="cmain__contact__details">
             <a href="tel:07528216309" target="_blank" rel="noopener noreferrer">

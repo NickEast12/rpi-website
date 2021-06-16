@@ -46,8 +46,8 @@ const Architecture = () => {
         company={quoteData.company}
       />
       <AllSpecialisms
-        title="Specialisms in this service"
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laborum quaerat suscipit, sint omnis vel."
+        title="Our specialisms"
+        text="Finding the best leaders and sourcing highly skilled talent means finding the right partner. Take a closer look at our areas of expertise in this service."
       />
       <CTA />
     </Layout>

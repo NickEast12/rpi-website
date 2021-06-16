@@ -22,6 +22,10 @@ const AboutBodyStyles = styled.section`
       h3 {
         margin: 0.25rem 0 0.5rem 0;
         font-size: 2.35rem;
+        span {
+          color: var(--newCyan);
+          font-size: inherit;
+        }
       }
       p {
         margin-bottom: 0.75rem;
@@ -59,7 +63,10 @@ const AboutBody = () => {
           <Illustration />
         </div>
         <div className="abody__text">
-          <h3>Our story</h3>
+          <h3>
+            <span>23 years </span> of inspiring careers in digital
+            transformation
+          </h3>
           <p>
             Founded in 1988, our heritage in telecoms has evolved into talent
             solutions across multiple sectors. We understand the latest trends

@@ -80,10 +80,6 @@ const Reviews = () => {
     <ReviewsStyles>
       <div className="reviews">
         <h4>What our team have to say?</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
-          nobis?
-        </p>
         <div className="reviews__wrapper">
           {data.map((box) => (
             <div className="reviews__wrapper__box" key={box.quote}>
