@@ -16,7 +16,6 @@ const Contact = () => {
       />
       <CMain />
       <ContactLocations />
-      <CTA />
     </Layout>
   );
 };

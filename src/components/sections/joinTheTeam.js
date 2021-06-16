@@ -45,8 +45,8 @@ const JoinOurTeam = () => {
           <Illustration />
         </div>
         <div className="join__right">
-          <h6 className="sbt">Join our team</h6>
-          <h4>Join the team title</h4>
+          <h6 className="sbt">Join the team</h6>
+          <h4>Come and join us</h4>
           <p>
             What does it take to get the right skills, in the right place, at
             the right time? A global mindset. At RPI, we’re looking for

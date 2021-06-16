@@ -41,7 +41,7 @@ const TeamHeaderStyles = styled.header`
     }
     p {
       margin: 1rem auto;
-      max-width: 550px;
+      max-width: 850px;
     }
     svg {
       width: 90%;
@@ -74,8 +74,10 @@ const TeamHeader = () => {
       <div className="thead">
         <h1>Meet RPI's leaders</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-          ipsum? Pariatur, magni maxime! Consectetur, expedita.
+          We’re a growing team of recruitment experts and thought leaders — full
+          of professionalism, personality and expertise across a vast range of
+          sectors. We drive the people part of technology-enabled transformation
+          and are dedicated to helping companies like yours reach the top.
         </p>
         <Illustration />
       </div>

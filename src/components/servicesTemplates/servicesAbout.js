@@ -73,8 +73,9 @@ const ServicesAbout = () => {
     <ServicesAboutStyles>
       <div className="s-a">
         <h4>
-          RPI is your gateway to <br />
-          <span>thousands of professional leaders</span>{' '}
+          RPI is your gateway to
+          <br />
+          <span>the talent that will transform your business</span>{' '}
         </h4>
         <div className="s-a__wrapper">
           {data.map((x) => (

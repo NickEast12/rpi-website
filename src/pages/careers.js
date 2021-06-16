@@ -17,8 +17,8 @@ const Careers = () => {
   return (
     <Layout>
       <MainHeader
-        page="Join our team"
-        title="Join our team header"
+        page="Join the team"
+        title="We’re looking for talented recruiters"
         text="What does it take to get the right skills, in the right place, at the right time? A global mindset. At RPI, we’re looking for recruiters with an international outlook to join our team and help our clients access the best in global talent."
       >
         <Illustration />

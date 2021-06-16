@@ -43,7 +43,7 @@ const CTA = () => (
   <CTAStyles>
     <div className="cta">
       <div className="cta--text">
-        <h3>RPI unlock the door to access the best tech talent globally</h3>
+        <h3>RPI provide access to the top tech globally</h3>
       </div>
       <div className="cta--btn">
         <Link to="/contact">
