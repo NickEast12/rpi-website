@@ -20,6 +20,8 @@ const CTAStyles = styled.section`
     h3 {
       color: var(--offWhite);
       font-size: 2.35rem;
+      max-width: 850px;
+      margin: var(--auto);
     }
     p {
       color: var(--offWhite);
@@ -41,7 +43,7 @@ const CTA = () => (
   <CTAStyles>
     <div className="cta">
       <div className="cta--text">
-        <h3>Ready to get started?</h3>
+        <h3>RPI unlock the door to access the best tech talent globally</h3>
       </div>
       <div className="cta--btn">
         <Link to="/contact">

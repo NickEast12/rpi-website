@@ -15,6 +15,9 @@ const AboutUsHeaderStyles = styled.header`
     width: 90%;
     margin: var(--auto);
     &__left {
+      h6 {
+        color: #66c2ab;
+      }
       h1 {
         margin: 0.5rem 0;
         font-size: 2.25rem;

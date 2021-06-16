@@ -78,9 +78,7 @@ const ByTheNumbers = () => {
             <div className="numbers__box">
               <h6>{x.title}</h6>
               {on ? <CountUp end={x.no} duration={5} /> : <p>0</p>}
-              <Link to={x.link}>
-                <p>{x.fact}</p>
-              </Link>
+              <p>{x.fact}</p>
             </div>
           ))}
         </div>

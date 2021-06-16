@@ -5,6 +5,9 @@ import styled from 'styled-components';
 const ServicesOverviewStyles = styled.section`
   width: 100%;
   padding: 3rem 0;
+  @media only screen and (min-width: 1024px) {
+    padding-top: 0;
+  }
   .stats {
     width: 90%;
     margin: var(--auto);
@@ -18,31 +21,38 @@ const ServicesOverviewStyles = styled.section`
         margin-bottom: 0.5rem;
       }
     }
-    &__boxes {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 2rem;
+    &__img {
+      width: 90%;
+      margin: var(--auto);
       padding: 1.5rem 0;
-      svg {
-        width: 30px;
-        height: 30px;
-        fill: rgba(102, 194, 171, 1);
-      }
-      h5 {
-        margin: 0.5rem 0;
+      @media only screen and (min-width: 1280px) {
+        width: 80%;
       }
     }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 768px) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 4rem;
-      &__boxes {
-        padding: 0;
+      grid-template-areas: 'a b';
+      grid-gap: 2.5rem;
+      &__text {
+        grid-area: b;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+      }
+      &__img {
+        grid-area: a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
       }
     }
   }
 `;
-const ServicesOverview = ({ subtitle, fp, sp, overviewData }) => (
+const ServicesOverview = ({ subtitle, fp, sp, children }) => (
   <ServicesOverviewStyles>
     <div className="stats">
       <div className="stats__text">
@@ -50,15 +60,7 @@ const ServicesOverview = ({ subtitle, fp, sp, overviewData }) => (
         <p>{fp}</p>
         <p>{sp}</p>
       </div>
-      <div className="stats__boxes">
-        {overviewData.map((x) => (
-          <section key={x.title}>
-            {x.icon}
-            <h5>{x.title}</h5>
-            <p>{x.text}</p>
-          </section>
-        ))}
-      </div>
+      <div className="stats__img">{children}</div>
     </div>
   </ServicesOverviewStyles>
 );

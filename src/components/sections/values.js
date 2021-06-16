@@ -3,22 +3,22 @@ import styled from 'styled-components';
 
 const data = [
   {
-    value: 'Excellence',
+    value: 'Excellence.',
     text:
       'We strive to deliver excellence to our clients, candidates and in all that we do',
   },
   {
-    value: 'Agility',
+    value: 'Agility.',
     text:
       'We have a flexible and innovative approach, always providing the  best environment for our people and the best experience for our customers',
   },
   {
-    value: 'Connection',
+    value: 'Connection.',
     text:
       'Our strength comes from the quality and trust based relationships that we hold locally and globally internally, which permeates out to our clients, candidates and partners',
   },
   {
-    value: 'Expertise',
+    value: 'Expertise.',
     text:
       'We are experts in sourcing talent for technology-enabled transformation. We seek out expertise in the practices, services, solutions and geographical locations we operate in',
   },

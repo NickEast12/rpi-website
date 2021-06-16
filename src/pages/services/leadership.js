@@ -5,7 +5,9 @@ import Layout from '../../components/Layout';
 import AllSpecialisms from '../../components/sections/allSpecialisms';
 import ServiceHeader from '../../components/sections/servicesHeader';
 import ServiceOverview from '../../components/servicesTemplates/serviceOverview';
+import ServicesAbout from '../../components/servicesTemplates/servicesAbout';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
+import Illustration from '../../svgs/big-data-analytics.svg';
 
 const information = [
   {
@@ -559,8 +561,10 @@ const Leadership = () => {
       <ServiceOverview
         subtitle="A business in need of transformation, needs transformational leaders"
         fp="RP International identifies the best talent for the C-Suite and all levels of leadership across operational and technology functions. With unrivalled knowledge, expertise and experience in headhunting highly skilled leadership talent."
-        overviewData={overviewData}
-      />
+      >
+        <Illustration />
+      </ServiceOverview>
+      <ServicesAbout />
       <ServiceTestimonial
         quote={quoteData.quote}
         name={quoteData.name}

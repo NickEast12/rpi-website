@@ -172,27 +172,35 @@ const WhereWeWorkStyles = styled.section`
     max-width: var(--maxWidth);
     width: 90%;
     margin: var(--auto);
-    padding: 1.5rem;
+    padding: 1.5rem 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem 0;
-    @media only screen and (min-width: 600px) {
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 1rem;
-    }
     @media only screen and (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
       padding: 3rem 0 0 0;
-      grid-gap: 3rem;
+      grid-gap: 1.5rem;
     }
     &__inner {
       text-align: center;
-      &:nth-child(3) {
-        /* grid-column: 1 / 3; */
-        @media only screen and (min-width: 600px) {
-          grid-column: 3;
-        }
+      border-radius: 2.5px;
+      padding: 1.5rem 1rem;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      @media only screen and (min-width: 768px) {
+        width: 80%;
+        margin: var(--auto);
       }
-      margin-bottom: 1rem;
+      @media only screen and (min-width: 1024px) {
+        width: 100%;
+        margin: var(--auto);
+      }
+      &:nth-child(odd) {
+        border-top: solid 8px #73d0d9;
+      }
+      &:nth-child(even) {
+        border-top: solid 8px #66c2ab;
+      }
+      margin-bottom: 0.25rem;
       svg {
         width: 40px;
       }

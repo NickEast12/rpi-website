@@ -515,8 +515,7 @@ const Services = () => {
       <div className="services">
         <h6 className="sbt">Our services</h6>
         <h3>
-          We place the top talent in the tech industry across a range of
-          services.
+          We place top talent in the tech industry across a range of services.
         </h3>
         <div className="services__wrapper">
           {listData.map((box) => (
