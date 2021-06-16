@@ -36,7 +36,7 @@ const DiversityStyles = styled.section`
       &__left {
         background-color: var(--background);
         grid-area: b;
-        background-color: var(--accent);
+        background-color: var(--newCyan);
         width: 100%;
         padding: 2rem;
         svg {
@@ -51,7 +51,8 @@ const DiversityStyles = styled.section`
         text-align: left;
         margin-top: 0;
         h6 {
-          color: rgb(206, 211, 214);
+          /* color: rgb(206, 211, 214); */
+          color: var(--accent);
         }
         h4,
         p {

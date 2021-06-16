@@ -8,6 +8,7 @@ const ServicesAboutStyles = styled.section`
     width: 90%;
     margin: var(--auto);
     text-align: center;
+    max-width: var(--maxWidth);
     h4 {
       font-size: 2rem;
       font-weight: 800;

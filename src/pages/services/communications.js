@@ -11,9 +11,8 @@ import Illustration from '../../svgs/communications.svg';
 
 const information = [
   {
+    name: 'Communications',
     title: 'Driving digital dexterity and elevating your digital workplace',
-    headerText:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolor expedita amet quos eligendi repellat.',
 
     quote: [
       {

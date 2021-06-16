@@ -48,10 +48,10 @@ const JoinOurTeam = () => {
           <h6 className="sbt">Join our team</h6>
           <h4>Join the team title</h4>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
-            eum deserunt perferendis quibusdam distinctio accusantium illo,
-            voluptatem, molestiae obcaecati nihil repellendus magnam voluptas
-            nobis ipsam.
+            What does it take to get the right skills, in the right place, at
+            the right time? A global mindset. At RPI, we’re looking for
+            recruiters with an international outlook to join our team and help
+            our clients access the best in global talent.
           </p>
           <LearnMore alt link="/careers" />
         </div>

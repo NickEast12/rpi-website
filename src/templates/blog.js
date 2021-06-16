@@ -68,7 +68,7 @@ const BlogStyles = styled.article`
         font-size: 1.1rem;
       }
       a {
-        color: var(--mainColour);
+        color: var(--newCyan);
         font-weight: 800;
       }
       .image {
@@ -88,10 +88,10 @@ const BlogStyles = styled.article`
         display: flex;
         align-items: center;
         .gatsby-image-wrapper {
-          width: 60px;
-          height: 60px;
+          width: 80px;
+          height: 80px;
           border-radius: 100%;
-          border: solid 2px var(--mainColour);
+          border: solid 4px var(--newCyan);
         }
         section {
           padding-left: 10px;
@@ -113,7 +113,7 @@ const BlogStyles = styled.article`
           svg {
             width: 18px;
             height: 18px;
-            fill: var(--mainColour);
+            fill: var(--newBlue);
           }
         }
       }

@@ -54,20 +54,23 @@ const Join = () => {
     <JoinStyles>
       <div className="join">
         <div className="join__left">
-          <h6 className="sbt">Intro</h6>
-          <h2>Join our team subtitle</h2>
+          <h2>Our areas of expertise</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
-            rerum doloremque sunt quaerat possimus voluptates tempora a ratione
-            adipisci odio.
+            With a focus on emerging technologies, we specialise in sourcing the
+            leaders and skilled professionals to drive transformation
+            incorporating 5G, AI, RPA, cyber security and all things digital.
+            Our insight enables our clients around the world to embrace Industry
+            4.0 and build solutions for a better future.
           </p>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, labore
-            aut natus nemo quod ipsa rem et dolorum asperiores nam!
+            Operating from offices in London, Singapore, Hong Kong, Dubai, Kuala
+            Lumpur and Auckland, we bring a unique perspective to the global
+            talent market – and a one-of-a-kind career experience to our team
+            members.
           </p>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab,
-            molestiae cupiditate unde assumenda ad nesciunt.
+            It’s a dynamic, international environment – fast-paced,
+            target-driven and ultimately rewarding.
           </p>
         </div>
         <div className="join__right">

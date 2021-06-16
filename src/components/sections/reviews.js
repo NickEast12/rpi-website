@@ -59,16 +59,10 @@ const ReviewsStyles = styled.section`
           font-size: 1.15rem;
         }
         &:nth-child(1n) {
-          border-top: solid #923879 6px;
+          border-top: solid var(--newCyan) 8px;
         }
         &:nth-child(2n) {
-          border-top: solid #48b481 6px;
-        }
-        &:nth-child(3n) {
-          border-top: solid var(--accent) 6px;
-        }
-        &:nth-child(4n) {
-          border-top: solid #53c0c5 6px;
+          border-top: solid var(--newBlue) 8px;
         }
       }
       @media only screen and (min-width: 768px) {

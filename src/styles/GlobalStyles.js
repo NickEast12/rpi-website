@@ -66,7 +66,7 @@ const GlobalStyles = createGlobalStyle`
         line-height: 1.5;
     }
     .sbt {
-        color:var(--mainColour);
+        color:var(--newCyan);
         text-transform: uppercase;
         font-size: 1.25rem;
         font-weight: 700;

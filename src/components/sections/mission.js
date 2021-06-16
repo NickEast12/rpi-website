@@ -230,16 +230,16 @@ const MissionStyles = styled.section`
           margin-top: 0.5rem;
         }
         &:nth-child(1) {
-          border-top: solid #ffd131 8px;
+          border-top: solid var(--newBlue) 8px;
         }
         &:nth-child(2) {
-          border-top: solid #73d0d9 8px;
+          border-top: solid var(--newCyan) 8px;
         }
         &:nth-child(3) {
-          border-top: solid #071841 8px;
+          border-top: solid var(--newCyan) 8px;
         }
         &:nth-child(4) {
-          border-top: solid #66c2ab 8px;
+          border-top: solid var(--newBlue) 8px;
         }
       }
     }

@@ -5,11 +5,13 @@ const vars = css`
     //*Colours
     --mainColour: rgb(190, 26, 38);
     --background: rgb(12, 37, 51);
+    --newBlue: rgb(115, 208, 217);
+    --newCyan: rgb(102, 194, 171);
     --darkBlue: rgb(0, 54, 80);
     --darkTeal: rgb(0, 99, 101);
     --lightTeal: rgb(41, 163, 160);
     --lightAlphaTeal: rgba(41, 163, 160, 0.25);
-    --accent: rgb(247, 173, 79);
+    --accent: rgb(245, 209, 50);
     --white: rgb(255, 255, 255);
     --offWhite: rgb(250, 250, 250);
     --altBackground: rgb(244, 246, 245);

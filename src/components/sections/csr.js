@@ -35,7 +35,7 @@ const CSRStyles = styled.section`
       &__left {
         background-color: var(--background);
         grid-area: b;
-        background-color: var(--darkTeal);
+        background-color: var(--newBlue);
         width: 100%;
         padding: 2rem;
         svg {
@@ -50,7 +50,7 @@ const CSRStyles = styled.section`
         text-align: left;
         margin-top: 0;
         h6 {
-          color: rgb(206, 211, 214);
+          color: var(--accent);
         }
         h4,
         p {
@@ -85,10 +85,10 @@ const CSR = () => {
           <h6 className="sbt">CSR</h6>
           <h4>CSR title</h4>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
-            eum deserunt perferendis quibusdam distinctio accusantium illo,
-            voluptatem, molestiae obcaecati nihil repellendus magnam voluptas
-            nobis ipsam.
+            At RPI we support a number of charitable causes. Whether it’s
+            through donations, physical trials that raise funds and awareness,
+            or even an investment of time, our employees share a genuine
+            enthusiasm to support programmes that help those in need.
           </p>
         </div>
       </div>

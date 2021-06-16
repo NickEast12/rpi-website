@@ -26,15 +26,17 @@ const StatsStyles = styled.section`
       svg {
         width: 30px;
         height: 30px;
-        fill: var(--mainColour);
+        fill: var(--newBlue);
       }
       h5 {
         margin: 0.5rem 0;
+        font-size: 1.1rem;
+        font-weight: 700;
       }
     }
     @media only screen and (min-width: 1024px) {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr 55%;
       grid-gap: 4rem;
       &__boxes {
         padding: 0;
@@ -48,46 +50,39 @@ const Stats = () => {
     <StatsStyles>
       <div className="stats">
         <div className="stats__text">
-          <h6 className="sbt">Inside RPI</h6>
-          <h3>Get started at RPI</h3>
+          <h6 className="sbt">Get started with RPI</h6>
+          <h3>What are we looking for?</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
-            assumenda nesciunt at sapiente sint reiciendis ipsa quibusdam rerum
-            similique magnam.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
-            dignissimos nostrum odio unde facere laborum.
+            To be an RP International consultant, you’ll know that matching
+            people to places is about more than ticking off requirements on a
+            list, and that it requires a deeper understanding of both client and
+            candidate.
           </p>
         </div>
         <div className="stats__boxes">
           <section>
             <RocketIcon />
-            <h5>We accelerate learning</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis.
-            </p>
+            <h5>You need to have an excellent eye for detail</h5>
           </section>
           <section>
             <RocketIcon />
-            <h5>We accelerate learning</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis.
-            </p>
+            <h5>
+              You’ll need an understanding of the bigger international picture
+            </h5>
           </section>
           <section>
             <RocketIcon />
-            <h5>We accelerate learning</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis.
-            </p>
+            <h5>
+              You’re goal-oriented and ambitious, you’ll relish going a step
+              further to deliver the right results
+            </h5>
           </section>
           <section>
             <RocketIcon />
-            <h5>We accelerate learning</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis.
-            </p>
+            <h5>
+              You’re prepared to learn, develop and improve, in a team that has
+              turned acquiring talent into an artform
+            </h5>
           </section>
         </div>
       </div>
