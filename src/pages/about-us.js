@@ -19,10 +19,8 @@ const AboutUs = () => {
       {/* <AboutUsHeader /> */}
       <MainHeader
         page="About us"
-        title="Title introducing RPI"
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio autem
-          nobis, temporibus sunt similique sint iure repudiandae dolorum
-          distinctio perspiciatis a commodi asperiores, blanditiis voluptatum!"
+        title="A trusted partner to identify and deliver the best talent"
+        text="Our deep market knowledge, extensive relationships with industry leaders and bespoke services make RPI your go-to specialist recruitment partner."
       >
         <Illustration />
       </MainHeader>

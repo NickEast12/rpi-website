@@ -166,8 +166,8 @@ const Hero = () => {
             Sourcing the talent that ignites transformation in your business
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Perferendis optio aspernatur facilis repellat ipsa quos!
+            We partner with the leaders who drive transformation around the
+            world.
           </p>
           <div className="hero__title__btn">
             <button type="button" className="btn btn--main">

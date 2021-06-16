@@ -12,7 +12,7 @@ const ServicesOverviewStyles = styled.section`
     &__text {
       h3 {
         margin: 0.25rem 0 0.5rem 0;
-        font-size: 2.2rem;
+        font-size: 1.85rem;
       }
       p {
         margin-bottom: 0.5rem;
@@ -26,7 +26,7 @@ const ServicesOverviewStyles = styled.section`
       svg {
         width: 30px;
         height: 30px;
-        fill: var(--mainColour);
+        fill: rgba(102, 194, 171, 1);
       }
       h5 {
         margin: 0.5rem 0;

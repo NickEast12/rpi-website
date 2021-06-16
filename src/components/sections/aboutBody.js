@@ -59,16 +59,24 @@ const AboutBody = () => {
           <Illustration />
         </div>
         <div className="abody__text">
-          <h6 className="sbt">Our story</h6>
-          <h3>Our story title</h3>
+          <h3>Our story</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            aperiam numquam fugiat officia iste reprehenderit magnam impedit,
-            sapiente nam beatae cum dolorum voluptates nobis? Tempora!
+            Founded in 1988, our heritage in telecoms has evolved into talent
+            solutions across multiple sectors. We understand the latest trends
+            in technology and recruitment and challenge and lead the debate.
           </p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
-            deleniti nemo sed debitis laboriosam dolores!
+            We work to understand your unique needs, sourcing highly-skilled
+            candidates that suit your business today whilst driving the agenda
+            for tomorrow.
+          </p>
+          <p>
+            Our specialist recruiters drive the people part of
+            technology-enabled transformation, developing unparalleled networks
+            within their chosen niche by investing in that community. Connecting
+            people, identifying talent, supporting strategy, driving change and
+            challenging culture, to advance transformational change for some of
+            the world’s biggest businesses.
           </p>
         </div>
       </div>

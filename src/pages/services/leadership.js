@@ -3,14 +3,14 @@ import CTA from '../../components/CTA';
 //* Local Imports
 import Layout from '../../components/Layout';
 import AllSpecialisms from '../../components/sections/allSpecialisms';
-import MainHeader from '../../components/sections/mainHeader';
+import ServiceHeader from '../../components/sections/servicesHeader';
 import ServiceOverview from '../../components/servicesTemplates/serviceOverview';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
 
 const information = [
   {
-    name: 'Leadership',
-    title: 'Leadership title',
+    title:
+      'Leadership that transforms themselves, their teams, and the organisation',
     headerText:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolor expedita amet quos eligendi repellat.',
     icon: (
@@ -478,8 +478,7 @@ const information = [
             />
           </svg>
         ),
-        title: 'Point 1',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit nihil.',
+        title: 'Our dedicated consultants assess your unique needs',
       },
       {
         icon: (
@@ -497,8 +496,7 @@ const information = [
             />
           </svg>
         ),
-        title: 'Point 2',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit nihil.',
+        title: 'We find the leaders that will transform your business',
       },
       {
         icon: (
@@ -516,8 +514,7 @@ const information = [
             />
           </svg>
         ),
-        title: 'Point 3',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit nihil.',
+        title: 'We determine ideal organisational and cultural fit',
       },
       {
         icon: (
@@ -535,8 +532,7 @@ const information = [
             />
           </svg>
         ),
-        title: 'Point 4',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit nihil.',
+        title: 'We serve a wide range of sectors and functions',
       },
     ],
 
@@ -557,13 +553,12 @@ const Leadership = () => {
   const quoteData = data.quote[0];
   return (
     <Layout>
-      <MainHeader page={data.name} title={data.title} text={data.headerText}>
+      <ServiceHeader page={data.name} title={data.title} text={data.headerText}>
         {data.icon}
-      </MainHeader>
+      </ServiceHeader>
       <ServiceOverview
-        subtitle="Leadership subtitle"
-        fp="Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat optio natus eaque maiores, assumenda, voluptates temporibus nesciunt sed sapiente veritatis voluptate, iure possimus beatae ullam."
-        sp="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur vitae non eos laborum ipsam soluta quae eveniet libero? In consequuntur accusamus numquam non veniam omnis?"
+        subtitle="A business in need of transformation, needs transformational leaders"
+        fp="RP International identifies the best talent for the C-Suite and all levels of leadership across operational and technology functions. With unrivalled knowledge, expertise and experience in headhunting highly skilled leadership talent."
         overviewData={overviewData}
       />
       <ServiceTestimonial
@@ -572,8 +567,8 @@ const Leadership = () => {
         company={quoteData.company}
       />
       <AllSpecialisms
-        title="Specialisms in this service"
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laborum quaerat suscipit, sint omnis vel."
+        title="Our specialisms"
+        text="Finding the best leaders and sourcing highly skilled talent means finding the right partner. Take a closer look at our areas of expertise in this service."
       />
       <CTA />
     </Layout>

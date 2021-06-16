@@ -13,7 +13,7 @@ const UVPStyles = styled.section`
     &__text {
       h2 {
         margin: 0.5rem 0;
-        font-size: 2.35rem;
+        font-size: 1.95rem;
       }
       p {
         margin: 0.5rem 0;
@@ -70,14 +70,15 @@ const UVP = () => {
       <div className="uvp">
         <div className="uvp__text">
           <h6 className="sbt">Why RPI?</h6>
-          <h2>UVP what makes us stand out from the competition?</h2>
+          <h2>
+            We offer a global approach to recruitment for technology-enabled
+            business transformation.
+          </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-            aliquam expedita adipisci quia itaque facilis.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-            aliquam expedita adipisci quia itaque facilis.
+            We understand the latest trends in technology and recruitment and we
+            work with you to understand your business, sourcing highly-skilled
+            candidates that suit your business today whilst driving the agenda
+            for tomorrow.
           </p>
         </div>
         <div className="uvp__img">

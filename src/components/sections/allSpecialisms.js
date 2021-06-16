@@ -10,11 +10,17 @@ const AllSpecialismsStyles = styled.section`
     margin: var(--auto);
     text-align: center;
     max-width: var(--maxWidth);
+    @media only screen and (min-width: 1280px) {
+      padding-bottom: 4rem;
+    }
     h2 {
       font-size: 2.25rem;
+
+      margin: var(--auto);
     }
     p {
       margin: 0.85rem auto;
+      max-width: 750px;
     }
     &__boxes {
       margin-top: 1.5rem;
@@ -37,23 +43,12 @@ const AllSpecialismsStyles = styled.section`
           margin-top: 1rem;
           font-size: 1.5rem;
         }
-        &:nth-child(1) {
-          border-top: solid 8px #923879;
+
+        &:nth-child(even) {
+          border-top: solid #66c2ab 8px;
         }
-        &:nth-child(2) {
-          border-top: solid 8px #48b481;
-        }
-        &:nth-child(3) {
-          border-top: solid 8px var(--accent);
-        }
-        &:nth-child(4) {
-          border-top: solid 8px #923879;
-        }
-        &:nth-child(5) {
-          border-top: solid 8px #923879;
-        }
-        &:nth-child(6) {
-          border-top: solid 8px #923879;
+        &:nth-child(odd) {
+          border-top: solid #73d0d9 8px;
         }
       }
       @media only screen and (min-width: 600px) {
@@ -261,7 +256,7 @@ const AllSpecialisms = ({ title, text }) => {
       ),
     },
     {
-      name: 'Project Solutions',
+      name: 'Project Solutions / SoW',
       link: '/specialisms#project-solutions',
       icon: (
         <svg

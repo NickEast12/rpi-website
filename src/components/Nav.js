@@ -276,6 +276,7 @@ const NavStyles = styled.nav`
           margin: 1.5rem auto 0 auto;
           width: 100%;
           text-align: center;
+          background-color: var(--mainColour);
           span {
             font-size: 1.2rem;
           }
@@ -559,7 +560,7 @@ const Nav = ({ alt }) => {
                 <li className="willFade navFade">
                   <Link to="/resources">Resources</Link>
                 </li>
-                <button type="button" className="btn btn--main">
+                <button type="button" className="btn">
                   <Link to="/contact">
                     <span>Get started</span>
                   </Link>
@@ -671,7 +672,7 @@ const Nav = ({ alt }) => {
                 href="mailto:contact@nick-east.com?subject=Request Resume"
                 onClick={() => setOpen(!open)}
               >
-                <button type="button" className="btn btn--main nav-button">
+                <button type="button" className="btn  nav-button">
                   <span>Get started</span>
                 </button>
               </Link>

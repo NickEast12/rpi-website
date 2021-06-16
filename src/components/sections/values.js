@@ -10,17 +10,17 @@ const data = [
   {
     value: 'Agility',
     text:
-      'We strive to deliver excellence to our clients, candidates and in all that we do',
+      'We have a flexible and innovative approach, always providing the  best environment for our people and the best experience for our customers',
   },
   {
     value: 'Connection',
     text:
-      'We strive to deliver excellence to our clients, candidates and in all that we do',
+      'Our strength comes from the quality and trust based relationships that we hold locally and globally internally, which permeates out to our clients, candidates and partners',
   },
   {
     value: 'Expertise',
     text:
-      'We strive to deliver excellence to our clients, candidates and in all that we do',
+      'We are experts in sourcing talent for technology-enabled transformation. We seek out expertise in the practices, services, solutions and geographical locations we operate in',
   },
 ];
 const ValuesStyles = styled.section`
@@ -61,6 +61,9 @@ const ValuesStyles = styled.section`
         grid-gap: 1.5rem 2rem;
         padding-top: 2rem;
       }
+      @media only screen and (min-width: 1024px) {
+        grid-gap: 2rem 8rem;
+      }
     }
   }
 `;
@@ -69,9 +72,13 @@ const Values = () => {
   return (
     <ValuesStyles>
       <div className="values">
-        <h4>Our values</h4>
+        <h4>Our values and vision</h4>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, omnis.
+          We work painstakingly to provide the best service and experience to
+          our clients and candidates, support our local communities globally,
+          reflect our employees’ desire to ‘do good and be the number #1
+          recruitment leader to be driving technology-enabled business
+          transformation on a global scale.
         </p>
         <div className="values__wrapper">
           {data.map((x) => (

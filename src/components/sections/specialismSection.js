@@ -21,11 +21,17 @@ const SpecialismSectionStyles = styled.section`
       h3 {
         margin: 1.5rem 0 1rem 0;
       }
+      i {
+        margin: 0 0 0.85rem 0;
+        display: block;
+        font-weight: 700;
+        font-size: 1.1rem;
+      }
       p {
         margin-top: 0.25rem;
       }
     }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 900px) {
       display: grid;
       grid-template-columns: 1fr 40%;
       grid-gap: 1.5rem;
@@ -51,7 +57,7 @@ const SpecialismSectionStyles = styled.section`
     }
   }
 `;
-const SpecialismSection = ({ id, title, text, children }) => {
+const SpecialismSection = ({ id, title, text, tag, children }) => {
   const i = true;
   return (
     <SpecialismSectionStyles id={id}>
@@ -59,6 +65,7 @@ const SpecialismSection = ({ id, title, text, children }) => {
         <div className="section__img">{children}</div>
         <div className="section__text">
           <h3>{title}</h3>
+          <i>{tag}</i>
           <p>{text}</p>
         </div>
       </div>

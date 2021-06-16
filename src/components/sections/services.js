@@ -52,7 +52,8 @@ const listData = [
     ),
     link: '/services/leadership',
     title: 'Leadership',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text:
+      'Leadership that transforms themselves, their teams, and the organisation',
   },
   {
     icon: (
@@ -99,9 +100,9 @@ const listData = [
         />
       </svg>
     ),
-    link: '/services/communication',
+    link: '/services/communications',
     title: 'Communications',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'Driving digital dexterity and elevating your digital workplace',
   },
   {
     icon: (
@@ -150,7 +151,7 @@ const listData = [
     ),
     link: '/services/architecture',
     title: 'Architecture',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'Enabling digital business propelled by corporate strategy',
   },
   {
     icon: (
@@ -199,7 +200,7 @@ const listData = [
     ),
     link: '/services/erp',
     title: 'ERP',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'Reshaping large-scale ERP projects globally',
   },
   {
     icon: (
@@ -248,7 +249,7 @@ const listData = [
     ),
     link: '/services/big-data-analytics',
     title: 'Big Data & Analytics',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'Delivering maximum value via a data-driven approach',
   },
   {
     icon: (
@@ -297,7 +298,7 @@ const listData = [
     ),
     link: '/services/software-engineering-devops',
     title: 'Software Engineering & DevOps',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text: 'Sourcing the best talent in a talent short market',
   },
   {
     icon: (
@@ -346,7 +347,8 @@ const listData = [
     ),
     link: '/services/infrastructure-cloud-services',
     title: 'Infrastructure & Cloud Services',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    text:
+      'Catalysts for business reinvention, innovation and technological growth',
   },
   {
     icon: (
@@ -395,8 +397,7 @@ const listData = [
     ),
     link: '/services/cybersecurity',
     title: 'Cybersecurity',
-    text:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ad et deleniti!',
+    text: 'Taking the risk out of cybersecurity recruitment',
   },
 ];
 
@@ -422,8 +423,9 @@ const ServicesStyles = styled.section`
     h6 {
     }
     h3 {
-      font-size: 2.35rem;
-      margin: 0.5rem 0;
+      font-size: 2rem;
+      margin: 0.5rem auto;
+      max-width: 800px;
     }
     p {
       /* margin-top: 0.5rem; */
@@ -495,29 +497,12 @@ const ServicesStyles = styled.section`
           /* display: none; */
         }
 
-        &:nth-child(1) {
-          border-top: solid #ffd131 8px;
-        }
-        &:nth-child(2) {
+        &:nth-child(odd) {
           border-top: solid #73d0d9 8px;
         }
-        &:nth-child(3) {
-          border-top: solid #071841 8px;
-        }
-        &:nth-child(4) {
+
+        &:nth-child(even) {
           border-top: solid #66c2ab 8px;
-        }
-        &:nth-child(5) {
-          border-top: solid #071841 8px;
-        }
-        &:nth-child(6) {
-          border-top: solid #66c2ab 8px;
-        }
-        &:nth-child(7) {
-          border-top: solid #ffd131 8px;
-        }
-        &:nth-child(8) {
-          border-top: solid #73d0d9 8px;
         }
       }
     }
@@ -529,11 +514,10 @@ const Services = () => {
     <ServicesStyles>
       <div className="services">
         <h6 className="sbt">Our services</h6>
-        <h3>A title introducing our services</h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos,
-          mollitia!
-        </p>
+        <h3>
+          We place the top talent in the tech industry across a range of
+          services.
+        </h3>
         <div className="services__wrapper">
           {listData.map((box) => (
             <div className="services__wrapper__box" key={box.title}>

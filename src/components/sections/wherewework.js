@@ -40,7 +40,7 @@ const areaData = [
     ),
     location: 'UK & Europe',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aperiam ducimus atque, assumenda odio voluptates sequi vero.',
+      'RP International’s UK operations are entering their 21st year. Our UK operations are based in central London, where we service clients throughout the UK and mainland Europe and have been working in recent times with numerous Silicon Valley businesses looking to expand their operations outside of the US.',
   },
   {
     icon: (
@@ -78,7 +78,7 @@ const areaData = [
     ),
     location: 'MEA',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aperiam ducimus atque, assumenda odio voluptates sequi vero.',
+      'After identifying a major phase of growth and transformation in the Middle East and Africa, we opened our Dubai offices in 2002. We’ve brokered over 3000 regional permanent placements including African and GCC nationals as well as expats for CXO, SVP and VP positions. We are the partner of choice for the UAE and the rest of the GCC for Visa and Payroll Services.',
   },
   {
     icon: (
@@ -116,7 +116,7 @@ const areaData = [
     ),
     location: 'APAC',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aperiam ducimus atque, assumenda odio voluptates sequi vero.',
+      'In 2007 we set up an office in Singapore as our APAC Headquarters. Since then we have opened offices in Malaysia (Kuala Lumpur), Hong Kong, and ANZ, to enable us to effectively service our ever-expanding client portfolio across a complex region. We strive to offer the high levels of service expected in an ever-increasing competitive and technological developing market by utilising our partner-led approach with both clients and candidates alike.',
   },
 ];
 
@@ -212,15 +212,18 @@ const WhereWeWork = () => {
           <Illustration />
         </div>
         <div className="work__wrapper">
-          <h6 className="sbt">Our locations</h6>
-          <h4>Where we work title</h4>
+          <h6 className="sbt">Our offices</h6>
+          <h4>Where we work</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-            cupiditate ab cum similique odio. Recusandae.
+            Operating in over 120 countries, our unique combination of local
+            expertise matched with a truly global reach makes us a trusted
+            partner to identify and deliver the best talent wherever and
+            whenever you need it.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-            reprehenderit.
+            From our 11 operations across the UK, Europe, MEA, APAC and US we
+            offer a truly global approach to recruitment for technology-enabled
+            business transformation.
           </p>
         </div>
       </div>

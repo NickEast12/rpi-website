@@ -29,7 +29,7 @@ const WhoweareStyles = styled.section`
       }
       h3 {
         margin: 0.25rem 0;
-        font-size: 2.35rem;
+        font-size: 1.9rem;
         color: var(--offWhite);
       }
       p {
@@ -78,12 +78,19 @@ const Whoweare = () => {
     <WhoweareStyles>
       <div className="wwa">
         <div className="wwa__text">
-          <h6 className="sbt">Who we are subtitle</h6>
-          <h3>Who we are title</h3>
+          <h6 className="sbt">Who we are</h6>
+          <h3>
+            We source the talent that ignites transformation in your business.
+          </h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
-            voluptate possimus pariatur perferendis dolore ab porro itaque
-            incidunt consequuntur eaque? Magni exercitationem unde iste et.
+            Founded in 1998 and still privately owned, we are passionate about
+            creating innovative and impactful talent solutions that ignites
+            transformation in your business.
+          </p>
+          <p>
+            Our deep market knowledge, extensive relationships with industry
+            leaders and bespoke services make RPI your go-to specialist
+            recruitment partner.
           </p>
           <LearnMore link="/about-us" />
         </div>

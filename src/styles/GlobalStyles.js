@@ -66,7 +66,7 @@ const GlobalStyles = createGlobalStyle`
         line-height: 1.5;
     }
     .sbt {
-        color: var(--mainColour);
+        color:var(--mainColour);
         text-transform: uppercase;
         font-size: 1.25rem;
         font-weight: 700;
@@ -77,6 +77,8 @@ const GlobalStyles = createGlobalStyle`
         border-radius: 5px;
         padding: 0.75rem 1.2rem;
         cursor: pointer;
+        border: none;
+        background-color: var(--mainColour);
          span {
             color: var(--white);
             font-weight: 700;
@@ -84,7 +86,11 @@ const GlobalStyles = createGlobalStyle`
         } 
     }
     .btn--main {
-        background: var(--mainColour);
+         background: linear-gradient(
+    344deg,
+    rgba(102, 194, 171, 1) 13%,
+    rgba(115, 208, 217, 1) 92%
+  );
         border: none;
        
     }

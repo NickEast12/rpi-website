@@ -91,7 +91,7 @@ const FooterStyles = styled.footer`
           button {
             width: 100%;
             padding: 1rem;
-            background: var(--mainColour);
+            background: #66c2ab;
             border: none;
             border-radius: 5px;
             margin-top: 0.75rem;

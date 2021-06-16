@@ -12,8 +12,9 @@ const data = [
   {
     title: 'Retained Search',
     id: 'retained-search',
+    i: 'Leadership journeys, supercharged',
     text:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nihil aut odio illo veniam, ducimus iste facilis facere fuga magni nostrum magnam, libero, cupiditate saepe.',
+      'RPI’s reputation is unquestionably in identifying and identifying the best leaders; people who understand their markets, with the right skills, experience, culture and strategy that will put the right teams in place to revolutionise and drive transformation across your business. Our retained search services identify and attract unique/inspired leaders and determine optimal organisational fit while our executive candidates have local expertise with a global perspective. ',
     img: (
       <svg
         width="589"
@@ -527,13 +528,14 @@ const data = [
         </defs>
       </svg>
     ),
-    alt: 'Permanent',
+    alt: 'Retained Search | Leadership journeys, supercharged',
   },
   {
     title: 'Permanent',
     id: 'permanent',
+    i: 'Exceptional candidates for exceptional businesses',
     text:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nihil aut odio illo veniam, ducimus iste facilis facere fuga magni nostrum magnam, libero, cupiditate saepe.',
+      'Our team of talented permanent consultants are experts in their field. Using cutting-edge sourcing tools and platforms combined with direct access to superior candidates empowers us to deliver highly skilled talent, on time. We understand no two hires are the same, and our approach is built on long-term, lasting relationships. On average, our recruiters and headhunters have a minimum of 15 years of experience, making them uniquely placed to assist with transformational projects.',
     img: (
       <svg
         width="589"
@@ -1047,13 +1049,14 @@ const data = [
         </defs>
       </svg>
     ),
-    alt: 'Permanent',
+    alt: 'Permanent | Exceptional candidates for exceptional businesses',
   },
   {
     title: 'Interim & Contract',
     id: 'interim-contract',
+    i: 'The trigger for transformation',
     text:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nihil aut odio illo veniam, ducimus iste facilis facere fuga magni nostrum magnam, libero, cupiditate saepe.',
+      'The skills and experience that interim and contract talent offer is highly sought after by organisations at the forefront of digital transformation. At RPI, we know that short-term expertise and agility is the linchpin to achieving strategic objectives. Managing hundreds of contract consultants and senior interims around the world, we facilitate existing teams or work with companies to build new teams for your project.',
     img: (
       <svg
         width="589"
@@ -1567,13 +1570,14 @@ const data = [
         </defs>
       </svg>
     ),
-    alt: 'First specialism',
+    alt: 'Interim & Contract | The trigger for transformation',
   },
   {
-    title: 'Project Solutions',
+    title: 'Project Solutions / SoW',
+    i: 'A tailored approach to tech expertise',
     id: 'project-solutions',
     text:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nihil aut odio illo veniam, ducimus iste facilis facere fuga magni nostrum magnam, libero, cupiditate saepe.',
+      'RPI supports transformational tech projects with augmented resources (delivering teams as a service). Providing clients with resource flexibility that allows them to scale up and down at pace based on requirements and rapid access to the right expertise, skills and resources to deliver specific objectives and transformation.',
     img: (
       <svg
         width="589"
@@ -2087,13 +2091,14 @@ const data = [
         </defs>
       </svg>
     ),
-    alt: 'First specialism',
+    alt: 'Project Solutions / SoW | A tailored approach to tech expertise',
   },
   {
     title: 'Visa and Payroll Services',
+    i: 'Removing access barriers to high calibre talent',
     id: 'visa-payroll-services',
     text:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nihil aut odio illo veniam, ducimus iste facilis facere fuga magni nostrum magnam, libero, cupiditate saepe.',
+      'To deliver transformation at scale, organisations need the right access to an increasingly globalised talent pool. With an unparalleled global reach, we support our candidates and clients by facilitating simplified onboarding. Having 11 operations globally allows us to facilitate work based visa provision and in the Middle East we offer full Visa and Payroll Services across the UAE, as well as other GCC and African countries to provide organisations with access to exceptional and experienced professionals from all over the world.',
     img: (
       <svg
         width="589"
@@ -2607,13 +2612,15 @@ const data = [
         </defs>
       </svg>
     ),
-    alt: 'Campaign Management',
+    alt:
+      'Visa and Payroll Services | Removing access barriers to high calibre talent ',
   },
   {
     title: 'Campaign Management',
+    i: 'A full service model of recruitment',
     id: 'campaign-management',
     text:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nihil aut odio illo veniam, ducimus iste facilis facere fuga magni nostrum magnam, libero, cupiditate saepe.',
+      'With unrivalled knowledge, expertise and experience in headhunting highly skilled talent, RPI works with IT and/or talent teams to build microsites, upskill managers, map out the market, raise an employer’s brand regionally and nationally, and source talent - a comprehensive solution to revolutionise not only your roster, but your place in the market.',
     img: (
       <svg
         width="589"
@@ -3127,7 +3134,7 @@ const data = [
         </defs>
       </svg>
     ),
-    alt: 'Campaign Management',
+    alt: 'Campaign Management | A full service model of recruitment ',
   },
 ];
 
@@ -3154,28 +3161,38 @@ const SpecialismsStyles = styled.div`
       }
     }
   }
+  @media only screen and (min-width: 1280px) {
+    section {
+      .section {
+        padding: 5rem 0;
+      }
+    }
+  }
 `;
 const Specialisms = () => {
   const i = true;
   return (
     <Layout>
       <MainHeader
-        page="Specialisms"
+        page="Our Specialisms"
         title="A title introducing our Specialisms"
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio autem
-          nobis, temporibus sunt similique sint iure repudiandae dolorum
-          distinctio perspiciatis a commodi asperiores, blanditiis voluptatum!"
+        text="The business landscape is perennially transforming, at RPI, we recognise the importance of staying ahead of the curve to accommodate the requirements of an ever-evolving workforce. Our unrivalled knowledge and experience expertly positions the team to deliver a wide range of talent solutions across multiple sectors."
       >
         <Illustration />
       </MainHeader>
       <AllSpecialisms
-        title="Subtitle introducing specialisms"
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quia
-          eos quisquam iste at consectetur!"
+        title="Find the best hiring or consulting option for you"
+        text="Advising organisations on talent that will transform their business, whilst ensuring access to the best candidates globally"
       />
       <SpecialismsStyles>
         {data.map((x) => (
-          <SpecialismSection id={x.id} key={x.id} title={x.title} text={x.text}>
+          <SpecialismSection
+            id={x.id}
+            key={x.id}
+            title={x.title}
+            text={x.text}
+            tag={x.i}
+          >
             {x.img}
           </SpecialismSection>
         ))}

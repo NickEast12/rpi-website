@@ -6,20 +6,20 @@ import { Link } from 'gatsby';
 
 const data = [
   {
-    title: 'Team members',
-    no: 120,
-    fact: 'Join the team',
+    title: 'We speak',
+    no: 35,
+    fact: 'Different languages',
     link: '/join-the-team',
   },
   {
-    title: 'Locations',
-    no: 7,
-    fact: 'World wide',
+    title: 'We have',
+    no: 75,
+    fact: 'Staff across 6 offices',
   },
   {
-    title: 'placements',
-    no: 10000,
-    fact: 'need copy here',
+    title: 'Our leaders average',
+    no: 15,
+    fact: 'Years in the sector',
   },
 ];
 const ByTheNumbersStyles = styled.section`
