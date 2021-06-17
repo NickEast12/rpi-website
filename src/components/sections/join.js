@@ -59,8 +59,8 @@ const Join = () => {
             With a focus on emerging technologies, we specialise in sourcing the
             leaders and skilled professionals to drive transformation
             incorporating 5G, AI, RPA, cyber security and all things digital.
-            Our insight enables our clients around the world to embrace Industry
-            4.0 and build solutions for a better future.
+            Our insight enables our clients around the world to embrace digital
+            transformation and build solutions for a better future.
           </p>
           <p>
             Operating from offices in London, Singapore, Hong Kong, Dubai, Kuala

@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 //* Local imports
 import RocketIcon from '../../svgs/rocket.svg';
+import EyeIcon from '../../svgs/eye.svg';
+import InternationalIcon from '../../svgs/grid.svg';
+import KnowledgeIcon from '../../svgs/knowledge.svg';
 
 const StatsStyles = styled.section`
   width: 100%;
@@ -24,8 +27,8 @@ const StatsStyles = styled.section`
       grid-gap: 2rem;
       padding: 1.5rem 0;
       svg {
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
         fill: var(--newBlue);
       }
       h5 {
@@ -61,11 +64,11 @@ const Stats = () => {
         </div>
         <div className="stats__boxes">
           <section>
-            <RocketIcon />
+            <EyeIcon />
             <h5>You need to have an excellent eye for detail</h5>
           </section>
           <section>
-            <RocketIcon />
+            <InternationalIcon />
             <h5>
               You’ll need an understanding of the bigger international picture
             </h5>
@@ -78,7 +81,7 @@ const Stats = () => {
             </h5>
           </section>
           <section>
-            <RocketIcon />
+            <KnowledgeIcon />
             <h5>
               You’re prepared to learn, develop and improve, in a team that has
               turned acquiring talent into an artform
