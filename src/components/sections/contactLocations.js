@@ -194,16 +194,40 @@ const ContactLocations = () => {
             <section>
               <Pin />
               <h5>London</h5>
-              <address>5th Floot, 1 Poultry, London, EC2R 8EJ, UK</address>
-              <p>+ 44 (0) 203 597 7150</p>
-              <p>people@rpint.com</p>
+              <address>
+                <a
+                  href="https://www.google.com/maps/place/5th+Floor,+1+Poultry,+London+EC2R+8EJ/@51.5133463,-0.0927404,17z/data=!3m1!4b1!4m5!3m4!1s0x48760354e6a16a63:0x6ac3d4a9cbeaf534!8m2!3d51.5133463!4d-0.0905464"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  5th Floot, 1 Poultry, London, EC2R 8EJ, UK
+                </a>
+              </address>
+              <p>
+                <a href="tel:+44 (0) 203 597 7150"> + 44 (0) 203 597 7150</a>
+              </p>
+              <p>
+                <a href="mailto:people@rpint.com"> people@rpint.com</a>
+              </p>
             </section>
             <section>
               <Pin />
               <h5>Stuttgart</h5>
-              <address>Naststrasse 15B Stuttgart 70376 Germany</address>
-              <p>+ 49 711 214756 40</p>
-              <p>germany@rpint.com</p>
+              <address>
+                <a
+                  href="https://www.google.com/maps/place/Naststra%C3%9Fe+15b,+70376+Stuttgart,+Germany/@48.8144932,9.2115734,17z/data=!3m1!4b1!4m5!3m4!1s0x4799c54755e6aaab:0x6afce6e401d85160!8m2!3d48.8144932!4d9.2137674"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Naststrasse 15B Stuttgart 70376 Germany
+                </a>
+              </address>
+              <p>
+                <a href="tel:+49 711 214756 40"> + 49 711 214756 40</a>
+              </p>
+              <p>
+                <a href="mailto:germany@rpint.com"> germany@rpint.com</a>
+              </p>
             </section>
           </div>
         </div>
@@ -214,11 +238,23 @@ const ContactLocations = () => {
               <Pin />
               <h5>Dubai</h5>
               <address>
-                Office EX-41 Ground Floor, Building 7 Dubai Outsource City UAE
-                (PO Box 500313)
+                <a
+                  href="https://www.google.com/maps/place/Dubai+Outsource+City/@25.1237489,55.4231638,17z/data=!4m8!1m2!2m1!1sOffice+EX-41+Ground+Floor,+Building+7+Dubai+Outsource+City+UAE+++++++++++++++++(PO+Box+500313)!3m4!1s0x3e5f63bd5e70ad87:0x4feb6ba83055a868!8m2!3d25.1239098!4d55.4252854"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Office EX-41 Ground Floor, Building 7 Dubai Outsource City UAE
+                  (PO Box 500313)
+                </a>
               </address>
-              <p>+ 971 (0)4 394 8760</p>
-              <p>dubai@rpint.com</p>
+              <p>
+                <a href="tel:971 (0)4 394 8760" rel="noopener noreferrer">
+                  + 971 (0)4 394 8760
+                </a>
+              </p>
+              <p>
+                <a href="mailto:dubai@rpint.com"> dubai@rpint.com</a>
+              </p>
             </section>
           </div>
         </div>
@@ -231,29 +267,59 @@ const ContactLocations = () => {
               <Pin />
               <h5>Singapore</h5>
               <address>
-                One Marina Boulevard Lvl20 1 Marina Boulevard Singapore 018989
+                <a
+                  href="https://www.google.com/maps/place/One+Marina+Boulevard+Office+Building/@1.2822004,103.8504573,17z/data=!3m1!4b1!4m5!3m4!1s0x31da19764d461df5:0x1c75e38f90b41fbd!8m2!3d1.2822004!4d103.8526513"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  One Marina Boulevard Lvl20 1 Marina Boulevard Singapore 018989
+                </a>
               </address>
-              <p>+ 65 69785831</p>
-              <p>singapore@rpint.com</p>
+              <p>
+                <a href="tel:+65 69785831">+ 65 69785831</a>
+              </p>
+              <p>
+                <a href="mailto:singapore@rpint.com"> singapore@rpint.com</a>
+              </p>
             </section>
             <section>
               <Pin />
               <h5>Malaysia</h5>
               <address>
-                Level 23, NU Tower 2 Jalan Tun Sambanthan, 50470 KL Sentral
-                Kuala Lumpur, Malaysia
+                <a
+                  href="https://www.google.com/maps/place/TDCX+Malaysia+(NU+Tower+2+Office)/@3.1333054,101.6840409,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc4992c3f7607b:0xa0d05a713540da90!8m2!3d3.1333054!4d101.6862349"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Level 23, NU Tower 2 Jalan Tun Sambanthan, 50470 KL Sentral
+                  Kuala Lumpur, Malaysia
+                </a>
               </address>
-              <p>+ (603) 2727 1751</p>
-              <p>rp@rpint.com</p>
+              <p>
+                <a href="tel:+(603) 2727 1751"> + (603) 2727 1751</a>
+              </p>
+              <p>
+                <a href="mailto:rp@rpint.com"> rp@rpint.com</a>
+              </p>
             </section>
             <section>
               <Pin />
               <h5>New Zealand</h5>
               <address>
-                BDH Business Hub 4 Whetu Place Rosedale New Zealand 0630
+                <a
+                  href="https://www.google.com/maps/place/BDH+Business+Hub/@-36.7472428,174.7344563,17z/data=!3m1!4b1!4m5!3m4!1s0x6d0d3a2bfd2d32f7:0xa99e3be5822083d8!8m2!3d-36.7472308!4d174.7365569"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  BDH Business Hub 4 Whetu Place Rosedale New Zealand 0630
+                </a>
               </address>
-              <p>+ 64 (0) 9 9284031</p>
-              <p>anz@rpint.com</p>
+              <p>
+                <a href="tel:+64 (0) 9 9284031">+ 64 (0) 9 9284031</a>
+              </p>
+              <p>
+                <a href="mailto:anz@rpint.com">anz@rpint.com</a>
+              </p>
             </section>
             <section>
               <Pin />
@@ -262,7 +328,9 @@ const ContactLocations = () => {
                 Rooms 1007-1012, 10/F., K. Wah Centre 191 Java Road, North Point
                 Hong Kong
               </address>
-              <p>zs@rpint.com</p>
+              <p>
+                <a href="mailto:zs@rpint.com "> zs@rpint.com</a>
+              </p>
             </section>
           </div>
         </div>
