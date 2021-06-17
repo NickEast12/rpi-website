@@ -263,7 +263,12 @@ const ResourcesHeader = ({ blogs }) => {
                     <input name="bot-field" />
                   </label>
                 </p>
-                <input type="email" placeholder="Email" />
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Email address"
+                />
                 <button type="submit">
                   <span>
                     <ArrowIcon />
