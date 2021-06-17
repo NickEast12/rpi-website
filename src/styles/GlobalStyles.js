@@ -72,7 +72,9 @@ const GlobalStyles = createGlobalStyle`
         font-weight: 700;
         letter-spacing: .5px;
     }
-    
+    .hidden {
+        display: none;
+    }
     .btn {
         border-radius: 5px;
         padding: 0.75rem 1.2rem;

@@ -337,9 +337,26 @@ const Footer = () => {
         <div className="footer__right">
           <div className="footer__right__signup">
             <p>Subscribe for our latest news</p>
-            <form action="">
-              <input type="text" name="" id="" placeholder="Email address" />
-              <button type="button">
+            <form
+              name="email_signup"
+              method="post"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="email_signup" value="email_signup" />
+              <p className="hidden">
+                <label htmlFor="bot-field">
+                  Don’t fill this out if you’re human:{' '}
+                  <input name="bot-field" />
+                </label>
+              </p>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Email address"
+              />
+              <button type="submit">
                 <span>Subscribe</span>
               </button>
             </form>
