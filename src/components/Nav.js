@@ -177,10 +177,11 @@ const NavStyles = styled.nav`
                   a {
                     display: flex;
                     align-items: center;
-                    gap: 0.5rem;
+
                     svg {
                       width: 25px;
                       height: 25px;
+                      margin-right: 10px;
                     }
                   }
                 }
@@ -297,6 +298,7 @@ const NavStyles = styled.nav`
         padding: 0;
         .s-dropdown {
           list-style: none;
+
           -webkit-touch-callout: none;
           -webkit-user-select: none;
           -khtml-user-select: none;
@@ -316,7 +318,6 @@ const NavStyles = styled.nav`
             a {
               display: flex;
               align-items: center;
-              gap: 0.85rem;
               svg {
                 width: 20px;
                 height: 20px;
@@ -352,10 +353,10 @@ const NavStyles = styled.nav`
             a {
               display: flex;
               align-items: center;
-              gap: 0.85rem;
               svg {
                 width: 20px;
                 height: 20px;
+                margin-right: 10px;
                 fill: var(--offWhite);
               }
               p {

@@ -20,9 +20,10 @@ const ContactLocationsStyles = styled.section`
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 1rem;
+      /* gap: 1rem; */
       margin-top: 1.5rem;
       button {
+        margin-right: 10px;
         cursor: pointer;
         padding: 0.5rem 1rem;
         border: solid var(--background) 2px;

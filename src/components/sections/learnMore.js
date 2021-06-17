@@ -25,7 +25,7 @@ const LearnMoreStyles = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.85rem;
+    /* gap: 0.85rem; */
     @media only screen and (min-width: 768px) {
       margin: 0 auto 0 0;
       justify-content: flex-start;
@@ -43,6 +43,7 @@ const LearnMoreStyles = styled.div`
       width: 18px;
       height: 18px;
       transition: all 0.35s ease;
+      margin-right: 0.5rem;
     }
   }
   .l-m {
@@ -62,7 +63,7 @@ const LearnMoreStyles = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.85rem;
+    margin-right: 0.5rem;
     @media only screen and (min-width: 768px) {
       margin: 0 auto 0 0;
       justify-content: flex-start;
@@ -80,6 +81,7 @@ const LearnMoreStyles = styled.div`
       width: 18px;
       height: 18px;
       transition: all 0.35s ease;
+      margin-right: 0.5rem;
     }
   }
 `;

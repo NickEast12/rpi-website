@@ -79,9 +79,12 @@ const HeroStyles = styled.header`
         }
         @media only screen and (min-width: 768px) {
           flex-direction: row;
-          gap: 1rem;
+          /* gap: 1rem; */
           button {
             width: 200px;
+            &:nth-child(1) {
+              margin-right: 20px;
+            }
           }
         }
       }
