@@ -114,6 +114,7 @@ const CMain = () => {
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            action="/success"
           >
             <input type="hidden" name="contact_form" value="contact_form" />
             <p className="hidden">

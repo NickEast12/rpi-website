@@ -255,6 +255,7 @@ const ResourcesHeader = ({ blogs }) => {
                 method="post"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
+                action="/thank-you"
               >
                 <input type="hidden" name="email_signup" value="email_signup" />
                 <p className="hidden">

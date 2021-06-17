@@ -2,18 +2,18 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Message from '../components/sections/message';
 
-const NotFound = () => {
+const ThankYou = () => {
   const i = true;
   return (
     <Layout>
       <Message
-        code="404"
-        title="Hmm, we can't seem to find that page"
-        text="Let's get you back somewhere safe "
-        btn="Back to safety"
+        code="Success"
+        title="Thank you for signing up to our mailing list"
+        text="Keep an eye on your inbox"
+        btn="Home"
       />
     </Layout>
   );
 };
 
-export default NotFound;
+export default ThankYou;
