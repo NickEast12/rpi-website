@@ -5,9 +5,9 @@ const path = require(`path`);
 module.exports = {
   siteMetadata: {
     title: `Enter`,
-    siteUrl: `https://wwww.nick-east.com`,
+    siteUrl: `https://www.rpint.com/`,
     description: `Enter`,
-    twitter: `@comebacktothis`,
+    twitter: `@RPInsight`,
     image: `/icon.png`,
   },
   plugins: [
@@ -35,22 +35,7 @@ module.exports = {
         },
       },
     },
-    // `gatsby-plugin-gatsby-cloud`,
-    //! Font loader for local font files
-    // {
-    //   resolve: 'gatsby-plugin-web-font-loader',
-    //   options: {
-    //     custom: {
-    //       families: [
-    //         'Gellix-Regular',
-    //         'Gellix-Medium',
-    //         'Gellix-Bold',
-    //         'Gellix-SemiBold',
-    //       ],
-    //       urls: ['/fonts/fonts.css'],
-    //     },
-    //   },
-    // },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -59,9 +44,9 @@ module.exports = {
         description: `I'm a front-end web developer based in London, UK. With a love for designing and writing code.`,
         start_url: `/`,
         lang: `en`,
-        background_color: `#162129`,
-        theme_color: `#1bbc9b`,
-        display: `minimal-ui`,
+        background_color: `#0c2533`,
+        theme_color: `#66c2ab`,
+        display: `standalone`,
         icon: `./src/assets/images/icon.png`,
       },
     },
