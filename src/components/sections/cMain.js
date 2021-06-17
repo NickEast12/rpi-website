@@ -110,18 +110,18 @@ const CMain = () => {
         </div>
         <div className="cmain__form">
           <form
-            name="contact"
+            name="contact_form"
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
-            <input type="hidden" name="contact" value="contact" />
+            <input type="hidden" name="contact_form" value="contact_form" />
             <p className="hidden">
               <label htmlFor="bot-field">
                 Don’t fill this out if you’re human: <input name="bot-field" />
               </label>
             </p>
-            <section>
+            {/* <section>
               <input
                 type="text"
                 name="first"
@@ -146,7 +146,7 @@ const CMain = () => {
               name="number"
               id="number"
               placeholder="Your number"
-            />
+            /> */}
             <textarea name="message" id="message" placeholder="Your message" />
             <button type="submit" className="btn btn--main">
               <span>Submit</span>
