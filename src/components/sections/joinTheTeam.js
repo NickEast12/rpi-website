@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 //* Local imports
-import Illustration from '../../svgs/template-1.svg';
+import Illustration from '../../svgs/who.svg';
 import LearnMore from './learnMore';
 
 const JoinOurTeamStyles = styled.section`

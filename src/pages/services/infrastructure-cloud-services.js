@@ -3,12 +3,12 @@ import CTA from '../../components/CTA';
 //* Local Imports
 import Layout from '../../components/Layout';
 import AllSpecialisms from '../../components/sections/allSpecialisms';
-import MainHeader from '../../components/sections/mainHeader';
 import ServiceHeader from '../../components/sections/servicesHeader';
 import ServiceOverview from '../../components/servicesTemplates/serviceOverview';
 import ServicesAbout from '../../components/servicesTemplates/servicesAbout';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
 import Illustration from '../../svgs/infrastructure.svg';
+import LowerIllustration from '../../svgs/cloud-lower.svg';
 
 const information = [
   {
@@ -40,7 +40,7 @@ const ERP = () => {
         subtitle="Aligning talent with business processes and transforming cloud implementation strategy"
         fp="Cloud computing offers major benefits to business operations as companies look to expand operations and enable staff to work remotely, but how change is implemented is just as important as what is being implemented. To help you with your transformation to the Cloud, RPI’s global reach of highly skilled talent in this sector enables us to fulfill positions that require successful Change Management. We source highly-skilled leadership and specialists to underpin successful Cloud technology implementation."
       >
-        <Illustration />
+        <LowerIllustration />
       </ServiceOverview>
       <ServicesAbout />
       <ServiceTestimonial

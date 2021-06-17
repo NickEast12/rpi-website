@@ -7,6 +7,13 @@ import gsap from 'gsap';
 //* Local imports
 import RPILogo from '../svgs/rpi-logo.svg';
 import LeaderShipIcon from '../svgs/leadership.svg';
+import CommunicationsIcons from '../svgs/communications-icon.svg';
+import ArchitectureIcons from '../svgs/architecture-icon.svg';
+import ErpIcon from '../svgs/erp-icon.svg';
+import DataIcon from '../svgs/data.svg';
+import SoftwareIcon from '../svgs/software-icon.svg';
+import CloudIcon from '../svgs/cloud.svg';
+import CyberIcon from '../svgs/cyber.svg';
 
 const NavStyles = styled.nav`
   z-index: 999;
@@ -160,7 +167,10 @@ const NavStyles = styled.nav`
                   &:hover {
                     a {
                       p {
-                        color: var(--mainColour);
+                        color: var(--newCyan);
+                      }
+                      svg {
+                        fill: var(--newCyan);
                       }
                     }
                   }
@@ -211,7 +221,7 @@ const NavStyles = styled.nav`
                   &:hover {
                     a {
                       p {
-                        color: var(--mainColour);
+                        color: var(--newCyan);
                       }
                     }
                   }
@@ -489,43 +499,43 @@ const Nav = ({ alt }) => {
                       </li>
                       <li>
                         <Link to="/services/communications">
-                          <LeaderShipIcon />
+                          <CommunicationsIcons />
                           <p>Communications</p>
                         </Link>
                       </li>
                       <li>
                         <Link to="/services/architecture">
-                          <LeaderShipIcon />
+                          <ArchitectureIcons />
                           <p>Architecture</p>
                         </Link>
                       </li>
                       <li>
                         <Link to="/services/erp">
-                          <LeaderShipIcon />
+                          <ErpIcon />
                           <p>ERP</p>
                         </Link>
                       </li>
                       <li>
                         <Link to="/services/big-data-analytics">
-                          <LeaderShipIcon />
+                          <DataIcon />
                           <p>Big Data &amp; Analytics</p>
                         </Link>
                       </li>
                       <li>
                         <Link to="/services/software-engineering-devops">
-                          <LeaderShipIcon />
+                          <SoftwareIcon />
                           <p>Software Engineering &amp; DevOps</p>
                         </Link>
                       </li>
                       <li>
                         <Link to="/services/infrastructure-cloud-services">
-                          <LeaderShipIcon />
+                          <CloudIcon />
                           <p>Infrastructure &amp; Cloud Services</p>
                         </Link>
                       </li>
                       <li>
                         <Link to="/services/cybersecurity">
-                          <LeaderShipIcon />
+                          <CyberIcon />
                           <p>Cybersecurity</p>
                         </Link>
                       </li>
@@ -588,43 +598,43 @@ const Nav = ({ alt }) => {
                 </li>
                 <li>
                   <Link to="/services/communications">
-                    <LeaderShipIcon />
+                    <CommunicationsIcons />
                     <p>Communications</p>
                   </Link>
                 </li>
                 <li>
                   <Link to="/services/architecture">
-                    <LeaderShipIcon />
+                    <ArchitectureIcons />
                     <p>Architecture</p>
                   </Link>
                 </li>
                 <li>
                   <Link to="/services/erp">
-                    <LeaderShipIcon />
+                    <ErpIcon />
                     <p>ERP</p>
                   </Link>
                 </li>
                 <li>
                   <Link to="/services/big-data-analytics">
-                    <LeaderShipIcon />
+                    <DataIcon />
                     <p>Big Data &amp; Analytics</p>
                   </Link>
                 </li>
                 <li>
                   <Link to="/services/software-engineering-devops">
-                    <LeaderShipIcon />
+                    <SoftwareIcon />
                     <p>Software Engineering &amp; DevOps</p>
                   </Link>
                 </li>
                 <li>
                   <Link to="/services/infrastructure-cloud-services">
-                    <LeaderShipIcon />
+                    <CloudIcon />
                     <p>Infrastructure &amp; Cloud Services</p>
                   </Link>
                 </li>
                 <li>
                   <Link to="/services/cybersecurity">
-                    <LeaderShipIcon />
+                    <CyberIcon />
                     <p>Cybersecurity</p>
                   </Link>
                 </li>

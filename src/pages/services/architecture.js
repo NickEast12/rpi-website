@@ -8,6 +8,7 @@ import ServiceOverview from '../../components/servicesTemplates/serviceOverview'
 import ServicesAbout from '../../components/servicesTemplates/servicesAbout';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
 import Illustration from '../../svgs/architecture.svg';
+import LowerIllustration from '../../svgs/architecture-lower.svg';
 
 const information = [
   {
@@ -37,7 +38,7 @@ const Architecture = () => {
         fp="Businesses must pay attention to how they are structured to fulfil individual needs and ensure long term success. When it comes to business architecture, companies need to build better. RPI’s track record expounds the sourcing of the right talent, with the right skills, experience and credentials to do the job."
         sp="Ensuring Technology is “enabling” and not “suffocating, stifling and overpowering” the business is a complex challenge; legacy dependencies, tech debt and business processes disparity require sophisticated Architecture roadmaps with your unique business at the heart of them. "
       >
-        <Illustration />
+        <LowerIllustration />
       </ServiceOverview>
       <ServicesAbout />
       <ServiceTestimonial

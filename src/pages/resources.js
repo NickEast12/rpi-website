@@ -36,7 +36,7 @@ const ResourcesHeaderStyles = styled.header`
     }
     h1 {
       span {
-        color: var(--mainColour);
+        color: var(--newCyan);
         font-size: inherit;
       }
       @media only screen and (min-width: 600px) {
@@ -179,7 +179,7 @@ const ResourcesHeaderStyles = styled.header`
               padding: 0.75rem;
               border: none;
               width: 100%;
-              background-color: var(--mainColour);
+              background-color: var(--newCyan);
               span {
                 svg {
                   width: 15px;

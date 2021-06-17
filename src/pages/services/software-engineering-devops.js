@@ -8,6 +8,7 @@ import ServiceOverview from '../../components/servicesTemplates/serviceOverview'
 import ServicesAbout from '../../components/servicesTemplates/servicesAbout';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
 import Illustration from '../../svgs/software.svg';
+import LowerIllustration from '../../svgs/software-lower.svg';
 
 const information = [
   {
@@ -39,7 +40,7 @@ const ERP = () => {
         subtitle="Empowering an engineering culture to attract top talent"
         fp="We know the challenges that companies face when recruiting for a wide range of DevOps focused positions which means we’re able to shortlist candidates for recruitment much faster than our competitors. At RPI, we ensure that we place highly-skilled talent with the right clients to ensure a cultural fit, as much as a technological one."
       >
-        <Illustration />
+        <LowerIllustration />
       </ServiceOverview>
       <ServicesAbout />
       <ServiceTestimonial

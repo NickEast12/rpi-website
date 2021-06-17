@@ -8,6 +8,7 @@ import ServiceOverview from '../../components/servicesTemplates/serviceOverview'
 import ServicesAbout from '../../components/servicesTemplates/servicesAbout';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
 import Illustration from '../../svgs/erp.svg';
+import LowerIllustration from '../../svgs/erp-lower.svg';
 
 const information = [
   {
@@ -37,7 +38,7 @@ const ERP = () => {
         subtitle="Filling the demand for talent and expertise in ERP deployments"
         fp="Enterprise Resource Planning deployments are complex and expensive endeavors. RPI understands the importance of ERP implementation projects and the role that highly skilled talent plays within them. Our ERP recruiters recognise the demand for the right expertise in this sector and match skills to enable enterprises to adopt digitised digitised processes and management tools, quickly and efficiently. "
       >
-        <Illustration />
+        <LowerIllustration />
       </ServiceOverview>
       <ServicesAbout />
       <ServiceTestimonial

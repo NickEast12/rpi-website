@@ -8,6 +8,7 @@ import ServiceOverview from '../../components/servicesTemplates/serviceOverview'
 import ServicesAbout from '../../components/servicesTemplates/servicesAbout';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
 import Illustration from '../../svgs/communications.svg';
+import LowerIllustration from '../../svgs/communications-lower.svg';
 
 const information = [
   {
@@ -38,7 +39,7 @@ const Communication = () => {
         fp="New communications technologies involve not only traditional telecommunications experience and skills but also a mix of technology-based knowledge. "
         sp="We have transformed our processes and methods of recruitment in this field, equipping our consultants with the right training to exceed the expectations of our partners. RPI embeds the right talent within your organisation to lead, drive and monetize change that involves a wide range of digital , cloud and platform agnostic technologies spanning 5G, wireless networking and IoT."
       >
-        <Illustration />
+        <LowerIllustration />
       </ServiceOverview>
       <ServicesAbout />
       <ServiceTestimonial

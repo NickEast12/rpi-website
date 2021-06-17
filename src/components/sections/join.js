@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 //* Local imports
-import Illustration from '../../svgs/template-1.svg';
+import Illustration from '../../svgs/uvp.svg';
 
 const JoinStyles = styled.section`
   width: 100%;

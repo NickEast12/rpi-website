@@ -7,7 +7,7 @@ import ServiceHeader from '../../components/sections/servicesHeader';
 import ServiceOverview from '../../components/servicesTemplates/serviceOverview';
 import ServicesAbout from '../../components/servicesTemplates/servicesAbout';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
-import Illustration from '../../svgs/big-data-analytics.svg';
+import Illustration from '../../svgs/leadership-lower.svg';
 
 const information = [
   {

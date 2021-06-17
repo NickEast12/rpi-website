@@ -8,7 +8,7 @@ import CSR from '../components/sections/csr';
 import Join from '../components/sections/join';
 import Stats from '../components/sections/stats';
 import Reviews from '../components/sections/reviews';
-import Illustration from '../svgs/template-1.svg';
+import Illustration from '../svgs/who.svg';
 import MainHeader from '../components/sections/mainHeader';
 import CareersCTA from '../components/sections/careersCTA';
 

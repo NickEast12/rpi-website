@@ -8,6 +8,7 @@ import ServiceOverview from '../../components/servicesTemplates/serviceOverview'
 import ServicesAbout from '../../components/servicesTemplates/servicesAbout';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
 import Illustration from '../../svgs/big-data-analytics.svg';
+import LowerIllustration from '../../svgs/big-data-analytics-lower.svg';
 
 const information = [
   {
@@ -37,7 +38,7 @@ const BigDataAnalytics = () => {
         subtitle="Ensuring data and analytics deliver competitive advantage"
         fp="The rise of big data has made business intelligence solutions a vital tool but finding the right technical professionals in this ever-growing sector is a challenge. To gain a competitive advantage through BI, Data & Analytics, businesses require a trusted talent acquisition advisor. Our team of consultants stay on top of the latest trends and have a network of highly skilled data professionals to place across projects of any scale, at any time. "
       >
-        <Illustration />
+        <LowerIllustration />
       </ServiceOverview>
       <ServicesAbout />
       <ServiceTestimonial

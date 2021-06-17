@@ -8,6 +8,7 @@ import ServiceOverview from '../../components/servicesTemplates/serviceOverview'
 import ServicesAbout from '../../components/servicesTemplates/servicesAbout';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
 import Illustration from '../../svgs/cybersecurity.svg';
+import LowerIllustration from '../../svgs/cybersecurity-lower.svg';
 
 const information = [
   {
@@ -36,7 +37,7 @@ const Cybersecurity = () => {
         subtitle="Talent solutions that will fortify your cybersecurity frontlines"
         fp="Cybersecurity is no longer a nice to have component of your IT strategy, it must be woven into the fabric of organisations and enterprises operating in the digital age. With the threat landscape continually reshaping, it is vital that businesses have the right talent in play to mitigate their risk. But while demand is high, candidate volumes are comparably low. We equip your business with the experts you need on the cyber frontlines and plug the global talent gap in cybersecurity."
       >
-        <Illustration />
+        <LowerIllustration />
       </ServiceOverview>
       <ServicesAbout />
       <ServiceTestimonial
