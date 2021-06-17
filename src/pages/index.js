@@ -9,14 +9,14 @@ import WhereWeWork from '../components/sections/wherewework';
 import Layout from '../components/Layout';
 import PageBlogs from '../components/sections/pageBlogs';
 import CTA from '../components/CTA';
-import SEO from '../components/functional/seo';
+import SEO from '../components/functional/SEO';
 
 const IndexPage = ({ data }) => {
   const blogs = data.BlogQuery.nodes;
   return (
     <Layout>
       <SEO
-        title="Global Technology &amp; Digital Transformation Recruitment Agency"
+        title="Global Technology &amp; Digital Transformation Recruitment Agency | RPI"
         description="Find the leadership and talent that your business needs to ignite transformation in your business. Choose the global recruitment leader driving technology-enabled business transformation."
       />
       <Hero />
