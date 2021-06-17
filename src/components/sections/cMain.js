@@ -121,7 +121,7 @@ const CMain = () => {
                 Don’t fill this out if you’re human: <input name="bot-field" />
               </label>
             </p>
-            {/* <section>
+            <section>
               <input
                 type="text"
                 name="first"
@@ -134,7 +134,7 @@ const CMain = () => {
                 id="second"
                 placeholder="Last name"
               />
-            </section> */}
+            </section>
             <input
               type="email"
               name="emailaddress"
