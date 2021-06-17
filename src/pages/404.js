@@ -6,7 +6,11 @@ const NotFound = () => {
   const i = true;
   return (
     <Layout>
-      <Message message="404" text="test" />
+      <Message
+        code="404"
+        title="Hmm, we can't seem to find that page"
+        text="Let's get you back somewhere safe "
+      />
     </Layout>
   );
 };

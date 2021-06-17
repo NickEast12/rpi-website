@@ -134,7 +134,7 @@ const CMain = () => {
                 id="second"
                 placeholder="Last name"
               />
-            </section>
+            </section> */}
             <input
               type="email"
               name="emailaddress"
@@ -146,7 +146,7 @@ const CMain = () => {
               name="number"
               id="number"
               placeholder="Your number"
-            /> */}
+            />
             <textarea name="message" id="message" placeholder="Your message" />
             <button type="submit" className="btn btn--main">
               <span>Submit</span>
