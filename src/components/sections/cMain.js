@@ -124,21 +124,21 @@ const CMain = () => {
             <section>
               <input
                 type="text"
-                name="firstName"
-                id="firstName"
+                name="first"
+                id="first"
                 placeholder="First name"
               />
               <input
                 type="text"
-                name="secondName"
-                id="secondName"
+                name="secon"
+                id="second"
                 placeholder="Last name"
               />
             </section>
             <input
               type="email"
-              name="email"
-              id="email"
+              name="emailaddress"
+              id="emailaddress"
               placeholder="Your email"
             />
             <input
