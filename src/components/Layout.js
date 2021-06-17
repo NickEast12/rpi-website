@@ -5,6 +5,7 @@ import styles, { ThemeProvider } from 'styled-components';
 import GlobalStyles from '../styles/GlobalStyles';
 import Nav from './Nav';
 import Footer from './Footer';
+import Cookie from './functional/Cookie';
 
 // https://medium.com/@chrisfitkin/how-to-smooth-scroll-links-in-gatsby-3dc445299558
 if (typeof window !== 'undefined') {
@@ -18,6 +19,7 @@ const Layout = ({ children, alt }) => {
     <>
       <GlobalStyles />
       <Nav alt={alt ? 'alt' : ''} />
+      <Cookie />
       <main>{children}</main>
       <Footer />
     </>
