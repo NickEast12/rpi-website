@@ -109,6 +109,7 @@ const FooterStyles = styled.footer`
               margin-top: 0;
               width: 35%;
               border-radius: 0 5px 5px 0;
+              cursor: pointer;
             }
           }
         }

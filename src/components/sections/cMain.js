@@ -109,7 +109,18 @@ const CMain = () => {
           </div>
         </div>
         <div className="cmain__form">
-          <form action="">
+          <form
+            name="contact"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="contact" value="contact" />
+            <p className="hidden">
+              <label htmlFor="bot-field">
+                Don’t fill this out if you’re human: <input name="bot-field" />
+              </label>
+            </p>
             <section>
               <input
                 type="text"

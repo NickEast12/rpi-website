@@ -250,7 +250,19 @@ const ResourcesHeader = ({ blogs }) => {
             ))}
             <div className="resources__wrapper__right__signup">
               <h5>Get the latest from RPI</h5>
-              <form action="">
+              <form
+                name="email_signup"
+                method="post"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+              >
+                <input type="hidden" name="email_signup" value="email_signup" />
+                <p className="hidden">
+                  <label htmlFor="bot-field">
+                    Don’t fill this out if you’re human:{' '}
+                    <input name="bot-field" />
+                  </label>
+                </p>
                 <input type="email" placeholder="Email" />
                 <button type="submit">
                   <span>
