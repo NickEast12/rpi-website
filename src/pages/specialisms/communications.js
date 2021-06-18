@@ -7,13 +7,14 @@ import ServiceHeader from '../../components/sections/servicesHeader';
 import ServiceOverview from '../../components/servicesTemplates/serviceOverview';
 import ServicesAbout from '../../components/servicesTemplates/servicesAbout';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
-import Illustration from '../../svgs/architecture.svg';
-import LowerIllustration from '../../svgs/architecture-lower.svg';
+import Illustration from '../../svgs/communications.svg';
+import LowerIllustration from '../../svgs/communications-lower.svg';
 
 const information = [
   {
-    name: 'Architecture',
-    title: 'Enabling digital business propelled by corporate strategy ',
+    name: 'Communications',
+    title: 'Driving digital dexterity and elevating your digital workplace',
+
     quote: [
       {
         quote:
@@ -25,7 +26,7 @@ const information = [
   },
 ];
 
-const Architecture = () => {
+const Communication = () => {
   const data = information[0];
   const quoteData = data.quote[0];
   return (
@@ -34,9 +35,9 @@ const Architecture = () => {
         <Illustration />
       </ServiceHeader>
       <ServiceOverview
-        subtitle="Overcoming big picture challenges in business architecture with the right skill sets"
-        fp="Businesses must pay attention to how they are structured to fulfil individual needs and ensure long term success. When it comes to business architecture, companies need to build better. RPI’s track record expounds the sourcing of the right talent, with the right skills, experience and credentials to do the job."
-        sp="Ensuring Technology is “enabling” and not “suffocating, stifling and overpowering” the business is a complex challenge; legacy dependencies, tech debt and business processes disparity require sophisticated Architecture roadmaps with your unique business at the heart of them. "
+        subtitle="With a heritage in telecoms, RPI are at the cutting edge of talent acquisition in the communications sector"
+        fp="New communications technologies involve not only traditional telecommunications experience and skills but also a mix of technology-based knowledge. "
+        sp="We have transformed our processes and methods of recruitment in this field, equipping our consultants with the right training to exceed the expectations of our partners. RPI embeds the right talent within your organisation to lead, drive and monetize change that involves a wide range of digital , cloud and platform agnostic technologies spanning 5G, wireless networking and IoT."
       >
         <LowerIllustration />
       </ServiceOverview>
@@ -47,7 +48,7 @@ const Architecture = () => {
         company={quoteData.company}
       />
       <AllSpecialisms
-        title="Our specialisms"
+        title="Our services"
         text="Finding the best leaders and sourcing highly skilled talent means finding the right partner. Take a closer look at our areas of expertise in this service."
       />
       <CTA />
@@ -55,4 +56,4 @@ const Architecture = () => {
   );
 };
 
-export default Architecture;
+export default Communication;

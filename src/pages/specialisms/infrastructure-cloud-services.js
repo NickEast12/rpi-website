@@ -49,7 +49,7 @@ const ERP = () => {
         company={quoteData.company}
       />
       <AllSpecialisms
-        title="Our specialisms"
+        title="Our services"
         text="Finding the best leaders and sourcing highly skilled talent means finding the right partner. Take a closer look at our areas of expertise in this service."
       />
       <CTA />

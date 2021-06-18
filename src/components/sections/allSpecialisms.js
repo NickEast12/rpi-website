@@ -105,7 +105,7 @@ const AllSpecialisms = ({ title, text }) => {
   const boxes = [
     {
       name: 'Retained Search',
-      link: '/specialisms#retained-search',
+      link: '/services#retained-search',
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -167,7 +167,7 @@ const AllSpecialisms = ({ title, text }) => {
     },
     {
       name: 'Permanent',
-      link: '/specialisms#permanent',
+      link: '/services#permanent',
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -211,7 +211,7 @@ const AllSpecialisms = ({ title, text }) => {
     },
     {
       name: 'Interim & Contract',
-      link: '/specialisms#interim-contract',
+      link: '/services#interim-contract',
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -293,7 +293,7 @@ const AllSpecialisms = ({ title, text }) => {
     },
     {
       name: 'Project Solutions / SoW',
-      link: '/specialisms#project-solutions',
+      link: '/services#project-solutions',
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -341,7 +341,7 @@ const AllSpecialisms = ({ title, text }) => {
     },
     {
       name: 'Visa and Payroll Services',
-      link: '/specialisms#visa-payroll-services',
+      link: '/services#visa-payroll-services',
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -400,7 +400,7 @@ const AllSpecialisms = ({ title, text }) => {
     },
     {
       name: 'Campaign Management',
-      link: '/specialisms#campaign-management',
+      link: '/services#campaign-management',
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"

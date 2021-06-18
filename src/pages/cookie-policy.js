@@ -11,7 +11,7 @@ const Terms = () => {
       <LegalBody>
         <section>
           <p>
-            This is the Cookie Policy for Nutcracker Agency Ltd, accessible from
+            This is the Cookie Policy for RP International, accessible from
             https://www.rpint.com/
           </p>
           <h3>What are cookies?</h3>

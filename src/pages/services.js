@@ -468,7 +468,7 @@ const Specialisms = () => {
   return (
     <Layout>
       <MainHeader
-        page="Our Specialisms"
+        page="Our Services"
         title="Finding the talent that your business needs"
         text="The business landscape is perennially transforming, at RPI, we recognise the importance of staying ahead of the curve to accommodate the requirements of an ever-evolving workforce. Our unrivalled knowledge and experience expertly positions the team to deliver a wide range of talent solutions across multiple sectors."
       >

@@ -7,16 +7,13 @@ import ServiceHeader from '../../components/sections/servicesHeader';
 import ServiceOverview from '../../components/servicesTemplates/serviceOverview';
 import ServicesAbout from '../../components/servicesTemplates/servicesAbout';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
-import Illustration from '../../svgs/software.svg';
-import LowerIllustration from '../../svgs/software-lower.svg';
+import Illustration from '../../svgs/big-data-analytics.svg';
+import LowerIllustration from '../../svgs/big-data-analytics-lower.svg';
 
 const information = [
   {
-    name: 'Software Engineering & DevOps',
-    title: 'Sourcing the best talent in a talent short market',
-    headerText:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolor expedita amet quos eligendi repellat.',
-
+    name: 'big data analytics',
+    title: 'Delivering maximum value via a data-driven approach',
     quote: [
       {
         quote:
@@ -28,8 +25,9 @@ const information = [
   },
 ];
 
-const ERP = () => {
+const BigDataAnalytics = () => {
   const data = information[0];
+
   const quoteData = data.quote[0];
   return (
     <Layout>
@@ -37,8 +35,8 @@ const ERP = () => {
         <Illustration />
       </ServiceHeader>
       <ServiceOverview
-        subtitle="Empowering an engineering culture to attract top talent"
-        fp="We know the challenges that companies face when recruiting for a wide range of DevOps focused positions which means we’re able to shortlist candidates for recruitment much faster than our competitors. At RPI, we ensure that we place highly-skilled talent with the right clients to ensure a cultural fit, as much as a technological one."
+        subtitle="Ensuring data and analytics deliver competitive advantage"
+        fp="The rise of big data has made business intelligence solutions a vital tool but finding the right technical professionals in this ever-growing sector is a challenge. To gain a competitive advantage through BI, Data & Analytics, businesses require a trusted talent acquisition advisor. Our team of consultants stay on top of the latest trends and have a network of highly skilled data professionals to place across projects of any scale, at any time. "
       >
         <LowerIllustration />
       </ServiceOverview>
@@ -49,7 +47,7 @@ const ERP = () => {
         company={quoteData.company}
       />
       <AllSpecialisms
-        title="Our specialisms"
+        title="Our services"
         text="Finding the best leaders and sourcing highly skilled talent means finding the right partner. Take a closer look at our areas of expertise in this service."
       />
       <CTA />
@@ -57,4 +55,4 @@ const ERP = () => {
   );
 };
 
-export default ERP;
+export default BigDataAnalytics;

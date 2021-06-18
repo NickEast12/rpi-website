@@ -489,53 +489,53 @@ const Nav = ({ alt }) => {
             <div className="nav--desktop">
               <ul>
                 <li className="willFade navFade submenu">
-                  Services
+                  Specialisms
                   <div className="dropdown">
                     <ul className="dropdown__wrapper">
                       <li>
-                        <Link to="/services/leadership">
+                        <Link to="/specialisms/leadership">
                           <LeaderShipIcon />
                           <p>Leadership</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/services/communications">
+                        <Link to="/specialisms/communications">
                           <CommunicationsIcons />
                           <p>Communications</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/services/architecture">
+                        <Link to="/specialisms/architecture">
                           <ArchitectureIcons />
                           <p>Architecture</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/services/erp">
+                        <Link to="/specialisms/erp">
                           <ErpIcon />
                           <p>ERP</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/services/big-data-analytics">
+                        <Link to="/specialisms/big-data-analytics">
                           <DataIcon />
                           <p>Big Data &amp; Analytics</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/services/software-engineering-devops">
+                        <Link to="/specialisms/software-engineering-devops">
                           <SoftwareIcon />
                           <p>Software Engineering &amp; DevOps</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/services/infrastructure-cloud-services">
+                        <Link to="/specialisms/infrastructure-cloud-services">
                           <CloudIcon />
                           <p>Infrastructure &amp; Cloud Services</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/services/cybersecurity">
+                        <Link to="/specialisms/cybersecurity">
                           <CyberIcon />
                           <p>Cybersecurity</p>
                         </Link>
@@ -544,7 +544,7 @@ const Nav = ({ alt }) => {
                   </div>
                 </li>
                 <li className="willFade navFade">
-                  <Link to="/specialisms">Specialisms</Link>
+                  <Link to="/services">Services</Link>
                 </li>
                 <li className="willFade navFade submenu-c">
                   Company
@@ -589,52 +589,52 @@ const Nav = ({ alt }) => {
               role="button"
               tabIndex={0}
             >
-              <a>Services</a>
+              <a>Specialisms</a>
               <ul className="dropdown">
                 <li>
-                  <Link to="/services/leadership">
+                  <Link to="/specialisms/leadership">
                     <LeaderShipIcon />
                     <p>Leadership</p>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/communications">
+                  <Link to="/specialisms/communications">
                     <CommunicationsIcons />
                     <p>Communications</p>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/architecture">
+                  <Link to="/specialisms/architecture">
                     <ArchitectureIcons />
                     <p>Architecture</p>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/erp">
+                  <Link to="/specialisms/erp">
                     <ErpIcon />
                     <p>ERP</p>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/big-data-analytics">
+                  <Link to="/specialisms/big-data-analytics">
                     <DataIcon />
                     <p>Big Data &amp; Analytics</p>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/software-engineering-devops">
+                  <Link to="/specialisms/software-engineering-devops">
                     <SoftwareIcon />
                     <p>Software Engineering &amp; DevOps</p>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/infrastructure-cloud-services">
+                  <Link to="/specialisms/infrastructure-cloud-services">
                     <CloudIcon />
                     <p>Infrastructure &amp; Cloud Services</p>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/cybersecurity">
+                  <Link to="/specialisms/cybersecurity">
                     <CyberIcon />
                     <p>Cybersecurity</p>
                   </Link>
@@ -642,8 +642,8 @@ const Nav = ({ alt }) => {
               </ul>
             </li>
             <li>
-              <Link to="/specialisms" onClick={() => setOpen(!open)}>
-                Specialisms
+              <Link to="/services" onClick={() => setOpen(!open)}>
+                Services
               </Link>
             </li>
             <li

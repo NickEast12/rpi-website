@@ -7,13 +7,14 @@ import ServiceHeader from '../../components/sections/servicesHeader';
 import ServiceOverview from '../../components/servicesTemplates/serviceOverview';
 import ServicesAbout from '../../components/servicesTemplates/servicesAbout';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
-import Illustration from '../../svgs/cybersecurity.svg';
-import LowerIllustration from '../../svgs/cybersecurity-lower.svg';
+import Illustration from '../../svgs/erp.svg';
+import LowerIllustration from '../../svgs/erp-lower.svg';
 
 const information = [
   {
-    name: 'Cybersecurity',
-    title: 'Taking the risk out of cybersecurity recruitment',
+    name: 'ERP',
+    title: 'Reshaping large-scale ERP projects globally',
+
     quote: [
       {
         quote:
@@ -25,7 +26,7 @@ const information = [
   },
 ];
 
-const Cybersecurity = () => {
+const ERP = () => {
   const data = information[0];
   const quoteData = data.quote[0];
   return (
@@ -34,8 +35,8 @@ const Cybersecurity = () => {
         <Illustration />
       </ServiceHeader>
       <ServiceOverview
-        subtitle="Talent solutions that will fortify your cybersecurity frontlines"
-        fp="Cybersecurity is no longer a nice to have component of your IT strategy, it must be woven into the fabric of organisations and enterprises operating in the digital age. With the threat landscape continually reshaping, it is vital that businesses have the right talent in play to mitigate their risk. But while demand is high, candidate volumes are comparably low. We equip your business with the experts you need on the cyber frontlines and plug the global talent gap in cybersecurity."
+        subtitle="Filling the demand for talent and expertise in ERP deployments"
+        fp="Enterprise Resource Planning deployments are complex and expensive endeavors. RPI understands the importance of ERP implementation projects and the role that highly skilled talent plays within them. Our ERP recruiters recognise the demand for the right expertise in this sector and match skills to enable enterprises to adopt digitised digitised processes and management tools, quickly and efficiently. "
       >
         <LowerIllustration />
       </ServiceOverview>
@@ -46,7 +47,7 @@ const Cybersecurity = () => {
         company={quoteData.company}
       />
       <AllSpecialisms
-        title="Our specialisms"
+        title="Our services"
         text="Finding the best leaders and sourcing highly skilled talent means finding the right partner. Take a closer look at our areas of expertise in this service."
       />
       <CTA />
@@ -54,4 +55,4 @@ const Cybersecurity = () => {
   );
 };
 
-export default Cybersecurity;
+export default ERP;

@@ -4,9 +4,9 @@ const path = require(`path`);
 
 module.exports = {
   siteMetadata: {
-    title: `Enter`,
+    title: `Global Technology & Digital Transformation Recruitment Agency | RPI`,
     siteUrl: `https://www.rpint.com/`,
-    description: `Enter`,
+    description: `Find the leadership and talent that your business needs to ignite transformation in your business. Choose the global recruitment leader driving technology-enabled business transformation.`,
     twitter: `@RPInsight`,
     image: `/icon.png`,
   },
@@ -39,9 +39,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Nick East `,
-        short_name: `Nick East`,
-        description: `I'm a front-end web developer based in London, UK. With a love for designing and writing code.`,
+        name: `Global Technology & Digital Transformation Recruitment Agency | RPI`,
+        short_name: `RPI`,
+        description: `Find the leadership and talent that your business needs to ignite transformation in your business. Choose the global recruitment leader driving technology-enabled business transformation.`,
         start_url: `/`,
         lang: `en`,
         background_color: `#0c2533`,
@@ -112,8 +112,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://www.nick-east.com',
-        sitemap: 'https://www.nick-east.com/sitemap.xml',
+        host: 'https://www.rpint.com/',
+        sitemap: 'https://www.rpint.com/',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },

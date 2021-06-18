@@ -230,7 +230,7 @@ const Services = () => {
   return (
     <ServicesStyles>
       <div className="services">
-        <h6 className="sbt">Our services</h6>
+        <h6 className="sbt">Our Specialisms</h6>
         <h3>
           We place top talent in the tech industry across a range of services.
         </h3>

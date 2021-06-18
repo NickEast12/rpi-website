@@ -284,37 +284,37 @@ const Footer = () => {
           </div>
           <div className="footer__left__links">
             <section>
-              <h6>Services</h6>
+              <h6>Specialisms</h6>
               <ul>
                 <li>
-                  <Link to="/services/leadership">Leadership</Link>
+                  <Link to="/specialisms/leadership">Leadership</Link>
                 </li>
                 <li>
-                  <Link to="/services/communications">Communications</Link>
+                  <Link to="/specialisms/communications">Communications</Link>
                 </li>
                 <li>
-                  <Link to="/services/architecture">Architecture</Link>
+                  <Link to="/specialisms/architecture">Architecture</Link>
                 </li>
                 <li>
-                  <Link to="/services/erp">ERP</Link>
+                  <Link to="/specialisms/erp">ERP</Link>
                 </li>
                 <li>
-                  <Link to="/services/big-data-analytics">
+                  <Link to="/specialisms/big-data-analytics">
                     Big Data &amp; Analytics
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/software-engineering-devops">
+                  <Link to="/specialisms/software-engineering-devops">
                     Software Engineering &amp; DevOps
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/infrastructure-cloud-services">
+                  <Link to="/specialisms/infrastructure-cloud-services">
                     Infrastructure &amp; Cloud Services
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/cybersecurity">Cybersecurity</Link>
+                  <Link to="/specialisms/cybersecurity">Cybersecurity</Link>
                 </li>
               </ul>
             </section>
@@ -405,7 +405,7 @@ const Footer = () => {
               <Link to="/terms">Terms</Link>
             </li>
             <li>
-              <Link to="privacy-policy">Privacy Policy</Link>
+              <Link to="/privacy-policy">Privacy Policy</Link>
             </li>
             <li>
               <Link to="/cookie-policy">Cookie Policy</Link>
