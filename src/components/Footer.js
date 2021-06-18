@@ -345,7 +345,7 @@ const Footer = () => {
               data-netlify-honeypot="bot-field"
               action="/thank-you"
             >
-              <input type="hidden" name="email_signup" value="email_signup" />
+              <input type="hidden" name="form-name" value="email_signup" />
               <p className="hidden">
                 <label htmlFor="bot-field">
                   Don’t fill this out if you’re human:{' '}

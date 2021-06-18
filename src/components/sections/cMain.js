@@ -114,9 +114,9 @@ const CMain = () => {
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
-            // action="/success"
+            action="/success"
           >
-            <input type="hidden" name="contact_form" value="contact_form" />
+            <input type="hidden" name="form-name" value="contact_form" />
             <p className="hidden">
               <label htmlFor="bot-field">
                 Don’t fill this out if you’re human: <input name="bot-field" />
