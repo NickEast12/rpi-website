@@ -357,6 +357,7 @@ const Footer = () => {
                 name="email"
                 id="email"
                 placeholder="Email address"
+                required
               />
               <button type="submit">
                 <span>Subscribe</span>

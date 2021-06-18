@@ -269,6 +269,7 @@ const ResourcesHeader = ({ blogs }) => {
                   name="email"
                   id="email"
                   placeholder="Email address"
+                  required
                 />
                 <button type="submit">
                   <span>

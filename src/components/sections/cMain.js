@@ -128,12 +128,14 @@ const CMain = () => {
                 name="first"
                 id="first"
                 placeholder="First name"
+                required
               />
               <input
                 type="text"
                 name="second"
                 id="second"
                 placeholder="Last name"
+                required
               />
             </section>
             <input
@@ -141,6 +143,7 @@ const CMain = () => {
               name="email-address"
               id="emailaddress"
               placeholder="Your email"
+              required
             />
             <input
               type="tel"
