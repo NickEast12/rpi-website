@@ -131,14 +131,14 @@ const CMain = () => {
               />
               <input
                 type="text"
-                name="secon"
+                name="second"
                 id="second"
                 placeholder="Last name"
               />
             </section>
             <input
               type="email"
-              name="emailaddress"
+              name="email-address"
               id="emailaddress"
               placeholder="Your email"
             />
