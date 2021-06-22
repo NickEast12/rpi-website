@@ -9,6 +9,7 @@ import ServicesAbout from '../../components/servicesTemplates/servicesAbout';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
 import Illustration from '../../svgs/architecture.svg';
 import LowerIllustration from '../../svgs/architecture-lower.svg';
+import SEO from '../../components/functional/SEO';
 
 const information = [
   {
@@ -30,6 +31,10 @@ const Architecture = () => {
   const quoteData = data.quote[0];
   return (
     <Layout>
+      <SEO
+        title="Business Architecture Recruitment Agency | RPI"
+        description="RPI are experts in recruiting solutions for business architecture internationally. Find the talent that will help you build better. "
+      />
       <ServiceHeader page={data.name} title={data.title} text={data.headerText}>
         <Illustration />
       </ServiceHeader>

@@ -9,13 +9,12 @@ import ServicesAbout from '../../components/servicesTemplates/servicesAbout';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
 import Illustration from '../../svgs/software.svg';
 import LowerIllustration from '../../svgs/software-lower.svg';
+import SEO from '../../components/functional/SEO';
 
 const information = [
   {
     name: 'Software Engineering & DevOps',
     title: 'Sourcing the best talent in a talent short market',
-    headerText:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolor expedita amet quos eligendi repellat.',
 
     quote: [
       {
@@ -33,6 +32,10 @@ const ERP = () => {
   const quoteData = data.quote[0];
   return (
     <Layout>
+      <SEO
+        title="Software Engineering Recruitment Agency | RPI"
+        description="RPI have access to a global talent pool of mid to senior level Architects, Engineering and Software Development professionals that will transform your business."
+      />
       <ServiceHeader page={data.name} title={data.title} text={data.headerText}>
         <Illustration />
       </ServiceHeader>

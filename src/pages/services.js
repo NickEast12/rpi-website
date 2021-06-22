@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import CTA from '../components/CTA';
+import SEO from '../components/functional/SEO';
 //* Local imports
 import Layout from '../components/Layout';
 import AllSpecialisms from '../components/sections/allSpecialisms';
@@ -467,6 +468,10 @@ const Specialisms = () => {
   const i = true;
   return (
     <Layout>
+      <SEO
+        title="Recruitment Services for Digital Transformation | RPI"
+        description="Find out about the recruitment services RPI offers. Specialists in technology-enabled business transformation, we’re experts at sourcing the talent that your business needs to create value today and in the future."
+      />
       <MainHeader
         page="Our Services"
         title="Finding the talent that your business needs"

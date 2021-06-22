@@ -11,11 +11,16 @@ import Reviews from '../components/sections/reviews';
 import Illustration from '../svgs/who.svg';
 import MainHeader from '../components/sections/mainHeader';
 import CareersCTA from '../components/sections/careersCTA';
+import SEO from '../components/functional/SEO';
 
 const Careers = () => {
   const i = true;
   return (
     <Layout>
+      <SEO
+        title="Work For Us | Join Our Team | RPI "
+        description="We’re looking for recruiters with an international outlook to join our team and help our clients access the best in global talent. Join us here."
+      />
       <MainHeader
         page="Join the team"
         title="We’re looking for talented recruiters"

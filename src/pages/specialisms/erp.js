@@ -9,6 +9,7 @@ import ServicesAbout from '../../components/servicesTemplates/servicesAbout';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
 import Illustration from '../../svgs/erp.svg';
 import LowerIllustration from '../../svgs/erp-lower.svg';
+import SEO from '../../components/functional/SEO';
 
 const information = [
   {
@@ -31,6 +32,10 @@ const ERP = () => {
   const quoteData = data.quote[0];
   return (
     <Layout>
+      <SEO
+        title="ERP Recruitment Agency | RPI "
+        description="Gain access to the best skilled talent in Enterprise Resource Planning deployments. RPI has a deep understanding of the ERP sector to fulfill business requirements."
+      />
       <ServiceHeader page={data.name} title={data.title} text={data.headerText}>
         <Illustration />
       </ServiceHeader>

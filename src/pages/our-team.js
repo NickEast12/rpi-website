@@ -8,12 +8,17 @@ import JoinTheTeam from '../components/sections/joinTheTeam';
 import TheTeam from '../components/sections/theTeam';
 import Illustration from '../svgs/architecture.svg';
 import PageBlogs from '../components/sections/pageBlogs';
+import SEO from '../components/functional/SEO';
 
 const OurTeam = ({ data }) => {
   const blogs = data.BlogQuery.nodes;
   const team = data.allSanityAuthor.nodes;
   return (
     <Layout>
+      <SEO
+        title="Our Team | Specialist Recruitment Partner | RPI"
+        description="RPI have led talent acquisition for leading brands globally, driven digital transformations and built brilliant teams. Meet the team behind it all here. "
+      />
       <TeamHeader />
       <TheTeam teamData={team} />
       <JoinTheTeam />

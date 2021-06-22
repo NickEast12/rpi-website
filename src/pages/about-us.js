@@ -11,12 +11,16 @@ import Values from '../components/sections/values';
 import CTA from '../components/CTA';
 import Illustration from '../svgs/who.svg';
 import MainHeader from '../components/sections/mainHeader';
+import SEO from '../components/functional/SEO';
 
 const AboutUs = () => {
   const i = true;
   return (
     <Layout>
-      {/* <AboutUsHeader /> */}
+      <SEO
+        title="About Us | Specialist Recruitment Partner | RPI"
+        description="Find out about us and discover how RPI can be your gateway to the best talent globally. Find the leaders and build innovative teams to achieve your business transformation goals."
+      />
       <MainHeader
         page="About us"
         title="A trusted partner to identify and deliver the best talent"

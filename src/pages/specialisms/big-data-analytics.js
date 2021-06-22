@@ -9,6 +9,7 @@ import ServicesAbout from '../../components/servicesTemplates/servicesAbout';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
 import Illustration from '../../svgs/big-data-analytics.svg';
 import LowerIllustration from '../../svgs/big-data-analytics-lower.svg';
+import SEO from '../../components/functional/SEO';
 
 const information = [
   {
@@ -31,6 +32,10 @@ const BigDataAnalytics = () => {
   const quoteData = data.quote[0];
   return (
     <Layout>
+      <SEO
+        title="Big Data &amp; Analytics Recruitment Agency | RPI"
+        description="RPIs team of trusted consultants are expertly placed to help your business find the talent that will deliver a competitive advantage through BI, Data &amp; Analytics. Get in touch today."
+      />
       <ServiceHeader page={data.name} title={data.title} text={data.headerText}>
         <Illustration />
       </ServiceHeader>

@@ -8,12 +8,17 @@ import CTA from '../components/CTA';
 import BookIcon from '../svgs/open-book.svg';
 import ArrowIcon from '../svgs/right-arrow.svg';
 import AllBlogs from '../components/sections/allBlogs';
+import SEO from '../components/functional/SEO';
 
 const Resources = ({ data }) => {
   const headerData = data.BlogQuery.nodes;
   const allBlogs = data.AllQuery.nodes;
   return (
     <Layout>
+      <SEO
+        title="Discover News &amp; Articles from our Thought Leaders | RPI"
+        description="Take a look at what we've been up to at RPI and what's happening within the industry as we keep up with the latest news."
+      />
       <ResourcesHeader blogs={headerData} />
       <AllBlogs blogs={allBlogs} />
       <CTA />

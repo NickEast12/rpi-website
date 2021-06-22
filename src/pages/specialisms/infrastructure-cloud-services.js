@@ -9,6 +9,7 @@ import ServicesAbout from '../../components/servicesTemplates/servicesAbout';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
 import Illustration from '../../svgs/infrastructure.svg';
 import LowerIllustration from '../../svgs/cloud-lower.svg';
+import SEO from '../../components/functional/SEO';
 
 const information = [
   {
@@ -33,6 +34,10 @@ const ERP = () => {
   const quoteData = data.quote[0];
   return (
     <Layout>
+      <SEO
+        title="Infrastructure &amp; Cloud Services Recruitment Agency | RPI "
+        description="Tailored Cloud &amp; Infrastructure recruitment. RPI source and secure the best talent in a talent short market. Find out how we do it and the specialist areas we support."
+      />
       <ServiceHeader page={data.name} title={data.title} text={data.headerText}>
         <Illustration />
       </ServiceHeader>

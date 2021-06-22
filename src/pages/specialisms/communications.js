@@ -9,6 +9,7 @@ import ServicesAbout from '../../components/servicesTemplates/servicesAbout';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
 import Illustration from '../../svgs/communications.svg';
 import LowerIllustration from '../../svgs/communications-lower.svg';
+import SEO from '../../components/functional/SEO';
 
 const information = [
   {
@@ -31,6 +32,10 @@ const Communication = () => {
   const quoteData = data.quote[0];
   return (
     <Layout>
+      <SEO
+        title="Telecommunications Recruitment Agency | RPI"
+        description="Partner with RPI, the leading telecommunications recruitment agency globally. Tell us about your hiring needs."
+      />
       <ServiceHeader page={data.name} title={data.title} text={data.headerText}>
         <Illustration />
       </ServiceHeader>

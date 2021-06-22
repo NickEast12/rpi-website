@@ -9,6 +9,7 @@ import ServicesAbout from '../../components/servicesTemplates/servicesAbout';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
 import Illustration from '../../svgs/cybersecurity.svg';
 import LowerIllustration from '../../svgs/cybersecurity-lower.svg';
+import SEO from '../../components/functional/SEO';
 
 const information = [
   {
@@ -30,6 +31,10 @@ const Cybersecurity = () => {
   const quoteData = data.quote[0];
   return (
     <Layout>
+      <SEO
+        title="Cybersecurity Recruitment Agency | RPI"
+        description="Talent solutions that will fortify your cybersecurity frontlines and mitigate the risk of cybercriminals. Find out how we do it and gain access to cybersecurity experts."
+      />
       <ServiceHeader page={data.name} title={data.title} text={data.headerText}>
         <Illustration />
       </ServiceHeader>

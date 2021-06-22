@@ -22,6 +22,7 @@ import TwitterIcon from '../svgs/twitter.svg';
 import LinkedInIcon from '../svgs/linkedin.svg';
 import EmailIcon from '../svgs/paper-plane.svg';
 import RelatedBlogs from '../components/sections/relatedBlogs';
+import SEO from '../components/functional/SEO';
 
 const BlogStyles = styled.article`
   width: 100%;
@@ -167,6 +168,11 @@ const Blog = ({ data }) => {
   };
   return (
     <Layout>
+      <SEO
+        title={`${blog.title} | RPI`}
+        description={blog.excerpt}
+        img={blog.mainImage.asset.url}
+      />
       <BlogHeader blog={blog} />
       <BlogStyles>
         <div className="bb">

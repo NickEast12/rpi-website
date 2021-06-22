@@ -1,5 +1,6 @@
 import React from 'react';
 import CTA from '../../components/CTA';
+import SEO from '../../components/functional/SEO';
 //* Local Imports
 import Layout from '../../components/Layout';
 import AllSpecialisms from '../../components/sections/allSpecialisms';
@@ -479,6 +480,10 @@ const Leadership = () => {
   const quoteData = data.quote[0];
   return (
     <Layout>
+      <SEO
+        title="Leadership Recruitment Agency | RPI"
+        description="RPI source and identify the best talent for the C-Suite and all levels of leadership across operational and technology functions. Find out how we can help."
+      />
       <ServiceHeader page={data.name} title={data.title} text={data.headerText}>
         {data.icon}
       </ServiceHeader>
