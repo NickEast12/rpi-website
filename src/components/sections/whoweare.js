@@ -36,6 +36,9 @@ const WhoweareStyles = styled.section`
         margin: 0.5rem 0;
         color: var(--offWhite);
       }
+      .l-m {
+        margin: 0 auto;
+      }
     }
     &__img {
       width: 90%;
