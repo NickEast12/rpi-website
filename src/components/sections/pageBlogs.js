@@ -29,7 +29,7 @@ const PageBlogsStyles = styled.section`
   }
 `;
 const PageBlogs = ({ Blogs }) => {
-  console.log('🫐');
+  const i = true;
   return (
     <PageBlogsStyles>
       <h4>Introducing blogs</h4>

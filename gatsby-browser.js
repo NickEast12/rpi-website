@@ -1,11 +1,8 @@
 const LogRocket = require('logrocket');
 //* Log rocket 🚀
 exports.onClientEntry = () => {
-  console.log('LogRocket 🚀');
   LogRocket.init('dptymq/rpi-website');
-};
-
-exports.onClientEntry = () => {
+  console.log('LogRocket 🚀');
   var Tawk_API = Tawk_API || {};
   const Tawk_LoadStart = new Date();
   (function () {
@@ -17,4 +14,5 @@ exports.onClientEntry = () => {
     s1.setAttribute('crossorigin', '*');
     s0.parentNode.insertBefore(s1, s0);
   })();
+  console.log('Tawk 🐦');
 };
