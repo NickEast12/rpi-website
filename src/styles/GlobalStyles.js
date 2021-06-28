@@ -68,7 +68,7 @@ const GlobalStyles = createGlobalStyle`
     .sbt {
         color:var(--newCyan);
         text-transform: uppercase;
-        font-size: 1.25rem;
+        font-size: 1.05rem;
         font-weight: 700;
         letter-spacing: .5px;
     }

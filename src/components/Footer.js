@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 //* Local imports
-import RPILogo from '../svgs/rpi-logo.svg';
+import RPILogo from '../svgs/rpi-logo--white.svg';
 import LinkedinIcon from '../svgs/linkedin.svg';
 import TwitterIcon from '../svgs/twitter.svg';
 import ArrowIcon from '../svgs/right-arrow.svg';
@@ -22,9 +22,6 @@ const FooterStyles = styled.footer`
         width: 80px;
         height: auto;
         svg {
-          .st0 {
-            fill: var(--white);
-          }
         }
       }
       &__links {
@@ -299,8 +296,8 @@ const Footer = () => {
                   <Link to="/specialisms/erp">ERP</Link>
                 </li>
                 <li>
-                  <Link to="/specialisms/big-data-analytics">
-                    Big Data &amp; Analytics
+                  <Link to="/specialisms/bi-data-analytics">
+                    Bi, Data &amp; Analytics
                   </Link>
                 </li>
                 <li>
@@ -314,7 +311,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/specialisms/cybersecurity">Cybersecurity</Link>
+                  <Link to="/specialisms/cyber-security">Cyber Security</Link>
                 </li>
               </ul>
             </section>

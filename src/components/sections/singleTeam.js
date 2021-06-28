@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
-
 //* Local imports
-import Image from '../functional/Image';
 import LinkedinIcon from '../../svgs/linkedin.svg';
 
 const SingleTeamStyles = styled.section`
@@ -103,7 +101,13 @@ const SingleTeam = ({ data }) => {
             <h6>{data.position}</h6>
           </section>
           <section>
-            <LinkedinIcon />
+            {data.linkedin ? (
+              <a href={data.linkedin} target="_blank" rel="noopener noreferrer">
+                <LinkedinIcon />
+              </a>
+            ) : (
+              ''
+            )}
           </section>
         </header>
         <div className="body">

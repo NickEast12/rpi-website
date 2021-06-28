@@ -20,9 +20,9 @@ const information = [
     quote: [
       {
         quote:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus placeat ullam saepe, doloribus perspiciatis adipisci architecto? Consequatur quibusdam a ut!',
-        name: 'Joe Blogs',
-        company: 'Company name',
+          'Leveraging RP Internationals extensive 20 + year network across Europe, MEA and APAC has enabled us to secure exceptional talent which has fuelled our growth and ensured effective and timely delivery of our digital solutions. The whole team at RPI are specialists within the cloud transformation world and their detailed understanding of the specific cultural and contractual demands of working cross border in  multiple contracts and continents has been extremely appreciated. ',
+        name: 'Damon Wheaton',
+        company: 'Matrixx',
       },
     ],
   },
@@ -43,7 +43,7 @@ const ERP = () => {
       </ServiceHeader>
       <ServiceOverview
         subtitle="Aligning talent with business processes and transforming cloud implementation strategy"
-        fp="Cloud computing offers major benefits to business operations as companies look to expand operations and enable staff to work remotely, but how change is implemented is just as important as what is being implemented. To help you with your transformation to the Cloud, RPI’s global reach of highly skilled talent in this sector enables us to fulfill positions that require successful Change Management. We source highly-skilled leadership and specialists to underpin successful Cloud technology implementation."
+        fp="Cloud computing offers major benefits to business operations look to expand operations and enable staff to work remotely, but how change is implemented is just as important as what is being implemented. To help you with your transformation to the Cloud, RPI’s global reach of highly skilled talent in this sector enables us to fulfill positions that require successful Change Management. "
       >
         <LowerIllustration />
       </ServiceOverview>
@@ -55,7 +55,7 @@ const ERP = () => {
       />
       <AllSpecialisms
         title="Our services"
-        text="Finding the best leaders and sourcing highly skilled talent means finding the right partner. Take a closer look at our areas of expertise in this service."
+        text="Finding the best leaders and sourcing highly skilled tech talent means finding the right partner. Take a closer look at how we deliver talent."
       />
       <CTA />
     </Layout>

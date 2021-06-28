@@ -87,8 +87,7 @@ const Whoweare = () => {
           </h3>
           <p>
             Founded in 1998 and still privately owned, we are passionate about
-            creating innovative and impactful talent solutions that ignites
-            transformation in your business.
+            creating innovative and impactful talent solutions.
           </p>
           <p>
             Our deep market knowledge, extensive relationships with industry

@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-//* Local imports
-import Illustration from '../../svgs/who.svg';
 
 const ServiceTestimonialStyles = styled.section`
   width: 100%;
@@ -22,31 +20,43 @@ const ServiceTestimonialStyles = styled.section`
       display: block;
     }
     q {
-      font-size: clamp(1.2rem, 3vw, 1.4rem);
-      max-width: 700px;
-      margin: var(--auto);
+      max-width: 1000px;
+      margin-bottom: 1.5rem;
     }
-    h5 {
-      font-weight: 400;
-    }
-    h6 {
-      margin-top: 1.5rem;
+  }
+  h5 {
+    font-weight: 400;
+  }
+  h6 {
+    margin-top: 1.5rem;
+    font-size: 1.35rem;
+    font-weight: 300;
+    span {
+      font-weight: 700;
+      padding-right: 5px;
       font-size: 1.35rem;
-      font-weight: 300;
-      span {
-        font-weight: 700;
-        padding-right: 5px;
-        font-size: 1.35rem;
-      }
     }
   }
 `;
-const ServiceTestimonial = ({ quote, name, company }) => {
+const ServiceTestimonial = ({ quotef, quotes, quotet, name, company }) => {
   const i = true;
   return (
     <ServiceTestimonialStyles>
       <div className="testimonal">
-        <q>{quote}</q>
+        <q>
+          {quotef}
+          {quotes}
+          {quotet}
+        </q>
+        {/* <p>
+            <span>{quotef}</span>
+          </p>
+          <p>
+            <span>{quotes}</span>
+          </p>
+          <p>
+            <span>{quotet}</span>
+          </p> */}
         <h6>
           <span>{name}</span>• {company}
         </h6>

@@ -48,7 +48,6 @@ const LearnMoreStyles = styled.div`
   }
   .l-m {
     cursor: pointer;
-
     &:hover {
       svg {
         transform: translate(7px);
@@ -63,9 +62,8 @@ const LearnMoreStyles = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 0.5rem;
     @media only screen and (min-width: 768px) {
-      margin: 0 auto 0 0;
+      margin: 0 !important;
       justify-content: flex-start;
     }
     &--text {
@@ -81,7 +79,7 @@ const LearnMoreStyles = styled.div`
       width: 18px;
       height: 18px;
       transition: all 0.35s ease;
-      margin-right: 0.5rem;
+      margin-right: 0.8rem;
     }
   }
 `;

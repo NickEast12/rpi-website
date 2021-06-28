@@ -169,8 +169,8 @@ const Hero = () => {
             Sourcing the talent that ignites transformation in your business
           </h1>
           <p>
-            We partner with the leaders who drive transformation around the
-            world.
+            We recruit leadership and highly skilled technology talent for
+            companies around the globe. Globally around the world.
           </p>
           <div className="hero__title__btn">
             <button type="button" className="btn btn--main">

@@ -14,7 +14,7 @@ const data = [
   {
     title: 'We have',
     no: 75,
-    fact: 'Staff across 6 offices',
+    fact: 'Staff across 9 offices',
   },
   {
     title: 'Our leaders average',

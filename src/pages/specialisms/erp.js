@@ -14,7 +14,7 @@ import SEO from '../../components/functional/SEO';
 const information = [
   {
     name: 'ERP',
-    title: 'Reshaping large-scale ERP projects globally',
+    title: 'Delivering large-scale information management projects globally',
 
     quote: [
       {
@@ -41,7 +41,7 @@ const ERP = () => {
       </ServiceHeader>
       <ServiceOverview
         subtitle="Filling the demand for talent and expertise in ERP deployments"
-        fp="Enterprise Resource Planning deployments are complex and expensive endeavors. RPI understands the importance of ERP implementation projects and the role that highly skilled talent plays within them. Our ERP recruiters recognise the demand for the right expertise in this sector and match skills to enable enterprises to adopt digitised digitised processes and management tools, quickly and efficiently. "
+        fp="Enterprise Resource Planning deployments are complex and expensive endeavors. RPI understands the importance of ERP implementation projects and the role that highly skilled talent plays within them. Our ERP consultants consultants have developed a community to support global ERP deployments."
       >
         <LowerIllustration />
       </ServiceOverview>
@@ -53,7 +53,7 @@ const ERP = () => {
       />
       <AllSpecialisms
         title="Our services"
-        text="Finding the best leaders and sourcing highly skilled talent means finding the right partner. Take a closer look at our areas of expertise in this service."
+        text="Finding the best leaders and sourcing highly skilled tech talent means finding the right partner. Take a closer look at how we deliver talent."
       />
       <CTA />
     </Layout>

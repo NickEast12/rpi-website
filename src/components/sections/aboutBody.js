@@ -73,12 +73,11 @@ const AboutBody = () => {
             in technology and recruitment and challenge and lead the debate.
           </p>
           <p>
-            We work to understand your unique needs, sourcing highly-skilled
-            candidates that suit your business today whilst driving the agenda
-            for tomorrow.
+            We understand the latest trends in technology and recruitment,
+            challenging and leading the debate.
           </p>
           <p>
-            Our specialist recruiters drive the people part of
+            Our specialist recruiters deliver the people part of
             technology-enabled transformation, developing unparalleled networks
             within their chosen niche by investing in that community. Connecting
             people, identifying talent, supporting strategy, driving change and

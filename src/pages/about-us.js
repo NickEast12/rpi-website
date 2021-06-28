@@ -12,6 +12,7 @@ import CTA from '../components/CTA';
 import Illustration from '../svgs/who.svg';
 import MainHeader from '../components/sections/mainHeader';
 import SEO from '../components/functional/SEO';
+import WhereWeWork from '../components/sections/wherewework';
 
 const AboutUs = () => {
   const i = true;
@@ -32,6 +33,7 @@ const AboutUs = () => {
       <AboutBody />
       <ByTheNumbers />
       <Values />
+      <WhereWeWork />
       <Diversity />
       <CSR />
       <CTA />

@@ -14,7 +14,7 @@ import SEO from '../../components/functional/SEO';
 const information = [
   {
     name: 'Architecture',
-    title: 'Enabling digital business propelled by corporate strategy ',
+    title: 'Designing digital businesses underpinned by innovation ',
     quote: [
       {
         quote:
@@ -40,7 +40,6 @@ const Architecture = () => {
       </ServiceHeader>
       <ServiceOverview
         subtitle="Overcoming big picture challenges in business architecture with the right skill sets"
-        fp="Businesses must pay attention to how they are structured to fulfil individual needs and ensure long term success. When it comes to business architecture, companies need to build better. RPI’s track record expounds the sourcing of the right talent, with the right skills, experience and credentials to do the job."
         sp="Ensuring Technology is “enabling” and not “suffocating, stifling and overpowering” the business is a complex challenge; legacy dependencies, tech debt and business processes disparity require sophisticated Architecture roadmaps with your unique business at the heart of them. "
       >
         <LowerIllustration />
@@ -53,7 +52,7 @@ const Architecture = () => {
       />
       <AllSpecialisms
         title="Our services"
-        text="Finding the best leaders and sourcing highly skilled talent means finding the right partner. Take a closer look at our areas of expertise in this service."
+        text="Finding the best leaders and sourcing highly skilled tech talent means finding the right partner. Take a closer look at how we deliver talent."
       />
       <CTA />
     </Layout>

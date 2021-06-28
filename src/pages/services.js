@@ -291,7 +291,7 @@ const data = [
     i: 'Removing access barriers to high calibre talent',
     id: 'visa-payroll-services',
     text:
-      'To deliver transformation at scale, organisations need the right access to an increasingly globalised talent pool. With an unparalleled global reach, we support our candidates and clients by facilitating simplified onboarding. Having 11 operations globally allows us to facilitate work based visa provision and in the Middle East we offer full Visa and Payroll Services across the UAE, as well as other GCC and African countries to provide organisations with access to exceptional and experienced professionals from all over the world.',
+      'To deliver transformation at scale, organisations need the right access to an increasingly globalised talent pool. With an unparalleled global reach, we support our candidates and clients by facilitating simplified onboarding. Having global operations allows us to facilitate work based visa provision and in the Middle East we offer full Visa and Payroll Services across the UAE, as well as other GCC and African countries to provide organisations with access to exceptional and experienced professionals from all over the world.',
     img: (
       <svg
         data-name="Layer 1"

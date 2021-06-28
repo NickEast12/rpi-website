@@ -18,7 +18,7 @@ const AboutUsHeaderStyles = styled.header`
     &__left {
       h1 {
         margin: 0.5rem 0;
-        font-size: 2.75rem;
+        font-size: 2.25rem;
       }
       button {
         width: 200px;

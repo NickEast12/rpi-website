@@ -15,7 +15,7 @@ const data = [
   {
     value: 'Connection.',
     text:
-      'Our strength comes from the quality and trust based relationships that we hold locally and globally internally, which permeates out to our clients, candidates and partners',
+      'Our strength comes from the quality and trust based relationships that we hold locally and globally, which permeates out to our clients, candidates and partners',
   },
   {
     value: 'Expertise.',
@@ -32,6 +32,11 @@ const ValuesStyles = styled.section`
     max-width: var(--maxWidth);
     @media only screen and (min-width: 768px) {
       width: 80%;
+    }
+    @media only screen and (min-width: 1280px) {
+      display: grid;
+      grid-template-columns: 45% 1fr;
+      grid-gap: 1rem;
     }
     h4 {
       font-size: 2.35rem;
@@ -64,6 +69,10 @@ const ValuesStyles = styled.section`
       @media only screen and (min-width: 1024px) {
         grid-gap: 2rem 8rem;
       }
+      @media only screen and (min-width: 1280px) {
+        grid-gap: 2rem 1.5rem;
+        padding-top: 0;
+      }
     }
   }
 `;
@@ -72,14 +81,14 @@ const Values = () => {
   return (
     <ValuesStyles>
       <div className="values">
-        <h4>Our values and vision</h4>
-        <p>
-          We work painstakingly to provide the best service and experience to
-          our clients and candidates, support our local communities globally,
-          reflect our employees’ desire to ‘do good and be the number #1
-          recruitment leader to be driving technology-enabled business
-          transformation on a global scale.
-        </p>
+        <div className="values__text">
+          <h4>Our values</h4>
+          <p>
+            We strive to provide the best service and experience to our clients
+            candidates and communities underpinned by our values.
+          </p>
+        </div>
+
         <div className="values__wrapper">
           {data.map((x) => (
             <div className="values__wrapper__box" key={x.value}>

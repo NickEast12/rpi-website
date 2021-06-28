@@ -5,9 +5,9 @@ import styled from 'styled-components';
 import { useIntersection } from 'react-use';
 import gsap from 'gsap';
 //* Local imports
-import RPILogo from '../svgs/rpi-logo.svg';
+import RPILogo from '../svgs/rpi-logo--black.svg';
 import LeaderShipIcon from '../svgs/leadership.svg';
-import CommunicationsIcons from '../svgs/communications-icon.svg';
+import CommunicationsIcons from '../svgs/communication.svg';
 import ArchitectureIcons from '../svgs/architecture-icon.svg';
 import ErpIcon from '../svgs/erp-icon.svg';
 import DataIcon from '../svgs/data.svg';
@@ -517,9 +517,9 @@ const Nav = ({ alt }) => {
                         </Link>
                       </li>
                       <li>
-                        <Link to="/specialisms/big-data-analytics">
+                        <Link to="/specialisms/bi-data-analytics">
                           <DataIcon />
-                          <p>Big Data &amp; Analytics</p>
+                          <p>Bi, Data &amp; Analytics</p>
                         </Link>
                       </li>
                       <li>
@@ -535,9 +535,9 @@ const Nav = ({ alt }) => {
                         </Link>
                       </li>
                       <li>
-                        <Link to="/specialisms/cybersecurity">
+                        <Link to="/specialisms/cyber-security">
                           <CyberIcon />
-                          <p>Cybersecurity</p>
+                          <p>Cyber Security</p>
                         </Link>
                       </li>
                     </ul>
@@ -616,9 +616,9 @@ const Nav = ({ alt }) => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/specialisms/big-data-analytics">
+                  <Link to="/specialisms/bi-data-analytics">
                     <DataIcon />
-                    <p>Big Data &amp; Analytics</p>
+                    <p>Bi, Data &amp; Analytics</p>
                   </Link>
                 </li>
                 <li>
@@ -634,9 +634,9 @@ const Nav = ({ alt }) => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/specialisms/cybersecurity">
+                  <Link to="/specialisms/cyber-security">
                     <CyberIcon />
-                    <p>Cybersecurity</p>
+                    <p>Cyber Security</p>
                   </Link>
                 </li>
               </ul>

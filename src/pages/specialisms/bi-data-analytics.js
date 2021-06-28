@@ -13,14 +13,14 @@ import SEO from '../../components/functional/SEO';
 
 const information = [
   {
-    name: 'big data analytics',
-    title: 'Delivering maximum value via a data-driven approach',
+    name: 'BI, Data and Analytics ',
+    title: 'Extracting maximum value via a data driven approach',
     quote: [
       {
         quote:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus placeat ullam saepe, doloribus perspiciatis adipisci architecto? Consequatur quibusdam a ut!',
-        name: 'Joe Blogs',
-        company: 'Company name',
+          'RP International provided professional engagement from the very first conversation regarding recruitment support in scaling our AI Lab. They showed excellent technical knowledge and provided extensively qualified candidates who had been technically tested before submitting. We successfully onboarded four Data Scientists with niche skill sets – we had struggled to hire even one Data Scientist before engaging with RPI.',
+        name: 'SVP Data Analytics',
+        company: 'Major Bank, Asia ',
       },
     ],
   },
@@ -41,19 +41,19 @@ const BigDataAnalytics = () => {
       </ServiceHeader>
       <ServiceOverview
         subtitle="Ensuring data and analytics deliver competitive advantage"
-        fp="The rise of big data has made business intelligence solutions a vital tool but finding the right technical professionals in this ever-growing sector is a challenge. To gain a competitive advantage through BI, Data & Analytics, businesses require a trusted talent acquisition advisor. Our team of consultants stay on top of the latest trends and have a network of highly skilled data professionals to place across projects of any scale, at any time. "
+        fp="To gain a competitive advantage through BI, Data &amp; Analytics, businesses require a trusted talent acquisition advisor. Our team of consultants stay on top of the latest trends and have a network of highly skilled data professionals. "
       >
         <LowerIllustration />
       </ServiceOverview>
       <ServicesAbout />
       <ServiceTestimonial
-        quote={quoteData.quote}
+        quotef={quoteData.quote}
         name={quoteData.name}
         company={quoteData.company}
       />
       <AllSpecialisms
         title="Our services"
-        text="Finding the best leaders and sourcing highly skilled talent means finding the right partner. Take a closer look at our areas of expertise in this service."
+        text="Finding the best leaders and sourcing highly skilled tech talent means finding the right partner. Take a closer look at how we deliver talent."
       />
       <CTA />
     </Layout>
