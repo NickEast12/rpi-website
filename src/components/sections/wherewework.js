@@ -272,13 +272,16 @@ const WhereWeWorkStyles = styled.section`
       grid-gap: 1rem;
     }
     @media only screen and (min-width: 1024px) {
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      /* grid-template-rows: repeat(2, 1fr); */
       padding: 3rem 0 0 0;
-      grid-gap: 1.5rem;
-      grid-template-areas:
+      grid-gap: 1rem;
+      /* grid-template-areas:
         'a a b b c c '
-        'd d d e e e';
+        'd d d e e e'; */
+    }
+    @media only screen and (min-width: 1280px) {
+      grid-template-columns: repeat(5, 1fr);
     }
     &__inner {
       text-align: center;
@@ -292,7 +295,7 @@ const WhereWeWorkStyles = styled.section`
       @media only screen and (min-width: 1024px) {
         width: 100%;
         margin: var(--auto);
-        &:nth-child(1) {
+        /* &:nth-child(1) {
           grid-area: a;
         }
         &:nth-child(2) {
@@ -306,6 +309,34 @@ const WhereWeWorkStyles = styled.section`
         }
         &:nth-child(5) {
           grid-area: e;
+        } */
+      }
+      @media only screen and (min-width: 1024px) {
+        padding: 1rem 0rem;
+        &:nth-child(1) {
+          .clear--fix {
+            padding: 2rem 0;
+          }
+        }
+        &:nth-child(2) {
+          .clear--fix {
+            padding: 2rem 0;
+          }
+        }
+        &:nth-child(3) {
+          .clear--fix {
+            padding: 1.35rem 0;
+          }
+        }
+        &:nth-child(4) {
+          .clear--fix {
+            padding: 2rem 0;
+          }
+        }
+        &:nth-child(5) {
+          .clear--fix {
+            padding: 2rem 0;
+          }
         }
       }
       &__wrapper {
@@ -329,6 +360,9 @@ const WhereWeWorkStyles = styled.section`
       h5 {
         font-size: 1.6rem;
         margin: 0.5rem 0;
+        @media only screen and (min-width: 1024px) {
+          font-size: 1.2rem;
+        }
       }
 
       section {
@@ -342,9 +376,15 @@ const WhereWeWorkStyles = styled.section`
           @media only screen and (min-width: 1024px) {
             font-size: 1.2rem;
           }
+          @media only screen and (min-width: 1024px) {
+            font-size: 1rem;
+          }
         }
         .office {
           font-size: 1.2rem;
+          @media only screen and (min-width: 1024px) {
+            font-size: 0.9rem;
+          }
         }
         p {
           text-transform: uppercase;
@@ -390,19 +430,19 @@ const WhereWeWork = () => {
                 <span>{area.established}</span>
                 <p>Established</p>
               </section>
-              <section>
+              <section className="clear--fix">
                 <span className="office">{area.regional}</span>
                 <p>Regional operations</p>
               </section>
               <section>
                 <span>{area.staff}</span>
-                <p>NO. Staff</p>
+                <p>Staff</p>
               </section>
               <section>
                 <span>
                   {area.total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
                 </span>
-                <p>NO. placements to date</p>
+                <p>placements to date</p>
               </section>
               <section>
                 <span>{area.countries}</span>
