@@ -170,7 +170,7 @@ const Hero = () => {
           </h1>
           <p>
             We recruit leadership and highly skilled technology talent for
-            companies around the globe. Globally around the world.
+            companies around the globe.
           </p>
           <div className="hero__title__btn">
             <button type="button" className="btn btn--main">

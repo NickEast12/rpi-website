@@ -58,7 +58,10 @@ const ServiceTestimonial = ({ quotef, quotes, quotet, name, company }) => {
             <span>{quotet}</span>
           </p> */}
         <h6>
-          <span>{name}</span>• {company}
+          <span>
+            {name}
+            {company ? { company } : ''}
+          </span>
         </h6>
       </div>
     </ServiceTestimonialStyles>

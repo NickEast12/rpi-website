@@ -21,8 +21,8 @@ const information = [
       {
         quote:
           'Leveraging RP Internationals extensive 20 + year network across Europe, MEA and APAC has enabled us to secure exceptional talent which has fuelled our growth and ensured effective and timely delivery of our digital solutions. The whole team at RPI are specialists within the cloud transformation world and their detailed understanding of the specific cultural and contractual demands of working cross border in  multiple contracts and continents has been extremely appreciated. ',
-        name: 'Damon Wheaton',
-        company: 'Matrixx',
+        name: 'Anonymous',
+        company: '',
       },
     ],
   },
@@ -43,13 +43,13 @@ const ERP = () => {
       </ServiceHeader>
       <ServiceOverview
         subtitle="Aligning talent with business processes and transforming cloud implementation strategy"
-        fp="Cloud computing offers major benefits to business operations look to expand operations and enable staff to work remotely, but how change is implemented is just as important as what is being implemented. To help you with your transformation to the Cloud, RPI’s global reach of highly skilled talent in this sector enables us to fulfill positions that require successful Change Management. "
+        fp="Cloud computing offers major benefits to business operations looking to expand operations and enable staff to work remotely, but how change is implemented is just as important as what is being implemented. To help you with your transformation to the Cloud, RPI’s global reach of highly skilled talent in this sector enables us to fulfill positions that require successful Change Management. "
       >
         <LowerIllustration />
       </ServiceOverview>
       <ServicesAbout />
       <ServiceTestimonial
-        quote={quoteData.quote}
+        quotef={quoteData.quote}
         name={quoteData.name}
         company={quoteData.company}
       />

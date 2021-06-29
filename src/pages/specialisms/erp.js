@@ -41,16 +41,16 @@ const ERP = () => {
       </ServiceHeader>
       <ServiceOverview
         subtitle="Filling the demand for talent and expertise in ERP deployments"
-        fp="Enterprise Resource Planning deployments are complex and expensive endeavors. RPI understands the importance of ERP implementation projects and the role that highly skilled talent plays within them. Our ERP consultants consultants have developed a community to support global ERP deployments."
+        fp="Enterprise Resource Planning deployments are complex and expensive endeavors. RPI understands the importance of ERP implementation projects and the role that highly skilled talent plays within them. Our ERP consultants have developed a community to support global ERP deployments."
       >
         <LowerIllustration />
       </ServiceOverview>
       <ServicesAbout />
-      <ServiceTestimonial
+      {/* <ServiceTestimonial
         quote={quoteData.quote}
         name={quoteData.name}
         company={quoteData.company}
-      />
+      /> */}
       <AllSpecialisms
         title="Our services"
         text="Finding the best leaders and sourcing highly skilled tech talent means finding the right partner. Take a closer look at how we deliver talent."

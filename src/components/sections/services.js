@@ -181,7 +181,7 @@ const ServicesStyles = styled.section`
           display: flex;
           flex-direction: column;
           align-items: center;
-          justify-content: center;
+          justify-content: baseline;
         }
         @media only screen and (min-width: 1024px) {
           padding: 1rem 0.5rem;

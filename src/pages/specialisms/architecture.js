@@ -39,17 +39,17 @@ const Architecture = () => {
         <Illustration />
       </ServiceHeader>
       <ServiceOverview
-        subtitle="Overcoming big picture challenges in business architecture with the right skill sets"
+        subtitle="Delivering roadmaps and solutions leading to business success"
         sp="Ensuring Technology is “enabling” and not “suffocating, stifling and overpowering” the business is a complex challenge; legacy dependencies, tech debt and business processes disparity require sophisticated Architecture roadmaps with your unique business at the heart of them. "
       >
         <LowerIllustration />
       </ServiceOverview>
       <ServicesAbout />
-      <ServiceTestimonial
+      {/* <ServiceTestimonial
         quote={quoteData.quote}
         name={quoteData.name}
         company={quoteData.company}
-      />
+      /> */}
       <AllSpecialisms
         title="Our services"
         text="Finding the best leaders and sourcing highly skilled tech talent means finding the right partner. Take a closer look at how we deliver talent."
