@@ -85,21 +85,3 @@ const AboutUsHeaderStyles = styled.header`
     }
   }
 `;
-const AboutUsHeader = () => (
-  <AboutUsHeaderStyles>
-    <div className="a-h">
-      <div className="a-h__left">
-        <h6 className="sbt">About us</h6>
-        <h1>Title introducing RPI </h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio autem
-          nobis, temporibus sunt similique sint iure repudiandae dolorum
-          distinctio perspiciatis a commodi asperiores, blanditiis voluptatum!
-        </p>
-      </div>
-      <div className="a-h__right">
-        <Illustration />
-      </div>
-    </div>
-  </AboutUsHeaderStyles>
-);

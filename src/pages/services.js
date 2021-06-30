@@ -11,8 +11,8 @@ import Illustration from '../svgs/who.svg';
 
 const data = [
   {
-    title: 'Retained Search',
-    id: 'retained-search',
+    title: 'Executive Search',
+    id: 'executive-search',
     i: 'Leadership journeys, supercharged',
     text:
       'RPI’s reputation is unquestionably in identifying and identifying the best leaders; people who understand their markets, with the right skills, experience, culture and strategy that will put the right teams in place to revolutionise and drive transformation across your business. Our retained search services identify and attract unique/inspired leaders and determine optimal organisational fit while our executive candidates have local expertise with a global perspective. ',
@@ -77,7 +77,7 @@ const data = [
         />
       </svg>
     ),
-    alt: 'Retained Search | Leadership journeys, supercharged',
+    alt: 'Executive Search | Leadership journeys, supercharged',
   },
   {
     title: 'Permanent',

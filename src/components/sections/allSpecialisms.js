@@ -104,8 +104,8 @@ const AllSpecialismsStyles = styled.section`
 const AllSpecialisms = ({ title, text }) => {
   const boxes = [
     {
-      name: 'Retained Search',
-      link: '/services#retained-search',
+      name: 'Executive Search',
+      link: '/services#executive-search',
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
