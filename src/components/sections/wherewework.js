@@ -427,26 +427,26 @@ const WhereWeWork = () => {
             <h5>{area.location}</h5>
             <div className="boxes__inner__wrapper">
               <section>
-                <span>{area.established}</span>
                 <p>Established</p>
+                <span>{area.established}</span>
               </section>
               <section className="clear--fix">
-                <span className="office">{area.regional}</span>
                 <p>Regional operations</p>
+                <span className="office">{area.regional}</span>
               </section>
               <section>
-                <span>{area.staff}</span>
                 <p>Staff</p>
+                <span>{area.staff}</span>
               </section>
               <section>
+                <p>placements to date</p>
                 <span>
                   {area.total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
                 </span>
-                <p>placements to date</p>
               </section>
               <section>
+                <p>Countries made placements in</p>
                 <span>{area.countries}</span>
-                <p>No. Countries made placements in</p>
               </section>
             </div>
           </div>
