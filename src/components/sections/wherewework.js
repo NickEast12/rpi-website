@@ -44,6 +44,7 @@ const areaData = [
     staff: 25,
     total: 3500,
     countries: 44,
+    link: '/contact#uk-europe',
   },
   {
     icon: (
@@ -85,6 +86,7 @@ const areaData = [
     staff: 22,
     total: 2700,
     countries: 34,
+    link: '/contact#mea',
   },
   {
     icon: (
@@ -122,10 +124,12 @@ const areaData = [
     ),
     location: 'Asia',
     established: 2007,
-    regional: 'Singapore, Malaysia, Hong Kong',
+    regional: 'Singapore, Malaysia,',
+    regionalLower: 'Hong Kong',
     staff: 18,
     total: 1350,
     countries: 14,
+    link: '',
   },
   {
     icon: (
@@ -167,6 +171,7 @@ const areaData = [
     staff: 4,
     total: 150,
     countries: 10,
+    link: '',
   },
   {
     icon: (
@@ -208,6 +213,7 @@ const areaData = [
     staff: 6,
     total: 300,
     countries: 20,
+    link: '',
   },
 ];
 
@@ -273,12 +279,8 @@ const WhereWeWorkStyles = styled.section`
     }
     @media only screen and (min-width: 1024px) {
       grid-template-columns: repeat(3, 1fr);
-      /* grid-template-rows: repeat(2, 1fr); */
       padding: 3rem 0 0 0;
       grid-gap: 1rem;
-      /* grid-template-areas:
-        'a a b b c c '
-        'd d d e e e'; */
     }
     @media only screen and (min-width: 1280px) {
       grid-template-columns: repeat(5, 1fr);
@@ -292,59 +294,38 @@ const WhereWeWorkStyles = styled.section`
         width: 100%;
         margin: var(--auto);
       }
+
       @media only screen and (min-width: 1024px) {
         width: 100%;
         margin: var(--auto);
-        /* &:nth-child(1) {
-          grid-area: a;
-        }
-        &:nth-child(2) {
-          grid-area: b;
-        }
-        &:nth-child(3) {
-          grid-area: c;
-        }
-        &:nth-child(4) {
-          grid-area: d;
-        }
-        &:nth-child(5) {
-          grid-area: e;
-        } */
-      }
-      @media only screen and (min-width: 1024px) {
-        padding: 1rem 0rem;
+        padding: 1rem 0 0.5rem 0;
         &:nth-child(1) {
           .clear--fix {
-            padding: 2rem 0;
+            padding: 0.25rem 0 1.3rem 0;
           }
         }
         &:nth-child(2) {
           .clear--fix {
-            padding: 2rem 0;
+            padding: 0.25rem 0 1.3rem 0;
           }
         }
         &:nth-child(3) {
           .clear--fix {
-            padding: 1.35rem 0;
+            padding: 0.25rem 0 0 0;
           }
         }
         &:nth-child(4) {
           .clear--fix {
-            padding: 2rem 0;
+            padding: 0.25rem 0 1.3rem 0;
           }
         }
         &:nth-child(5) {
           .clear--fix {
-            padding: 2rem 0;
+            padding: 0.25rem 0 1.3rem 0;
           }
         }
       }
       &__wrapper {
-        @media only screen and (min-width: 1024px) {
-          /* display: flex;
-          justify-content: center;
-          align-items: baseline; */
-        }
       }
       &:nth-child(odd) {
         border-top: solid 8px #73d0d9;
@@ -368,14 +349,16 @@ const WhereWeWorkStyles = styled.section`
       section {
         padding: 0.75rem 0;
         border-top: solid 0.1px rgba(0, 0, 0, 0.1);
-
+        @media only screen and (min-width: 1024px) {
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: column;
+          padding: 0.25rem 0;
+        }
         span {
           font-weight: 700;
           font-size: 1.5rem;
           color: var(--newCyan);
-          @media only screen and (min-width: 1024px) {
-            font-size: 1.2rem;
-          }
           @media only screen and (min-width: 1024px) {
             font-size: 1rem;
           }
@@ -431,8 +414,9 @@ const WhereWeWork = () => {
                 <span>{area.established}</span>
               </section>
               <section className="clear--fix">
-                <p>Regional operations</p>
+                <p>Regional offices</p>
                 <span className="office">{area.regional}</span>
+                <span>{area.regionalLower}</span>
               </section>
               <section>
                 <p>Staff</p>
@@ -445,7 +429,7 @@ const WhereWeWork = () => {
                 </span>
               </section>
               <section>
-                <p>Countries made placements in</p>
+                <p>Countries placed in to date</p>
                 <span>{area.countries}</span>
               </section>
             </div>

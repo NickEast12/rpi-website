@@ -52,13 +52,14 @@ const ServicesOverviewStyles = styled.section`
     }
   }
 `;
-const ServicesOverview = ({ subtitle, fp, sp, children }) => (
+const ServicesOverview = ({ subtitle, fp, sp, tp, children }) => (
   <ServicesOverviewStyles>
     <div className="stats">
       <div className="stats__text">
         <h3>{subtitle}</h3>
         <p>{fp}</p>
         <p>{sp}</p>
+        {tp}
       </div>
       <div className="stats__img">{children}</div>
     </div>

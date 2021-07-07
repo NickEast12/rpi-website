@@ -82,10 +82,7 @@ const Stats = () => {
           </section>
           <section>
             <KnowledgeIcon />
-            <h5>
-              You’re prepared to learn, develop and improve, in a team that has
-              turned acquiring talent into an artform
-            </h5>
+            <h5>You’re prepared to learn, develop and improve.</h5>
           </section>
         </div>
       </div>

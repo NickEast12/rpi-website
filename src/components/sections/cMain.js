@@ -51,6 +51,10 @@ const CMainStyles = styled.section`
           background-color: var(--offWhite);
           border: 1px solid #eee;
           margin-bottom: 0.75rem;
+          &:focus {
+            outline: 2px solid var(--newBlue);
+            outline-offset: -1px;
+          }
         }
         textarea {
           width: 100%;
@@ -60,6 +64,10 @@ const CMainStyles = styled.section`
           margin-bottom: 0.75rem;
           height: 9rem;
           resize: vertical;
+          &:focus {
+            outline: 2px solid var(--newBlue);
+            outline-offset: -1px;
+          }
         }
         input::placeholder,
         textarea::placeholder {
@@ -92,13 +100,10 @@ const CMain = () => {
         <div className="cmain__contact">
           <h2>Let’s start a conversation</h2>
           <p>
-            Curious how RPI will fit in best with your business? Give us a call
-            or send us a message.
+            Curious how RPI can deliver talent to transform your business? Send
+            us a message.
           </p>
           <div className="cmain__contact__details">
-            <a href="tel:07528216309" target="_blank" rel="noopener noreferrer">
-              <span>+44 (0) 203 597 7150</span>
-            </a>
             <a
               href="mailto:people@rpint.com"
               target="_blank"

@@ -62,7 +62,7 @@ const listData = [
       </svg>
     ),
     link: '/specialisms/bi-data-analytics',
-    title: 'Bi, Data & Analytics',
+    title: 'BI, Data & Analytics',
     text: 'Extracting maximum value via a data driven approach.',
   },
   {

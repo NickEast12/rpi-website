@@ -81,9 +81,10 @@ const TeamHeader = () => {
         <h1>Meet RPI's leaders</h1>
         <p>
           We’re a growing team of recruitment experts and thought leaders — full
-          of professionalism, personality and expertise across a vast range of
-          sectors. We drive the people part of technology-enabled transformation
-          and are dedicated to helping companies like yours reach the top.
+          of professionalism, personality and expertise aacross a vast range of
+          specialisms and services. We drive the people part of
+          technology-enabled transformation and are dedicated to helping
+          companies like yours reach the top.
         </p>
         <Illustration />
       </div>

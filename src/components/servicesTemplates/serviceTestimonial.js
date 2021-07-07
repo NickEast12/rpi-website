@@ -22,6 +22,14 @@ const ServiceTestimonialStyles = styled.section`
     q {
       max-width: 1000px;
       margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+    }
+    > p {
+      color: #fff;
+      text-align: center;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      margin-top: 0.5rem;
     }
   }
   h5 {
@@ -43,26 +51,13 @@ const ServiceTestimonial = ({ quotef, quotes, quotet, name, company }) => {
   return (
     <ServiceTestimonialStyles>
       <div className="testimonal">
-        <q>
-          {quotef}
-          {quotes}
-          {quotet}
-        </q>
-        {/* <p>
-            <span>{quotef}</span>
-          </p>
-          <p>
-            <span>{quotes}</span>
-          </p>
-          <p>
-            <span>{quotet}</span>
-          </p> */}
+        <q>{quotef}</q>
+        {quotes ? <q>{quotes}</q> : ''}
+        {quotet ? <q>{quotet}</q> : ''}
         <h6>
-          <span>
-            {name}
-            {company ? { company } : ''}
-          </span>
+          <span>{name}</span>
         </h6>
+        <p>{company}</p>
       </div>
     </ServiceTestimonialStyles>
   );

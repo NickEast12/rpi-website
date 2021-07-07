@@ -5,22 +5,22 @@ const data = [
   {
     value: 'Excellence.',
     text:
-      'We strive to deliver excellence to our clients, candidates and in all that we do',
+      'We strive to deliver excellence to our clients and candidates in all that we do.',
   },
   {
     value: 'Agility.',
     text:
-      'We have a flexible and innovative approach, always providing the  best environment for our people and the best experience for our customers',
+      'We have a flexible and innovative approach, a superior experience for our clients and candidates.',
   },
   {
     value: 'Connection.',
     text:
-      'Our strength comes from the quality and trust based relationships that we hold locally and globally, which permeates out to our clients, candidates and partners',
+      'Our strength comes from the quality and trust based relationships that we hold locally and globally, which permeate out to our clients, candidates.',
   },
   {
     value: 'Expertise.',
     text:
-      'We are experts in sourcing talent for technology-enabled transformation. We seek out expertise in the practices, services, solutions and geographical locations we operate in',
+      'We are experts in sourcing talent for technology-enabled transformation. We seek out expertise in the specialisms, services, and geographical locations.',
   },
 ];
 const ValuesStyles = styled.section`
@@ -35,7 +35,7 @@ const ValuesStyles = styled.section`
     }
     @media only screen and (min-width: 1280px) {
       display: grid;
-      grid-template-columns: 45% 1fr;
+      grid-template-columns: 1fr;
       grid-gap: 1rem;
     }
     h4 {
@@ -83,10 +83,6 @@ const Values = () => {
       <div className="values">
         <div className="values__text">
           <h4>Our values</h4>
-          <p>
-            We strive to provide the best service and experience to our clients
-            candidates and communities underpinned by our values.
-          </p>
         </div>
 
         <div className="values__wrapper">

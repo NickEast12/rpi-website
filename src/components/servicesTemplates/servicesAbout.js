@@ -62,7 +62,7 @@ const data = [
     fact: 'Staff across 9 offices',
   },
   {
-    title: 'Our leaders average',
+    title: 'Our consultants average',
     no: 15,
     fact: 'Years in the sector',
   },

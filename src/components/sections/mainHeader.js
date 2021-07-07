@@ -20,6 +20,9 @@ const AboutUsHeaderStyles = styled.header`
         margin: 0.5rem 0;
         font-size: 2.25rem;
       }
+      p {
+        margin-bottom: 0.5rem;
+      }
       button {
         width: 200px;
         margin-top: 1rem;
@@ -50,7 +53,7 @@ const AboutUsHeaderStyles = styled.header`
     }
   }
 `;
-const MainHeader = ({ page, title, text, children }) => {
+const MainHeader = ({ page, title, text, lowerText, children }) => {
   const i = true;
   return (
     <AboutUsHeaderStyles>
@@ -59,6 +62,7 @@ const MainHeader = ({ page, title, text, children }) => {
           <h6 className="sbt">{page}</h6>
           <h1>{title}</h1>
           <p>{text}</p>
+          <p>{lowerText}</p>
           <button type="button" className="btn btn--main">
             <Link to="/contact">
               <span>Get started</span>

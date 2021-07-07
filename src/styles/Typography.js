@@ -10,7 +10,7 @@ const typography = css`
       font-size: 19px;
     }
     @media only screen and (min-width: 1280px) {
-      font-size: 20px;
+      font-size: 19.5px;
     }
   }
   h1 {

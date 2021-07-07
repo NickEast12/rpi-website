@@ -18,12 +18,8 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
     }
     ::selection {
-        background-color: var(--lightTeal);
-        color: var(--lightTeal);
-    }
-    :focus {
-        outline: 2px dashed var(--green);
-        outline-offset: 3px;
+        background-color: var(--background);
+        color: var(--newBlue);
     }
     a, a:visited {
         color: inherit;

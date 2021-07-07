@@ -24,6 +24,11 @@ const CSRStyles = styled.section`
         font-size: 2.35rem;
         margin: 0.25rem 0 0.5rem 0;
       }
+      p {
+        &:nth-child(2) {
+          margin-top: 0.5rem;
+        }
+      }
     }
     @media only screen and (min-width: 768px) {
       &__left,
@@ -67,6 +72,9 @@ const CSRStyles = styled.section`
         width: 100%;
         margin: var(--auto);
       }
+      &__right {
+        padding: 1.5rem 2rem;
+      }
     }
     @media only screen and (min-width: 1280px) {
       padding-bottom: 2rem;
@@ -82,13 +90,16 @@ const CSR = () => {
           <Illustration />
         </div>
         <div className="CSR__right">
-          <h6 className="sbt">CSR</h6>
-          <h4>CSR title</h4>
+          <h4>CSR</h4>
           <p>
             At RPI we support a number of charitable causes. Whether it’s
             through donations, physical trials that raise funds and awareness,
             or even an investment of time, our employees share a genuine
             enthusiasm to support programmes that help those in need.
+          </p>
+          <p>
+            During 2020 we raised or donated over USD $20K to more than 10
+            charities.
           </p>
         </div>
       </div>

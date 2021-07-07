@@ -161,9 +161,6 @@ const NavStyles = styled.nav`
                 li {
                   padding: 0.75rem 0.5rem;
                   border-bottom: solid 1px rgba(100, 100, 111, 0.2);
-                  &:nth-child(8) {
-                    border: none;
-                  }
                   &:hover {
                     a {
                       p {
@@ -519,7 +516,7 @@ const Nav = ({ alt }) => {
                       <li>
                         <Link to="/specialisms/bi-data-analytics">
                           <DataIcon />
-                          <p>Bi, Data &amp; Analytics</p>
+                          <p>BI, Data &amp; Analytics</p>
                         </Link>
                       </li>
                       <li>
@@ -618,7 +615,7 @@ const Nav = ({ alt }) => {
                 <li>
                   <Link to="/specialisms/bi-data-analytics">
                     <DataIcon />
-                    <p>Bi, Data &amp; Analytics</p>
+                    <p>BI, Data &amp; Analytics</p>
                   </Link>
                 </li>
                 <li>

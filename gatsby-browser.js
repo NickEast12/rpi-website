@@ -1,9 +1,9 @@
 const LogRocket = require('logrocket');
 //* Log rocket 🚀
 exports.onClientEntry = () => {
+  const Tawk_API = Tawk_API || {};
   LogRocket.init('dptymq/rpi-website');
   console.log('LogRocket 🚀');
-  var Tawk_API = Tawk_API || {};
   const Tawk_LoadStart = new Date();
   (function () {
     const s1 = document.createElement('script');

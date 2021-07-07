@@ -15,10 +15,7 @@ const Contact = () => {
         title="Contact Us | Specialist Recruitment Partner | RPI"
         description="Looking for a specialist recruitment partner that will connect business strategy, talent and technology to drive transformation? Let's talk. Visit our contact page to get in touch."
       />
-      <DarkHeader
-        title="Contact us"
-        text="Are you ready to find the talent that will ignite transformation in your business?"
-      />
+      <DarkHeader title="Are you ready to talk about talent that transforms your business? " />
       <CMain />
       <ContactLocations />
     </Layout>

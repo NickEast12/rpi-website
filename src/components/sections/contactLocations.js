@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 //* Local imports
 import { Link } from 'gatsby';
-import LocationMap from '../icons/locationmap';
+import LocationMap from '../../svgs/map_pins.svg';
 import Pin from '../../svgs/pin.svg';
 
 const ContactLocationsStyles = styled.section`
@@ -44,9 +44,10 @@ const ContactLocationsStyles = styled.section`
       }
     }
     svg {
-      margin-top: 1rem;
+      margin-top: 3rem;
       width: 100%;
-      height: auto;
+      height: 100%;
+      max-width: 750px;
       @media only screen and (min-width: 1280px) {
         width: 80%;
       }
@@ -166,9 +167,6 @@ const ContactLocations = () => {
     <ContactLocationsStyles>
       <div className="locations">
         <h3>Our locations around the globe</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, a!
-        </p>
         <div className="locations__btns">
           <Link to="/contact#uk-europe">
             <button type="button">

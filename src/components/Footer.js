@@ -297,7 +297,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link to="/specialisms/bi-data-analytics">
-                    Bi, Data &amp; Analytics
+                    BI, Data &amp; Analytics
                   </Link>
                 </li>
                 <li>

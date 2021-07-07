@@ -50,10 +50,6 @@ const DiversityStyles = styled.section`
         padding: 3rem;
         text-align: left;
         margin-top: 0;
-        h6 {
-          /* color: rgb(206, 211, 214); */
-          color: var(--accent);
-        }
         h4,
         p {
           color: var(--offWhite);
@@ -68,6 +64,9 @@ const DiversityStyles = styled.section`
       &__left {
         width: 100%;
         margin: var(--auto);
+      }
+      &__right {
+        padding: 1rem 2rem;
       }
     }
     @media only screen and (min-width: 1280px) {
@@ -84,13 +83,14 @@ const Diversity = () => {
           <Illustration />
         </div>
         <div className="diversity__right">
-          <h6 className="sbt">Diversity</h6>
-          <h4>Diversity title</h4>
+          <h4>Diversity</h4>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
-            eum deserunt perferendis quibusdam distinctio accusantium illo,
-            voluptatem, molestiae obcaecati nihil repellendus magnam voluptas
-            nobis ipsam.
+            At RPI, diversity, equity, and inclusion are at the core of who we
+            are. Our commitment to these values is unwavering – across all of
+            our work around the world. They are central to our mission and to
+            our impact. We know that having varied perspectives helps generate
+            better ideas to solve the complex problems of a changing—and
+            increasingly diverse—world.
           </p>
         </div>
       </div>

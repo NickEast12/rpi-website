@@ -56,21 +56,23 @@ const Join = () => {
         <div className="join__left">
           <h2>Our areas of expertise</h2>
           <p>
-            With a focus on emerging technologies, we specialise in sourcing the
-            leaders and skilled professionals to drive transformation
-            incorporating 5G, AI, RPA, cyber security and all things digital.
-            Our insight enables our clients around the world to embrace digital
-            transformation and build solutions for a better future.
+            Focused on leadership and technology recruitment, RPI sources the
+            talent that ignites transformation for our clients.
           </p>
           <p>
-            Operating from offices in London, Singapore, Hong Kong, Dubai, Kuala
-            Lumpur and Auckland, we bring a unique perspective to the global
-            talent market – and a one-of-a-kind career experience to our team
-            members.
+            We have 8 defined specialisms: Leadership, Communications,
+            Architecture, ERP, BI Data &amp; Analytics, Software Engineering and
+            DevOps, Infrastructure and Cloud Services, and Cyber Security.
           </p>
           <p>
-            It’s a dynamic, international environment – fast-paced,
-            target-driven and ultimately rewarding.
+            Operating from offices across UK, Europe, Middle East, Asia, USA and
+            ANZ &amp; Pacific we bring a very unique perspective to the global
+            talent market – and a one-of-a-kind career experience to our people.
+          </p>
+          <p>
+            We work as a collaborative organization, often working together
+            globally to ensure we deliver maximum value for our clients. We
+            value global mobility and actively encourage career development.
           </p>
         </div>
         <div className="join__right">

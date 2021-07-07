@@ -97,6 +97,9 @@ const BlogStyles = styled.article`
         section {
           padding-left: 10px;
           padding-top: 2px;
+          p {
+            font-size: 0.85rem;
+          }
         }
       }
       .share {

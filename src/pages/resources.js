@@ -3,12 +3,22 @@ import React from 'react';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
 //* Local imports
+import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
 import CTA from '../components/CTA';
 import BookIcon from '../svgs/open-book.svg';
 import ArrowIcon from '../svgs/right-arrow.svg';
 import AllBlogs from '../components/sections/allBlogs';
 import SEO from '../components/functional/SEO';
+
+const WidgetWrapper = styled.section`
+  width: 100%;
+  padding: 2rem 0;
+  > div {
+    max-width: var(--maxWidth);
+    margin: var(--auto);
+  }
+`;
 
 const Resources = ({ data }) => {
   const headerData = data.BlogQuery.nodes;
@@ -19,8 +29,18 @@ const Resources = ({ data }) => {
         title="Discover News &amp; Articles from our Thought Leaders | RPI"
         description="Take a look at what we've been up to at RPI and what's happening within the industry as we keep up with the latest news."
       />
+      <Helmet>
+        <script
+          src="https://www.sociablekit.com/app/embed/linkedin-page-post/widget.js"
+          async
+          defer
+        />
+      </Helmet>
       <ResourcesHeader blogs={headerData} />
       <AllBlogs blogs={allBlogs} />
+      <WidgetWrapper>
+        <div className="sk-ww-linkedin-page-post" data-embed-id="54509" />
+      </WidgetWrapper>
       <CTA />
     </Layout>
   );

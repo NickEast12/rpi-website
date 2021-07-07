@@ -11,7 +11,9 @@ const AltHeaderStyles = styled.header`
     margin: var(--auto);
     max-width: var(--maxWidth);
     h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
+      max-width: 750px;
+      margin: var(--auto);
     }
     p {
       margin: 0.85rem auto;
