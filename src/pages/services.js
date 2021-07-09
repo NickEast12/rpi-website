@@ -15,7 +15,7 @@ const data = [
     id: 'executive-search',
     i: 'Leadership journeys, supercharged',
     text:
-      'RPI’s reputation is unquestionably in identifying the best leaders; people who understand their markets, with the right skills, experience, culture and strategy that will put the right teams in place to revolutionise and drive transformation across your business. Our retained search services identify and attract unique/inspired leaders and determine optimal organisational fit while our executive candidates have local expertise with a global perspective. ',
+      'RPI’s reputation is unquestionably in identifying the best leaders; people who understand their markets, with the right skills, experience, culture and strategy that will put the right teams in place to revolutionise and drive transformation across your business. Our executive search services identify and attract unique/inspired leaders and determine optimal organisational fit while our executive candidates have local expertise with a global perspective. ',
     img: (
       <svg
         data-name="Layer 1"

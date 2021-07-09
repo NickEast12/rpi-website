@@ -15,10 +15,11 @@ const TheTeamStyles = styled.section`
     }
     @media only screen and (min-width: 600px) {
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 1.5rem;
+      grid-gap: 2rem;
     }
     @media only screen and (min-width: 1024px) {
       grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2rem 0;
     }
   }
 `;

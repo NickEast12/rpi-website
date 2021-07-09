@@ -13,8 +13,7 @@ const listData = [
     ),
     link: '/specialisms/leadership',
     title: 'Leadership',
-    text:
-      'Leadership that transforms themselves, their teams, and the organisation.',
+    text: 'Leadership that transforms their team and the organisation',
   },
   {
     icon: (

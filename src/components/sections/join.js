@@ -65,9 +65,10 @@ const Join = () => {
             DevOps, Infrastructure and Cloud Services, and Cyber Security.
           </p>
           <p>
-            Operating from offices across UK, Europe, Middle East, Asia, USA and
-            ANZ &amp; Pacific we bring a very unique perspective to the global
-            talent market – and a one-of-a-kind career experience to our people.
+            Operating from offices across UK, Europe, Middle East, Asia,
+            Americas and ANZ &amp; Pacific we bring a very unique perspective to
+            the global talent market – and a one-of-a-kind career experience to
+            our people.
           </p>
           <p>
             We work as a collaborative organization, often working together

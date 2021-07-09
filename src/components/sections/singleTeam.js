@@ -7,24 +7,31 @@ import LinkedinIcon from '../../svgs/linkedin.svg';
 const SingleTeamStyles = styled.section`
   position: relative;
   border-radius: 1.5px;
-  width: 100%;
+  width: 90%;
   height: auto;
+  margin: var(--auto);
   transition: all 0.35s ease;
   margin-bottom: 1.5rem;
+  cursor: pointer;
+  border: solid 6px transparent;
+  border-radius: 10px;
+  &:hover {
+    border: solid 6px var(--newBlue);
+  }
   @media only screen and (min-width: 600px) {
     margin-bottom: 0;
   }
   .gatsby-image-wrapper {
     width: 100%;
-    height: 20rem;
+    height: auto;
     border-radius: 5px;
   }
   .info {
     position: absolute;
     transition: max-height 0.35s ease;
-    bottom: 0.5rem;
-    width: 90%;
-    left: calc(100% - 95%);
+    bottom: 0;
+    width: 100%;
+    left: 0;
     header {
       padding: 0.5rem 0.75rem;
       background-color: var(--background);

@@ -41,7 +41,7 @@ const Architecture = () => {
       <ServiceOverview
         subtitle="Delivering roadmaps and solutions leading to business success"
         sp="Ensuring Technology is “enabling” and not “suffocating, stifling and overpowering” the business is a complex challenge."
-        tp=" Legacy dependencies, tech debt and business process disparity require sophisticated Architecture roadmaps with your unique business at the heart of them. "
+        tp="Legacy dependencies, tech debt and business process disparity require sophisticated Architecture roadmaps with your unique business at the heart of them. "
       >
         <LowerIllustration />
       </ServiceOverview>

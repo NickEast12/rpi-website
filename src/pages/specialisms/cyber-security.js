@@ -18,8 +18,8 @@ const information = [
     quote: [
       {
         quote:
-          'I have worked with RP International for a number of years now as they stand out above the crowd. Their professionalism and knowledge of the Cyber Security market is unparalleled, and have assisted us in developing entire regions from scratch with superb quality and speed.',
-        name: 'Anonymous',
+          '"I have worked with RP International for a number of years now as they stand out above the crowd. Their professionalism and knowledge of the Cyber Security market is unparalleled, and have assisted us in developing entire regions from scratch with superb quality and speed."',
+        name: 'Cyber Security SVP IT, Security Company',
         company: '',
       },
     ],

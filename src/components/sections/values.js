@@ -10,12 +10,12 @@ const data = [
   {
     value: 'Agility.',
     text:
-      'We have a flexible and innovative approach, a superior experience for our clients and candidates.',
+      'We have a flexible and innovative approach, offering a superior experience for our clients and candidates.',
   },
   {
     value: 'Connection.',
     text:
-      'Our strength comes from the quality and trust based relationships that we hold locally and globally, which permeate out to our clients, candidates.',
+      'Our strength comes from the quality and trust based relationships that we hold locally and globally, which permeate out to our clients and candidates.',
   },
   {
     value: 'Expertise.',

@@ -19,7 +19,7 @@ const information = [
       {
         quote:
           'RP International provided professional engagement from the very first conversation regarding recruitment support in scaling our AI Lab. They showed excellent technical knowledge and provided extensively qualified candidates who had been technically tested before submitting. We successfully onboarded four Data Scientists with niche skill sets – we had struggled to hire even one Data Scientist before engaging with RPI.',
-        name: 'Anonymous ',
+        name: 'SVP Data Analytics, Major Bank, Asia',
         company: '',
       },
     ],
@@ -33,7 +33,7 @@ const BigDataAnalytics = () => {
   return (
     <Layout>
       <SEO
-        title="Big Data &amp; Analytics Recruitment Agency | RPI"
+        title="BI, Data &amp; Analytics Recruitment Agency | RPI"
         description="RPIs team of trusted consultants are expertly placed to help your business find the talent that will deliver a competitive advantage through BI, Data &amp; Analytics. Get in touch today."
       />
       <ServiceHeader page={data.name} title={data.title} text={data.headerText}>

@@ -19,8 +19,8 @@ const information = [
     quote: [
       {
         quote:
-          'From the beginning of our transformation RP International has supported with the identification and deployment of highly experienced individuals. RPI has also placed specialist talent into the strategic vendors who are supporting our transformation. This has had a significant impact to the delivery of our project at both a management and technical level. ',
-        name: 'Anonymous',
+          '"From the beginning of our transformation RP International has supported with the identification and deployment of highly experienced individuals. RPI has also placed specialist talent into the strategic vendors who are supporting our transformation. This has had a significant impact to the delivery of our project at both a management and technical level." ',
+        name: 'CTO, Mobile Operator, Europe ',
         company: '',
       },
     ],
