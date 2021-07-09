@@ -10,9 +10,6 @@ export async function BlogPages({ graphql, actions }) {
           slug {
             current
           }
-          categories {
-            title
-          }
         }
       }
     }
@@ -26,7 +23,6 @@ export async function BlogPages({ graphql, actions }) {
       context: {
         title: blog.title,
         slug: blog.slug.current,
-        category: blog.categories[0].title,
       },
     });
   });
