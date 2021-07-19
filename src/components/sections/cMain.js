@@ -31,8 +31,8 @@ const CMainStyles = styled.section`
       &__details {
         display: flex;
         flex-direction: column;
-        margin: 1rem 0;
-        gap: 1rem;
+        margin: 0.25rem 0;
+        gap: 0.5rem;
         a {
           font-weight: 700;
           span {
