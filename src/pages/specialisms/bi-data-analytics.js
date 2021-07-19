@@ -18,7 +18,7 @@ const information = [
     quote: [
       {
         quote:
-          'RP International provided professional engagement from the very first conversation regarding recruitment support in scaling our AI Lab. They showed excellent technical knowledge and provided extensively qualified candidates who had been technically tested before submitting. We successfully onboarded four Data Scientists with niche skill sets – we had struggled to hire even one Data Scientist before engaging with RPI.',
+          '"RP International provided professional engagement from the very first conversation regarding recruitment support in scaling our AI Lab. They showed excellent technical knowledge and provided extensively qualified candidates who had been technically tested before submitting. We successfully onboarded four Data Scientists with niche skill sets – we had struggled to hire even one Data Scientist before engaging with RPI."',
         name: 'SVP Data Analytics, Major Bank, Asia',
         company: '',
       },

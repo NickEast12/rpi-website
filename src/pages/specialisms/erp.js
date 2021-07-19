@@ -18,10 +18,11 @@ const information = [
 
     quote: [
       {
-        quote:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus placeat ullam saepe, doloribus perspiciatis adipisci architecto? Consequatur quibusdam a ut!',
-        name: 'Joe Blogs',
-        company: 'Company name',
+        quotef:
+          '"Working in high-growth markets where the demand for the best talent is extremely high we have been pleased to work with RP International securing numerous Senior and Specialist hires across our European business.',
+        quotes:
+          'Throughout our dealings with RP International they have shown in-depth industry knowledge, a very professional approach and the patience and versatility to deliver excellent candidates in a consistently timely manner. They have not been afraid to push-back on occasions, acting as true business partners with open communications and regular, informed feedback."',
+        name: 'Director HR, Global Software company',
       },
     ],
   },
@@ -46,11 +47,12 @@ const ERP = () => {
         <LowerIllustration />
       </ServiceOverview>
       <ServicesAbout />
-      {/* <ServiceTestimonial
-        quote={quoteData.quote}
+      <ServiceTestimonial
+        quotef={quoteData.quotef}
+        quotes={quoteData.quotes}
         name={quoteData.name}
         company={quoteData.company}
-      /> */}
+      />
       <AllSpecialisms
         title="Our services"
         text="Finding the best leaders and sourcing highly skilled tech talent means finding the right partner. Take a closer look at how we deliver talent."

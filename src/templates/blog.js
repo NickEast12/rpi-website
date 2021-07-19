@@ -23,6 +23,7 @@ import LinkedInIcon from '../svgs/linkedin.svg';
 import EmailIcon from '../svgs/paper-plane.svg';
 import RelatedBlogs from '../components/sections/relatedBlogs';
 import SEO from '../components/functional/SEO';
+import LogoIcon from '../svgs/favicon.svg';
 
 const BlogStyles = styled.article`
   width: 100%;
@@ -88,11 +89,15 @@ const BlogStyles = styled.article`
         padding: 1rem;
         display: flex;
         align-items: center;
-        .gatsby-image-wrapper {
+        .gatsby-image-wrapper,
+        svg {
           width: 80px;
           height: 80px;
           border-radius: 100%;
           border: solid 4px var(--newCyan);
+        }
+        svg {
+          padding: 0.5rem;
         }
         section {
           padding-left: 10px;
@@ -184,10 +189,15 @@ const Blog = ({ data }) => {
           </div>
           <aside className="bb__right">
             <div className="author">
-              <Img fluid={blog.authors[0].author.image.asset.fluid} />
+              {blog.authors[0].image ? (
+                <Img fluid={blog.authors[0].image.asset.fluid} />
+              ) : (
+                <LogoIcon />
+              )}
+
               <section>
-                <h6>{blog.authors[0].author.name}</h6>
-                <p>{blog.authors[0].author.position}</p>
+                <h6>{blog.authors[0].name}</h6>
+                <p>{blog.authors[0].position}</p>
               </section>
             </div>
             <div className="share">
@@ -369,16 +379,14 @@ export const query = graphql`
       }
       _rawBody
       authors {
-        author {
-          name
-          id
-          position
-          image {
-            alt
-            asset {
-              fluid(maxWidth: 50) {
-                ...GatsbySanityImageFluid
-              }
+        name
+        id
+        position
+        image {
+          alt
+          asset {
+            fluid(maxWidth: 50) {
+              ...GatsbySanityImageFluid
             }
           }
         }
@@ -410,15 +418,13 @@ export const query = graphql`
           title
         }
         authors {
-          author {
-            name
-            id
-            image {
-              alt
-              asset {
-                fluid(maxWidth: 100) {
-                  ...GatsbySanityImageFluid
-                }
+          name
+          id
+          image {
+            alt
+            asset {
+              fluid(maxWidth: 100) {
+                ...GatsbySanityImageFluid
               }
             }
           }

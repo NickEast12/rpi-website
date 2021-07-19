@@ -13,9 +13,9 @@ const data = [
   {
     title: 'Executive Search',
     id: 'executive-search',
-    i: 'Leadership journeys, supercharged',
+    i: 'Robust methodology delivering impactful transformative leaders',
     text:
-      'RPI’s reputation is unquestionably in identifying the best leaders; people who understand their markets, with the right skills, experience, culture and strategy that will put the right teams in place to revolutionise and drive transformation across your business. Our executive search services identify and attract unique/inspired leaders and determine optimal organisational fit while our executive candidates have local expertise with a global perspective. ',
+      'Our Executive Search service offers a dynamic alternative to the traditional model. We disrupt the legacy approach by injecting pace and agility while adopting a flexible and tailored search process, ensuring maximum visibility for the client, without compromising on methodology. Our experienced team combine their regional knowledge and networks to deliver a partner-led, intensive search and assessment process. With commercial models weighted to delivery, they present accurate & relevant short-lists quicker than the competition with consistently strong conversion to offer ratios.',
     img: (
       <svg
         data-name="Layer 1"

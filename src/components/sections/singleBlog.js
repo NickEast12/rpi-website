@@ -64,9 +64,8 @@ const SingleBlogStyles = styled.article`
   }
 `;
 const SingleBlog = ({ blog }) => {
-  const colors = ['#923879', 'rgb(0, 54, 80)', '#48b481', 'rgb(247, 173, 79)'];
-  const num = Math.floor(Math.random() * 4);
-  const pick = colors[num];
+  const i = true;
+  console.log(blog);
   return (
     <SingleBlogStyles>
       <Link to={`/blog/${blog.slug.current}`}>
@@ -80,7 +79,7 @@ const SingleBlog = ({ blog }) => {
           <span className="b-meta">
             <BookIcon />
             <p>Article</p>
-            <p className="author">• {blog.authors[0].author.name}</p>
+            <p className="author">• {blog.authors[0].name}</p>
           </span>
         </div>
         <div className="b-title">

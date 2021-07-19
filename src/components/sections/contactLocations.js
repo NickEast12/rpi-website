@@ -104,7 +104,7 @@ const ContactLocationsStyles = styled.section`
 `;
 const ContactLocations = ({ regions, offices }) => {
   const [europe, middleEast, asia, pacific, america] = offices;
-  const europeData = europe.nodes;
+  const europeData = europe.nodes.reverse();
   const middleEastAfrica = middleEast.nodes;
   const pacificData = pacific.nodes;
   const asiaData = asia.nodes;
