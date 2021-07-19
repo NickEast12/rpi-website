@@ -96,7 +96,7 @@ const CareersCTA = () => {
               type="text"
               name="career-name"
               id="career-name"
-              placeholder="Your name"
+              placeholder="First name"
               required
               onChange={(e) => setName(e.target.value)}
             />
@@ -104,7 +104,7 @@ const CareersCTA = () => {
               type="email"
               name="career-email"
               id="career-email"
-              placeholder="Your email"
+              placeholder="Email"
               required
               onChange={(e) => setEmail(e.target.value)}
             />
