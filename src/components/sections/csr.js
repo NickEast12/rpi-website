@@ -95,11 +95,8 @@ const CSR = () => {
             At RPI we support a number of charitable causes. Whether it’s
             through donations, physical trials that raise funds and awareness,
             or even an investment of time, our employees share a genuine
-            enthusiasm to support programmes that help those in need.
-          </p>
-          <p>
-            During 2020 we raised or donated over USD $20K to more than 10
-            charities.
+            enthusiasm to support programmes that help those in need. During
+            2020 we raised or donated over USD $20K to more than 10 charities.
           </p>
         </div>
       </div>

@@ -18,9 +18,8 @@ const information = [
     quote: [
       {
         quote:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus placeat ullam saepe, doloribus perspiciatis adipisci architecto? Consequatur quibusdam a ut!',
-        name: 'Joe Blogs',
-        company: 'Company name',
+          'Over the last two years, RP International have placed over 40 Interim Subject Matter Experts who  support our continuing global expansion and multi-million-pound technology transformation programmes. Other placements have included: Enterprise Architects, Programme Managers, Data Architects, Data Managers, Solutions Architects, Security Architects and Security Managers. I highly recommend RPI',
+        name: 'CIO, Asia',
       },
     ],
   },
@@ -41,16 +40,16 @@ const Architecture = () => {
       <ServiceOverview
         subtitle="Delivering roadmaps and solutions leading to business success"
         sp="Ensuring Technology is “enabling” and not “suffocating, stifling and overpowering” the business is a complex challenge."
-        tp="Legacy dependencies, tech debt and business process disparity require sophisticated Architecture roadmaps with your unique business at the heart of them. "
+        tp="Legacy dependencies, tech debt and business process disparity require sophisticated Architecture roadmaps with your unique business at the heart of them. RPI’s understanding of the challenges and our network of Architecture experts enables delivery of the best talent for your business.   "
       >
         <LowerIllustration />
       </ServiceOverview>
       <ServicesAbout />
-      {/* <ServiceTestimonial
-        quote={quoteData.quote}
+      <ServiceTestimonial
+        quotef={quoteData.quote}
         name={quoteData.name}
         company={quoteData.company}
-      /> */}
+      />
       <AllSpecialisms
         title="Our services"
         text="Finding the best leaders and sourcing highly skilled tech talent means finding the right partner. Take a closer look at how we deliver talent."

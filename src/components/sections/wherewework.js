@@ -24,15 +24,6 @@ const areaData = [
     link: 'middle-east-and-africa',
   },
   {
-    location: 'ANZ & Pacific',
-    established: 2010,
-    regional: 'Australia, New Zealand',
-    staff: 4,
-    total: 150,
-    countries: 10,
-    link: 'anz-and-pacific',
-  },
-  {
     location: 'Asia',
     established: 2007,
     regional: 'Singapore, Malaysia,',
@@ -42,6 +33,16 @@ const areaData = [
     countries: 14,
     link: 'asia',
   },
+  {
+    location: 'ANZ & Pacific',
+    established: 2010,
+    regional: 'Australia, New Zealand',
+    staff: 4,
+    total: 150,
+    countries: 10,
+    link: 'anz-and-pacific',
+  },
+
   {
     location: 'Americas',
     established: 2017,
@@ -145,12 +146,12 @@ const WhereWeWorkStyles = styled.section`
             padding: 0.25rem 0 1.15rem 0;
           }
         }
-        &:nth-child(4) {
+        &:nth-child(3) {
           .clear--fix {
             padding: 0.25rem 0 0 0;
           }
         }
-        &:nth-child(3) {
+        &:nth-child(4) {
           .clear--fix {
             padding: 0.25rem 0 1.15rem 0;
           }

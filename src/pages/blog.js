@@ -252,9 +252,7 @@ export const blogQuery = graphql`
         readingTimeInMinutes
         id
         authors {
-          author {
-            name
-          }
+          name
         }
         excerpt
         categories {

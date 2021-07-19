@@ -20,7 +20,7 @@ const data = [
   {
     value: 'Expertise.',
     text:
-      'We are experts in sourcing talent for technology-enabled transformation. We seek out expertise in the specialisms, services, and geographical locations.',
+      'We are experts in sourcing talent for technology-enabled transformation. We seek out expertise in our specialisms, services, and geographical locations.',
   },
 ];
 const ValuesStyles = styled.section`

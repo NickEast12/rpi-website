@@ -14,7 +14,12 @@ import SEO from '../components/functional/SEO';
 const WidgetWrapper = styled.section`
   width: 100%;
   padding: 2rem 0;
+  h4 {
+    text-align: center;
+    padding-bottom: 0.5rem;
+  }
   > div {
+    border-top: solid 4px var(--background);
     max-width: var(--maxWidth);
     margin: var(--auto);
   }
@@ -39,6 +44,7 @@ const Resources = ({ data }) => {
       <ResourcesHeader blogs={headerData} />
       <AllBlogs blogs={allBlogs} />
       <WidgetWrapper>
+        <h4>Recent Posts</h4>
         <div className="sk-ww-linkedin-page-post" data-embed-id="54509" />
       </WidgetWrapper>
       <CTA />
@@ -72,6 +78,8 @@ const ResourcesHeaderStyles = styled.header`
       margin-top: 1.5rem;
       &__left {
         cursor: pointer;
+        background-color: #fff;
+
         .b-img {
           width: 100%;
           height: auto;
@@ -93,59 +101,70 @@ const ResourcesHeaderStyles = styled.header`
             }
           }
         }
-        .b-meta {
-          margin: 1rem 0 0 0;
-          display: flex;
-          svg {
-            width: 20px;
-            height: 20px;
-            fill: var(--lightTeal);
-          }
-          p {
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: var(--textMedium);
-            color: var(--lightTeal);
-            padding-left: 7.5px;
-          }
-        }
-        .b-title {
-          h5 {
-            font-size: 1.85rem;
-            margin: 0.5rem 0;
-          }
-        }
-        @media only screen and (min-width: 600px) {
-          position: relative;
-          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-          will-change: box-shadow;
-          transition: box-shadow 0.35s ease;
-          &:hover {
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 10px;
-          }
-          .b-img {
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: 0;
-            position: absolute;
-            &__overlay {
-              top: 1rem;
-              left: 1rem;
-              right: inherit;
-              bottom: inherit;
+
+        .b--img--wrapper {
+          padding: 0.75rem;
+          .b-meta {
+            margin: 1rem 0 0 0;
+            display: flex;
+            svg {
+              width: 20px;
+              height: 20px;
+              fill: var(--lightTeal);
+            }
+            p {
+              font-weight: 700;
+              text-transform: uppercase;
+              font-size: var(--textMedium);
+              color: var(--lightTeal);
+              padding-left: 7.5px;
             }
           }
-          .b--img--wrapper {
-            position: absolute;
-            z-index: 2;
-            background-color: white;
-            border-radius: 4.5px;
-            padding: 0.7rem 1rem;
-            width: 80%;
-            top: 4rem;
-            left: 1rem;
+          .b-title {
+            h3 {
+              font-size: 1.85rem;
+              margin: 0.5rem 0;
+            }
+          }
+        }
+
+        @media only screen and (min-width: 768px) {
+          position: relative;
+          background-color: transparent;
+          a {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+            .b-img {
+              width: 100%;
+              height: 100%;
+
+              &__overlay {
+                top: 1rem;
+                left: 1rem;
+                right: inherit;
+                bottom: inherit;
+              }
+            }
+            .b--img--wrapper {
+              padding: 0;
+              section {
+                background-color: #fff;
+                padding: 1rem;
+                border-radius: 4.5px;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+              }
+              background-color: none;
+              width: 90%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+
+              padding-top: 0;
+              .b-meta {
+                margin-top: 0;
+              }
+            }
           }
         }
       }
@@ -218,21 +237,21 @@ const ResourcesHeaderStyles = styled.header`
           }
         }
       }
-      @media only screen and (min-width: 600px) {
+      /* @media only screen and (min-width: 1024px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
         &__right {
           margin-top: 0;
         }
-      }
+      } */
     }
   }
 `;
 const ResourcesHeader = ({ blogs }) => {
-  const [x, y, z, i] = blogs;
+  const [x, y, z] = blogs;
   const secondary = [];
-  secondary.push(y, z, i);
+  secondary.push(y, z);
   return (
     <ResourcesHeaderStyles>
       <div className="resources">
@@ -249,60 +268,18 @@ const ResourcesHeader = ({ blogs }) => {
                 </div>
               </div>
               <div className="b--img--wrapper">
-                <span className="b-meta">
-                  <BookIcon />
-                  <p>Article</p>
-                </span>
-                <div className="b-title">
-                  <h3>{x.title}</h3>
-                  <p>{x.excerpt}</p>
-                </div>
-              </div>
-            </Link>
-          </div>
-          <div className="resources__wrapper__right">
-            <h4>Featured articles</h4>
-            {secondary.map((blog) => (
-              <Link to={`/blog/${blog.slug.current}`} key={blog.title}>
-                <div className="resources__wrapper__right__fea">
-                  <span>
+                <section>
+                  <span className="b-meta">
                     <BookIcon />
                     <p>Article</p>
                   </span>
-                  <h5>{blog.title}</h5>
-                </div>
-              </Link>
-            ))}
-            <div className="resources__wrapper__right__signup">
-              <h5>Get the latest from RPI</h5>
-              <form
-                name="email_signup"
-                method="post"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                action="/thank-you"
-              >
-                <input type="hidden" name="form-name" value="email_signup" />
-                <p className="hidden">
-                  <label htmlFor="bot-field">
-                    Don’t fill this out if you’re human:{' '}
-                    <input name="bot-field" />
-                  </label>
-                </p>
-                <input
-                  type="text"
-                  name="email"
-                  id="email"
-                  placeholder="Email address"
-                  required
-                />
-                <button type="submit">
-                  <span>
-                    <ArrowIcon />
-                  </span>
-                </button>
-              </form>
-            </div>
+                  <div className="b-title">
+                    <h3>{x.title}</h3>
+                    <p>{x.excerpt}</p>
+                  </div>
+                </section>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -312,7 +289,7 @@ const ResourcesHeader = ({ blogs }) => {
 export const resourcesQuery = graphql`
   query HeaderQuery {
     BlogQuery: allSanityPost(
-      limit: 4
+      limit: 3
       sort: { fields: publishedAt, order: DESC }
     ) {
       nodes {
@@ -332,9 +309,7 @@ export const resourcesQuery = graphql`
         readingTimeInMinutes
         id
         authors {
-          author {
-            name
-          }
+          name
         }
         excerpt
         categories {
@@ -367,9 +342,7 @@ export const resourcesQuery = graphql`
         readingTimeInMinutes
         id
         authors {
-          author {
-            name
-          }
+          name
         }
         excerpt
         categories {
