@@ -43,23 +43,20 @@ const AllBlogsStyles = styled.section`
     }
   }
 `;
-const AllBlogs = ({ blogs }) => {
-  console.log(blogs);
-  return (
-    <AllBlogsStyles>
-      <div className="allblogs">
-        <h2>All Blogs</h2>
-        <Link to="/blog">
-          <span>See all blogs</span>
-        </Link>
-        <div className="allblogs__wrapper">
-          {blogs.map((blog) => (
-            <SingleBlog key={blog.title} blog={blog} />
-          ))}
-        </div>
+const AllBlogs = ({ blogs }) => (
+  <AllBlogsStyles>
+    <div className="allblogs">
+      <h2>All Blogs</h2>
+      <Link to="/blog">
+        <span>See all blogs</span>
+      </Link>
+      <div className="allblogs__wrapper">
+        {blogs.map((blog) => (
+          <SingleBlog key={blog.title} blog={blog} />
+        ))}
       </div>
-    </AllBlogsStyles>
-  );
-};
+    </div>
+  </AllBlogsStyles>
+);
 
 export default AllBlogs;

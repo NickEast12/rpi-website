@@ -65,7 +65,6 @@ const SingleBlogStyles = styled.article`
 `;
 const SingleBlog = ({ blog }) => {
   const i = true;
-  console.log(blog);
   return (
     <SingleBlogStyles>
       <Link to={`/blog/${blog.slug.current}`}>

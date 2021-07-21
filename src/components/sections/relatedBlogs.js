@@ -33,7 +33,6 @@ const RelatedBlogsStyles = styled.section`
 `;
 const RelatedBlogs = ({ data }) => {
   const relatedBlogs = data.nodes;
-  console.log(relatedBlogs);
   return (
     <RelatedBlogsStyles>
       <div className={relatedBlogs.length === 0 || null ? 'empty' : 'related'}>

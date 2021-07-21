@@ -113,7 +113,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://www.rpint.com/',
-        sitemap: 'https://www.rpint.com/',
+        sitemap: 'https://www.rpint.com/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },

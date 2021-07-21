@@ -109,7 +109,6 @@ const ContactLocations = ({ regions, offices }) => {
   const pacificData = pacific.nodes.reverse();
   const asiaData = asia.nodes;
   const americaData = america.nodes;
-  console.log(asiaData);
   return (
     <ContactLocationsStyles>
       <div className="locations">
