@@ -30,7 +30,7 @@ const LegalHeader = ({ title, date }) => (
       <h6>Legal</h6>
       <h1>{title}</h1>
       <p>
-        Last revised:
+        Effective Date:
         <span>{date}</span>
       </p>
     </div>

@@ -198,10 +198,11 @@ const FooterStyles = styled.footer`
       margin-top: 2rem;
       margin: 2rem auto 0 auto;
       text-align: center;
-      width: 90%;
+      width: 100%;
       ul {
         list-style: none;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-self: center;
         gap: 1rem;
@@ -401,6 +402,9 @@ const Footer = () => {
           <ul>
             <li>
               <Link to="/terms">Terms</Link>
+            </li>
+            <li>
+              <Link to="/modern-slavery">Modern Slavery</Link>
             </li>
             <li>
               <Link to="/privacy-policy">Privacy Policy</Link>

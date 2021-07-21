@@ -7,15 +7,30 @@ const PrivacyPolicy = () => {
   const i = true;
   return (
     <Layout>
-      <LegalHeader title="Privacy Policy" date="June 2021" />
+      <LegalHeader title="Privacy Policy" date="1 May 2018" />
       <LegalBody>
         <section>
           <p>
-            <span>RP International (RPI) </span> is a global search and
-            strategic recruitment firm, specialising in the provision of
-            C-suite, senior management and technology professionals across
-            multiple sectors, offering three core services of Human Capital
-            Solutions: Executive, Permanent and Contract
+            <span>RPI consists of the following operating companies: </span>
+          </p>
+          <p>
+            RP International Ltd registered in England, RP International
+            Resources (Europe) Ltd registered in England, RPI Consulting GmbH
+            registered in Germany, RP International FZ-LLC registered in the
+            UAE, RP International Labors Supply LLC registered in the UAE, RP
+            International Resources Pte Ltd registered in Singapore, RP
+            International Resources Ltd registered in Hong Kong, RP
+            International Resources Malaysia Sdn.Bhd registered in Malaysia, RP
+            International Resources Pty Ltd registered in Australia, RP
+            International Inc. registered in the USA and RP International New
+            Zealand Ltd registered in New Zealand. This group is described as
+            RPI in the rest of this document.
+          </p>
+          <p>
+            RPI is a global search and strategic recruitment firm, specialising
+            in the provision of leadership and technology professionals across
+            multiple specialisms and sectors, offering three core recruitment
+            services: Executive, Permanent and Interim &amp; Contract.
           </p>
           <p>
             RPI has built its reputation on the trust they have from its
@@ -58,22 +73,15 @@ const PrivacyPolicy = () => {
             <li>meeting our legal obligations</li>
           </ul>
           <h5>Consent</h5>
-          <p>On some occasions, RPI processes your data with your consent.</p>
-          <h5>The processing is necessary to fulfil a contract</h5>
+          <p>RPI will only process your data with your consent. </p>
+          <p>The processing is necessary to fulfil a contract.</p>
           <p>
-            RPI may process your data when we need to do this to fulfil a
-            contract with you, such as to send your Curriculum Vitae to one of
-            RPI’s clients or to a prospective employer for a specific job
-            application.
+            RPI may process your data when we need to do this to fulfil the
+            needs of your contract of employment.
           </p>
         </section>
         <section>
           <h4>What type of personal data we collect about you</h4>
-          <h5>Contractor’s data</h5>
-          <p>
-            Registration with RPI and use of our recruitment and consulting
-            services for those looking for a role is free.
-          </p>
           <p>The information we collect may include but is not limited to:</p>
           <p>
             Personal contact details such as name, job title, addresses,
@@ -90,16 +98,7 @@ const PrivacyPolicy = () => {
             </li>
             <li>Financial compensation history such as salary or rate</li>
             <li>Next of kin and emergency contact information</li>
-            <li>
-              Limited company information, their representative’s information
-              and payment and financial information and certificates included
-              but not limited to certificate of incorporation, certificate of
-              professional insurance
-            </li>
-            <li>Bank account details of your company</li>
-            <li>Phone records of conversations RPI have with you</li>
             <li>Any information that you choose to tell us</li>
-            <li>Trading information about your company or employer</li>
           </ul>
           <p>
             We may collect, store and use the following “special categories” of
@@ -110,7 +109,7 @@ const PrivacyPolicy = () => {
             <li>Information about criminal convictions and offences</li>
           </ul>
           <p>
-            We may, as part of the recruitment process, collect sensitive
+            RPI may, as part of the recruitment process, collect sensitive
             personal information included in our equal opportunity and diversity
             monitoring. The information is provided on a voluntary basis with
             explicit consent and we will only use this data for the purpose of
@@ -118,85 +117,36 @@ const PrivacyPolicy = () => {
           </p>
         </section>
         <section>
-          <h5>Client Data</h5>
-          <p>
-            RPI will collect a limited amount of information from its client to
-            provide recruitment and consulting services. This may include but is
-            not limited to:
-          </p>
-          <ul>
-            <li>
-              Information about the client to complete our KYC (“Know Your
-              Client”) checks
-            </li>
-            <li>Information about the role and requirement</li>
-            <li>
-              Information about the client hiring manager, billing contact(s) or
-              other main contact information (email address, telephone and
-              relevant data)
-            </li>
-            <li>
-              Information about pricing, trading and relevant contractual
-              agreements
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h5>Supplier Data</h5>
-          <p>
-            RPI will collect a limited amount of information from its suppliers
-            of services and goods. This may include but is not limited to:
-          </p>
-          <ul>
-            <li>Information about the supplier to complete our KYC checks</li>
-            <li>Information about the supplier services</li>
-            <li>
-              Information about the supplier main contact information (email
-              address, telephone and relevant data)
-            </li>
-            <li>
-              Information about pricing, billing, trading and relevant
-              contractual agreements
-            </li>
-          </ul>
-        </section>
-        <section>
           <h5>How we collect and use your data?</h5>
           <p>
-            For the purpose of providing recruitment and consulting services, we
-            may collect information about you from a number of sources.
+            For the purpose of our internal recruitment processes, we may
+            collect information about you from a number of sources.
           </p>
           <ul>
+            <li>Directly from you. This information is shared by you to us</li>
             <li>
-              Directly from you. This information is shared by you to us to help
-              you in your job search and to match your skills with our client
-              requirement
+              From an agent/third party acting on your behalf, e.g. an external
+              recruitment agency
             </li>
-            <li>
-              From an agent/third party acting on your behalf, e.g. Contractors
-              Limited Company.
-            </li>
-            <li>
-              From a recruitment platform such as LinkedIn, Monster, Gulftalent
-              and Jobsite
-            </li>
+            <li>From recruitment platform such as LinkedIn and Jobsites</li>
             <li>
               From a referral from friends, colleagues or relevant contacts
             </li>
-            <li>
-              From recruitment software. Where we collect your information
-              through publicly available sources as set out above, we may do
-              this with the aid of software programs such as Lusha. If you have
-              any questions or queries you can contact support@lusha.com.
-            </li>
-            <p>
-              We may conduct checks during the recruitment process to verify the
-              information you have provided us. We will inform you during the
-              recruitment process if this is required.
-            </p>
-            <p>Your data will be safely stored on our CRM system: Invenias.</p>
+            <li>From recruitment software</li>
           </ul>
+          <p>
+            Where we collect your information through publicly available sources
+            as set out above, we may do this with the aid of software programs
+            such as Lusha. If you have any questions or queries you can contact{' '}
+            <a href="mailto:support@lusha.co.uk">support@lusha.co.uk</a>
+          </p>
+          <p>
+            RPI may conduct checks during the recruitment process to verify the
+            information you have provided us. We will inform you during the
+            recruitment process if this is required.
+          </p>
         </section>
+
         <section>
           <h5>
             What rights do you have in relation to the data we hold on you?
@@ -211,11 +161,10 @@ const PrivacyPolicy = () => {
           <ul>
             <li>The right to be informed</li>
             <li>The right to access</li>
-            <li>The right to rectification</li>
             <li>The right to erasure</li>
             <li>The right to data portability</li>
             <li>The right to restrict processing</li>
-            <li>The right to object to processing</li>
+            <li>The right to object</li>
             <p>
               Further information and advice about your rights can be obtained
               from the relevant data protection regulator in your country.
@@ -256,14 +205,6 @@ const PrivacyPolicy = () => {
             obligations. This includes exchanging information with other
             companies and organisations for the purposes of fraud protection and
             credit risk reduction.
-          </p>
-          <p>
-            You have the right to ask us not to process your personal data for
-            marketing purposes. We will usually inform you (before collecting
-            your data) if we intend to use your data for such purposes or if we
-            intend to disclose your information to any third party for such
-            purposes. You can exercise your right to prevent such processing by
-            checking certain boxes on the forms we use to collect your data.
           </p>
         </section>
         <section>

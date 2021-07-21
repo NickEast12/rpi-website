@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from 'react';
 import Layout from '../components/Layout';
 import LegalBody from '../components/sections/legalBody';
@@ -7,12 +8,34 @@ const Terms = () => {
   const i = true;
   return (
     <Layout>
-      <LegalHeader title="Cookie Policy" date="June 2021" />
+      <LegalHeader title="Cookie Policy" date="1 July 2021" />
       <LegalBody>
         <section>
           <p>
-            This is the Cookie Policy for RP International, accessible from
-            https://www.rpint.com/
+            <span>RPI consists of the following operating companies: </span>
+          </p>
+          <p>
+            RP International Ltd registered in England, RP International
+            Resources (Europe) Ltd registered in England, RPI Consulting GmbH
+            registered in Germany, RP International FZ-LLC registered in the
+            UAE, RP International Labors Supply LLC registered in the UAE, RP
+            International Resources Pte Ltd registered in Singapore, RP
+            International Resources Ltd registered in Hong Kong, RP
+            International Resources Malaysia Sdn.Bhd registered in Malaysia, RP
+            International Resources Pty Ltd registered in Australia, RP
+            International Inc. registered in the USA and RP International New
+            Zealand Ltd registered in New Zealand. This group is described as
+            RPI in the rest of this document.
+          </p>
+          <p>
+            RPI is a global search and strategic recruitment firm, specialising
+            in the provision of leadership and technology professionals across
+            multiple specialisms and sectors, offering three core recruitment
+            services: Executive, Permanent and Interim &amp; Contract.
+          </p>
+          <p>
+            This is the Cookie Policy for RPI, accessible from{' '}
+            <Link to="/">https://www.rpint.com</Link>
           </p>
           <h3>What are cookies?</h3>
           <p>
