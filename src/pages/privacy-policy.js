@@ -2,11 +2,19 @@ import React from 'react';
 import Layout from '../components/Layout';
 import LegalBody from '../components/sections/legalBody';
 import LegalHeader from '../components/sections/legalHeader';
+import SEO from '../components/functional/SEO';
 
 const PrivacyPolicy = () => {
   const i = true;
   return (
     <Layout>
+      <SEO
+        title="Privacy Policy | Specialist Recruitment Partner | RPI"
+        description="RPI is a global search and strategic recruitment firm, specialising
+        in the provision of leadership and technology professionals across
+        multiple specialisms and sectors, offering three core recruitment
+        services: Executive, Permanent and Interim &amp; Contract."
+      />
       <LegalHeader title="Privacy Policy" date="1 May 2018" />
       <LegalBody>
         <section>

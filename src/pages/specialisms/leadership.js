@@ -9,6 +9,7 @@ import ServiceOverview from '../../components/servicesTemplates/serviceOverview'
 import ServicesAbout from '../../components/servicesTemplates/servicesAbout';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
 import Illustration from '../../svgs/leadership-lower.svg';
+import LeadershipIcon from '../../svgs/who.svg';
 
 const information = [
   {
@@ -487,7 +488,7 @@ const Leadership = () => {
         description="RPI source and identify the best talent for the C-Suite and all levels of leadership across operational and technology functions. Find out how we can help."
       />
       <ServiceHeader page={data.name} title={data.title} text={data.headerText}>
-        {data.icon}
+        <LeadershipIcon />
       </ServiceHeader>
       <ServiceOverview
         subtitle="A business in need of transformation, needs transformational leaders"
