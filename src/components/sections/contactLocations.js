@@ -106,7 +106,7 @@ const ContactLocations = ({ regions, offices }) => {
   const [europe, middleEast, asia, pacific, america] = offices;
   const europeData = europe.nodes.reverse();
   const middleEastAfrica = middleEast.nodes;
-  const pacificData = pacific.nodes;
+  const pacificData = pacific.nodes.reverse();
   const asiaData = asia.nodes;
   const americaData = america.nodes;
   console.log(asiaData);

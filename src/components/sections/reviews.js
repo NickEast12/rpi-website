@@ -56,7 +56,8 @@ const ReviewsStyles = styled.section`
       grid-gap: 1.5rem;
       padding: 2rem 0;
       &__box {
-        background-color: var(--white);
+        background: var(--background);
+        color: var(--white);
         text-align: center;
         padding: 1.5rem 1rem;
         box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
@@ -65,6 +66,7 @@ const ReviewsStyles = styled.section`
         }
         p {
           font-weight: 700;
+          color: var(--white);
         }
         &:nth-child(1n) {
           border-top: solid var(--newCyan) 8px;

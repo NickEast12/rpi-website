@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const CareersCTAStyles = styled.section`
   width: 100%;
-  padding: 4rem 0;
+  padding: 4rem 0 1rem 0;
   border-top: solid 1px rgba(0, 0, 0, 0.05);
 
   .ca {
@@ -74,48 +74,15 @@ const CareersCTAStyles = styled.section`
   }
 `;
 
-const CareersCTA = () => {
-  const [email, setEmail] = useState('');
-  const [name, setName] = useState('');
-  function handleSubmit(e) {
-    e.preventDefault(e);
-    navigate('/careers-form', {
-      state: { email, name },
-    });
-  }
-  return (
-    <CareersCTAStyles>
-      <div className="ca">
-        <h3>
-          If you’re up to the challenge, <br />
-          <span>we want to hear from you today.</span>
-        </h3>
-        <form onSubmit={(e) => handleSubmit(e)}>
-          <section>
-            <input
-              type="text"
-              name="career-name"
-              id="career-name"
-              placeholder="First name"
-              required
-              onChange={(e) => setName(e.target.value)}
-            />
-            <input
-              type="email"
-              name="career-email"
-              id="career-email"
-              placeholder="Email"
-              required
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </section>
-          <button type="submit" className="btn btn--main">
-            <span>Get started</span>
-          </button>
-        </form>
-      </div>
-    </CareersCTAStyles>
-  );
-};
+const CareersCTA = () => (
+  <CareersCTAStyles>
+    <div className="ca">
+      <h3>
+        If you’re up to the challenge, <br />
+        <span>we want to hear from you today.</span>
+      </h3>
+    </div>
+  </CareersCTAStyles>
+);
 
 export default CareersCTA;

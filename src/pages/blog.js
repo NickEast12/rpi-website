@@ -34,7 +34,7 @@ const Blogsheader = styled.header`
           width: 20px;
           height: 20px;
           transform: rotate(180deg);
-          fill: var(--mainColour);
+          fill: var(--newCyan);
         }
       }
       p {
@@ -89,7 +89,7 @@ const Blogs = ({ data }) => {
               </div>
             </span>
           </Link>
-          <h1>PRI Blogs</h1>
+          <h1>RPI Blogs</h1>
         </div>
       </Blogsheader>
       <BlogBodyStyles>

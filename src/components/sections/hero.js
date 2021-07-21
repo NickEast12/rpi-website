@@ -94,7 +94,7 @@ const HeroStyles = styled.header`
       }
     }
     &__img {
-      padding: 2rem 0;
+      padding: 2rem 1rem;
       position: relative;
       svg {
         height: auto;
@@ -107,7 +107,7 @@ const HeroStyles = styled.header`
       @media only screen and (min-width: 768px) {
         position: absolute;
         right: -13.5rem;
-        top: 4rem;
+        top: 5rem;
         width: 550px;
       }
       @media only screen and (min-width: 800px) {
@@ -124,24 +124,24 @@ const HeroStyles = styled.header`
       }
       @media only screen and (min-width: 1024px) {
         position: absolute;
-        right: -10.5rem;
-        top: 2rem;
+        right: -10rem;
+        top: 4rem;
         width: 600px;
       }
       @media only screen and (min-width: 1200px) {
         position: relative;
-        right: 0;
+        right: -5rem;
         top: 0;
         width: 100%;
-        margin: -3rem 0 0 0;
+        margin: -2rem 0 0 0;
         padding: 0;
       }
       @media only screen and (min-width: 1280px) {
         position: relative;
-        width: 100%;
-        right: 0;
+        width: 95%;
+        right: -2rem;
         top: 0;
-        margin: -4rem 0 0 2rem;
+        margin: -2rem 0 0 2rem;
         padding: 0;
       }
     }

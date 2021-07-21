@@ -12,6 +12,7 @@ import Illustration from '../svgs/who.svg';
 import MainHeader from '../components/sections/mainHeader';
 import CareersCTA from '../components/sections/careersCTA';
 import SEO from '../components/functional/SEO';
+import CareersForm from '../components/sections/careers-form';
 
 const Careers = () => {
   const i = true;
@@ -30,8 +31,9 @@ const Careers = () => {
       </MainHeader>
       <Join />
       <Stats />
-      <Reviews />
       <CareersCTA />
+      <CareersForm />
+      <Reviews />
       <Diversity />
       <CSR />
       <CTA />
