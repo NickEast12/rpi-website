@@ -137,8 +137,8 @@ const CMain = () => {
               />
               <input
                 type="text"
-                name="second"
-                id="second"
+                name="last"
+                id="last"
                 placeholder="Last name"
                 required
               />

@@ -90,9 +90,9 @@ const CareersForm = () => (
         />
         <input
           type="text"
-          name="second"
-          id="second"
-          placeholder="Second name"
+          name="last"
+          id="last"
+          placeholder="Last name"
           required
         />
       </section>

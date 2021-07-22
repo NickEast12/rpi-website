@@ -15,7 +15,11 @@ const PrivacyPolicy = () => {
         multiple specialisms and sectors, offering three core recruitment
         services: Executive, Permanent and Interim &amp; Contract."
       />
-      <LegalHeader title="Privacy Policy" date="1 May 2018" />
+      <LegalHeader
+        title="Privacy Policy"
+        date="1st May 2018"
+        review="1st July 2021"
+      />
       <LegalBody>
         <section>
           <p>

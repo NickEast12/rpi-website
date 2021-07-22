@@ -45,7 +45,7 @@ const Terms = () => {
             This is the Cookie Policy for RPI, accessible from{' '}
             <Link to="/">https://www.rpint.com</Link>
           </p>
-          <h3>What are cookies?</h3>
+          <h4>What are cookies?</h4>
           <p>
             As is common practice with almost all professional websites this
             site uses cookies, which are tiny files that are downloaded to your
@@ -56,9 +56,9 @@ const Terms = () => {
             certain elements of the sites functionality.
           </p>
           <section>
-            <h4>How we use cookies:</h4>
+            <h4>How we use cookies</h4>
             <p>
-              We use cookies for a variety of reasons detailed below.
+              RPI use cookies for a variety of reasons detailed below.
               Unfortunately in most cases there are no industry standard options
               for disabling cookies without completely disabling the
               functionality and features they add to this site. It is
@@ -68,7 +68,7 @@ const Terms = () => {
             </p>
           </section>
           <section>
-            <h4>Disabling cookies:</h4>
+            <h4>Disabling cookies</h4>
             <p>
               You can prevent the setting of cookies by adjusting the settings
               on your browser (see your browser Help for how to do this). Be
@@ -76,11 +76,11 @@ const Terms = () => {
               and many other websites that you visit. Disabling cookies will
               usually result in also disabling certain functionality and
               features of the this site. Therefore it is recommended that you do
-              not disable cookies
+              not disable cookies.
             </p>
           </section>
           <section>
-            <h4>The cookie we set:</h4>
+            <h4>The cookie we set</h4>
             <h6>Email newsletters related cookies</h6>
             <ul>
               <li>
@@ -100,7 +100,7 @@ const Terms = () => {
             </ul>
           </section>
           <section>
-            <h4>Third party cookie:</h4>
+            <h4>Third party cookie</h4>
             <p>
               In some special cases we also use cookies provided by trusted
               third parties. The following section details which third party
@@ -117,24 +117,21 @@ const Terms = () => {
               </li>
             </ul>
             <p>
-              For more information on Google Analytics cookies, see the official
-              Google Analytics page.
+              For more information on Google Analytics cookies, please see the
+              official Google Analytics page.
             </p>
           </section>
           <section>
-            <h4>More information:</h4>
+            <h4>More information</h4>
             <p>
-              Hopefully that has clarified things for you and as was previously
-              mentioned if there is something that you aren't sure whether you
-              need or not it's usually safer to leave cookies enabled in case it
-              does interact with one of the features you use on our site.
+              If there is something that you aren't sure whether you need or
+              not, it's usually safer to leave cookies enabled in case it does
+              interact with one of the features you use on our site.
             </p>
             <p>
-              <span>
-                However if you are still looking for more information then you
-                can contact us via:{' '}
-                <a href="mailto:people@rpint.com">people@rpint.com</a>
-              </span>
+              Please feel free to contact us on{' '}
+              <a href="mailto:people@rpint.com">people@rpint.com</a> if you have
+              any further questions.
             </p>
           </section>
         </section>

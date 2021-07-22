@@ -24,7 +24,7 @@ const LegalHeaderStyles = styled.header`
     }
   }
 `;
-const LegalHeader = ({ title, date }) => (
+const LegalHeader = ({ title, date, review }) => (
   <LegalHeaderStyles>
     <div className="l-h">
       <h6>Legal</h6>
@@ -33,6 +33,14 @@ const LegalHeader = ({ title, date }) => (
         Effective Date:
         <span>{date}</span>
       </p>
+      {review ? (
+        <p>
+          Review Date:
+          <span>{review}</span>
+        </p>
+      ) : (
+        ''
+      )}
     </div>
   </LegalHeaderStyles>
 );

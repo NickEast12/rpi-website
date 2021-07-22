@@ -15,7 +15,7 @@ const ModernSlavery = () => {
         multiple specialisms and sectors, offering three core recruitment
         services: Executive, Permanent and Interim &amp; Contract."
       />
-      <LegalHeader title="Modern Slavery" date="March 2021" />
+      <LegalHeader title="Modern Slavery" date="1st March 2021" />
       <LegalBody>
         <section>
           <p>
