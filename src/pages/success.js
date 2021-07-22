@@ -12,7 +12,7 @@ const Success = () => {
       </Helmet>
       <Message
         code="Success"
-        title="Thank you for your getting in touch"
+        title="Thank you for getting in touch"
         text="A member of the team will be in touch shortly."
         btn="Home"
       />
