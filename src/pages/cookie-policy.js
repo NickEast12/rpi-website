@@ -80,7 +80,7 @@ const Terms = () => {
             </p>
           </section>
           <section>
-            <h4>The cookie we set</h4>
+            <h4>The cookies we set</h4>
             <h6>Email newsletters related cookies</h6>
             <ul>
               <li>
@@ -100,7 +100,7 @@ const Terms = () => {
             </ul>
           </section>
           <section>
-            <h4>Third party cookie</h4>
+            <h4>Third party cookies</h4>
             <p>
               In some special cases we also use cookies provided by trusted
               third parties. The following section details which third party
