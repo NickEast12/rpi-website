@@ -44,7 +44,7 @@ const AllBlogsStyles = styled.section`
   }
 `;
 const AllBlogs = ({ blogs }) => {
-  console.log(blogs);
+  const i = true;
   return (
     <AllBlogsStyles>
       <div className="allblogs">

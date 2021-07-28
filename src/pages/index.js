@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { graphql, Link } from 'gatsby';
-import styled from 'styled-components';
+import React from 'react';
+import { graphql } from 'gatsby';
 import Hero from '../components/sections/hero';
 import UVP from '../components/sections/uvp';
 import Services from '../components/sections/services';
@@ -13,6 +12,7 @@ import SEO from '../components/functional/SEO';
 
 const IndexPage = ({ data }) => {
   const blogs = data.BlogQuery.nodes;
+  console.log(blogs);
   return (
     <Layout>
       <SEO
