@@ -43,6 +43,7 @@ const AllBlogsStyles = styled.section`
     }
   }
 `;
+<<<<<<< HEAD
 const AllBlogs = ({ blogs }) => (
   <AllBlogsStyles>
     <div className="allblogs">
@@ -54,6 +55,22 @@ const AllBlogs = ({ blogs }) => (
         {blogs.map((blog) => (
           <SingleBlog key={blog.title} blog={blog} />
         ))}
+=======
+const AllBlogs = ({ blogs }) => {
+  const i = true;
+  return (
+    <AllBlogsStyles>
+      <div className="allblogs">
+        <h2>All Blogs</h2>
+        <Link to="/blog">
+          <span>See all blogs</span>
+        </Link>
+        <div className="allblogs__wrapper">
+          {blogs.map((blog) => (
+            <SingleBlog key={blog.title} blog={blog} />
+          ))}
+        </div>
+>>>>>>> staging
       </div>
     </div>
   </AllBlogsStyles>

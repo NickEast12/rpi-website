@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import { graphql, Link } from 'gatsby';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
+=======
+import React from 'react';
+import { graphql } from 'gatsby';
+>>>>>>> staging
 import Hero from '../components/sections/hero';
 import UVP from '../components/sections/uvp';
 import Services from '../components/sections/services';
@@ -14,6 +19,7 @@ import SEO from '../components/functional/SEO';
 
 const IndexPage = ({ data }) => {
   const blogs = data.BlogQuery.nodes;
+<<<<<<< HEAD
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Corporation',
@@ -23,6 +29,9 @@ const IndexPage = ({ data }) => {
     logo:
       'https://cdn.sanity.io/images/x2j6emyv/production/83aa068956e711c6ef42999d6e6c705df29ae295-1920x1080.png',
   };
+=======
+  console.log(blogs);
+>>>>>>> staging
   return (
     <Layout>
       <SEO
