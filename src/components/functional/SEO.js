@@ -43,6 +43,7 @@ const SEO = ({ children, location, description, title, img, schemaMarkup }) => {
         name="description"
         content={description || settings.openGraph.description}
       />
+      <meta name="msvalidate.01" content="DE557C4817DC49B8603C8BF2B87AC09F" />
       <link rel="canonical" href={`${site.siteMetadata.siteUrl}${pathname}`} />
       <link rel="icon" href="/favicon.png" />
       <link rel="alternate icon" href="/favicon.ico" />
