@@ -7,9 +7,6 @@ const ThankYou = () => {
   const i = true;
   return (
     <Layout>
-      <Helmet>
-        <meta name="robots" content="noindex" />
-      </Helmet>
       <Message
         code="Success"
         title="Thank you for signing up to our mailing list"

@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `Global Technology & Digital Transformation Recruitment Agency | RPI`,
     siteUrl: `https://www.rpint.com/`,
-    description: `Find the leadership and talent that your business needs to ignite transformation in your business. Choose the global recruitment leader driving technology-enabled business transformation.`,
+    description: `RPI recruits leadership and highly skilled technology talent for companies around the globe. Founded in 1998, our heritage in telecoms has evolved into providing talent solutions across multiple specialisms, services and sectors. We source the talent that ignites transformation in your business.`,
     twitter: `@RPInsight`,
     image: `/icon.png`,
   },
@@ -41,7 +41,7 @@ module.exports = {
       options: {
         name: `Global Technology & Digital Transformation Recruitment Agency | RPI`,
         short_name: `RPI`,
-        description: `Find the leadership and talent that your business needs to ignite transformation in your business. Choose the global recruitment leader driving technology-enabled business transformation.`,
+        description: `RPI recruits leadership and highly skilled technology talent for companies around the globe. Founded in 1998, our heritage in telecoms has evolved into providing talent solutions across multiple specialisms, services and sectors. We source the talent that ignites transformation in your business.`,
         start_url: `/`,
         lang: `en`,
         background_color: `#0c2533`,

@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { useLocation } from '@reach/router';
 
-const SEO = ({ children, location, description, title, img }) => {
+const SEO = ({ children, location, description, title, img, schemaMarkup }) => {
   const { pathname } = useLocation();
   const { site, data } = useStaticQuery(graphql`
     query {
@@ -81,6 +81,11 @@ const SEO = ({ children, location, description, title, img }) => {
         name="twitter:image"
         content={img || settings.openGraph.image.asset.url}
       />
+      {schemaMarkup && (
+        <script type="application/ld+json">
+          {JSON.stringify(schemaMarkup)}
+        </script>
+      )}
     </Helmet>
   );
 };
