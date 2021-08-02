@@ -68,7 +68,7 @@ const AboutBody = () => {
             transformation
           </h3>
           <p>
-            Founded in 1988, our heritage in telecoms has evolved into talent
+            Founded in 1998, our heritage in telecoms has evolved into talent
             solutions across multiple sectors. We understand the latest trends
             in technology and recruitment and challenge and lead the debate.
           </p>
