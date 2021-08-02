@@ -20,7 +20,7 @@ const areaData = [
     regional: 'United Arab Emirates',
     staff: 22,
     total: 2700,
-    countries: 34,
+    countries: 30,
     link: 'middle-east-and-africa',
   },
   {
@@ -30,7 +30,7 @@ const areaData = [
     regionalLower: 'Hong Kong',
     staff: 18,
     total: 1350,
-    countries: 14,
+    countries: 18,
     link: 'asia',
   },
   {
