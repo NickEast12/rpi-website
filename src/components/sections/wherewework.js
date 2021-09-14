@@ -16,7 +16,7 @@ const areaData = [
   },
   {
     location: 'Middle East & Africa',
-    established: 2003,
+    established: 2002,
     regional: 'United Arab Emirates',
     staff: 22,
     total: 2700,
