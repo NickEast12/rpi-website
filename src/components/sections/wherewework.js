@@ -19,7 +19,7 @@ const areaData = [
     established: 2002,
     regional: 'United Arab Emirates',
     staff: 22,
-    total: 2700,
+    total: 3200,
     countries: 30,
     link: 'middle-east-and-africa',
   },
@@ -231,7 +231,7 @@ const WhereWeWork = () => {
           <h4>Where we work</h4>
           <p>
             Established for 23 years and operating in 9 countries we’ve made
-            over 8000 leadership and technology placements across 120 countries.
+            over 8500 leadership and technology placements across 120 countries.
           </p>
           <p>
             Our unique combination of local expertise matched with a truly
