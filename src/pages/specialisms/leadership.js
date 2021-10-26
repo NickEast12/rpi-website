@@ -469,7 +469,7 @@ const information = [
         quotef:
           '"RP International has a long history of recruiting senior and specialist talent for our company. I was pleased to be able to rely on their expertise and professionalism to hire a number of my direct reports over the past few months.',
         quotes:
-          ' From our first interaction RPI accurately understood my needs, not just from an IT perspective, but also regarding culture, personality and ‘fit’. The fact that RPI personally knew almost every candidate and was able to describe them so accurately was testament to their 20+ years’ experience and great reputation in the market. I have no doubt he was able to attract the interest of candidates not openly on the market and others we ourselves wouldn’t have been able to identify. ',
+          ' From our first interaction RPI accurately understood my needs, not just from an IT perspective, but also regarding culture, personality and ‘fit’. The fact that RPI personally knew almost every candidate and was able to describe them so accurately was testament to their 20+ years’ experience and great reputation in the market. I have no doubt they were able to attract the interest of candidates not openly on the market and others we ourselves wouldn’t have been able to identify. ',
         quotet:
           'Diversity and inclusion are a key theme for us and I was very impressed with RPI’s ability to provide balanced short-lists which resulted in securing key senior female talent for the organisation."',
         name: 'CEO, UK',
