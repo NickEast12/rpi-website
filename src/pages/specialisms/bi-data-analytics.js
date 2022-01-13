@@ -33,7 +33,7 @@ const BigDataAnalytics = () => {
   return (
     <Layout>
       <SEO
-        title="BI, Data &amp; Analytics Recruitment Agency | RPI"
+        title="BI, Data &amp; Analytics Recruitment  | RPI"
         description="RPIs team of trusted consultants are expertly placed to help your business find the talent that will deliver a competitive advantage through BI, Data &amp; Analytics. Get in touch today."
       />
       <ServiceHeader page={data.name} title={data.title} text={data.headerText}>

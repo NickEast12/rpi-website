@@ -4,7 +4,7 @@ const path = require(`path`);
 
 module.exports = {
   siteMetadata: {
-    title: `Global Technology & Digital Transformation Recruitment Agency | RPI`,
+    title: `Global Technology & Digital Transformation Recruitment  | RPI`,
     siteUrl: `https://www.rpint.com/`,
     description: `RPI recruits leadership and highly skilled technology talent for companies around the globe. Founded in 1998, our heritage in telecoms has evolved into providing talent solutions across multiple specialisms, services and sectors. We source the talent that ignites transformation in your business.`,
     twitter: `@RPInsight`,
@@ -39,7 +39,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Global Technology & Digital Transformation Recruitment Agency | RPI`,
+        name: `Global Technology & Digital Transformation Recruitment  | RPI`,
         short_name: `RPI`,
         description: `RPI recruits leadership and highly skilled technology talent for companies around the globe. Founded in 1998, our heritage in telecoms has evolved into providing talent solutions across multiple specialisms, services and sectors. We source the talent that ignites transformation in your business.`,
         start_url: `/`,

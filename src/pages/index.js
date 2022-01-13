@@ -20,13 +20,12 @@ const IndexPage = ({ data }) => {
     name: 'RPI',
     description: '',
     url: 'https://www.rpint.com/',
-    logo:
-      'https://cdn.sanity.io/images/x2j6emyv/production/83aa068956e711c6ef42999d6e6c705df29ae295-1920x1080.png',
+    logo: 'https://cdn.sanity.io/images/x2j6emyv/production/83aa068956e711c6ef42999d6e6c705df29ae295-1920x1080.png',
   };
   return (
     <Layout>
       <SEO
-        title="Global Technology &amp; Digital Transformation Recruitment Agency | RPI"
+        title="Global Technology &amp; Digital Transformation Recruitment | RPI"
         description="RPI recruits leadership and highly skilled technology talent for companies around the globe. Founded in 1998, our heritage in telecoms has evolved into providing talent solutions across multiple specialisms, services and sectors. We source the talent that ignites transformation in your business"
         schemaMarkup={schema}
       />

@@ -31,7 +31,7 @@ const Architecture = () => {
   return (
     <Layout>
       <SEO
-        title="Business Architecture Recruitment Agency | RPI"
+        title="Business Architecture Recruitment  | RPI"
         description="RPI are experts in recruiting solutions for business architecture internationally. Find the talent that will help you build better. "
       />
       <ServiceHeader page={data.name} title={data.title} text={data.headerText}>

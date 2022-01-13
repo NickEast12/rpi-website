@@ -33,8 +33,8 @@ const Communication = () => {
   return (
     <Layout>
       <SEO
-        title="Telecommunications Recruitment Agency | RPI"
-        description="Partner with RPI, the leading telecommunications recruitment agency globally. Tell us about your hiring needs."
+        title="Telecommunications Recruitment  | RPI"
+        description="Partner with RPI, the leading telecommunications recruitment  globally. Tell us about your hiring needs."
       />
       <ServiceHeader page={data.name} title={data.title} text={data.headerText}>
         <Illustration />

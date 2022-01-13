@@ -35,7 +35,7 @@ const ERP = () => {
   return (
     <Layout>
       <SEO
-        title="Infrastructure &amp; Cloud Services Recruitment Agency | RPI "
+        title="Infrastructure &amp; Cloud Services Recruitment  | RPI "
         description="Tailored Cloud &amp; Infrastructure recruitment. RPI source and secure the best talent in a talent short market. Find out how we do it and the specialist areas we support."
       />
       <ServiceHeader page={data.name} title={data.title} text={data.headerText}>

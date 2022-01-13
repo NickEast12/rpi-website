@@ -1,6 +1,7 @@
 const path = require('path');
 
-export async function BlogPages({ graphql, actions }) {
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions;
   const template = path.resolve('./src/templates/blog.js');
   const { data } = await graphql(`
     query {
@@ -26,9 +27,4 @@ export async function BlogPages({ graphql, actions }) {
       },
     });
   });
-}
-
-export async function createPages(params) {
-  //* Create page functions will go here
-  await Promise.all([BlogPages(params)]);
-}
+};

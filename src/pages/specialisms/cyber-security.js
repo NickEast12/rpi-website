@@ -32,7 +32,7 @@ const Cybersecurity = () => {
   return (
     <Layout>
       <SEO
-        title="Cybersecurity Recruitment Agency | RPI"
+        title="Cybersecurity Recruitment  | RPI"
         description="Embedding solutions to mitigate risk and protect the busines"
       />
       <ServiceHeader page={data.name} title={data.title} text={data.headerText}>

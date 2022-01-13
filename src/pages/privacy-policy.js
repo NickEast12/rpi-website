@@ -138,7 +138,7 @@ const PrivacyPolicy = () => {
             <li>Directly from you. This information is shared by you to us</li>
             <li>
               From an agent/third party acting on your behalf, e.g. an external
-              recruitment agency
+              recruitment
             </li>
             <li>From recruitment platform such as LinkedIn and Jobsites</li>
             <li>
