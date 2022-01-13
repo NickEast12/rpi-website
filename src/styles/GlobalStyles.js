@@ -25,6 +25,47 @@ const GlobalStyles = createGlobalStyle`
         color: inherit;
         text-decoration: none;
     }
+  .cookie__wrapper {
+    bottom: 0px;
+    background: var(--white);
+    padding: 1rem;
+    align-items: baseline;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    left: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 1050;
+    @media only screen and (min-width: 768px) {
+        width: 50%;
+        margin: var(--auto);
+        padding: 1.5rem;
+    }
+    @media only screen and (min-width: 1024px) {
+        width: 30%;
+        margin: var(--auto);
+        padding: 1.5rem;
+        max-width: 400px;
+    }
+    div {
+        text-align: center;
+        button {
+            width: 70%;
+            margin: .5rem auto 0 auto;
+            @media only screen and (min-width: 768px) {
+            margin-top: 1rem;
+     
+    }
+        }
+    }
+    &__content {
+            text-align: center;    
+            a {
+                text-decoration: underline;
+            } 
+    }
+    }
     body {
         margin: 0;
         width: 100%;
@@ -104,47 +145,7 @@ const GlobalStyles = createGlobalStyle`
     button {
         font-size: inherit;
     }
-    .cookie__wrapper {
-    bottom: 0px;
-    background: var(--white);
-    padding: 1rem;
-    align-items: baseline;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    left: 0px;
-    position: fixed;
-    width: 100%;
-    z-index: 1050;
-    @media only screen and (min-width: 768px) {
-        width: 50%;
-        margin: var(--auto);
-        padding: 1.5rem;
-    }
-    @media only screen and (min-width: 1024px) {
-        width: 30%;
-        margin: var(--auto);
-        padding: 1.5rem;
-        max-width: 400px;
-    }
-    div {
-        text-align: center;
-        button {
-            width: 70%;
-            margin: .5rem auto 0 auto;
-            @media only screen and (min-width: 768px) {
-            margin-top: 1rem;
-     
-    }
-        }
-    }
-    &__content {
-            text-align: center;    
-            a {
-                text-decoration: underline;
-            } 
-    }
-    }
+    
     a[aria-current="page"] {
         /* color: var(--favColour); */
     }
