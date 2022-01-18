@@ -83,32 +83,27 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: 'UA-33012219-1',
-        head: true,
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          'GTM-K6J2WPX', // Google Analytics / GA
+        ],
+        // This object gets passed directly to the gtag config command
+
+        pluginConfig: {
+          head: true,
+        },
       },
     },
-    {
-      resolve: `gatsby-plugin-gdpr-cookies`,
-      options: {
-        googleAnalytics: {
-          trackingId: 'UA-33012219-1',
-          cookieName: 'gatsby-gdpr-google-analytics',
-          anonymize: true,
-        },
-        googleTagManager: {
-          trackingId: '',
-          cookieName: 'gatsby-gdpr-google-tagmanager',
-          dataLayerName: 'dataLayer',
-        },
-        facebookPixel: {
-          pixelId: '',
-          cookieName: 'gatsby-gdpr-facebook-pixel',
-        },
-        environments: ['production', 'development'],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: 'UA-33012219-1',
+    //     head: true,
+    //   },
+    // },
+
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
