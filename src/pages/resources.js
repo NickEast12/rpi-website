@@ -10,6 +10,7 @@ import BookIcon from '../svgs/open-book.svg';
 import ArrowIcon from '../svgs/right-arrow.svg';
 import AllBlogs from '../components/sections/allBlogs';
 import SEO from '../components/functional/SEO';
+import DownloadLinks from '../components/resources/downloadLinks';
 
 const WidgetWrapper = styled.section`
   width: 100%;
@@ -28,6 +29,7 @@ const WidgetWrapper = styled.section`
 const Resources = ({ data }) => {
   const headerData = data.BlogQuery.nodes;
   const allBlogs = data.AllQuery.nodes;
+  const downloads = data.Downloads.nodes;
   return (
     <Layout>
       <SEO
@@ -41,7 +43,7 @@ const Resources = ({ data }) => {
           defer
         />
       </Helmet>
-      <ResourcesHeader blogs={headerData} />
+      <ResourcesHeader blogs={headerData} downloads={downloads} />
       <AllBlogs blogs={allBlogs} />
       <WidgetWrapper>
         <h4>Recent Posts</h4>
@@ -248,7 +250,7 @@ const ResourcesHeaderStyles = styled.header`
     }
   }
 `;
-const ResourcesHeader = ({ blogs }) => {
+const ResourcesHeader = ({ blogs, downloads }) => {
   const [x, y, z] = blogs;
   const secondary = [];
   secondary.push(y, z);
@@ -282,12 +284,19 @@ const ResourcesHeader = ({ blogs }) => {
             </Link>
           </div>
         </div>
+        <DownloadLinks data={downloads} />
       </div>
     </ResourcesHeaderStyles>
   );
 };
 export const resourcesQuery = graphql`
   query HeaderQuery {
+    Downloads: allDownloadsJson {
+      nodes {
+        title
+        url
+      }
+    }
     BlogQuery: allSanityPost(
       limit: 3
       sort: { fields: publishedAt, order: DESC }

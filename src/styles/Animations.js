@@ -1,6 +1,16 @@
 import { css } from 'styled-components';
 
 const Animations = css`
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-5px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
   .nav__wrapper {
     transition: all 0.35s linear;
     z-index: 99999;
