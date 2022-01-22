@@ -65,7 +65,7 @@ const ResourcesHeaderStyles = styled.header`
     margin: var(--auto);
     max-width: var(--maxWidth);
     @media only screen and (min-width: 600px) {
-      padding-bottom: 4rem;
+      padding-bottom: 1.5rem;
     }
     h1 {
       span {
