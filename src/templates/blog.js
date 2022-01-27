@@ -93,6 +93,8 @@ const BlogStyles = styled.article`
         svg {
           width: 80px;
           height: 80px;
+          min-height: 80px;
+          min-width: 80px;
           border-radius: 100%;
           border: solid 4px var(--newCyan);
         }

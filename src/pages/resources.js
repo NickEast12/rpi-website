@@ -11,6 +11,7 @@ import ArrowIcon from '../svgs/right-arrow.svg';
 import AllBlogs from '../components/sections/allBlogs';
 import SEO from '../components/functional/SEO';
 import DownloadLinks from '../components/resources/downloadLinks';
+import ResourcesLinks from '../components/resources/resourcesLinks';
 
 const WidgetWrapper = styled.section`
   width: 100%;
@@ -44,6 +45,7 @@ const Resources = ({ data }) => {
         />
       </Helmet>
       <ResourcesHeader blogs={headerData} downloads={downloads} />
+      <ResourcesLinks data={downloads} />
       <AllBlogs blogs={allBlogs} />
       <WidgetWrapper>
         <h4>Recent Posts</h4>
@@ -284,17 +286,31 @@ const ResourcesHeader = ({ blogs, downloads }) => {
             </Link>
           </div>
         </div>
-        <DownloadLinks data={downloads} />
       </div>
     </ResourcesHeaderStyles>
   );
 };
 export const resourcesQuery = graphql`
   query HeaderQuery {
-    Downloads: allDownloadsJson {
+    Downloads: allSanityResources {
       nodes {
+        file {
+          asset {
+            url
+          }
+        }
         title
-        url
+        slug {
+          current
+        }
+        mainImage {
+          alt
+          asset {
+            fluid(maxWidth: 500) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
       }
     }
     BlogQuery: allSanityPost(
@@ -330,7 +346,7 @@ export const resourcesQuery = graphql`
       }
     }
     AllQuery: allSanityPost(
-      limit: 5
+      limit: 6
       skip: 1
       sort: { fields: publishedAt, order: DESC }
     ) {

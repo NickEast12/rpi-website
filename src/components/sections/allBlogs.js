@@ -8,7 +8,7 @@ const AllBlogsStyles = styled.section`
   width: 100%;
   .allblogs {
     width: 90%;
-    padding: 3rem 0;
+    padding: 1rem 0 2rem 0;
     margin: var(--auto);
     text-align: center;
     max-width: var(--maxWidth);
