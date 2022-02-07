@@ -9,8 +9,8 @@ const areaData = [
     location: 'UK & Europe',
     established: 1998,
     regional: 'UK, Germany',
-    staff: 25,
-    total: 3500,
+    staff: 32,
+    total: 3710,
     countries: 44,
     link: 'uk-and-europe',
   },
@@ -18,8 +18,8 @@ const areaData = [
     location: 'Middle East & Africa',
     established: 2002,
     regional: 'United Arab Emirates',
-    staff: 22,
-    total: 3200,
+    staff: 21,
+    total: 3390,
     countries: 30,
     link: 'middle-east-and-africa',
   },
@@ -28,8 +28,8 @@ const areaData = [
     established: 2007,
     regional: 'Singapore, Malaysia,',
     regionalLower: 'Hong Kong',
-    staff: 18,
-    total: 1350,
+    staff: 15,
+    total: 1525,
     countries: 18,
     link: 'asia',
   },
@@ -38,7 +38,7 @@ const areaData = [
     established: 2010,
     regional: 'Australia, New Zealand',
     staff: 4,
-    total: 150,
+    total: 175,
     countries: 10,
     link: 'anz-and-pacific',
   },
@@ -47,7 +47,7 @@ const areaData = [
     location: 'Americas',
     established: 2017,
     regional: 'USA',
-    staff: 6,
+    staff: 4,
     total: 300,
     countries: 20,
     link: 'americas',
@@ -230,8 +230,8 @@ const WhereWeWork = () => {
           <h6 className="sbt">Our offices</h6>
           <h4>Where we work</h4>
           <p>
-            Established for 23 years and operating in 9 countries we’ve made
-            over 8500 leadership and technology placements across 120 countries.
+            Established for 24 years and operating in 9 countries we’ve made
+            over 9100 leadership and technology placements across 120 countries.
           </p>
           <p>
             Our unique combination of local expertise matched with a truly
