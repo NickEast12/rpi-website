@@ -199,8 +199,7 @@ const SingleOfficeStyles = styled.div`
       margin-bottom: 0.5rem;
     }
     &--number,
-    &--email,
-    &--ea {
+    &--email {
       font-weight: 700;
     }
     &--email {
@@ -232,17 +231,17 @@ const SingleOffice = ({ office }) => {
             <p>{office.addressfour}</p>
           </a>
         </address>
+        {office.ealicence ? (
+          <p className="s-o--ea">{`EA Licence : ${office.ealicence}`}</p>
+        ) : (
+          ''
+        )}
         <a href={`tel:${office.number}`}>
           <p className="s-o--number">{office.number}</p>
         </a>
         <a href={`mailto:${office.email}`}>
           <p className="s-o--email">{office.email}</p>
         </a>
-        {office.ealicence ? (
-          <p className="s-o--ea">{`EA Licence : ${office.ealicence}`}</p>
-        ) : (
-          ''
-        )}
       </div>
     </SingleOfficeStyles>
   );

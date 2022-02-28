@@ -13,7 +13,7 @@ const data = [
   },
   {
     title: 'We have',
-    no: 75,
+    no: 76,
     fact: 'Staff across 9 offices',
   },
   {

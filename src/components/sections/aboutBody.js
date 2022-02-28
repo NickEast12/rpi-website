@@ -64,7 +64,7 @@ const AboutBody = () => {
         </div>
         <div className="abody__text">
           <h3>
-            <span>23 years </span> of inspiring careers in digital
+            <span>24 years </span> of inspiring careers in digital
             transformation
           </h3>
           <p>
