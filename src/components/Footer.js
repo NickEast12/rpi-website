@@ -259,7 +259,7 @@ const Footer = () => {
   const { featured } = useStaticQuery(graphql`
     query FeaturedQuery {
       featured: allSanityPost(
-        limit: 2
+        limit: 3
         sort: { fields: publishedAt, order: DESC }
       ) {
         nodes {
@@ -334,7 +334,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer__right">
-          <div className="footer__right__signup">
+          {/* <div className="footer__right__signup">
             <p>Subscribe for our latest news</p>
             <form
               name="email_signup"
@@ -361,7 +361,7 @@ const Footer = () => {
                 <span>Subscribe</span>
               </button>
             </form>
-          </div>
+          </div> */}
           <div className="footer__right__featured">
             <p>Featured articles</p>
             {featured.nodes.map((x) => (

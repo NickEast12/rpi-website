@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { graphql, Link } from 'gatsby';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
+import { EmailSignUp } from '../components/EmailSignUp';
 import Hero from '../components/sections/hero';
 import UVP from '../components/sections/uvp';
 import Services from '../components/sections/services';
@@ -33,9 +34,10 @@ const IndexPage = ({ data }) => {
       <UVP />
       <Services />
       <WhoWeAre />
+      <CTA />
       <WhereWeWork />
       <PageBlogs Blogs={blogs} />
-      <CTA />
+      <EmailSignUp />
     </Layout>
   );
 };

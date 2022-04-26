@@ -424,7 +424,7 @@ const Nav = ({ alt }) => {
   const [secondactive, setSecondActive] = useState(false);
 
   const changeNavScroll = () => {
-    if (window.scrollY >= 20) {
+    if (window.scrollY >= 20 || window.pageYOffset >= 20) {
       setScroll(true);
     } else {
       setScroll(false);

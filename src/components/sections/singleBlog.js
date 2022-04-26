@@ -23,6 +23,7 @@ const SingleBlogStyles = styled.article`
     .gatsby-image-wrapper {
       width: 100%;
       height: 100%;
+      max-height: 210px;
     }
     &__overlay {
       position: absolute;
