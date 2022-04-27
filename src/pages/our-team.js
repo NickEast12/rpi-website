@@ -9,6 +9,7 @@ import TheTeam from '../components/sections/theTeam';
 import Illustration from '../svgs/architecture.svg';
 import PageBlogs from '../components/sections/pageBlogs';
 import SEO from '../components/functional/SEO';
+import { EmailSignUp } from '../components/EmailSignUp';
 
 const OurTeam = ({ data }) => {
   const blogs = data.BlogQuery.nodes;
@@ -23,7 +24,8 @@ const OurTeam = ({ data }) => {
       <TheTeam teamData={team} />
       <JoinTheTeam />
       <PageBlogs Blogs={blogs} />
-      <CTA />
+      {/* <CTA /> */}
+      <EmailSignUp />
     </Layout>
   );
 };

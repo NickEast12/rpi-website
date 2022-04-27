@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import CTA from '../components/CTA';
+import { EmailSignUp } from '../components/EmailSignUp';
 import SEO from '../components/functional/SEO';
 //* Local imports
 import Layout from '../components/Layout';
@@ -14,8 +15,7 @@ const data = [
     title: 'Executive Search',
     id: 'executive-search',
     i: 'Robust methodology delivering impactful transformative leaders',
-    text:
-      'Our Executive Search service offers a dynamic alternative to the traditional model. We disrupt the legacy approach by injecting pace and agility while adopting a flexible and tailored search process, ensuring maximum visibility for the client, without compromising on methodology. Our experienced team combine their regional knowledge and networks to deliver a partner-led, intensive search and assessment process. With commercial models weighted to delivery, they present accurate & relevant short-lists quicker than the competition with consistently strong conversion to offer ratios.',
+    text: 'Our Executive Search service offers a dynamic alternative to the traditional model. We disrupt the legacy approach by injecting pace and agility while adopting a flexible and tailored search process, ensuring maximum visibility for the client, without compromising on methodology. Our experienced team combine their regional knowledge and networks to deliver a partner-led, intensive search and assessment process. With commercial models weighted to delivery, they present accurate & relevant short-lists quicker than the competition with consistently strong conversion to offer ratios.',
     img: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -70,8 +70,7 @@ const data = [
     title: 'Permanent',
     id: 'permanent',
     i: 'Exceptional candidates for exceptional businesses',
-    text:
-      'Our team of talented permanent consultants are experts in their field. Using cutting-edge sourcing tools and platforms combined with direct access to superior candidates empowers us to deliver highly skilled talent, on time. We understand no two hires are the same, and our approach is built on long-term, lasting relationships. On average, our recruiters and headhunters have a minimum of 15 years of experience, making them uniquely placed to assist with transformational projects.',
+    text: 'Our team of talented permanent consultants are experts in their field. Using cutting-edge sourcing tools and platforms combined with direct access to superior candidates empowers us to deliver highly skilled talent, on time. We understand no two hires are the same, and our approach is built on long-term, lasting relationships. On average, our recruiters and headhunters have a minimum of 15 years of experience, making them uniquely placed to assist with transformational projects.',
     img: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -117,8 +116,7 @@ const data = [
     title: 'Interim & Contract',
     id: 'interim-contract',
     i: 'The trigger for transformation',
-    text:
-      'The skills and experience that interim and contract talent offer is highly sought after by organisations at the forefront of digital transformation. At RPI, we know that short-term expertise and agility is the linchpin to achieving strategic objectives. Managing hundreds of contract consultants and senior interims around the world, we facilitate existing teams or work with companies to build new teams for your project.',
+    text: 'The skills and experience that interim and contract talent offer is highly sought after by organisations at the forefront of digital transformation. At RPI, we know that short-term expertise and agility is the linchpin to achieving strategic objectives. Managing hundreds of contract consultants and senior interims around the world, we facilitate existing teams or work with companies to build new teams for your project.',
     img: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -167,8 +165,7 @@ const data = [
     title: 'Project Solutions / SoW',
     i: 'A tailored approach to tech expertise',
     id: 'project-solutions',
-    text:
-      'RPI supports transformational tech projects with augmented resources (delivering teams as a service). Providing clients with resource flexibility that allows them to scale up and down at pace based on requirements and rapid access to the right expertise, skills and resources to deliver specific objectives and transformation.',
+    text: 'RPI supports transformational tech projects with augmented resources (delivering teams as a service). Providing clients with resource flexibility that allows them to scale up and down at pace based on requirements and rapid access to the right expertise, skills and resources to deliver specific objectives and transformation.',
     img: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -213,8 +210,7 @@ const data = [
     title: 'Visa and Payroll Services',
     i: 'Removing access barriers to high calibre talent',
     id: 'visa-payroll-services',
-    text:
-      'To deliver transformation at scale, organisations need the right access to an increasingly globalised talent pool. With an unparalleled global reach, we support our candidates and clients by facilitating simplified onboarding. Having global operations allows us to facilitate work based visa provision and in the Middle East we offer full Visa and Payroll Services across the UAE, as well as other GCC and African countries to provide organisations with access to exceptional and experienced professionals from all over the world.',
+    text: 'To deliver transformation at scale, organisations need the right access to an increasingly globalised talent pool. With an unparalleled global reach, we support our candidates and clients by facilitating simplified onboarding. Having global operations allows us to facilitate work based visa provision and in the Middle East we offer full Visa and Payroll Services across the UAE, as well as other GCC and African countries to provide organisations with access to exceptional and experienced professionals from all over the world.',
     img: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -255,15 +251,13 @@ const data = [
         />
       </svg>
     ),
-    alt:
-      'Visa and Payroll Services | Removing access barriers to high calibre talent ',
+    alt: 'Visa and Payroll Services | Removing access barriers to high calibre talent ',
   },
   {
     title: 'Campaign Management',
     i: 'A full service model of recruitment',
     id: 'campaign-management',
-    text:
-      'With unrivalled knowledge, expertise and experience in headhunting highly skilled talent, RPI works with IT and/or talent teams to build microsites, upskill managers, map out the market, raise an employer’s brand regionally and nationally, and source talent - a comprehensive solution to revolutionise not only your roster, but your place in the market.',
+    text: 'With unrivalled knowledge, expertise and experience in headhunting highly skilled talent, RPI works with IT and/or talent teams to build microsites, upskill managers, map out the market, raise an employer’s brand regionally and nationally, and source talent - a comprehensive solution to revolutionise not only your roster, but your place in the market.',
     img: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -373,7 +367,7 @@ const Specialisms = () => {
           </SpecialismSection>
         ))}
       </SpecialismsStyles>
-      <CTA />
+      <EmailSignUp />
     </Layout>
   );
 };

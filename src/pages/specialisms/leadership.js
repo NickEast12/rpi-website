@@ -10,6 +10,7 @@ import ServicesAbout from '../../components/servicesTemplates/servicesAbout';
 import ServiceTestimonial from '../../components/servicesTemplates/serviceTestimonial';
 import Illustration from '../../svgs/leadership-lower.svg';
 import LeadershipIcon from '../../svgs/who.svg';
+import { EmailSignUp } from '../../components/EmailSignUp';
 
 const information = [
   {
@@ -496,6 +497,7 @@ const Leadership = () => {
       >
         <Illustration />
       </ServiceOverview>
+      <CTA />
       <ServicesAbout />
       <ServiceTestimonial
         quotef={quoteData.quotef}
@@ -508,7 +510,8 @@ const Leadership = () => {
         title="Our services"
         text="Finding the best leaders and sourcing highly skilled tech talent means finding the right partner. Take a closer look at how we deliver talent."
       />
-      <CTA />
+
+      <EmailSignUp />
     </Layout>
   );
 };

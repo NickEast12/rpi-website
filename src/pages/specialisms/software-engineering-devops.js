@@ -10,6 +10,7 @@ import ServiceTestimonial from '../../components/servicesTemplates/serviceTestim
 import Illustration from '../../svgs/software.svg';
 import LowerIllustration from '../../svgs/software-lower.svg';
 import SEO from '../../components/functional/SEO';
+import { EmailSignUp } from '../../components/EmailSignUp';
 
 const information = [
   {
@@ -44,6 +45,7 @@ const ERP = () => {
       >
         <LowerIllustration />
       </ServiceOverview>
+      <CTA />
       <ServicesAbout />
       <ServiceTestimonial
         quotef={quoteData.quote}
@@ -54,7 +56,8 @@ const ERP = () => {
         title="Our services"
         text="Finding the best leaders and sourcing highly skilled tech talent means finding the right partner. Take a closer look at how we deliver talent."
       />
-      <CTA />
+
+      <EmailSignUp />
     </Layout>
   );
 };

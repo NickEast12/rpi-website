@@ -13,6 +13,7 @@ import Illustration from '../svgs/who.svg';
 import MainHeader from '../components/sections/mainHeader';
 import SEO from '../components/functional/SEO';
 import WhereWeWork from '../components/sections/wherewework';
+import { EmailSignUp } from '../components/EmailSignUp';
 
 const AboutUs = () => {
   const i = true;
@@ -33,10 +34,11 @@ const AboutUs = () => {
       <AboutBody />
       <ByTheNumbers />
       <Values />
+      <CTA />
       <WhereWeWork />
       <Diversity />
       <CSR />
-      <CTA />
+      <EmailSignUp />
     </Layout>
   );
 };

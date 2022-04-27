@@ -13,6 +13,7 @@ import MainHeader from '../components/sections/mainHeader';
 import CareersCTA from '../components/sections/careersCTA';
 import SEO from '../components/functional/SEO';
 import CareersForm from '../components/sections/careers-form';
+import { EmailSignUp } from '../components/EmailSignUp';
 
 const Careers = () => {
   const i = true;
@@ -37,6 +38,7 @@ const Careers = () => {
       <Diversity />
       <CSR />
       <CTA />
+      {/* <EmailSignUp /> */}
     </Layout>
   );
 };

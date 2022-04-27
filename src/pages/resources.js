@@ -12,6 +12,7 @@ import AllBlogs from '../components/sections/allBlogs';
 import SEO from '../components/functional/SEO';
 import DownloadLinks from '../components/resources/downloadLinks';
 import ResourcesLinks from '../components/resources/resourcesLinks';
+import { EmailSignUp } from '../components/EmailSignUp';
 
 const WidgetWrapper = styled.section`
   width: 100%;
@@ -47,11 +48,12 @@ const Resources = ({ data }) => {
       <ResourcesHeader blogs={headerData} downloads={downloads} />
       <ResourcesLinks data={downloads} />
       <AllBlogs blogs={allBlogs} />
+      <CTA />
       <WidgetWrapper>
         <h4>Recent Posts</h4>
         <div className="sk-ww-linkedin-page-post" data-embed-id="54509" />
       </WidgetWrapper>
-      <CTA />
+      <EmailSignUp />
     </Layout>
   );
 };

@@ -8,6 +8,7 @@ import CTA from '../components/CTA';
 import ArrowIcon from '../svgs/right-arrow.svg';
 import BookIcon from '../svgs/open-book.svg';
 import SingleBlog from '../components/sections/singleBlog';
+import { EmailSignUp } from '../components/EmailSignUp';
 
 const Blogsheader = styled.header`
   width: 100%;
@@ -99,7 +100,7 @@ const Blogs = ({ data }) => {
           ))}
         </div>
       </BlogBodyStyles>
-      <CTA />
+      <EmailSignUp />
     </Layout>
   );
 };

@@ -4,6 +4,69 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 const EmailSignUpStyles = styled.section`
   width: 100%;
+  max-width: 1220px;
+  margin: var(--auto);
+  background: rgb(102, 194, 171);
+  background: linear-gradient(
+    344deg,
+    rgba(102, 194, 171, 1) 33%,
+    rgba(115, 208, 217, 1) 92%
+  );
+  @media only screen and (min-width: 1024px) {
+    margin: 0 auto 2rem auto;
+  }
+  .wrapper {
+    padding: 3rem 0;
+    width: 90%;
+    margin: var(--auto);
+    h4 {
+      text-align: center;
+      color: var(--white);
+    }
+    form {
+      max-width: 650px;
+      margin: 2rem auto 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        @media only screen and (min-width: 526px) {
+          flex-direction: row;
+        }
+      }
+      input,
+      select {
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        padding: 0.75rem 0.5rem;
+      }
+      select {
+        color: #969696;
+      }
+      option:not(:first-of-type) {
+        color: black;
+      }
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+          width: 80%;
+          max-width: 250px;
+          border: solid 1px var(--offWhite);
+          background-color: var(--offWhite);
+          span {
+            color: #66c2ab;
+          }
+        }
+      }
+    }
+  }
 `;
 const EmailSignUp = () => {
   const { countries } = useStaticQuery(graphql`
@@ -75,9 +138,11 @@ const EmailSignUp = () => {
             placeholder="Email address"
             required
           />
-          <button type="submit">
-            <span>Subscribe</span>
-          </button>
+          <div className="button">
+            <button type="submit" className="btn">
+              <span>Subscribe</span>
+            </button>
+          </div>
         </form>
       </section>
     </EmailSignUpStyles>
