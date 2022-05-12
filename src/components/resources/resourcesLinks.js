@@ -14,6 +14,14 @@ const ResourcesLinksStyles = styled.section`
     h2 {
       text-align: center;
     }
+    @media only screen and (min-width: 768px) {
+      .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 750px;
+        margin: 0 auto;
+      }
+    }
   }
 `;
 
@@ -62,23 +70,26 @@ const SingleResourceStyles = styled.section`
     text-align: center;
     margin-top: 0.25rem;
   }
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
 `;
 
-const ResourcesLinks = ({ data }) => {
-  console.log(data);
-  return (
-    <ResourcesLinksStyles>
-      <section>
-        <h2>Downloads</h2>
-        <div className="wrapper">
-          {data.map((data, i) => (
-            <SingleResource data={data} key={i} />
-          ))}
-        </div>
-      </section>
-    </ResourcesLinksStyles>
-  );
-};
+const ResourcesLinks = ({ data }) => (
+  <ResourcesLinksStyles>
+    <section>
+      <h2>Downloads</h2>
+      <div className="wrapper">
+        {data.map((data, i) => (
+          <SingleResource data={data} key={i} />
+        ))}
+      </div>
+    </section>
+  </ResourcesLinksStyles>
+);
 
 export default ResourcesLinks;
 
