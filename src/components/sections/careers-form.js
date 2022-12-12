@@ -27,6 +27,10 @@ const CareersFormStyles = styled.main`
         outline-offset: -1px;
       }
     }
+    .recaptcha {
+      text-align: center;
+      margin: 0 auto;
+    }
     textarea {
       width: 100%;
       padding: 0.85rem 0.65rem;
@@ -44,6 +48,7 @@ const CareersFormStyles = styled.main`
     textarea::placeholder {
       color: #000;
     }
+
     .btn-wrapper {
       margin: var(--auto);
       text-align: center;
@@ -72,6 +77,7 @@ const CareersForm = () => (
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
+      data-netlify-recaptcha="true"
       action="/success"
     >
       <input type="hidden" name="form-name" value="careers_form" />
@@ -107,6 +113,12 @@ const CareersForm = () => (
         />
       </section>
       <textarea name="message" id="message" placeholder="Your message" />
+      <div className="recaptcha">
+        <div
+          className="g-recaptcha"
+          data-sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY}
+        />
+      </div>
       <div className="btn-wrapper">
         <button type="submit" className="btn btn--main">
           <span>Submit</span>

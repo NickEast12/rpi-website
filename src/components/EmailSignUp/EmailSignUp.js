@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import styled from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
 
@@ -66,6 +66,10 @@ const EmailSignUpStyles = styled.section`
         }
       }
     }
+    .recaptcha {
+      margin: 0 auto;
+      text-align: center;
+    }
   }
 `;
 const EmailSignUp = () => {
@@ -89,6 +93,7 @@ const EmailSignUp = () => {
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
+          data-netlify-recaptcha="true"
           action="/thank-you"
         >
           <input type="hidden" name="form-name" value="email_signup" />
@@ -138,6 +143,12 @@ const EmailSignUp = () => {
             placeholder="Email address"
             required
           />
+          <div className="recaptcha">
+            <div
+              className="g-recaptcha"
+              data-sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY}
+            />
+          </div>
           <div className="button">
             <button type="submit" className="btn">
               <span>Subscribe</span>

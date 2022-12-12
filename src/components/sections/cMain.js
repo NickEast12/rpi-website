@@ -76,6 +76,9 @@ const CMainStyles = styled.section`
         button {
           width: 185px;
         }
+        .recaptcha {
+          margin: 0 0 1rem 0;
+        }
       }
       @media only screen and (min-width: 1024px) {
         margin-top: 0;
@@ -119,6 +122,7 @@ const CMain = () => {
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            data-netlify-recaptcha="true"
             action="/success"
           >
             <input type="hidden" name="form-name" value="contact_form" />
@@ -157,6 +161,12 @@ const CMain = () => {
               placeholder="Your number"
             />
             <textarea name="message" id="message" placeholder="Your message" />
+            <div className="recaptcha">
+              <div
+                className="g-recaptcha"
+                data-sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY}
+              />
+            </div>
             <button type="submit" className="btn btn--main">
               <span>Submit</span>
             </button>
