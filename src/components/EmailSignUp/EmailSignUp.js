@@ -93,7 +93,6 @@ const EmailSignUp = () => {
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          data-netlify-recaptcha="true"
           action="/thank-you"
         >
           <input type="hidden" name="form-name" value="email_signup" />

@@ -122,7 +122,6 @@ const CMain = () => {
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
-            data-netlify-recaptcha="true"
             action="/success"
           >
             <input type="hidden" name="form-name" value="contact_form" />

@@ -77,7 +77,6 @@ const CareersForm = () => (
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      data-netlify-recaptcha="true"
       action="/success"
     >
       <input type="hidden" name="form-name" value="careers_form" />
