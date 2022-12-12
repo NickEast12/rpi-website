@@ -1,6 +1,5 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import ReCAPTCHA from 'react-google-recaptcha';
 import styled from 'styled-components';
 
 const CareersFormStyles = styled.main`
@@ -114,9 +113,9 @@ const CareersForm = () => (
         />
       </section>
       <textarea name="message" id="message" placeholder="Your message" />
-      <div className="recaptcha">
+      {/* <div className="recaptcha">
         <ReCAPTCHA sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY} />
-      </div>
+      </div> */}
       <div className="btn-wrapper">
         <button type="submit" className="btn btn--main">
           <span>Submit</span>
