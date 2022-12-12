@@ -1,4 +1,5 @@
 import React from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 import styled from 'styled-components';
 
 const CMainStyles = styled.section`
@@ -162,10 +163,7 @@ const CMain = () => {
             />
             <textarea name="message" id="message" placeholder="Your message" />
             <div className="recaptcha">
-              <div
-                className="g-recaptcha"
-                data-sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY}
-              />
+              <ReCAPTCHA sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY} />
             </div>
             <button type="submit" className="btn btn--main">
               <span>Submit</span>

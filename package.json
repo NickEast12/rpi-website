@@ -72,6 +72,7 @@
     "react-cookie-consent": "^6.2.3",
     "react-countup": "^4.3.3",
     "react-dom": "^16.14.0",
+    "react-google-recaptcha": "^2.1.0",
     "react-gradient": "^1.0.2",
     "react-granim": "^1.1.0",
     "react-helmet": "^6.1.0",

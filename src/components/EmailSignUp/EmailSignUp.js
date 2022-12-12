@@ -1,6 +1,7 @@
 import React, { useLayoutEffect } from 'react';
 import styled from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const EmailSignUpStyles = styled.section`
   width: 100%;
@@ -144,10 +145,7 @@ const EmailSignUp = () => {
             required
           />
           <div className="recaptcha">
-            <div
-              className="g-recaptcha"
-              data-sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY}
-            />
+            <ReCAPTCHA sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY} />
           </div>
           <div className="button">
             <button type="submit" className="btn">
