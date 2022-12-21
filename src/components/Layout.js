@@ -14,7 +14,6 @@ if (typeof window !== 'undefined') {
 }
 
 const Layout = ({ children, alt }) => {
-  const i = true;
   return (
     <>
       <GlobalStyles />
