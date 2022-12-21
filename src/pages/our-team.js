@@ -105,9 +105,7 @@ export const teamQuery = graphql`
         mainImage {
           alt
           asset {
-            fluid(maxWidth: 500) {
-              ...GatsbySanityImageFluid
-            }
+              gatsbyImageData( formats: AUTO)
           }
         }
         title
@@ -139,9 +137,7 @@ export const teamQuery = graphql`
         image {
           alt
           asset {
-            fluid(maxWidth: 900) {
-              ...GatsbySanityImageFluid
-            }
+              gatsbyImageData( formats: AUTO)
           }
         }
       }

@@ -55,9 +55,7 @@ export const indexQuery = graphql`
         mainImage {
           alt
           asset {
-            fluid(maxWidth: 500) {
-              ...GatsbySanityImageFluid
-            }
+              gatsbyImageData(formats: AUTO)
           }
         }
         title
@@ -89,9 +87,7 @@ export const indexQuery = graphql`
         image {
           alt
           asset {
-            fluid(maxWidth: 900) {
-              ...GatsbySanityImageFluid
-            }
+              gatsbyImageData(formats: AUTO)
           }
         }
       }

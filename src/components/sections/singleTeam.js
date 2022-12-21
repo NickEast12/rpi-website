@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 //* Local imports
 import LinkedinIcon from '../../svgs/linkedin.svg';
+import GetImage from '../functional/getImage';
 
 const SingleTeamStyles = styled.section`
   position: relative;
@@ -100,7 +101,7 @@ const SingleTeam = ({ data }) => {
   const [open, setOpen] = useState(false);
   return (
     <SingleTeamStyles onClick={() => setOpen(!open)} open={open}>
-      <Img fluid={data.image.asset.fluid} alt={data.image.alt} />
+      <GetImage data={data.image.asset} alt={data.image.alt} />
       <div className="info">
         <header>
           <section>

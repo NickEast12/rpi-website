@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import PortableText from '@sanity/block-content-to-react';
 import urlBuilder from '@sanity/image-url';
 import getYouTubeId from 'get-youtube-id';
@@ -24,6 +24,7 @@ import EmailIcon from '../svgs/paper-plane.svg';
 import RelatedBlogs from '../components/sections/relatedBlogs';
 import SEO from '../components/functional/SEO';
 import LogoIcon from '../svgs/favicon.svg';
+import GetImage from '../components/functional/getImage';
 
 const BlogStyles = styled.article`
   width: 100%;
@@ -154,6 +155,7 @@ const urlFor = (source) =>
 
 const Blog = ({ data }) => {
   const blog = data.Blog;
+  console.log(blog);
   const relatedData = data.Related;
   const serializers = {
     types: {
@@ -192,7 +194,8 @@ const Blog = ({ data }) => {
           <aside className="bb__right">
             <div className="author">
               {blog.authors[0].image ? (
-                <Img fluid={blog.authors[0].image.asset.fluid} />
+                // <GatsbyImage image={blog.authors[0].image.childImageSharp.gatsbyImageData} />
+                <GetImage data={blog.authors[0].image.asset} />
               ) : (
                 <LogoIcon />
               )}
@@ -344,7 +347,10 @@ const BlogHeader = ({ blog }) => (
   <BlogHeaderStyles>
     <div className="b-header">
       <div className="b-header__img">
-        <Img fluid={blog.mainImage.asset.fluid} alt={blog.mainImage.alt} />
+        {/* <GatsbyImage
+          image={blog.mainImage.childImageSharp.gatsbyImageData}
+          alt={blog.mainImage.alt} /> */}
+          <GetImage data={blog.mainImage.asset} alt={blog.mainImage.alt} />
       </div>
       <div className="b-header__text">
         <div className="b-header__text__meta">
@@ -352,7 +358,9 @@ const BlogHeader = ({ blog }) => (
             <BookIcon />
             <p>Article</p>
           </span>
-          <p>{`• ${blog.publishedAt}`}</p>
+          {blog.publishedAt && (
+            <p>{`• ${blog.publishedAt}`}</p>
+          )}
         </div>
         <h1>{blog.title}</h1>
         <div className="b-header__text__time">
@@ -387,18 +395,14 @@ export const query = graphql`
         image {
           alt
           asset {
-            fluid(maxWidth: 50) {
-              ...GatsbySanityImageFluid
-            }
+            gatsbyImageData(formats: AUTO, width: 50) 
           }
         }
       }
       mainImage {
         alt
         asset {
-          fluid(maxWidth: 1500) {
-            ...GatsbySanityImageFluid
-          }
+          gatsbyImageData(formats: AUTO, width: 1500)
           url
         }
       }
@@ -425,17 +429,13 @@ export const query = graphql`
           image {
             alt
             asset {
-              fluid(maxWidth: 100) {
-                ...GatsbySanityImageFluid
-              }
+              gatsbyImageData(formats: AUTO, width: 100)
             }
           }
         }
         mainImage {
           asset {
-            fluid(maxWidth: 410) {
-              ...GatsbySanityImageFluid
-            }
+            gatsbyImageData(formats: AUTO, width: 410)
           }
         }
       }

@@ -1,7 +1,7 @@
 import { graphql, Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 //* Local imports
 import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
@@ -13,6 +13,7 @@ import SEO from '../components/functional/SEO';
 import DownloadLinks from '../components/resources/downloadLinks';
 import ResourcesLinks from '../components/resources/resourcesLinks';
 import { EmailSignUp } from '../components/EmailSignUp';
+import GetImage from '../components/functional/getImage';
 
 const WidgetWrapper = styled.section`
   width: 100%;
@@ -268,7 +269,7 @@ const ResourcesHeader = ({ blogs, downloads }) => {
           <div className="resources__wrapper__left">
             <Link to={`/blog/${x.slug.current}`}>
               <div className="b-img">
-                <Img fluid={x.mainImage.asset.fluid} alt={x.mainImage.alt} />
+                <GetImage data={x.mainImage.asset} alt={x.mainImage.alt} />
                 <div className="b-img__overlay">
                   <p>{`${x.readingTimeInMinutes} min read`}</p>
                 </div>
@@ -308,9 +309,7 @@ export const resourcesQuery = graphql`
         mainImage {
           alt
           asset {
-            fluid(maxWidth: 500) {
-              ...GatsbySanityImageFluid
-            }
+              gatsbyImageData(formats: AUTO)
           }
         }
       }
@@ -324,9 +323,7 @@ export const resourcesQuery = graphql`
         mainImage {
           alt
           asset {
-            fluid(maxWidth: 500) {
-              ...GatsbySanityImageFluid
-            }
+              gatsbyImageData( formats: AUTO)
           }
         }
         title
@@ -357,9 +354,7 @@ export const resourcesQuery = graphql`
         mainImage {
           alt
           asset {
-            fluid(maxWidth: 500) {
-              ...GatsbySanityImageFluid
-            }
+              gatsbyImageData( formats: AUTO)
           }
         }
         title

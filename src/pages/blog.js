@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { graphql, Link } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 //* Local imports
 import Layout from '../components/Layout';
 import CTA from '../components/CTA';
@@ -9,6 +9,7 @@ import ArrowIcon from '../svgs/right-arrow.svg';
 import BookIcon from '../svgs/open-book.svg';
 import SingleBlog from '../components/sections/singleBlog';
 import { EmailSignUp } from '../components/EmailSignUp';
+import GetImage from '../components/functional/getImage';
 
 const Blogsheader = styled.header`
   width: 100%;
@@ -213,7 +214,10 @@ const LargeBlog = ({ blog }) => (
     <Link to={`/blog/${blog.slug.current}`}>
       <div className="largeblog">
         <div className="largeblog__img">
-          <Img fluid={blog.mainImage.asset.fluid} alt={blog.mainImage.alt} />
+          {/* <GatsbyImage
+            image={blog.mainImage.childImageSharp.gatsbyImageData}
+            alt={blog.mainImage.alt} /> */}
+            <GetImage data={blog.mainImage} alt={blog.mainImage.alt} />
           <div className="overlay">
             <p>{`${blog.readingTimeInMinutes} min read`}</p>
           </div>
@@ -241,9 +245,7 @@ export const blogQuery = graphql`
         mainImage {
           alt
           asset {
-            fluid(maxWidth: 500) {
-              ...GatsbySanityImageFluid
-            }
+              gatsbyImageData(formats: AUTO)
           }
         }
         title

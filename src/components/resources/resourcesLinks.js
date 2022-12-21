@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import DownloadIcon from '../../svgs/download.svg';
+import GetImage from '../functional/getImage';
 
 const ResourcesLinksStyles = styled.section`
   width: 100%;
@@ -34,10 +35,16 @@ const SingleResourceStyles = styled.section`
       text-decoration: underline;
     }
   }
-  .gatsby-image-wrapper {
-    max-width: 200px;
+  .img {
+    text-align: center;
     margin: 0 auto;
+    .gatsby-image-wrapper {
+      max-width: 200px;
+      margin: 0 auto;
+    }
+
   }
+
   .b-meta {
     margin: 0.5rem 0 0 0;
     display: flex;
@@ -96,7 +103,11 @@ export default ResourcesLinks;
 const SingleResource = ({ data }) => (
   <SingleResourceStyles>
     <a href={`${data.file.asset.url}?dl=`} target="_blank" rel="noreferrer">
-      <Img fluid={data.mainImage.asset.fluid} alt={data.mainImage.alt} />
+      <div className="img">
+        <GetImage
+          data={data.mainImage.asset}
+          alt={data.mainImage.alt} />
+        </div>
       <span className="b-meta">
         <DownloadIcon />
         <p>Download</p>

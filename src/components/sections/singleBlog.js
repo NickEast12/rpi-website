@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import { Link } from 'gatsby';
 //* Local imports
 import BookIcon from '../../svgs/open-book.svg';
+import GetImage from '../functional/getImage';
 
 const SingleBlogStyles = styled.article`
   width: 100%;
@@ -65,12 +66,14 @@ const SingleBlogStyles = styled.article`
   }
 `;
 const SingleBlog = ({ blog }) => {
-  const i = true;
   return (
     <SingleBlogStyles>
       <Link to={`/blog/${blog.slug.current}`}>
         <div className="b-img">
-          <Img fluid={blog.mainImage.asset.fluid} alt={blog.mainImage.alt} />
+          {/* <GatsbyImage
+            image={blog.mainImage.childImageSharp.gatsbyImageData}
+            alt={blog.mainImage.alt} /> */}
+            <GetImage data={blog.mainImage.asset} alt={blog.mainImage.alt} />
           <div className="b-img__overlay">
             <p>{`${blog.readingTimeInMinutes} min read`}</p>
           </div>

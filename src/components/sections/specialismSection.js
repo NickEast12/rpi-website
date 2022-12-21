@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-//* Local imports
-import Image from '../functional/Image';
 
 const SpecialismSectionStyles = styled.section`
   width: 100%;
