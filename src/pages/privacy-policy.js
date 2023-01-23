@@ -229,8 +229,8 @@ const PrivacyPolicy = () => {
           <p>
             If you have any questions about this policy or our use of your
             personal data you can email:{' '}
-            <a href="mailto:dpo@rpint.com">dpo@rpint.com </a>
-            or write to the RPI Data Protection Officer, 5th Floor, 1 Poultry,
+            <a href="mailto:dp@rpint.com">dp@rpint.com </a>
+            or write to RPI Data Protection, 5th Floor, 1 Poultry,
             London, EC2R 8EJ
           </p>
           <p>
