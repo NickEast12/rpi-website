@@ -15,11 +15,14 @@ const ResourcesLinksStyles = styled.section`
     h2 {
       text-align: center;
     }
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+      }
     @media only screen and (min-width: 768px) {
       .wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        max-width: 750px;
+        grid-template-columns: repeat(4, 1fr);
         margin: 0 auto;
       }
     }
@@ -38,6 +41,7 @@ const SingleResourceStyles = styled.section`
   .img {
     text-align: center;
     margin: 0 auto;
+    width: 100px;
     .gatsby-image-wrapper {
       max-width: 200px;
       margin: 0 auto;
@@ -76,12 +80,19 @@ const SingleResourceStyles = styled.section`
   .author {
     text-align: center;
     margin-top: 0.25rem;
+    font-size: .85rem;
   }
   @media only screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+    .img {
+      width: 125px;
+    }
+    .author {
+      font-size: 0.95rem;
+    }
   }
 `;
 
