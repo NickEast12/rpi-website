@@ -155,19 +155,19 @@ const urlFor = (source) =>
 
 const Blog = ({ data }) => {
   const blog = data.Blog;
-  console.log(blog);
   const relatedData = data.Related;
+  console.log(blog.authors[0].image.asset)
   const serializers = {
     types: {
       mainImage: (props) => (
         <div className="image">
           <img
             src={`${urlFor(props.node.asset)
-              .width(1388)
-              .height(926)
+              // .width('100%')
+              // .height('100%')
               .fit('crop')
               .auto('format')}`}
-            alt="woprds"
+            alt={`${blog.title} | RPI`}
           />
         </div>
       ),
@@ -395,7 +395,7 @@ export const query = graphql`
         image {
           alt
           asset {
-            gatsbyImageData(formats: AUTO, width: 50) 
+            gatsbyImageData(formats: AUTO, width: 250) 
           }
         }
       }
