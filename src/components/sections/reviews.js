@@ -14,24 +14,9 @@ const data = [
   },
   {
     quote:
-      'Joining in February 2018 to build a Cyber Security practice, RPI’s global pedigree is what first attracted me. They have the horsepower and resources of a large corporate business, but still retain a non-corporate, agile, entrepreneurial, and personal approach to their operation, working environment, and customers. This was reinforced by the trust and freedom I was given to take ownership of my own success in terms of the strategy I would take. I have subsequently secured multiple global clients delivering both executive search and Permanent recruitment, but most importantly establishing true ‘business partner’ status with these clients which is inherent to the RPI philosophy.',
-    name: 'James Foster, UK',
-  },
-  {
-    quote:
       'From my first day with RPI without any doubt, I can say that I have continued to grow and expand both personally and professionally. Having the opportunity to work, meet and have direct access to the leaders of the company has helped me to look at the bigger picture of recruitment. I have been promoted twice in this period and have been rewarded well for my efforts. Since starting at RPI, I’ve got married, had a baby, bought my first house and lastly, my sales figures have enabled me to join the annual honours club including Dubai, Miami and New Orleans.',
     name: 'Mothi Rajendran, Asia',
-  },
-  {
-    quote:
-      'I joined RPI in 2015 to head the Pay & Bill team for the group. With the support from the Head of Finance as well as the Chief Finance Officer right from the beginning, RPI encouraged me and made me feel like I can really make a difference. My regular business trips to Dubai and Singapore as well as India, allow me to support my team personally regardless to which office they are based in. Having direct access and working closely with all the leaders across the group has made me learn so much more than I envisaged.',
-    name: 'Michaela Bernklauova, UK',
-  },
-  {
-    quote:
-      'I joined RPI in 2008 with little experience in international recruitment and have grown so much since then; the company has given me every opportunity to learn and excel. What I like the most is that RPI has inspiring leaders, cares deeply about its staff and all efforts are always rewarded. With excellent support from managers and back office support, I have had the privilege to join the other top performers on several honours club trips including to Tokyo, South Africa, Los Vegas, and New Zealand.',
-    name: 'Amy Li, Asia',
-  },
+  }
 ];
 const ReviewsStyles = styled.section`
   width: 100%;

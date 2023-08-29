@@ -84,7 +84,7 @@ const CSR = () => {
             through donations, physical trials that raise funds and awareness,
             or even an investment of time, our employees share a genuine
             enthusiasm to support programmes that help those in need. During
-            2021 we raised or donated over USD $15K to more than 10 charities.
+            2022 we raised or donated over USD $15K to more than 10 charities.
           </p>
         </div>
       </div>

@@ -35,6 +35,12 @@ const WhoweareStyles = styled.section`
       p {
         margin: 0.5rem 0;
         color: var(--offWhite);
+        a {
+          color: var(--newCyan);
+          &:hover, &:active {
+            text-decoration: underline;
+          }
+        }
       }
       .l-m {
         margin: 0 auto;
@@ -86,7 +92,7 @@ const Whoweare = () => {
             We source the talent that ignites transformation in your business.
           </h3>
           <p>
-            Founded in 1998 and still privately owned, we are passionate about
+          Founded in 1998 and acquired in 2021 by <a href="https://www.themcggroup.com/" target="_blank" rel="noopener">The MCG Group</a>, we are passionate, we are passionate about
             creating innovative and impactful talent solutions.
           </p>
           <p>

@@ -9,8 +9,8 @@ const areaData = [
     location: 'UK & Europe',
     established: 1998,
     regional: 'UK, Germany',
-    staff: 32,
-    total: 3710,
+    staff: 20,
+    total: 3910,
     countries: 44,
     link: 'uk-and-europe',
   },
@@ -18,8 +18,8 @@ const areaData = [
     location: 'Middle East & Africa',
     established: 2002,
     regional: 'United Arab Emirates',
-    staff: 21,
-    total: 3390,
+    staff: 18,
+    total: 3540,
     countries: 30,
     link: 'middle-east-and-africa',
   },
@@ -28,8 +28,8 @@ const areaData = [
     established: 2007,
     regional: 'Singapore, Malaysia,',
     regionalLower: 'Hong Kong',
-    staff: 15,
-    total: 1525,
+    staff: 11,
+    total: 1650,
     countries: 18,
     link: 'asia',
   },
@@ -38,7 +38,7 @@ const areaData = [
     established: 2010,
     regional: 'Australia, New Zealand',
     staff: 4,
-    total: 175,
+    total: 200,
     countries: 10,
     link: 'anz-and-pacific',
   },
@@ -47,7 +47,7 @@ const areaData = [
     location: 'Americas',
     established: 2017,
     regional: 'USA',
-    staff: 4,
+    staff: 2,
     total: 300,
     countries: 20,
     link: 'americas',
@@ -230,8 +230,7 @@ const WhereWeWork = () => {
           <h6 className="sbt">Our offices</h6>
           <h4>Where we work</h4>
           <p>
-            Established for 24 years and operating in 9 countries we’ve made
-            over 9100 leadership and technology placements across 120 countries.
+          Established for 25 years, and acquired by <a href="https://www.themcggroup.com/" target="_blank" rel="noopener">The MCG Group</a> in 2021, RPI operate in 9 countries. We’ve made over 9,600 leadership and technology placements across 120 countries. 
           </p>
           <p>
             Our unique combination of local expertise matched with a truly

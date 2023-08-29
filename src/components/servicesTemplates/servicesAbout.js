@@ -58,7 +58,7 @@ const data = [
   },
   {
     title: 'We have',
-    no: 75,
+    no: 55,
     fact: 'Staff across 9 offices',
   },
   {
