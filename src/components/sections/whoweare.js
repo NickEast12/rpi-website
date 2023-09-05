@@ -92,7 +92,7 @@ const Whoweare = () => {
             We source the talent that ignites transformation in your business.
           </h3>
           <p>
-          Founded in 1998 and acquired in 2021 by <a href="https://www.themcggroup.com/" target="_blank" rel="noopener">The MCG Group</a>, we are passionate, we are passionate about
+          Founded in 1998 and acquired in 2021 by <a href="https://www.themcggroup.com/" target="_blank" rel="noopener">The MCG Group</a>, we are passionate about
             creating innovative and impactful talent solutions.
           </p>
           <p>

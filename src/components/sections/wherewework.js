@@ -49,7 +49,7 @@ const areaData = [
     regional: 'USA',
     staff: 2,
     total: 300,
-    countries: 20,
+    countries: 18,
     link: 'americas',
   },
 ];
@@ -62,6 +62,10 @@ const WhereWeWorkStyles = styled.section`
     margin: 0 auto;
     text-align: left;
     max-width: var(--maxWidth);
+    a {
+      color: var(--newBlue)!important;
+      text-decoration: underline;
+    }
     @media only screen and (min-width: 768px) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -93,6 +97,9 @@ const WhereWeWorkStyles = styled.section`
       }
       p {
         margin-bottom: 0.5rem;
+        a {
+          color: var(--main);
+        }
       }
       @media only screen and (min-width: 768px) {
         margin-top: 0;

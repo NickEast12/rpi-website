@@ -31,7 +31,8 @@ const LegalBodyStyles = styled.section`
       ol,
       ul {
         margin: 1rem 0;
-        list-style-position: inside;
+        padding-left: 22px;
+        /* list-style-position: inside; */
         li {
           margin-bottom: 0.5rem;
         }

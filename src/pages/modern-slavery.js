@@ -15,7 +15,7 @@ const ModernSlavery = () => {
         multiple specialisms and sectors, offering three core recruitment
         services: Executive, Permanent and Interim &amp; Contract."
       />
-      <LegalHeader title="Modern Slavery" date="1st March 2021" />
+      <LegalHeader title="Modern Slavery" date="1st August 2023" />
       <LegalBody>
       <section>
       <p><strong>Modern Slavery and Child Labour Policy (collectively referred to as Modern Slavery)</strong></p>
