@@ -208,12 +208,12 @@ const SingleOfficeStyles = styled.div`
   }
 `;
 const SingleOffice = ({ office }) => {
-  const location =
-    office.addressone +
-    office.addresstwo +
-    office.addressthree +
-    office.addressfour;
-  const t = location.split(' ');
+  // const location =
+  //   office.addressone +
+  //   office.addresstwo +
+  //   office.addressthree +
+  //   office.addressfour;
+  // const t = location?.split(' ');
   return (
     <SingleOfficeStyles>
       <div className="s-o">
