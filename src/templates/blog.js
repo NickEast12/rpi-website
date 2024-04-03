@@ -156,7 +156,7 @@ const urlFor = (source) =>
 const Blog = ({ data }) => {
   const blog = data.Blog;
   const relatedData = data.Related;
-  console.log(blog.authors[0].image.asset)
+  // console.log(blog.authors[0].image.asset)
   const serializers = {
     types: {
       mainImage: (props) => (

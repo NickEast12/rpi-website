@@ -73,7 +73,9 @@ const SingleBlog = ({ blog }) => {
           {/* <GatsbyImage
             image={blog.mainImage.childImageSharp.gatsbyImageData}
             alt={blog.mainImage.alt} /> */}
-            <GetImage data={blog.mainImage.asset} alt={blog.mainImage.alt} />
+            {blog.mainImage.asset && (
+              <GetImage data={blog.mainImage.asset} alt={blog.mainImage.alt} />
+            )}
           <div className="b-img__overlay">
             <p>{`${blog.readingTimeInMinutes} min read`}</p>
           </div>
