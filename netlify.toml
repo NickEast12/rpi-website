@@ -1,7 +1,7 @@
 # netlify.toml
 [build]
   command = "npm run build"
-  publish = "dist" # adjust to your framework
+  publish = "public" # Gatsby builds to public directory
 
 [[edge_functions]]
   path = "/*"
