@@ -1,2 +1,35 @@
+# netlify.toml
 [build]
-    functions = "functions/"
+  command = "npm run build"
+  publish = "dist" # adjust to your framework
+
+[[edge_functions]]
+  path = "/*"
+  function = "protect"
+
+# Strong caching for static assets
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.pdf"
+  [headers.values]
+    Cache-Control = "public, max-age=604800" # 7 days (tune as needed)
+
+# HTML: revalidate each visit
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
